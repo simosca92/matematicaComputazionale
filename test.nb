@@ -1,0 +1,287 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.4' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     10943,        279]
+NotebookOptionsPosition[     10490,        259]
+NotebookOutlinePosition[     10824,        274]
+CellTagsIndexPosition[     10781,        271]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.700806727716104*^9, 3.7008067805048523`*^9}, 
+   3.700892699972177*^9}],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.700892708888176*^9, 3.700892708894412*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"banana", "=", 
+   RowBox[{
+   "Import", "[", "\"\<//home/simone/Scrivania/MC/banana.png\>\"", "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"mela", "=", 
+   RowBox[{
+   "Import", "[", "\"\<//home/simone/Scrivania/MC/mela.png\>\"", "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"pera", "=", 
+   RowBox[{
+   "Import", "[", "\"\<//home/simone/Scrivania/MC/pera.png\>\"", "]"}]}], 
+  ";"}]}], "Input",
+ CellChangeTimes->{{3.700892744409169*^9, 3.7008927577770567`*^9}, {
+  3.700893793889056*^9, 3.700893800339347*^9}}],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.70089271034664*^9, 3.70089271035872*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DynamicModule", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"pt1", "=", 
+      RowBox[{"{", 
+       RowBox[{"0", ",", "30"}], "}"}]}], ",", 
+     RowBox[{"pt2", "=", 
+      RowBox[{"{", 
+       RowBox[{"2", ",", "30"}], "}"}]}], ",", 
+     RowBox[{"pt3", "=", 
+      RowBox[{"{", 
+       RowBox[{"4", ",", "30"}], "}"}]}], ",", 
+     RowBox[{"pt4", "=", 
+      RowBox[{"{", 
+       RowBox[{"6", ",", "30"}], "}"}]}], ",", 
+     RowBox[{"pt5", "=", 
+      RowBox[{"{", 
+       RowBox[{"8", ",", "30"}], "}"}]}], ",", 
+     RowBox[{"pt6", "=", 
+      RowBox[{"{", 
+       RowBox[{"10", ",", "30"}], "}"}]}], ",", " ", "eh1", ",", " ", "eh", 
+     ",", " ", "eh2"}], "}"}], ",", 
+   RowBox[{"Dynamic", "[", 
+    RowBox[{
+     RowBox[{"Graphics", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"eh", "@", "pt1"}], ",", 
+         RowBox[{"eh", "@", "pt2"}], ",", 
+         RowBox[{"eh1", "@", "pt3"}], ",", 
+         RowBox[{"eh1", "@", "pt4"}], ",", 
+         RowBox[{"eh2", "@", "pt5"}], ",", 
+         RowBox[{"eh2", "@", "pt6"}]}], "}"}], ",", 
+       RowBox[{"ImageSize", "\[Rule]", "900"}], ",", 
+       RowBox[{"PlotRange", "\[Rule]", "40"}], ",", 
+       RowBox[{"Axes", "\[Rule]", "True"}]}], "]"}], ",", "None"}], "]"}], 
+   ",", "\[IndentingNewLine]", 
+   RowBox[{"Initialization", "\[RuleDelayed]", 
+    RowBox[{"(", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"SetAttributes", "[", 
+       RowBox[{"eh1", ",", "HoldAll"}], "]"}], ";", "\[IndentingNewLine]", 
+      RowBox[{"SetAttributes", "[", 
+       RowBox[{"eh", ",", "HoldAll"}], "]"}], ";", "\[IndentingNewLine]", 
+      RowBox[{"SetAttributes", "[", 
+       RowBox[{"eh2", ",", "HoldAll"}], "]"}], ";", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"eh1", "[", "val1_", "]"}], ":=", 
+       RowBox[{"EventHandler", "[", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"Inset", "[", 
+           RowBox[{"mela", ",", 
+            RowBox[{"Dynamic", "@", "val1"}], ",", "Automatic", ",", "5"}], 
+           "]"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"\"\<MouseClicked\>\"", "\[RuleDelayed]", 
+            RowBox[{"(", 
+             RowBox[{"val1", "=", 
+              RowBox[{"{", 
+               RowBox[{"1", ",", "1"}], "}"}]}], ")"}]}], ",", 
+           RowBox[{"\"\<MouseDragged\>\"", "\[RuleDelayed]", 
+            RowBox[{"(", 
+             RowBox[{"val1", "=", 
+              RowBox[{"MousePosition", "[", "\"\<Graphics\>\"", "]"}]}], 
+             ")"}]}]}], "}"}]}], "]"}]}], ";", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"eh", "[", "val_", "]"}], ":=", 
+       RowBox[{"EventHandler", "[", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"Inset", "[", 
+           RowBox[{"banana", ",", 
+            RowBox[{"Dynamic", "@", "val"}], ",", "Automatic", ",", "5"}], 
+           "]"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"\"\<MouseClicked\>\"", "\[RuleDelayed]", 
+            RowBox[{"(", 
+             RowBox[{"val", "=", 
+              RowBox[{"{", 
+               RowBox[{"1", ",", "1"}], "}"}]}], ")"}]}], ",", 
+           RowBox[{"\"\<MouseDragged\>\"", "\[RuleDelayed]", 
+            RowBox[{"(", 
+             RowBox[{"val", "=", 
+              RowBox[{"MousePosition", "[", "\"\<Graphics\>\"", "]"}]}], 
+             ")"}]}]}], "}"}]}], "]"}]}], ";", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"eh2", "[", "val2_", "]"}], ":=", 
+       RowBox[{"EventHandler", "[", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"Inset", "[", 
+           RowBox[{"pera", ",", 
+            RowBox[{"Dynamic", "@", "val2"}], ",", "Automatic", ",", "5"}], 
+           "]"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"\"\<MouseClicked\>\"", "\[RuleDelayed]", 
+            RowBox[{"(", 
+             RowBox[{"val2", "=", 
+              RowBox[{"{", 
+               RowBox[{"1", ",", "1"}], "}"}]}], ")"}]}], ",", 
+           RowBox[{"\"\<MouseDragged\>\"", "\[RuleDelayed]", 
+            RowBox[{"(", 
+             RowBox[{"val2", "=", 
+              RowBox[{"MousePosition", "[", "\"\<Graphics\>\"", "]"}]}], 
+             ")"}]}]}], "}"}]}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+     ")"}]}]}], "\[IndentingNewLine]", "]"}]], "Input",
+ CellChangeTimes->CompressedData["
+1:eJxTTMoPSmViYGCQAGIQzXF5O/vuSa8deW5AaLamG8Ig+oXxXTBt4/dYCUTf
+eZCsBaIdbjwzAtFSdRrGINrdy80CRM9ekwamLT7/twPLVwfYg+hzYa/dQbTb
+huPeIFrkwa9AEL3ktVIQiF7MXBwNolnWnY8B0ez39FLB+rYHpYPd1To7F0SX
+yCwuANF+D56XgGiPfYurQPSrb0UNYP0+Qi0gepeW0mcQrSOYAaZbQlaz7gG5
+PziCB0RPyvZxAdEMu1eB6Wc+iR5PgHRRkG8wiE46vyEVRId9c08H0eukqvJA
+9JwDFfkg2ranqRtEN2S8XQNWl7v6CIjeFcZ2HkTr6F29BqJVJ6s/BtG9ges+
+geiQKzfB9K4Nyr9BtHDKDu6nQBoA9LrVQg==
+  "]],
+
+Cell[BoxData[
+ DynamicModuleBox[{$CellContext`pt1$$ = {-38.046564452015886`, 
+  34.73026689381033}, $CellContext`pt2$$ = {-34.048835888699585`, 
+  33.549119818285064`}, $CellContext`pt3$$ = {-13.969335604770002`, 
+  33.73083475298126}, $CellContext`pt4$$ = {-6.064735945485502, 
+  33.27654741624077}, $CellContext`pt5$$ = {23.91822827938673, 
+  33.27654741624077}, $CellContext`pt6$$ = {17.55820556501989, 
+  33.18568994889267}, $CellContext`eh1$$, $CellContext`eh$$, \
+$CellContext`eh2$$}, 
+  DynamicBox[ToBoxes[
+    Graphics[{
+      $CellContext`eh$$[$CellContext`pt1$$], 
+      $CellContext`eh$$[$CellContext`pt2$$], 
+      $CellContext`eh1$$[$CellContext`pt3$$], 
+      $CellContext`eh1$$[$CellContext`pt4$$], 
+      $CellContext`eh2$$[$CellContext`pt5$$], 
+      $CellContext`eh2$$[$CellContext`pt6$$]}, ImageSize -> 900, PlotRange -> 
+     40, Axes -> True], StandardForm], None,
+   ImageSizeCache->{900., {445., 451.}}],
+  DynamicModuleValues:>{{DownValues[$CellContext`eh1$$] = {HoldPattern[
+         $CellContext`eh1$$[
+          Pattern[$CellContext`val1, 
+           Blank[]]]] :> EventHandler[{
+          Inset[$CellContext`mela, 
+           Dynamic[$CellContext`val1], Automatic, 5]}, {
+         "MouseClicked" :> ($CellContext`val1 = {1, 1}), 
+          "MouseDragged" :> ($CellContext`val1 = 
+           MousePosition["Graphics"])}]}, 
+     Attributes[$CellContext`eh1$$] = {HoldAll}}, {
+    DownValues[$CellContext`eh$$] = {HoldPattern[
+         $CellContext`eh$$[
+          Pattern[$CellContext`val, 
+           Blank[]]]] :> EventHandler[{
+          Inset[$CellContext`banana, 
+           Dynamic[$CellContext`val], Automatic, 5]}, {
+         "MouseClicked" :> ($CellContext`val = {1, 1}), 
+          "MouseDragged" :> ($CellContext`val = MousePosition["Graphics"])}]},
+      Attributes[$CellContext`eh$$] = {HoldAll}}, {
+    DownValues[$CellContext`eh2$$] = {HoldPattern[
+         $CellContext`eh2$$[
+          Pattern[$CellContext`val2, 
+           Blank[]]]] :> EventHandler[{
+          Inset[$CellContext`pera, 
+           Dynamic[$CellContext`val2], Automatic, 5]}, {
+         "MouseClicked" :> ($CellContext`val2 = {1, 1}), 
+          "MouseDragged" :> ($CellContext`val2 = 
+           MousePosition["Graphics"])}]}, 
+     Attributes[$CellContext`eh2$$] = {HoldAll}}},
+  Initialization:>(SetAttributes[$CellContext`eh1$$, HoldAll]; 
+   SetAttributes[$CellContext`eh$$, HoldAll]; 
+   SetAttributes[$CellContext`eh2$$, HoldAll]; $CellContext`eh1$$[
+      Pattern[$CellContext`val1, 
+       Blank[]]] := EventHandler[{
+       Inset[$CellContext`mela, 
+        Dynamic[$CellContext`val1], Automatic, 5]}, {
+      "MouseClicked" :> ($CellContext`val1 = {1, 1}), 
+       "MouseDragged" :> ($CellContext`val1 = 
+        MousePosition["Graphics"])}]; $CellContext`eh$$[
+      Pattern[$CellContext`val, 
+       Blank[]]] := EventHandler[{
+       Inset[$CellContext`banana, 
+        Dynamic[$CellContext`val], Automatic, 5]}, {
+      "MouseClicked" :> ($CellContext`val = {1, 1}), 
+       "MouseDragged" :> ($CellContext`val = 
+        MousePosition["Graphics"])}]; $CellContext`eh2$$[
+      Pattern[$CellContext`val2, 
+       Blank[]]] := EventHandler[{
+       Inset[$CellContext`pera, 
+        Dynamic[$CellContext`val2], Automatic, 5]}, {
+      "MouseClicked" :> ($CellContext`val2 = {1, 1}), 
+       "MouseDragged" :> ($CellContext`val2 = MousePosition["Graphics"])}]; 
+   Null)]], "Output",
+ CellChangeTimes->{{3.700808240859068*^9, 3.700808290752317*^9}, 
+   3.700808339470256*^9, 3.7008084247038383`*^9, 3.70080849634334*^9, {
+   3.700808563072648*^9, 3.700808584038291*^9}, {3.700808634447032*^9, 
+   3.7008086633644867`*^9}, 3.7008087497213097`*^9, 3.700809630214712*^9, {
+   3.700809795861113*^9, 3.700809828668416*^9}, {3.700810261592443*^9, 
+   3.700810280020549*^9}, 3.700812986020678*^9, 3.700891966511085*^9, 
+   3.700892339109087*^9, 3.7008924769926*^9, 3.70089254193316*^9, {
+   3.700892777109445*^9, 3.700892806728402*^9}, 3.700892901011023*^9, {
+   3.7008930092042227`*^9, 3.700893033570017*^9}, {3.7008932232661963`*^9, 
+   3.7008932762680483`*^9}, 3.700893310645027*^9, 3.7008933685178747`*^9, {
+   3.700893423740251*^9, 3.700893438532138*^9}, 3.700893805971689*^9}]
+}, Open  ]]
+},
+WindowSize->{1366, 704},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"10.4 for Linux x86 (64-bit) (April 11, 2016)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 120, 2, 32, "Input"],
+Cell[681, 24, 92, 1, 32, "Input"],
+Cell[776, 27, 584, 17, 77, "Input"],
+Cell[1363, 46, 90, 1, 32, "Input"],
+Cell[CellGroupData[{
+Cell[1478, 51, 4792, 121, 319, "Input"],
+Cell[6273, 174, 4201, 82, 911, "Output"]
+}, Open  ]]
+}
+]
+*)
+
