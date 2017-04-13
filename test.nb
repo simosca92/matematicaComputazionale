@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     56481,       1269]
-NotebookOptionsPosition[     55632,       1237]
-NotebookOutlinePosition[     55966,       1252]
-CellTagsIndexPosition[     55923,       1249]
+NotebookDataLength[     56751,       1269]
+NotebookOptionsPosition[     56010,       1240]
+NotebookOutlinePosition[     56347,       1255]
+CellTagsIndexPosition[     56304,       1252]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -21,9 +21,6 @@ Notebook[{
 Cell[BoxData[""], "Input",
  CellChangeTimes->{{3.700806727716104*^9, 3.7008067805048523`*^9}, 
    3.700892699972177*^9}],
-
-Cell[BoxData[""], "Input",
- CellChangeTimes->{{3.700892708888176*^9, 3.700892708894412*^9}}],
 
 Cell[BoxData[{
  RowBox[{
@@ -43,9 +40,6 @@ Cell[BoxData[{
   ";"}]}], "Input",
  CellChangeTimes->{{3.700892744409169*^9, 3.7008927577770567`*^9}, {
   3.700893793889056*^9, 3.700893800339347*^9}}],
-
-Cell[BoxData[""], "Input",
- CellChangeTimes->{{3.70089271034664*^9, 3.70089271035872*^9}}],
 
 Cell[CellGroupData[{
 
@@ -350,7 +344,7 @@ Cell[BoxData[
                     RowBox[{"val1", "=", 
                     RowBox[{"{", 
                     RowBox[{
-                    RowBox[{"-", "28"}], ",", "15"}], "}"}]}], ";", 
+                    RowBox[{"-", "30"}], ",", "15"}], "}"}]}], ";", 
                     RowBox[{"oneTimeOut", "=", "0"}]}]}], 
                   RowBox[{"(*", 
                    RowBox[{
@@ -481,7 +475,7 @@ Cell[BoxData[
                    RowBox[{
                     RowBox[{"val", "=", 
                     RowBox[{"{", 
-                    RowBox[{"5", ",", "15"}], "}"}]}], ";", 
+                    RowBox[{"0", ",", "15"}], "}"}]}], ";", 
                     RowBox[{"oneTimeOut", "=", "0"}]}]}], 
                   RowBox[{"(*", 
                    RowBox[{
@@ -612,7 +606,7 @@ Cell[BoxData[
                    RowBox[{
                     RowBox[{"val2", "=", 
                     RowBox[{"{", 
-                    RowBox[{"5", ",", "15"}], "}"}]}], ";", 
+                    RowBox[{"0", ",", "15"}], "}"}]}], ";", 
                     RowBox[{"oneTimeOut", "=", "0"}]}]}], 
                   RowBox[{"(*", 
                    RowBox[{
@@ -646,7 +640,7 @@ Cell[BoxData[
                     RowBox[{"val2", "=", 
                     RowBox[{"{", 
                     RowBox[{
-                    RowBox[{"-", "28"}], ",", "15"}], "}"}]}], ";", 
+                    RowBox[{"-", "30"}], ",", "15"}], "}"}]}], ";", 
                     RowBox[{"oneTimeOut", "=", "0"}]}]}], 
                   RowBox[{"(*", 
                    RowBox[{
@@ -724,13 +718,15 @@ Cell[BoxData[
    3.700983683611156*^9, 3.700983830897038*^9}, {3.700983928935793*^9, 
    3.700984005217826*^9}, {3.700984100000134*^9, 3.700984159139423*^9}, {
    3.70098419794643*^9, 3.700984365362873*^9}, {3.700984415195969*^9, 
-   3.700984420869866*^9}}],
+   3.700984420869866*^9}, 3.701015050277532*^9, {3.701015257312582*^9, 
+   3.701015286217284*^9}, {3.7010153278080063`*^9, 3.701015359836973*^9}}],
 
 Cell[BoxData[
  DynamicModuleBox[{$CellContext`pt1$$ = {-35, 35}, $CellContext`pt2$$ = {-30, 
-  35}, $CellContext`pt3$$ = {-2.5, 35}, $CellContext`pt4$$ = {
-  2.5, 35}, $CellContext`pt5$$ = {30, 35}, $CellContext`pt6$$ = {35, 
-  35}, $CellContext`eh1$$, $CellContext`eh$$, $CellContext`eh2$$, \
+  35}, $CellContext`pt3$$ = {-3.0999999999999943`, 
+  34.7}, $CellContext`pt4$$ = {3.200000000000003, 
+  34.8}, $CellContext`pt5$$ = {30, 35}, $CellContext`pt6$$ = {34.5, 
+  35.1}, $CellContext`eh1$$, $CellContext`eh$$, $CellContext`eh2$$, \
 $CellContext`l1$$ = 
   Line[{{-40, 8}, {-35, 1}, {-25, 1}, {-20, 8}, {-40, 
    8}}], $CellContext`l2$$ = 
@@ -789,7 +785,7 @@ $CellContext`l1$$ =
                Part[$CellContext`val1$, 1] < -20], 
               
               If[$CellContext`oneTimeOut$$ == 
-               1, $CellContext`val1$ = {-28, 15}; $CellContext`oneTimeOut$$ = 
+               1, $CellContext`val1$ = {-30, 15}; $CellContext`oneTimeOut$$ = 
                 0]] If[
               And[
               Part[$CellContext`val1$, 2] < 5, Part[$CellContext`val1$, 1] > 
@@ -823,7 +819,7 @@ $CellContext`l1$$ =
                 Part[$CellContext`val$, 1] < 10], 
               
               If[$CellContext`oneTimeOut$$ == 
-               1, $CellContext`val$ = {5, 15}; $CellContext`oneTimeOut$$ = 0]]
+               1, $CellContext`val$ = {0, 15}; $CellContext`oneTimeOut$$ = 0]]
               If[
               And[
               Part[$CellContext`val$, 2] < 5, Part[$CellContext`val$, 1] > 25,
@@ -858,14 +854,15 @@ $CellContext`l1$$ =
                10], 
               
               If[$CellContext`oneTimeOut$$ == 
-               1, $CellContext`val2$ = {5, 15}; $CellContext`oneTimeOut$$ = 
+               1, $CellContext`val2$ = {0, 15}; $CellContext`oneTimeOut$$ = 
                 0]] If[
               And[
               Part[$CellContext`val2$, 2] < 5, 
                Part[$CellContext`val2$, 1] > -35, 
                Part[$CellContext`val2$, 1] < -20], 
+              
               If[$CellContext`oneTimeOut$$ == 
-               1, $CellContext`val2$ = {-28, 15}; $CellContext`oneTimeOut$$ = 
+               1, $CellContext`val2$ = {-30, 15}; $CellContext`oneTimeOut$$ = 
                 0]])}]}, Attributes[$CellContext`eh2$$] = {HoldAll}}, {
     Attributes[$CellContext`l1$$] = {HoldAll}}, {
     Attributes[$CellContext`l2$$] = {HoldAll}}, {
@@ -917,7 +914,7 @@ $CellContext`l1$$ =
              Part[$CellContext`val1$, 1] < -20], 
            
            If[$CellContext`oneTimeOut$$ == 
-            1, $CellContext`val1$ = {-28, 15}; $CellContext`oneTimeOut$$ = 0]]
+            1, $CellContext`val1$ = {-30, 15}; $CellContext`oneTimeOut$$ = 0]]
            If[
            And[
            Part[$CellContext`val1$, 2] < 5, Part[$CellContext`val1$, 1] > 25, 
@@ -947,7 +944,7 @@ $CellContext`l1$$ =
             Part[$CellContext`val$, 1] < 10], 
            
            If[$CellContext`oneTimeOut$$ == 
-            1, $CellContext`val$ = {5, 15}; $CellContext`oneTimeOut$$ = 0]] If[
+            1, $CellContext`val$ = {0, 15}; $CellContext`oneTimeOut$$ = 0]] If[
            And[
            Part[$CellContext`val$, 2] < 5, Part[$CellContext`val$, 1] > 25, 
             Part[$CellContext`val$, 1] < 40], 
@@ -976,14 +973,14 @@ $CellContext`l1$$ =
             Part[$CellContext`val2$, 1] < 10], 
            
            If[$CellContext`oneTimeOut$$ == 
-            1, $CellContext`val2$ = {5, 15}; $CellContext`oneTimeOut$$ = 0]] 
+            1, $CellContext`val2$ = {0, 15}; $CellContext`oneTimeOut$$ = 0]] 
          If[
            And[
            Part[$CellContext`val2$, 2] < 5, Part[$CellContext`val2$, 1] > -35,
              Part[$CellContext`val2$, 1] < -20], 
            
            If[$CellContext`oneTimeOut$$ == 
-            1, $CellContext`val2$ = {-28, 15}; $CellContext`oneTimeOut$$ = 
+            1, $CellContext`val2$ = {-30, 15}; $CellContext`oneTimeOut$$ = 
              0]])}]; Null)]], "Output",
  CellChangeTimes->{{3.700808240859068*^9, 3.700808290752317*^9}, 
    3.700808339470256*^9, 3.7008084247038383`*^9, 3.70080849634334*^9, {
@@ -1033,13 +1030,11 @@ $CellContext`l1$$ =
    3.7009840093743353`*^9}, {3.700984147937294*^9, 3.700984162985342*^9}, {
    3.700984206130773*^9, 3.700984234510735*^9}, 3.700984270439783*^9, 
    3.700984321512344*^9, {3.70098435634454*^9, 3.700984370494755*^9}, 
-   3.7009844270794*^9}]
+   3.7009844270794*^9, 3.7010148549993763`*^9, 3.7010149425646973`*^9, 
+   3.701014997422637*^9, {3.701015069730089*^9, 3.701015085426477*^9}, 
+   3.701015227335318*^9, {3.7010152612914867`*^9, 3.7010153021997538`*^9}, {
+   3.7010153390298653`*^9, 3.7010153622216*^9}}]
 }, Open  ]],
-
-Cell[BoxData[""], "Input",
- CellChangeTimes->{{3.7008965690091467`*^9, 3.700896573861223*^9}, {
-   3.700896611647483*^9, 3.700896613594775*^9}, 3.700897475752845*^9, {
-   3.700898348175634*^9, 3.700898351541617*^9}}],
 
 Cell[CellGroupData[{
 
@@ -1157,20 +1152,19 @@ Cell[BoxData[
 Cell[BoxData[
  TagBox[
   StyleBox[
-   DynamicModuleBox[{$CellContext`pts$$ = {{0, 0}, {-1.955, -1.92}, {2, -2}, {
-     0.015000000000000124`, 1.54}}, Typeset`show$$ = True, 
-    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
-    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
-    "\"untitled\"", Typeset`specs$$ = {{{
+   DynamicModuleBox[{$CellContext`pts$$ = {{0, 0}, {-2, -2}, {2, -2}, {0, 2}},
+     Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
+    Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ = 
+    1, Typeset`name$$ = "\"untitled\"", Typeset`specs$$ = {{{
        Hold[$CellContext`pts$$], {{0, 0}, {-2, -2}, {2, -2}, {0, 
        2}}}, {-3, -3}, {3, 3}}}, Typeset`size$$ = {400., {234., 241.}}, 
     Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = 
-    False, $CellContext`pts$16069$$ = {0, 0}}, 
+    False, $CellContext`pts$989$$ = {0, 0}}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, 
       "Variables" :> {$CellContext`pts$$ = {{0, 0}, {-2, -2}, {2, -2}, {0, 
          2}}}, "ControllerVariables" :> {
-        Hold[$CellContext`pts$$, $CellContext`pts$16069$$, {0, 0}]}, 
+        Hold[$CellContext`pts$$, $CellContext`pts$989$$, {0, 0}]}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -1196,15 +1190,24 @@ Cell[BoxData[
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
-    Initialization:>({$CellContext`testpoint[
-         Pattern[$CellContext`poly, 
-          Blank[]], 
-         Pattern[$CellContext`pt, 
-          Blank[]]] := Round[(Total[
-             Mod[
-              (# - RotateRight[#]& )[
-               Map[Apply[ArcTan, $CellContext`pt - #]& , $CellContext`poly]], 
-              2 Pi, -Pi]]/2)/Pi] != 0}; Typeset`initDone$$ = True),
+    Initialization:>({{$CellContext`testpoint[
+           Pattern[$CellContext`poly, 
+            Blank[]], 
+           Pattern[$CellContext`pt, 
+            Blank[]]] := Round[Total[
+              Mod[
+               (# - RotateRight[#]& )[
+                Map[Apply[ArcTan, $CellContext`pt - #]& , $CellContext`poly]],
+                2 Pi, -Pi]] 2^(-1)/Pi] != 0}; {$CellContext`testpoint[
+           Pattern[$CellContext`poly, 
+            Blank[]], 
+           Pattern[$CellContext`pt, 
+            Blank[]]] := Round[(Total[
+               Mod[
+                (# - RotateRight[#]& )[
+                 Map[
+                 Apply[ArcTan, $CellContext`pt - #]& , $CellContext`poly]], 2 
+                Pi, -Pi]]/2)/Pi] != 0}}; Typeset`initDone$$ = True),
     SynchronousInitialization->True,
     UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
     UnsavedVariables:>{Typeset`initDone$$},
@@ -1212,7 +1215,7 @@ Cell[BoxData[
    Deployed->True,
    StripOnInput->False],
   Manipulate`InterpretManipulate[1]]], "Output",
- CellChangeTimes->{3.7008985757376757`*^9}]
+ CellChangeTimes->{3.7008985757376757`*^9, 3.701014855286435*^9}]
 }, Open  ]],
 
 Cell["", "Text"],
@@ -1236,7 +1239,7 @@ Cell["", "Text"]
 }, Open  ]]
 },
 WindowSize->{1366, 704},
-WindowMargins->{{0, Automatic}, {Automatic, 0}},
+WindowMargins->{{-10, Automatic}, {Automatic, -8}},
 FrontEndVersion->"10.4 for Linux x86 (64-bit) (April 11, 2016)",
 StyleDefinitions->"Default.nb"
 ]
@@ -1252,24 +1255,21 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[558, 20, 120, 2, 32, "Input"],
-Cell[681, 24, 92, 1, 32, "Input"],
-Cell[776, 27, 584, 17, 77, "Input"],
-Cell[1363, 46, 90, 1, 32, "Input"],
+Cell[681, 24, 584, 17, 77, "Input"],
 Cell[CellGroupData[{
-Cell[1478, 51, 30567, 675, 1683, "Input"],
-Cell[32048, 728, 16318, 307, 415, "Output"]
+Cell[1290, 45, 30687, 676, 1683, "Input"],
+Cell[31980, 723, 16620, 312, 415, "Output"]
 }, Open  ]],
-Cell[48381, 1038, 216, 3, 32, "Input"],
 Cell[CellGroupData[{
-Cell[48622, 1045, 3724, 109, 165, "Input"],
-Cell[52349, 1156, 2775, 58, 560, "Output"]
+Cell[48637, 1040, 3724, 109, 165, "Input"],
+Cell[52364, 1151, 3138, 66, 560, "Output"]
 }, Open  ]],
-Cell[55139, 1217, 16, 0, 33, "Text"],
-Cell[55158, 1219, 92, 1, 32, "Input"],
+Cell[55517, 1220, 16, 0, 33, "Text"],
+Cell[55536, 1222, 92, 1, 32, "Input"],
 Cell[CellGroupData[{
-Cell[55275, 1224, 181, 4, 79, "Subtitle"],
-Cell[55459, 1230, 138, 2, 33, "Text"],
-Cell[55600, 1234, 16, 0, 33, "Text"]
+Cell[55653, 1227, 181, 4, 79, "Subtitle"],
+Cell[55837, 1233, 138, 2, 33, "Text"],
+Cell[55978, 1237, 16, 0, 33, "Text"]
 }, Open  ]]
 }
 ]

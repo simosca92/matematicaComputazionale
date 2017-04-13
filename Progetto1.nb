@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    108357,       1847]
-NotebookOptionsPosition[    108048,       1832]
-NotebookOutlinePosition[    108421,       1848]
-CellTagsIndexPosition[    108378,       1845]
+NotebookDataLength[    111041,       1891]
+NotebookOptionsPosition[    110732,       1876]
+NotebookOutlinePosition[    111105,       1892]
+CellTagsIndexPosition[    111062,       1889]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -1756,8 +1756,8 @@ caratteristica che si adatta ad alcuni dei suoi elementi: costruiamo cos\
  StyleBox["sottoinsieme. ",
   FontSize->18,
   FontColor->RGBColor[0, 1, 0]],
- StyleBox["(immagine lego) \nIl concetto di sottoinsieme viene intuito come \
-una scatola dentro un\[CloseCurlyQuote]",
+ StyleBox["(immagine lego) \nIl concetto di sott\[Union]oinsieme viene \
+intuito come una scatola dentro un\[CloseCurlyQuote]",
   FontSize->18,
   FontColor->GrayLevel[0]],
  StyleBox["altra scatola ovvero un insieme che sta dentro \
@@ -1786,7 +1786,42 @@ usiamo ",
 contengono una parte degli elementi dell\[CloseCurlyQuote]insieme A, o \
 eventualmente tutti. Un sottoinsieme proprio \[EGrave] un sottoinsieme che \
 contiene solo una parte degli elementi di A mentre un sottoinsieme improprio \
-pu\[OGrave] essere solamente vuoto o coincidere con A.\n\n\n\n\n",
+pu\[OGrave] essere solamente vuoto o coincidere con A.\n\n",
+  FontSize->18],
+ StyleBox["LE OPERAZIONI TRA INSIEMI", "Section",
+  FontSize->24],
+ StyleBox["\n\nDati due o pi\[UGrave] insiemi \[EGrave] possibile fare tra di \
+loro alcune operazioni. In particolare le cinque pi\[UGrave] importanti sono: \
+\n1) l\[CloseCurlyQuote]unione;\n2) la partizione;\n3) la differenza;\n4) l\
+\[CloseCurlyQuote]intersezione;\n5) il prodotto cartesiano;\n\nAnalizziamo \
+per prima l\[CloseCurlyQuote]unione. Consideriamo due insiemi di partenza \
+quali l\[CloseCurlyQuote]insieme delle rose e l\[CloseCurlyQuote]insieme dei \
+girasoli che chiameremo rispettivamente A e B.\n(esempio)\nsi definisce l\
+\[CloseCurlyQuote]unione come l\[CloseCurlyQuote]insieme C formato sia dagli \
+elementi A sia dagli elementi di B. in simboli scriviamo C=A ",
+  FontSize->18],
+ StyleBox["\[Union]",
+  FontSize->24],
+ StyleBox[" B ( si legge A unito B ). Volendo esprimere per caratteristica l\
+\[CloseCurlyQuote]operazione di unione possiamo scrivere: posto x = elementi, \
+A ",
+  FontSize->18],
+ StyleBox["\[Union]",
+  FontSize->24],
+ StyleBox[" B={ x / x \[Element] A o x \[Element] B}.\n\n\
+L\[CloseCurlyQuote]operazione pi\[UGrave] apparentemente complessa ma molto \
+importante \[EGrave] la partizione di un insieme. Ovvero trovare un certo \
+numero di sottoinsiemi non vuoti la cui unione da l\[CloseCurlyQuote]insieme \
+A e l\[CloseCurlyQuote]intersezione tra essi \[EGrave] vuota. Come esempio \
+riportiamo il nostro paese: l\[CloseCurlyQuote]Italia. \n\nesempio\n\nSi \
+evince come l\[CloseCurlyQuote]unione di tutte le regioni formi l\
+\[CloseCurlyQuote]Italia, nessuna regione (sottoinsieme) \[EGrave] vuota, \
+nessuna citt\[AGrave] appartiene a pi\[UGrave] di una regione.\n\nPiu \
+formalmente una partizione di un insieme A \[EGrave] una collezione P di \
+sottoinsiemi di A tali che:\n1) i sottoinsiemi non sono vuoti;\n2) l\
+\[CloseCurlyQuote]unione di tutti i sottoinsiemi sia \
+l\[CloseCurlyQuote]insieme stesso;\n3) dati due elementi (distinti) qualsiasi \
+di P, questi sono disgiunti.\n\n\n\n\n\n\n",
   FontSize->18],
  StyleBox["\n\n\n\n",
   FontSize->16],
@@ -1828,9 +1863,18 @@ pu\[OGrave] essere solamente vuoto o coincidere con A.\n\n\n\n\n",
    3.7009811601830425`*^9, 3.7009812997052717`*^9}, {3.700981408169221*^9, 
    3.7009814678602986`*^9}, {3.7009815443629355`*^9, 3.700981566017889*^9}, 
    3.7009816360176764`*^9, {3.7009818186888695`*^9, 3.7009818207445173`*^9}, {
-   3.700981884204615*^9, 3.700981885455214*^9}}]
+   3.700981884204615*^9, 3.700981885455214*^9}, {3.7009821239890437`*^9, 
+   3.700982124594715*^9}, {3.700982165406228*^9, 3.7009821727911243`*^9}, {
+   3.700982235163288*^9, 3.700982290592636*^9}, {3.70098240525251*^9, 
+   3.7009826443371267`*^9}, {3.7009828838857555`*^9, 3.700982942350382*^9}, {
+   3.700983030451705*^9, 3.700983200453755*^9}, {3.7009832361708555`*^9, 
+   3.700983236740602*^9}, {3.700983269581252*^9, 3.7009834292346354`*^9}, {
+   3.700983478459193*^9, 3.7009835976006756`*^9}, {3.700983653943222*^9, 
+   3.70098369901678*^9}, {3.7009837541989045`*^9, 3.700983821124546*^9}, {
+   3.7009839271027627`*^9, 3.7009839716804485`*^9}, {3.700984029623706*^9, 
+   3.700984170296769*^9}}]
 },
-WindowSize->{1343, 685},
+WindowSize->{1348, 685},
 WindowMargins->{{0, Automatic}, {Automatic, 0}},
 Magnification:>0.8 Inherited,
 FrontEndVersion->"11.0 for Microsoft Windows (64-bit) (October 8, 2016)",
@@ -1848,7 +1892,7 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[558, 20, 16, 0, 25, "Text"],
-Cell[577, 22, 107467, 1808, 1510, "Text"]
+Cell[577, 22, 110151, 1852, 2042, "Text"]
 }
 ]
 *)
