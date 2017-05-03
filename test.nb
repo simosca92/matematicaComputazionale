@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[   3837088,      63945]
-NotebookOptionsPosition[   3835905,      63902]
-NotebookOutlinePosition[   3836239,      63917]
-CellTagsIndexPosition[   3836196,      63914]
+NotebookDataLength[   3839657,      64006]
+NotebookOptionsPosition[   3838212,      63956]
+NotebookOutlinePosition[   3838546,      63971]
+CellTagsIndexPosition[   3838503,      63968]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -61701,8 +61701,11 @@ Cell[BoxData[{
        RowBox[{"colTwelve", "=", "Blue"}], ",", 
        RowBox[{"colTwelve1", "=", "Black"}], ",", 
        RowBox[{"colEighteen", "=", "Blue"}], ",", 
-       RowBox[{"colEighteen1", "=", "Black"}]}], "}"}], ",", 
-     "\[IndentingNewLine]", "\[IndentingNewLine]", 
+       RowBox[{"colEighteen1", "=", "Black"}], ",", 
+       RowBox[{"ok1", "=", "0"}], ",", 
+       RowBox[{"ok2", "=", "0"}], ",", 
+       RowBox[{"ok3", "=", "0"}]}], "}"}], ",", "\[IndentingNewLine]", 
+     "\[IndentingNewLine]", 
      RowBox[{"Row", "[", 
       RowBox[{
        RowBox[{"{", "\[IndentingNewLine]", 
@@ -61844,9 +61847,9 @@ Cell[BoxData[{
              RowBox[{"If", "[", 
               RowBox[{
                RowBox[{
-                RowBox[{"colSix", "==", "Red"}], " ", "&&", " ", 
-                RowBox[{"colEighteen", "\[Equal]", "Red"}], " ", "&&", " ", 
-                RowBox[{"colTwelve", "\[Equal]", "Red"}]}], ",", 
+                RowBox[{"ok1", "\[Equal]", "1"}], " ", "&&", " ", 
+                RowBox[{"ok2", "\[Equal]", "1"}], " ", "&&", " ", 
+                RowBox[{"ok3", "\[Equal]", "1"}]}], ",", 
                RowBox[{"Speak", "[", "\"\<Very good\>\"", "]"}], ",", 
                RowBox[{"Speak", "[", "\"\<You can do better\>\"", "]"}]}], 
               "]"}]}], "]"}]}], "]"}], ",", "\[IndentingNewLine]", 
@@ -62187,7 +62190,8 @@ Cell[BoxData[{
                     RowBox[{"inSix", "\[Equal]", "2"}], ",", 
                     RowBox[{
                     RowBox[{"colSix", "=", "Red"}], ";", 
-                    RowBox[{"colSix1", "=", "Red"}]}]}], "]"}], ";"}]}], 
+                    RowBox[{"colSix1", "=", "Red"}], ";", 
+                    RowBox[{"ok1", "=", "1"}]}]}], "]"}], ";"}]}], 
                  "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", 
                ")"}]}]}], "\[IndentingNewLine]", "}"}]}], "]"}]}], ";", 
         "\[IndentingNewLine]", " ", 
@@ -62333,7 +62337,8 @@ Cell[BoxData[{
                     RowBox[{"inTwelve", "\[Equal]", "2"}], ",", 
                     RowBox[{
                     RowBox[{"colTwelve", "=", "Red"}], ";", 
-                    RowBox[{"colTwelve1", "=", "Red"}]}]}], "]"}], ";"}]}], 
+                    RowBox[{"colTwelve1", "=", "Red"}], ";", 
+                    RowBox[{"ok2", "=", "1"}]}]}], "]"}], ";"}]}], 
                  "\[IndentingNewLine]", "\[IndentingNewLine]", "]"}]}], 
                "\[IndentingNewLine]", ")"}]}]}], "\[IndentingNewLine]", 
             "}"}]}], "]"}]}], ";", "\[IndentingNewLine]", " ", 
@@ -62479,7 +62484,8 @@ Cell[BoxData[{
                     RowBox[{"inEighteen", "\[Equal]", "2"}], ",", 
                     RowBox[{
                     RowBox[{"colEighteen", "=", "Red"}], ";", 
-                    RowBox[{"colEighteen1", "=", "Red"}]}]}], "]"}], ";"}]}], 
+                    RowBox[{"colEighteen1", "=", "Red"}], ";", 
+                    RowBox[{"ok3", "=", "1"}]}]}], "]"}], ";"}]}], 
                  "\[IndentingNewLine]", "\[IndentingNewLine]", "]"}]}], 
                "\[IndentingNewLine]", ")"}]}]}], "\[IndentingNewLine]", 
             "}"}]}], "]"}]}], ";", "\[IndentingNewLine]", " ", 
@@ -62556,7 +62562,8 @@ Cell[BoxData[{
                     RowBox[{"inSix", "\[Equal]", "2"}], ",", 
                     RowBox[{
                     RowBox[{"colSix1", "=", "Red"}], ";", 
-                    RowBox[{"colSix", "=", "Red"}]}]}], "]"}], ";"}]}], 
+                    RowBox[{"colSix", "=", "Red"}], ";", 
+                    RowBox[{"ok1", "=", "1"}]}]}], "]"}], ";"}]}], 
                  "\[IndentingNewLine]", "\[IndentingNewLine]", "]"}]}], 
                "\[IndentingNewLine]", "\[IndentingNewLine]", ")"}]}]}], 
             "\[IndentingNewLine]", "}"}]}], "]"}]}], ";", 
@@ -62909,7 +62916,8 @@ Cell[BoxData[{
                     RowBox[{"inTwelve", "\[Equal]", "2"}], ",", 
                     RowBox[{
                     RowBox[{"colTwelve", "=", "Red"}], ";", 
-                    RowBox[{"colTwelve1", "=", "Red"}]}]}], "]"}], ";"}]}], 
+                    RowBox[{"colTwelve1", "=", "Red"}], ";", 
+                    RowBox[{"ok2", "=", "1"}]}]}], "]"}], ";"}]}], 
                  "\[IndentingNewLine]", "\[IndentingNewLine]", "]"}]}], 
                "\[IndentingNewLine]", "\[IndentingNewLine]", ")"}]}]}], 
             "\[IndentingNewLine]", "}"}]}], "]"}]}], ";", 
@@ -62986,7 +62994,8 @@ Cell[BoxData[{
                     RowBox[{"inEighteen", "\[Equal]", "2"}], ",", 
                     RowBox[{
                     RowBox[{"colEighteen", "=", "Red"}], ";", 
-                    RowBox[{"colEighteen1", "=", "Red"}]}]}], "]"}], ";"}]}], 
+                    RowBox[{"colEighteen1", "=", "Red"}], ";", 
+                    RowBox[{"ok3", "=", "1"}]}]}], "]"}], ";"}]}], 
                  "\[IndentingNewLine]", "\[IndentingNewLine]", "]"}]}], 
                "\[IndentingNewLine]", ")"}]}]}], "\[IndentingNewLine]", 
             "}"}]}], "]"}]}], ";"}], "\[IndentingNewLine]", 
@@ -63089,13 +63098,14 @@ Cell[BoxData[{
    3.702824315244322*^9, 3.702824329290968*^9}, {3.702824384543435*^9, 
    3.702824386291037*^9}, {3.702824417577248*^9, 3.702824421561932*^9}, {
    3.702824490384202*^9, 3.702824494465797*^9}, {3.702824603493085*^9, 
-   3.702824604501217*^9}, {3.7028246496025257`*^9, 3.7028246508144693`*^9}}],
+   3.702824604501217*^9}, {3.7028246496025257`*^9, 3.7028246508144693`*^9}, {
+   3.702825103535207*^9, 3.702825228765175*^9}}],
 
 Cell[BoxData[
  DynamicModuleBox[{$CellContext`pt1$$ = {-34, 7}, $CellContext`pt2$$ = {-5, 
   28}, $CellContext`pt3$$ = {-28, 7}, $CellContext`pt4$$ = {0, 
   28}, $CellContext`pt5$$ = {-20, 7}, $CellContext`pt6$$ = {5, 
-  28}, $CellContext`pt7$$ = {16, 7}, $CellContext`pt8$$ = {19, 
+  28}, $CellContext`pt7$$ = {-5, 28}, $CellContext`pt8$$ = {19, 
   7}, $CellContext`pt9$$ = {23, 7}, $CellContext`pt10$$ = {31, 
   7}, $CellContext`pt11$$ = {35, 7}, $CellContext`pt12$$ = {0, 
   28}, $CellContext`pt13$$ = {5, 
@@ -63110,16 +63120,19 @@ $CellContext`eh12$$, $CellContext`l1$$ =
    35}}], $CellContext`l3$$ = 
   Line[{{10, 13}, {15, 1}, {35, 1}, {40, 13}, {10, 13}}], $CellContext`l4$$ = 
   Line[{{-44, 0.2}, {44, 0.2}, {44, 40}, {-44, 
-    40}, {-44, 0.2}}], $CellContext`inSix$$ = 1, $CellContext`inTwelve$$ = 
+    40}, {-44, 0.2}}], $CellContext`inSix$$ = 2, $CellContext`inTwelve$$ = 
   2, $CellContext`inEighteen$$ = 2, $CellContext`oneTime$$ = 
   1, $CellContext`oneTimeOut$$ = 1, $CellContext`prec$$, $CellContext`init$$ =
-   0, $CellContext`init1$$ = 1, $CellContext`init2$$ = 
+   0, $CellContext`init1$$ = 0, $CellContext`init2$$ = 
   0, $CellContext`init3$$ = 0, $CellContext`init4$$ = 
   0, $CellContext`init5$$ = 0, $CellContext`colSix$$ = RGBColor[
-  0, 0, 1], $CellContext`colSix1$$ = GrayLevel[0], $CellContext`colTwelve$$ = 
-  RGBColor[1, 0, 0], $CellContext`colTwelve1$$ = RGBColor[
+  1, 0, 0], $CellContext`colSix1$$ = RGBColor[
+  1, 0, 0], $CellContext`colTwelve$$ = RGBColor[
+  1, 0, 0], $CellContext`colTwelve1$$ = RGBColor[
   1, 0, 0], $CellContext`colEighteen$$ = RGBColor[
-  1, 0, 0], $CellContext`colEighteen1$$ = RGBColor[1, 0, 0]}, 
+  1, 0, 0], $CellContext`colEighteen1$$ = RGBColor[
+  1, 0, 0], $CellContext`ok1$$ = 1, $CellContext`ok2$$ = 
+  1, $CellContext`ok3$$ = 1}, 
   TemplateBox[{"    ","\"    \"",TagBox[
      StyleBox[
       DynamicModuleBox[{
@@ -63130,10 +63143,9 @@ $CellContext`eh12$$, $CellContext`l1$$ =
            Hold[
             Button["Valuta!", 
              If[
-              And[
-              Factorial[$CellContext`colSix$$] 
-               Red, $CellContext`colEighteen$$ == 
-               Red, $CellContext`colTwelve$$ == Red], 
+              
+              And[$CellContext`ok1$$ == 1, $CellContext`ok2$$ == 
+               1, $CellContext`ok3$$ == 1], 
               Speak["Very good"], 
               Speak["You can do better"]]]], 
            Manipulate`Dump`ThisIsNotAControl}}, Typeset`size$$ = Automatic, 
@@ -63178,9 +63190,9 @@ $CellContext`eh12$$, $CellContext`l1$$ =
          "Specifications" :> {
            Button["Valuta!", 
             If[
-             And[
-             Factorial[$CellContext`colSix$$] Red, $CellContext`colEighteen$$ == 
-              Red, $CellContext`colTwelve$$ == Red], 
+             
+             And[$CellContext`ok1$$ == 1, $CellContext`ok2$$ == 
+              1, $CellContext`ok3$$ == 1], 
              Speak["Very good"], 
              Speak["You can do better"]]]}, "Options" :> {}, 
          "DefaultOptions" :> {}], SingleEvaluation -> True], 
@@ -63198,12 +63210,12 @@ $CellContext`eh12$$, $CellContext`l1$$ =
             Hold[$CellContext`a$$], 10, "A \[Intersection] B"}, 10, 20, 1}}, 
         Typeset`size$$ = {360., {175., 182.}}, Typeset`update$$ = 0, 
         Typeset`initDone$$, Typeset`skipInitDone$$ = 
-        True, $CellContext`a$14952$$ = 0}, 
+        True, $CellContext`a$15884$$ = 0}, 
        DynamicBox[
         Manipulate`ManipulateBoxes[
         1, StandardForm, "Variables" :> {$CellContext`a$$ = 10}, 
          "ControllerVariables" :> {
-           Hold[$CellContext`a$$, $CellContext`a$14952$$, 0]}, 
+           Hold[$CellContext`a$$, $CellContext`a$15884$$, 0]}, 
          "OtherVariables" :> {
           Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
            Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -63260,8 +63272,9 @@ $CellContext`eh12$$, $CellContext`l1$$ =
                1, $CellContext`oneTimeloc$ = 
                 0; $CellContext`inSix$$ = $CellContext`inSix$$ + 1]; 
              If[$CellContext`inSix$$ == 
-               2, $CellContext`colSix$$ = Red; $CellContext`colSix1$$ = Red]; 
-             Null]}]}, Attributes[$CellContext`eh1$$] = {HoldAll}}, {
+               2, $CellContext`colSix$$ = Red; $CellContext`colSix1$$ = 
+                Red; $CellContext`ok1$$ = 1]; Null]}]}, 
+     Attributes[$CellContext`eh1$$] = {HoldAll}}, {
     DownValues[$CellContext`eh$$] = {HoldPattern[
          $CellContext`eh$$[
           Pattern[$CellContext`val1$, 
@@ -63325,7 +63338,8 @@ $CellContext`eh12$$, $CellContext`l1$$ =
                 0; $CellContext`inTwelve$$ = $CellContext`inTwelve$$ + 1]; 
              If[$CellContext`inTwelve$$ == 
                2, $CellContext`colTwelve$$ = Red; $CellContext`colTwelve1$$ = 
-                Red]; Null]}]}, Attributes[$CellContext`eh3$$] = {HoldAll}}, {
+                Red; $CellContext`ok2$$ = 1]; Null]}]}, 
+     Attributes[$CellContext`eh3$$] = {HoldAll}}, {
     DownValues[$CellContext`eh4$$] = {HoldPattern[
          $CellContext`eh4$$[
           Pattern[$CellContext`val1$, 
@@ -63368,8 +63382,8 @@ $CellContext`eh12$$, $CellContext`l1$$ =
                 0; $CellContext`inEighteen$$ = $CellContext`inEighteen$$ + 1]; 
              If[$CellContext`inEighteen$$ == 
                2, $CellContext`colEighteen$$ = 
-                Red; $CellContext`colEighteen1$$ = Red]; Null]}]}, 
-     Attributes[$CellContext`eh5$$] = {HoldAll}}, {
+                Red; $CellContext`colEighteen1$$ = Red; $CellContext`ok3$$ = 
+                1]; Null]}]}, Attributes[$CellContext`eh5$$] = {HoldAll}}, {
     DownValues[$CellContext`eh6$$] = {HoldPattern[
          $CellContext`eh6$$[
           Pattern[$CellContext`val1$, 
@@ -63390,8 +63404,9 @@ $CellContext`eh12$$, $CellContext`l1$$ =
                1, $CellContext`oneTimeloc$ = 
                 0; $CellContext`inSix$$ = $CellContext`inSix$$ + 1]; 
              If[$CellContext`inSix$$ == 
-               2, $CellContext`colSix1$$ = Red; $CellContext`colSix$$ = Red]; 
-             Null]}]}, Attributes[$CellContext`eh6$$] = {HoldAll}}, {
+               2, $CellContext`colSix1$$ = Red; $CellContext`colSix$$ = 
+                Red; $CellContext`ok1$$ = 1]; Null]}]}, 
+     Attributes[$CellContext`eh6$$] = {HoldAll}}, {
     DownValues[$CellContext`eh7$$] = {HoldPattern[
          $CellContext`eh7$$[
           Pattern[$CellContext`val1$, 
@@ -63497,7 +63512,7 @@ $CellContext`eh12$$, $CellContext`l1$$ =
                 0; $CellContext`inTwelve$$ = $CellContext`inTwelve$$ + 1]; 
              If[$CellContext`inTwelve$$ == 
                2, $CellContext`colTwelve$$ = Red; $CellContext`colTwelve1$$ = 
-                Red]; Null]}]}, 
+                Red; $CellContext`ok2$$ = 1]; Null]}]}, 
      Attributes[$CellContext`eh11$$] = {HoldAll}}, {
     DownValues[$CellContext`eh12$$] = {HoldPattern[
          $CellContext`eh12$$[
@@ -63520,8 +63535,8 @@ $CellContext`eh12$$, $CellContext`l1$$ =
                 0; $CellContext`inEighteen$$ = $CellContext`inEighteen$$ + 1]; 
              If[$CellContext`inEighteen$$ == 
                2, $CellContext`colEighteen$$ = 
-                Red; $CellContext`colEighteen1$$ = Red]; Null]}]}, 
-     Attributes[$CellContext`eh12$$] = {HoldAll}}, {
+                Red; $CellContext`colEighteen1$$ = Red; $CellContext`ok3$$ = 
+                1]; Null]}]}, Attributes[$CellContext`eh12$$] = {HoldAll}}, {
     Attributes[$CellContext`l1$$] = {HoldAll}}, {
     Attributes[$CellContext`l2$$] = {HoldAll}}, {
     Attributes[$CellContext`l3$$] = {HoldAll}}, {
@@ -63600,8 +63615,8 @@ $CellContext`eh12$$, $CellContext`l1$$ =
             1, $CellContext`oneTimeloc$ = 
              0; $CellContext`inSix$$ = $CellContext`inSix$$ + 1]; 
           If[$CellContext`inSix$$ == 
-            2, $CellContext`colSix$$ = Red; $CellContext`colSix1$$ = Red]; 
-          Null]}]; $CellContext`eh2$$[
+            2, $CellContext`colSix$$ = Red; $CellContext`colSix1$$ = 
+             Red; $CellContext`ok1$$ = 1]; Null]}]; $CellContext`eh2$$[
       Pattern[$CellContext`val1$, 
        Blank[]]] := EventHandler[{
        Text[
@@ -63638,7 +63653,7 @@ $CellContext`eh12$$, $CellContext`l1$$ =
              0; $CellContext`inTwelve$$ = $CellContext`inTwelve$$ + 1]; 
           If[$CellContext`inTwelve$$ == 
             2, $CellContext`colTwelve$$ = Red; $CellContext`colTwelve1$$ = 
-             Red]; Null]}]; $CellContext`eh4$$[
+             Red; $CellContext`ok2$$ = 1]; Null]}]; $CellContext`eh4$$[
       Pattern[$CellContext`val1$, 
        Blank[]]] := EventHandler[{
        Text[
@@ -63675,7 +63690,7 @@ $CellContext`eh12$$, $CellContext`l1$$ =
              0; $CellContext`inEighteen$$ = $CellContext`inEighteen$$ + 1]; 
           If[$CellContext`inEighteen$$ == 
             2, $CellContext`colEighteen$$ = Red; $CellContext`colEighteen1$$ = 
-             Red]; Null]}]; $CellContext`eh6$$[
+             Red; $CellContext`ok3$$ = 1]; Null]}]; $CellContext`eh6$$[
       Pattern[$CellContext`val1$, 
        Blank[]], 
       Pattern[$CellContext`oneTimeloc$, 
@@ -63693,8 +63708,8 @@ $CellContext`eh12$$, $CellContext`l1$$ =
             1, $CellContext`oneTimeloc$ = 
              0; $CellContext`inSix$$ = $CellContext`inSix$$ + 1]; 
           If[$CellContext`inSix$$ == 
-            2, $CellContext`colSix1$$ = Red; $CellContext`colSix$$ = Red]; 
-          Null]}]; $CellContext`eh7$$[
+            2, $CellContext`colSix1$$ = Red; $CellContext`colSix$$ = 
+             Red; $CellContext`ok1$$ = 1]; Null]}]; $CellContext`eh7$$[
       Pattern[$CellContext`val1$, 
        Blank[]]] := EventHandler[{
        Text[
@@ -63785,7 +63800,7 @@ $CellContext`eh12$$, $CellContext`l1$$ =
              0; $CellContext`inTwelve$$ = $CellContext`inTwelve$$ + 1]; 
           If[$CellContext`inTwelve$$ == 
             2, $CellContext`colTwelve$$ = Red; $CellContext`colTwelve1$$ = 
-             Red]; Null]}]; $CellContext`eh12$$[
+             Red; $CellContext`ok2$$ = 1]; Null]}]; $CellContext`eh12$$[
       Pattern[$CellContext`val1$, 
        Blank[]], 
       Pattern[$CellContext`oneTimeloc$, 
@@ -63804,7 +63819,7 @@ $CellContext`eh12$$, $CellContext`l1$$ =
              0; $CellContext`inEighteen$$ = $CellContext`inEighteen$$ + 1]; 
           If[$CellContext`inEighteen$$ == 
             2, $CellContext`colEighteen$$ = Red; $CellContext`colEighteen1$$ = 
-             Red]; Null]}]; Null)]], "Output",
+             Red; $CellContext`ok3$$ = 1]; Null]}]; Null)]], "Output",
  CellChangeTimes->{
   3.702387545454979*^9, {3.7023875839795847`*^9, 3.7023875859771214`*^9}, 
    3.702387622928514*^9, {3.702387704380465*^9, 3.702387732169611*^9}, {
@@ -63866,23 +63881,62 @@ $CellContext`eh12$$, $CellContext`l1$$ =
    3.7028234668033857`*^9, 3.702823603227004*^9, 3.702823692255748*^9, {
    3.702823754725112*^9, 3.7028237724003773`*^9}, {3.7028238450757713`*^9, 
    3.702823867518672*^9}, 3.702823947071609*^9, 3.702824250380644*^9, 
-   3.702824333979141*^9, 3.702824391327409*^9, 3.702824612724925*^9}]
+   3.702824333979141*^9, 3.702824391327409*^9, 3.702824612724925*^9, 
+   3.702824663997513*^9, 3.702825235973824*^9}]
 }, Open  ]],
 
 Cell[BoxData[""], "Input",
  CellChangeTimes->{{3.702822273572421*^9, 3.702822273572939*^9}, 
    3.702823699041587*^9}],
 
-Cell[CellGroupData[{
-
 Cell[BoxData[
  SubscriptBox["\[Placeholder]", "\[Placeholder]"]], "Input",
  CellChangeTimes->{3.702391120611203*^9}],
 
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"colSix", "=", "1"}], "\[IndentingNewLine]", 
+ RowBox[{"colEighteen", "=", "1"}], "\[IndentingNewLine]", 
+ RowBox[{"colTwelve", "=", "2"}]}], "Input",
+ CellChangeTimes->{{3.7028248742669573`*^9, 3.702824915933127*^9}, {
+  3.702825037133504*^9, 3.7028250811291857`*^9}}],
+
+Cell[BoxData["1"], "Output",
+ CellChangeTimes->{{3.702824905346457*^9, 3.702824922145582*^9}, 
+   3.702824973749433*^9, {3.7028250477471457`*^9, 3.7028250858816967`*^9}}],
+
+Cell[BoxData["1"], "Output",
+ CellChangeTimes->{{3.702824905346457*^9, 3.702824922145582*^9}, 
+   3.702824973749433*^9, {3.7028250477471457`*^9, 3.702825085883306*^9}}],
+
+Cell[BoxData["2"], "Output",
+ CellChangeTimes->{{3.702824905346457*^9, 3.702824922145582*^9}, 
+   3.702824973749433*^9, {3.7028250477471457`*^9, 3.702825085884562*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
 Cell[BoxData[
- SubscriptBox["\[Placeholder]", "\[Placeholder]"]], "Output",
- CellChangeTimes->{3.7024709055694933`*^9, 3.7027875390635033`*^9, 
-  3.702793124220722*^9, 3.702795118570356*^9, 3.70282196596586*^9}]
+ RowBox[{
+  SubscriptBox["\[Placeholder]", "\[Placeholder]"], 
+  RowBox[{"If", "[", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"colSix", "\[Equal]", "1"}], " ", "&&", " ", 
+     RowBox[{"colEighteen", "\[Equal]", "1"}], " ", "&&", " ", 
+     RowBox[{"colTwelve", "\[Equal]", "1"}]}], ",", 
+    RowBox[{"Speak", "[", "\"\<Very good\>\"", "]"}], ",", 
+    RowBox[{"Speak", "[", "\"\<You can do better\>\"", "]"}]}], "]"}]}]], \
+"Input",
+ CellChangeTimes->{{3.70282487098689*^9, 3.70282487099123*^9}, {
+  3.702825064447397*^9, 3.7028250711501493`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"Null", " ", 
+  SubscriptBox["\[Placeholder]", "\[Placeholder]"]}]], "Output",
+ CellChangeTimes->{{3.702824908774371*^9, 3.7028249429306993`*^9}, 
+   3.702824976315277*^9, {3.7028250436005707`*^9, 3.702825087989888*^9}}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -63934,18 +63988,25 @@ Cell[3714425, 61304, 11983, 265, 363, "Input"],
 Cell[3726411, 61571, 2781, 54, 590, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[3729229, 61630, 67165, 1461, 4125, "Input"],
-Cell[3796397, 63093, 38597, 775, 464, "Output"]
+Cell[3729229, 61630, 67636, 1471, 4125, "Input"],
+Cell[3796868, 63103, 38994, 781, 464, "Output"]
 }, Open  ]],
-Cell[3835009, 63871, 118, 2, 32, "Input"],
+Cell[3835877, 63887, 118, 2, 32, "Input"],
+Cell[3835998, 63891, 116, 2, 32, "Input"],
 Cell[CellGroupData[{
-Cell[3835152, 63877, 116, 2, 32, "Input"],
-Cell[3835271, 63881, 211, 3, 32, "Output"]
+Cell[3836139, 63897, 293, 5, 77, "Input"],
+Cell[3836435, 63904, 170, 2, 32, "Output"],
+Cell[3836608, 63908, 168, 2, 32, "Output"],
+Cell[3836779, 63912, 168, 2, 32, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[3835519, 63889, 210, 4, 103, "Subtitle"],
-Cell[3835732, 63895, 138, 2, 33, "Text"],
-Cell[3835873, 63899, 16, 0, 33, "Text"]
+Cell[3836984, 63919, 559, 13, 32, InheritFromParent],
+Cell[3837546, 63934, 243, 4, 32, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3837826, 63943, 210, 4, 103, "Subtitle"],
+Cell[3838039, 63949, 138, 2, 33, "Text"],
+Cell[3838180, 63953, 16, 0, 33, "Text"]
 }, Open  ]]
 }
 ]
