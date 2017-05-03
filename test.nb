@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[   3832562,      63883]
-NotebookOptionsPosition[   3831421,      63841]
-NotebookOutlinePosition[   3831755,      63856]
-CellTagsIndexPosition[   3831712,      63853]
+NotebookDataLength[   3837088,      63945]
+NotebookOptionsPosition[   3835905,      63902]
+NotebookOutlinePosition[   3836239,      63917]
+CellTagsIndexPosition[   3836196,      63914]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -834,11 +834,11 @@ Cell[BoxData[
  RowBox[{
   ButtonBox["\<\"Inzia gioco\\n\"\>",
    Appearance->Automatic,
-   ButtonFunction:>($CellContext`output$18802 = $CellContext`game1[]),
+   ButtonFunction:>($CellContext`output$1496 = $CellContext`game1[]),
    Evaluator->Automatic,
    Method->"Queued"], " ", 
-  DynamicBox[ToBoxes[$CellContext`output$18802, StandardForm],
-   ImageSizeCache->{900., {197., 203.}}]}]], "Output",
+  DynamicBox[ToBoxes[$CellContext`output$1496, StandardForm],
+   ImageSizeCache->{354., {2., 10.}}]}]], "Output",
  CellChangeTimes->{
   3.701159624154914*^9, {3.7011600222717*^9, 3.701160039156555*^9}, 
    3.701176600728747*^9, 3.701177634245537*^9, 3.70119065615372*^9, 
@@ -855,7 +855,7 @@ Cell[BoxData[
    3.7022720353911667`*^9, 3.7022877735306187`*^9, {3.70228831850452*^9, 
    3.702288351006613*^9}, 3.7022916560594*^9, 3.7023544563251867`*^9, 
    3.702387205271347*^9, 3.702470903816948*^9, 3.70278753625307*^9, 
-   3.702793120214902*^9, 3.702795117026569*^9}]
+   3.702793120214902*^9, 3.702795117026569*^9, 3.702821956106691*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -982,12 +982,12 @@ Cell[BoxData[
        Hold[$CellContext`pts$$], {{0, 0}, {-2, -2}, {2, -2}, {0, 
        2}}}, {-3, -3}, {3, 3}}}, Typeset`size$$ = {400., {234., 241.}}, 
     Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = 
-    False, $CellContext`pts$18805$$ = {0, 0}}, 
+    False, $CellContext`pts$1499$$ = {0, 0}}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, 
       "Variables" :> {$CellContext`pts$$ = {{0, 0}, {-2, -2}, {2, -2}, {0, 
          2}}}, "ControllerVariables" :> {
-        Hold[$CellContext`pts$$, $CellContext`pts$18805$$, {0, 0}]}, 
+        Hold[$CellContext`pts$$, $CellContext`pts$1499$$, {0, 0}]}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -1046,7 +1046,7 @@ Cell[BoxData[
    3.702026640572525*^9, 3.702029705699697*^9, 3.7022689554846*^9, 
    3.702287773683425*^9, 3.7022883286723757`*^9, 3.702354456362418*^9, 
    3.70238720619556*^9, 3.702470903953774*^9, 3.702787536388998*^9, 
-   3.702793120334531*^9, 3.702795117065063*^9}]
+   3.702793120334531*^9, 3.702795117065063*^9, 3.702821956150597*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -61297,7 +61297,7 @@ D785/9Y3HTU9/kL44tPv218qvjz0yupV90zQzMPXaa/nZgvfKL45/Jb1tvdd
    3.7022714197703238`*^9, 3.702271453505197*^9, 3.702287774537581*^9, 
    3.702288329175764*^9, 3.702354481560519*^9, 3.702360973172123*^9, 
    3.7023872075065117`*^9, 3.702470904652175*^9, 3.702787537478438*^9, 
-   3.702793121713052*^9, 3.70279511747314*^9}]
+   3.702793121713052*^9, 3.70279511747314*^9, 3.7028219577764473`*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -61570,11 +61570,9 @@ Cell[BoxData[
    3.7023611667284527`*^9, 3.702361187060959*^9}}],
 
 Cell[BoxData[
- DynamicModuleBox[{$CellContext`a$$ = 4, $CellContext`col$$ = RGBColor[
-  0, 0, 1], $CellContext`col2$$ = GrayLevel[1], $CellContext`col3$$ = 
-  GrayLevel[
-  1], $CellContext`val$$ = {-0.014934625788999512`, -0.004696423204087502}, \
-$CellContext`level$$ = 0}, 
+ DynamicModuleBox[{$CellContext`a$$ = 4, $CellContext`col$$ = GrayLevel[
+  1], $CellContext`col2$$ = GrayLevel[1], $CellContext`col3$$ = GrayLevel[
+  1], $CellContext`val$$, $CellContext`level$$ = 0}, 
   TemplateBox[{"      ","\"      \"",TagBox[
      DynamicBox[
       ToBoxes[
@@ -61625,7 +61623,7 @@ $CellContext`col3$$}, BoundaryStyle -> {Thick, Gray, Thick, Red}, ImageSize ->
   DynamicModuleValues:>{}]], "Output",
  CellChangeTimes->{3.702361189584628*^9, 3.7023872141167593`*^9, 
   3.702470905153817*^9, 3.7027875382946672`*^9, 3.702793123011175*^9, 
-  3.702795117859599*^9}]
+  3.702795117859599*^9, 3.7028219654908333`*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -61704,202 +61702,184 @@ Cell[BoxData[{
        RowBox[{"colTwelve1", "=", "Black"}], ",", 
        RowBox[{"colEighteen", "=", "Blue"}], ",", 
        RowBox[{"colEighteen1", "=", "Black"}]}], "}"}], ",", 
+     "\[IndentingNewLine]", "\[IndentingNewLine]", 
      RowBox[{"Row", "[", 
-      RowBox[{"{", 
-       RowBox[{
-        RowBox[{"Dynamic", "[", 
-         RowBox[{
-          RowBox[{"Graphics", "[", 
+      RowBox[{
+       RowBox[{"{", "\[IndentingNewLine]", 
+        RowBox[{
+         RowBox[{"Manipulate", "[", "\[IndentingNewLine]", 
+          RowBox[{
            RowBox[{
-            RowBox[{"{", 
-             RowBox[{
-              RowBox[{"eh", "[", "pt1", "]"}], ",", 
-              RowBox[{"eh1", "[", 
-               RowBox[{"pt2", ",", "init"}], "]"}], ",", 
-              RowBox[{"eh2", "@", "pt3"}], ",", 
-              RowBox[{"eh3", "[", 
-               RowBox[{"pt4", ",", "init2"}], "]"}], ",", 
-              RowBox[{"eh4", "@", "pt5"}], ",", 
-              RowBox[{"eh5", "[", 
-               RowBox[{"pt6", ",", "init3"}], "]"}], " ", ",", 
-              RowBox[{"eh6", "[", 
-               RowBox[{"pt7", ",", "init1"}], "]"}], ",", 
-              RowBox[{"eh7", "@", "pt8"}], ",", 
-              RowBox[{"eh8", "@", "pt9"}], ",", 
-              RowBox[{"eh9", "@", "pt10"}], ",", 
-              RowBox[{"eh10", "@", "pt11"}], ",", 
-              RowBox[{"eh11", "[", 
-               RowBox[{"pt12", ",", "init4"}], "]"}], ",", 
-              RowBox[{"eh12", "[", 
-               RowBox[{"pt13", ",", "init5"}], "]"}], ",", "Blue", ",", 
-              RowBox[{"Thickness", "[", "0.005", "]"}], ",", 
-              RowBox[{"l1", "=", 
-               RowBox[{"Line", "[", 
-                RowBox[{"{", 
-                 RowBox[{
-                  RowBox[{"{", 
-                   RowBox[{
-                    RowBox[{"-", "40"}], ",", "13"}], "}"}], ",", 
-                  RowBox[{"{", 
-                   RowBox[{
-                    RowBox[{"-", "35"}], ",", "1"}], "}"}], ",", 
-                  RowBox[{"{", 
-                   RowBox[{
-                    RowBox[{"-", "15"}], ",", "1"}], "}"}], ",", 
-                  RowBox[{"{", 
-                   RowBox[{
-                    RowBox[{"-", "10"}], ",", "13"}], "}"}], ",", 
-                  RowBox[{"{", 
-                   RowBox[{
-                    RowBox[{"-", "40"}], ",", "13"}], "}"}]}], "}"}], "]"}]}],
-               ",", "Red", ",", "\[IndentingNewLine]", 
-              RowBox[{"l2", "=", 
-               RowBox[{"Line", "[", 
-                RowBox[{"{", 
-                 RowBox[{
-                  RowBox[{"{", 
-                   RowBox[{
-                    RowBox[{"-", "15"}], ",", "35"}], "}"}], ",", 
-                  RowBox[{"{", 
-                   RowBox[{
-                    RowBox[{"-", "10"}], ",", "21"}], "}"}], ",", 
-                  RowBox[{"{", 
-                   RowBox[{"10", ",", "21"}], "}"}], ",", 
-                  RowBox[{"{", 
-                   RowBox[{"15", ",", "35"}], "}"}], ",", 
-                  RowBox[{"{", 
-                   RowBox[{
-                    RowBox[{"-", "15"}], ",", "35"}], "}"}]}], "}"}], "]"}]}],
-               ",", "Black", ",", "\[IndentingNewLine]", 
-              RowBox[{"l3", "=", 
-               RowBox[{"Line", "[", 
-                RowBox[{"{", 
-                 RowBox[{
-                  RowBox[{"{", 
-                   RowBox[{"10", ",", "13"}], "}"}], ",", 
-                  RowBox[{"{", 
-                   RowBox[{"15", ",", "1"}], "}"}], ",", 
-                  RowBox[{"{", 
-                   RowBox[{"35", ",", "1"}], "}"}], ",", 
-                  RowBox[{"{", 
-                   RowBox[{"40", ",", "13"}], "}"}], ",", 
-                  RowBox[{"{", 
-                   RowBox[{"10", ",", "13"}], "}"}]}], "}"}], "]"}]}], ",", 
-              "Black", ",", 
-              RowBox[{"Thickness", "[", "0.001", "]"}], ",", 
-              "\[IndentingNewLine]", 
-              RowBox[{"l4", "=", 
-               RowBox[{"Line", "[", 
-                RowBox[{"{", 
-                 RowBox[{
-                  RowBox[{"{", 
-                   RowBox[{
-                    RowBox[{"-", "44"}], ",", "0.2"}], "}"}], ",", 
-                  RowBox[{"{", 
-                   RowBox[{"44", ",", "0.2"}], "}"}], ",", 
-                  RowBox[{"{", 
-                   RowBox[{"44", ",", "40"}], "}"}], ",", 
-                  RowBox[{"{", 
-                   RowBox[{
-                    RowBox[{"-", "44"}], ",", "40"}], "}"}], ",", 
-                  RowBox[{"{", 
-                   RowBox[{
-                    RowBox[{"-", "44"}], ",", "0.2"}], "}"}]}], "}"}], 
-                "]"}]}], ",", "Blue", ",", 
-              RowBox[{"FontSize", "\[Rule]", "20"}], ",", 
-              "\[IndentingNewLine]", "\[IndentingNewLine]", 
-              "\[IndentingNewLine]", 
-              RowBox[{"Text", "[", 
-               RowBox[{"\"\<A\>\"", ",", 
-                RowBox[{"{", 
-                 RowBox[{
-                  RowBox[{"-", "40"}], ",", "2"}], "}"}]}], "]"}], ",", "Red",
-               ",", 
-              RowBox[{"Text", "[", 
-               RowBox[{"\"\<A\[Intersection]B\>\"", ",", 
-                RowBox[{"{", 
-                 RowBox[{"0", ",", "38"}], "}"}]}], "]"}], ",", " ", "Black", 
-              " ", ",", " ", 
-              RowBox[{"Text", "[", 
-               RowBox[{"\"\<B\>\"", ",", 
-                RowBox[{"{", 
-                 RowBox[{"10", ",", "2"}], "}"}]}], "]"}]}], 
-             "\[IndentingNewLine]", "}"}], ",", "\[IndentingNewLine]", 
-            RowBox[{"ImageSize", "\[Rule]", "800"}], ",", 
-            RowBox[{"PlotRange", "\[Rule]", 
-             RowBox[{"{", 
+           "Dynamic", "[", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+            RowBox[{
+             RowBox[{"Graphics", "[", 
               RowBox[{
                RowBox[{"{", 
                 RowBox[{
-                 RowBox[{"-", "45"}], ",", "45"}], "}"}], ",", 
-               RowBox[{"{", 
-                RowBox[{"0", ",", "40"}], "}"}]}], "}"}]}], ",", 
-            RowBox[{"Axes", "\[Rule]", "False"}]}], "]"}], ",", "None"}], 
-         "]"}], ",", "\[IndentingNewLine]", 
-        RowBox[{"Manipulate", "[", "\[IndentingNewLine]", 
-         RowBox[{
-          RowBox[{"RegionPlot", "[", 
-           RowBox[{
-            RowBox[{"{", 
-             RowBox[{
+                 RowBox[{"eh", "[", "pt1", "]"}], ",", 
+                 RowBox[{"eh1", "[", 
+                  RowBox[{"pt2", ",", "init"}], "]"}], ",", 
+                 RowBox[{"eh2", "@", "pt3"}], ",", 
+                 RowBox[{"eh3", "[", 
+                  RowBox[{"pt4", ",", "init2"}], "]"}], ",", 
+                 RowBox[{"eh4", "@", "pt5"}], ",", 
+                 RowBox[{"eh5", "[", 
+                  RowBox[{"pt6", ",", "init3"}], "]"}], " ", ",", 
+                 RowBox[{"eh6", "[", 
+                  RowBox[{"pt7", ",", "init1"}], "]"}], ",", 
+                 RowBox[{"eh7", "@", "pt8"}], ",", 
+                 RowBox[{"eh8", "@", "pt9"}], ",", 
+                 RowBox[{"eh9", "@", "pt10"}], ",", 
+                 RowBox[{"eh10", "@", "pt11"}], ",", 
+                 RowBox[{"eh11", "[", 
+                  RowBox[{"pt12", ",", "init4"}], "]"}], ",", 
+                 RowBox[{"eh12", "[", 
+                  RowBox[{"pt13", ",", "init5"}], "]"}], ",", "Blue", ",", 
+                 RowBox[{"Thickness", "[", "0.005", "]"}], ",", 
+                 RowBox[{"l1", "=", 
+                  RowBox[{"Line", "[", 
+                   RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"-", "40"}], ",", "13"}], "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"-", "35"}], ",", "1"}], "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"-", "15"}], ",", "1"}], "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"-", "10"}], ",", "13"}], "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"-", "40"}], ",", "13"}], "}"}]}], "}"}], "]"}]}],
+                  ",", "Red", ",", "\[IndentingNewLine]", 
+                 RowBox[{"l2", "=", 
+                  RowBox[{"Line", "[", 
+                   RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"-", "15"}], ",", "35"}], "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"-", "10"}], ",", "21"}], "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{"10", ",", "21"}], "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{"15", ",", "35"}], "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"-", "15"}], ",", "35"}], "}"}]}], "}"}], "]"}]}],
+                  ",", "Black", ",", "\[IndentingNewLine]", 
+                 RowBox[{"l3", "=", 
+                  RowBox[{"Line", "[", 
+                   RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{"10", ",", "13"}], "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{"15", ",", "1"}], "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{"35", ",", "1"}], "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{"40", ",", "13"}], "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{"10", ",", "13"}], "}"}]}], "}"}], "]"}]}], ",", 
+                 "Black", ",", 
+                 RowBox[{"Thickness", "[", "0.001", "]"}], ",", 
+                 "\[IndentingNewLine]", 
+                 RowBox[{"l4", "=", 
+                  RowBox[{"Line", "[", 
+                   RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"-", "44"}], ",", "0.2"}], "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{"44", ",", "0.2"}], "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{"44", ",", "40"}], "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"-", "44"}], ",", "40"}], "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"-", "44"}], ",", "0.2"}], "}"}]}], "}"}], 
+                   "]"}]}], ",", "Blue", ",", 
+                 RowBox[{"FontSize", "\[Rule]", "20"}], ",", 
+                 "\[IndentingNewLine]", "\[IndentingNewLine]", 
+                 "\[IndentingNewLine]", 
+                 RowBox[{"Text", "[", 
+                  RowBox[{"\"\<A\>\"", ",", 
+                   RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"-", "40"}], ",", "2"}], "}"}]}], "]"}], ",", 
+                 "Red", ",", 
+                 RowBox[{"Text", "[", 
+                  RowBox[{"\"\<A\[Intersection]B\>\"", ",", 
+                   RowBox[{"{", 
+                    RowBox[{"0", ",", "38"}], "}"}]}], "]"}], ",", " ", 
+                 "Black", " ", ",", " ", 
+                 RowBox[{"Text", "[", 
+                  RowBox[{"\"\<B\>\"", ",", 
+                   RowBox[{"{", 
+                    RowBox[{"10", ",", "2"}], "}"}]}], "]"}]}], 
+                "\[IndentingNewLine]", "}"}], ",", "\[IndentingNewLine]", 
+               RowBox[{"ImageSize", "\[Rule]", "750"}], ",", 
+               RowBox[{"PlotRange", "\[Rule]", 
+                RowBox[{"{", 
+                 RowBox[{
+                  RowBox[{"{", 
+                   RowBox[{
+                    RowBox[{"-", "45"}], ",", "45"}], "}"}], ",", 
+                  RowBox[{"{", 
+                   RowBox[{"0", ",", "40"}], "}"}]}], "}"}]}], ",", 
+               RowBox[{"Axes", "\[Rule]", "False"}]}], "]"}], ",", "None"}], 
+            "]"}], ",", 
+           RowBox[{"Button", "[", 
+            RowBox[{"\"\<Valuta!\>\"", ",", 
+             RowBox[{"If", "[", 
+              RowBox[{
+               RowBox[{
+                RowBox[{"colSix", "==", "Red"}], " ", "&&", " ", 
+                RowBox[{"colEighteen", "\[Equal]", "Red"}], " ", "&&", " ", 
+                RowBox[{"colTwelve", "\[Equal]", "Red"}]}], ",", 
+               RowBox[{"Speak", "[", "\"\<Very good\>\"", "]"}], ",", 
+               RowBox[{"Speak", "[", "\"\<You can do better\>\"", "]"}]}], 
+              "]"}]}], "]"}]}], "]"}], ",", "\[IndentingNewLine]", 
+         RowBox[{"Manipulate", "[", "\[IndentingNewLine]", 
+          RowBox[{
+           RowBox[{"RegionPlot", "[", 
+            RowBox[{
+             RowBox[{"{", 
               RowBox[{
                RowBox[{
                 RowBox[{
                  RowBox[{
-                  RowBox[{"(", 
-                   RowBox[{"x", " ", "-", " ", 
+                  RowBox[{
+                   RowBox[{"(", 
+                    RowBox[{"x", " ", "-", " ", 
                     RowBox[{"(", 
                     RowBox[{"a", "/", "5"}], ")"}]}], ")"}], "^", "2"}], " ", 
-                 "+", " ", 
-                 RowBox[{"y", "^", "2"}]}], " ", "<", " ", "\n", 
-                "\t\t\t\t\t\t\t       ", "10"}], " ", "&&", " ", 
-               RowBox[{"!", " ", 
-                RowBox[{"(", 
-                 RowBox[{
+                  "+", " ", 
+                  RowBox[{"y", "^", "2"}]}], " ", "<", " ", "\n", 
+                 "\t\t\t\t\t\t\t       ", "10"}], " ", "&&", " ", 
+                RowBox[{"!", " ", 
+                 RowBox[{"(", 
                   RowBox[{
                    RowBox[{
+                    RowBox[{
                     RowBox[{"(", 
                     RowBox[{"x", " ", "+", " ", 
                     RowBox[{"(", 
                     RowBox[{"a", "/", "5"}], ")"}]}], ")"}], "^", "2"}], " ", 
-                   "+", " ", 
-                   RowBox[{"y", "^", "2"}]}], " ", "<", " ", "10"}], 
-                 ")"}]}]}], ",", " ", 
-              RowBox[{
+                    "+", " ", 
+                    RowBox[{"y", "^", "2"}]}], " ", "<", " ", "10"}], 
+                  ")"}]}]}], ",", " ", 
                RowBox[{
-                RowBox[{
-                 RowBox[{
-                  RowBox[{"(", 
-                   RowBox[{"x", " ", "+", " ", 
-                    RowBox[{"(", 
-                    RowBox[{"a", "/", "5"}], ")"}]}], ")"}], "^", "2"}], " ", 
-                 "+", " ", 
-                 RowBox[{"y", "^", "2"}]}], " ", "<", " ", "\n", 
-                "\t\t\t\t\t\t\t       ", "10"}], " ", "&&", " ", 
-               RowBox[{"!", " ", 
-                RowBox[{"(", 
-                 RowBox[{
-                  RowBox[{
-                   RowBox[{
-                    RowBox[{"(", 
-                    RowBox[{"x", " ", "-", " ", 
-                    RowBox[{"(", 
-                    RowBox[{"a", "/", "5"}], ")"}]}], ")"}], "^", "2"}], " ", 
-                   "+", " ", 
-                   RowBox[{"y", "^", "2"}]}], " ", "<", " ", "10"}], 
-                 ")"}]}]}], ",", " ", 
-              RowBox[{
-               RowBox[{
-                RowBox[{
-                 RowBox[{
-                  RowBox[{"(", 
-                   RowBox[{"x", " ", "-", " ", 
-                    RowBox[{"(", 
-                    RowBox[{"a", "/", "5"}], ")"}]}], ")"}], "^", "2"}], " ", 
-                 "+", " ", 
-                 RowBox[{"y", "^", "2"}]}], " ", "<", " ", "\n", 
-                "\t\t\t\t\t\t\t       ", "10"}], " ", "&&", " ", 
-               RowBox[{"(", 
                 RowBox[{
                  RowBox[{
                   RowBox[{
@@ -61908,62 +61888,75 @@ Cell[BoxData[{
                     RowBox[{"(", 
                     RowBox[{"a", "/", "5"}], ")"}]}], ")"}], "^", "2"}], " ", 
                   "+", " ", 
-                  RowBox[{"y", "^", "2"}]}], " ", "<", " ", "10"}], ")"}]}]}],
-              "}"}], ",", " ", 
-            RowBox[{"{", 
-             RowBox[{"x", ",", " ", 
-              RowBox[{"-", "8"}], ",", " ", "8"}], "}"}], ",", " ", 
-            RowBox[{"{", 
-             RowBox[{"y", ",", " ", 
-              RowBox[{"-", "8"}], ",", " ", "8"}], "}"}], ",", " ", "\n", 
-            "\t\t\t\t\t\t\t    ", 
-            RowBox[{"PlotStyle", " ", "->", " ", 
-             RowBox[{"{", 
-              RowBox[{"Black", ",", " ", "Blue", ",", " ", "Red"}], "}"}]}], 
-            ",", " ", 
-            RowBox[{"ImageSize", " ", "->", " ", "Medium"}], ",", 
-            RowBox[{"Epilog", "\[Rule]", 
-             RowBox[{"{", 
-              RowBox[{"Text", "[", 
+                  RowBox[{"y", "^", "2"}]}], " ", "<", " ", "\n", 
+                 "\t\t\t\t\t\t\t       ", "10"}], " ", "&&", " ", 
+                RowBox[{"!", " ", 
+                 RowBox[{"(", 
+                  RowBox[{
+                   RowBox[{
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{"x", " ", "-", " ", 
+                    RowBox[{"(", 
+                    RowBox[{"a", "/", "5"}], ")"}]}], ")"}], "^", "2"}], " ", 
+                    "+", " ", 
+                    RowBox[{"y", "^", "2"}]}], " ", "<", " ", "10"}], 
+                  ")"}]}]}], ",", " ", 
                RowBox[{
-                RowBox[{"Style", "[", 
+                RowBox[{
                  RowBox[{
-                 "\"\<A\[Intersection]B\>\"", ",", "Red", ",", "Italic", ",", 
-                  "15"}], "]"}], ",", 
-                RowBox[{"{", 
-                 RowBox[{"0", ",", 
-                  RowBox[{"-", "4.5"}]}], "}"}]}], "]"}], "}"}]}], ",", 
-            RowBox[{"Epilog", "\[Rule]", 
+                  RowBox[{
+                   RowBox[{"(", 
+                    RowBox[{"x", " ", "-", " ", 
+                    RowBox[{"(", 
+                    RowBox[{"a", "/", "5"}], ")"}]}], ")"}], "^", "2"}], " ", 
+                  "+", " ", 
+                  RowBox[{"y", "^", "2"}]}], " ", "<", " ", "\n", 
+                 "\t\t\t\t\t\t\t       ", "10"}], " ", "&&", " ", 
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{
+                   RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{"x", " ", "+", " ", 
+                    RowBox[{"(", 
+                    RowBox[{"a", "/", "5"}], ")"}]}], ")"}], "^", "2"}], " ", 
+                   "+", " ", 
+                   RowBox[{"y", "^", "2"}]}], " ", "<", " ", "10"}], 
+                 ")"}]}]}], "}"}], ",", " ", 
              RowBox[{"{", 
-              RowBox[{"Text", "[", 
-               RowBox[{
-                RowBox[{"Style", "[", 
-                 RowBox[{
-                 "\"\<\[Intersection]]\>\"", ",", "Red", ",", "Italic", ",", 
-                  "24"}], "]"}], ",", 
-                RowBox[{"{", 
-                 RowBox[{"0", ",", 
-                  RowBox[{"-", "4.5"}]}], "}"}]}], "]"}], "}"}]}], ",", 
-            RowBox[{"Epilog", "\[Rule]", 
+              RowBox[{"x", ",", " ", 
+               RowBox[{"-", "8"}], ",", " ", "8"}], "}"}], ",", " ", 
              RowBox[{"{", 
-              RowBox[{"Text", "[", 
-               RowBox[{
-                RowBox[{"Style", "[", 
-                 RowBox[{
-                 "\"\<B\>\"", ",", "Black", ",", "Italic", ",", "24"}], "]"}],
-                 ",", 
-                RowBox[{"{", 
-                 RowBox[{"1", ",", 
-                  RowBox[{"-", "4.5"}]}], "}"}]}], "]"}], "}"}]}]}], "]"}], 
-          ",", " ", 
-          RowBox[{"{", 
-           RowBox[{
-            RowBox[{"{", 
-             RowBox[{
-             "a", ",", " ", "10", ",", " ", "\"\<A \[Intersection] B\>\""}], 
-             "}"}], ",", " ", "10", ",", " ", "\n", "\t\t\t\t\t\t\t  ", "20", 
-            ",", " ", "1"}], "}"}]}], "]"}]}], "\[IndentingNewLine]", 
-       "\[IndentingNewLine]", "}"}], "]"}], ",", "\[IndentingNewLine]", 
+              RowBox[{"y", ",", " ", 
+               RowBox[{"-", "8"}], ",", " ", "8"}], "}"}], ",", " ", "\n", 
+             "\t\t\t\t\t\t\t    ", 
+             RowBox[{"PlotStyle", " ", "->", " ", 
+              RowBox[{"{", 
+               RowBox[{"Black", ",", " ", "Blue", ",", " ", "Red"}], "}"}]}], 
+             ",", " ", 
+             RowBox[{"ImageSize", " ", "->", " ", "Medium"}], ",", 
+             RowBox[{"Epilog", "\[Rule]", 
+              RowBox[{"{", 
+               RowBox[{"Text", "[", 
+                RowBox[{
+                 RowBox[{"Style", "[", 
+                  RowBox[{
+                  "\"\<A\[Intersection]B\>\"", ",", "Red", ",", "Italic", ",",
+                    "15"}], "]"}], ",", 
+                 RowBox[{"{", 
+                  RowBox[{"0", ",", 
+                   RowBox[{"-", "4.5"}]}], "}"}]}], "]"}], "}"}]}]}], "]"}], 
+           ",", " ", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"{", 
+              RowBox[{
+              "a", ",", " ", "10", ",", " ", "\"\<A \[Intersection] B\>\""}], 
+              "}"}], ",", " ", "10", ",", " ", "\n", "\t\t\t\t\t\t\t  ", "20",
+              ",", " ", "1"}], "}"}]}], "]"}]}], "\[IndentingNewLine]", 
+        "\[IndentingNewLine]", "}"}], ",", "\"\<    \>\""}], "]"}], ",", 
+     "\[IndentingNewLine]", 
      RowBox[{"Initialization", "\[RuleDelayed]", 
       RowBox[{"(", "\[IndentingNewLine]", 
        RowBox[{
@@ -62113,7 +62106,8 @@ Cell[BoxData[{
                     RowBox[{
                     RowBox[{"val1", "=", 
                     RowBox[{"{", 
-                    RowBox[{"0", ",", "15"}], "}"}]}], ";", 
+                    RowBox[{
+                    RowBox[{"-", "34"}], ",", "7"}], "}"}]}], ";", 
                     RowBox[{"oneTimeOut", "=", "0"}]}]}], 
                    RowBox[{"(*", 
                     RowBox[{
@@ -62258,7 +62252,8 @@ Cell[BoxData[{
                     RowBox[{
                     RowBox[{"val1", "=", 
                     RowBox[{"{", 
-                    RowBox[{"0", ",", "15"}], "}"}]}], ";", 
+                    RowBox[{
+                    RowBox[{"-", "28"}], ",", "7"}], "}"}]}], ";", 
                     RowBox[{"oneTimeOut", "=", "0"}]}]}], 
                    RowBox[{"(*", 
                     RowBox[{
@@ -62403,7 +62398,8 @@ Cell[BoxData[{
                     RowBox[{
                     RowBox[{"val1", "=", 
                     RowBox[{"{", 
-                    RowBox[{"0", ",", "15"}], "}"}]}], ";", 
+                    RowBox[{
+                    RowBox[{"-", "20"}], ",", "7"}], "}"}]}], ";", 
                     RowBox[{"oneTimeOut", "=", "0"}]}]}], 
                    RowBox[{"(*", 
                     RowBox[{
@@ -62626,7 +62622,7 @@ Cell[BoxData[{
                     RowBox[{
                     RowBox[{"val1", "=", 
                     RowBox[{"{", 
-                    RowBox[{"0", ",", "15"}], "}"}]}], ";", 
+                    RowBox[{"19", ",", "7"}], "}"}]}], ";", 
                     RowBox[{"oneTimeOut", "=", "0"}]}]}], 
                    RowBox[{"(*", 
                     RowBox[{
@@ -62695,7 +62691,7 @@ Cell[BoxData[{
                     RowBox[{
                     RowBox[{"val1", "=", 
                     RowBox[{"{", 
-                    RowBox[{"0", ",", "15"}], "}"}]}], ";", 
+                    RowBox[{"23", ",", "7"}], "}"}]}], ";", 
                     RowBox[{"oneTimeOut", "=", "0"}]}]}], 
                    RowBox[{"(*", 
                     RowBox[{
@@ -62764,7 +62760,7 @@ Cell[BoxData[{
                     RowBox[{
                     RowBox[{"val1", "=", 
                     RowBox[{"{", 
-                    RowBox[{"0", ",", "15"}], "}"}]}], ";", 
+                    RowBox[{"31", ",", "7"}], "}"}]}], ";", 
                     RowBox[{"oneTimeOut", "=", "0"}]}]}], 
                    RowBox[{"(*", 
                     RowBox[{
@@ -63074,17 +63070,36 @@ Cell[BoxData[{
    3.7027955882529907`*^9}, {3.702795650900444*^9, 3.702795661172269*^9}, {
    3.702795702055011*^9, 3.702795713190002*^9}, {3.7027957831910143`*^9, 
    3.702795785123683*^9}, {3.7027958162005663`*^9, 3.702795816282806*^9}, {
-   3.702796531531824*^9, 3.702796533866849*^9}, 3.702796579359467*^9}],
+   3.702796531531824*^9, 3.702796533866849*^9}, 3.702796579359467*^9, {
+   3.702821748793398*^9, 3.702821776661325*^9}, {3.7028218106894083`*^9, 
+   3.7028218820895777`*^9}, {3.7028223583259*^9, 3.702822401696041*^9}, {
+   3.7028224464503736`*^9, 3.7028224618299427`*^9}, {3.7028225292910433`*^9, 
+   3.702822558124982*^9}, {3.702822605434585*^9, 3.702822664615883*^9}, {
+   3.702822736312002*^9, 3.702822740450219*^9}, {3.702822801120893*^9, 
+   3.7028228060651207`*^9}, {3.7028228597907343`*^9, 
+   3.7028228857541943`*^9}, {3.7028229204057713`*^9, 
+   3.7028229499059153`*^9}, {3.702823063221835*^9, 3.702823084807218*^9}, {
+   3.702823162530595*^9, 3.702823169264001*^9}, {3.702823287277727*^9, 
+   3.702823293737926*^9}, {3.702823368666498*^9, 3.7028234000839863`*^9}, {
+   3.702823450477415*^9, 3.7028235970197067`*^9}, {3.702823685354134*^9, 
+   3.702823687296241*^9}, {3.702823732583198*^9, 3.702823744491969*^9}, {
+   3.702823819964312*^9, 3.7028238394863863`*^9}, {3.702823935131962*^9, 
+   3.702823941452067*^9}, {3.702824005862597*^9, 3.7028240185098467`*^9}, 
+   3.702824054001148*^9, {3.702824100656913*^9, 3.702824132124394*^9}, {
+   3.702824315244322*^9, 3.702824329290968*^9}, {3.702824384543435*^9, 
+   3.702824386291037*^9}, {3.702824417577248*^9, 3.702824421561932*^9}, {
+   3.702824490384202*^9, 3.702824494465797*^9}, {3.702824603493085*^9, 
+   3.702824604501217*^9}, {3.7028246496025257`*^9, 3.7028246508144693`*^9}}],
 
 Cell[BoxData[
- DynamicModuleBox[{$CellContext`pt1$$ = {-34, 7}, $CellContext`pt2$$ = {-31, 
-  7}, $CellContext`pt3$$ = {-28, 7}, $CellContext`pt4$$ = {-24, 
-  7}, $CellContext`pt5$$ = {-20, 7}, $CellContext`pt6$$ = {-16, 
-  7}, $CellContext`pt7$$ = {16, 7}, $CellContext`pt8$$ = {19, 
+ DynamicModuleBox[{$CellContext`pt1$$ = {-34, 7}, $CellContext`pt2$$ = {-5, 
+  28}, $CellContext`pt3$$ = {-28, 7}, $CellContext`pt4$$ = {0, 
+  28}, $CellContext`pt5$$ = {-20, 7}, $CellContext`pt6$$ = {5, 
+  28}, $CellContext`pt7$$ = {16, 7}, $CellContext`pt8$$ = {19, 
   7}, $CellContext`pt9$$ = {23, 7}, $CellContext`pt10$$ = {31, 
-  7}, $CellContext`pt11$$ = {35, 7}, $CellContext`pt12$$ = {27, 
-  7}, $CellContext`pt13$$ = {25, 
-  4}, $CellContext`eh1$$, $CellContext`eh$$, $CellContext`eh2$$, \
+  7}, $CellContext`pt11$$ = {35, 7}, $CellContext`pt12$$ = {0, 
+  28}, $CellContext`pt13$$ = {5, 
+  28}, $CellContext`eh1$$, $CellContext`eh$$, $CellContext`eh2$$, \
 $CellContext`eh3$$, $CellContext`eh4$$, $CellContext`eh5$$, \
 $CellContext`eh6$$, $CellContext`eh7$$, $CellContext`eh8$$, \
 $CellContext`eh9$$, $CellContext`eh10$$, $CellContext`eh11$$, \
@@ -63095,47 +63110,86 @@ $CellContext`eh12$$, $CellContext`l1$$ =
    35}}], $CellContext`l3$$ = 
   Line[{{10, 13}, {15, 1}, {35, 1}, {40, 13}, {10, 13}}], $CellContext`l4$$ = 
   Line[{{-44, 0.2}, {44, 0.2}, {44, 40}, {-44, 
-    40}, {-44, 0.2}}], $CellContext`inSix$$ = 0, $CellContext`inTwelve$$ = 
-  0, $CellContext`inEighteen$$ = 0, $CellContext`oneTime$$ = 
+    40}, {-44, 0.2}}], $CellContext`inSix$$ = 1, $CellContext`inTwelve$$ = 
+  2, $CellContext`inEighteen$$ = 2, $CellContext`oneTime$$ = 
   1, $CellContext`oneTimeOut$$ = 1, $CellContext`prec$$, $CellContext`init$$ =
-   1, $CellContext`init1$$ = 1, $CellContext`init2$$ = 
-  1, $CellContext`init3$$ = 1, $CellContext`init4$$ = 
-  1, $CellContext`init5$$ = 1, $CellContext`colSix$$ = RGBColor[
+   0, $CellContext`init1$$ = 1, $CellContext`init2$$ = 
+  0, $CellContext`init3$$ = 0, $CellContext`init4$$ = 
+  0, $CellContext`init5$$ = 0, $CellContext`colSix$$ = RGBColor[
   0, 0, 1], $CellContext`colSix1$$ = GrayLevel[0], $CellContext`colTwelve$$ = 
-  RGBColor[0, 0, 1], $CellContext`colTwelve1$$ = GrayLevel[
-  0], $CellContext`colEighteen$$ = RGBColor[
-  0, 0, 1], $CellContext`colEighteen1$$ = GrayLevel[0]}, 
-  TemplateBox[{DynamicBox[
-     ToBoxes[
-      Graphics[{
-        $CellContext`eh$$[$CellContext`pt1$$], 
-        $CellContext`eh1$$[$CellContext`pt2$$, $CellContext`init$$], 
-        $CellContext`eh2$$[$CellContext`pt3$$], 
-        $CellContext`eh3$$[$CellContext`pt4$$, $CellContext`init2$$], 
-        $CellContext`eh4$$[$CellContext`pt5$$], 
-        $CellContext`eh5$$[$CellContext`pt6$$, $CellContext`init3$$], 
-        $CellContext`eh6$$[$CellContext`pt7$$, $CellContext`init1$$], 
-        $CellContext`eh7$$[$CellContext`pt8$$], 
-        $CellContext`eh8$$[$CellContext`pt9$$], 
-        $CellContext`eh9$$[$CellContext`pt10$$], 
-        $CellContext`eh10$$[$CellContext`pt11$$], 
-        $CellContext`eh11$$[$CellContext`pt12$$, $CellContext`init4$$], 
-        $CellContext`eh12$$[$CellContext`pt13$$, $CellContext`init5$$], Blue, 
-        
-        Thickness[0.005], $CellContext`l1$$ = 
-        Line[{{-40, 13}, {-35, 1}, {-15, 1}, {-10, 13}, {-40, 13}}], 
-        Red, $CellContext`l2$$ = 
-        Line[{{-15, 35}, {-10, 21}, {10, 21}, {15, 35}, {-15, 35}}], 
-        Black, $CellContext`l3$$ = 
-        Line[{{10, 13}, {15, 1}, {35, 1}, {40, 13}, {10, 13}}], Black, 
-        Thickness[0.001], $CellContext`l4$$ = 
-        Line[{{-44, 0.2}, {44, 0.2}, {44, 40}, {-44, 40}, {-44, 0.2}}], Blue, 
-        FontSize -> 20, 
-        Text["A", {-40, 2}], Red, 
-        Text["A\[Intersection]B", {0, 38}], Black, 
-        Text["B", {10, 2}]}, ImageSize -> 800, 
-       PlotRange -> {{-45, 45}, {0, 40}}, Axes -> False], StandardForm], 
-     None],TagBox[
+  RGBColor[1, 0, 0], $CellContext`colTwelve1$$ = RGBColor[
+  1, 0, 0], $CellContext`colEighteen$$ = RGBColor[
+  1, 0, 0], $CellContext`colEighteen1$$ = RGBColor[1, 0, 0]}, 
+  TemplateBox[{"    ","\"    \"",TagBox[
+     StyleBox[
+      DynamicModuleBox[{
+       Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
+        Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, 
+        Typeset`animvar$$ = 1, Typeset`name$$ = "\"untitled\"", 
+        Typeset`specs$$ = {{
+           Hold[
+            Button["Valuta!", 
+             If[
+              And[
+              Factorial[$CellContext`colSix$$] 
+               Red, $CellContext`colEighteen$$ == 
+               Red, $CellContext`colTwelve$$ == Red], 
+              Speak["Very good"], 
+              Speak["You can do better"]]]], 
+           Manipulate`Dump`ThisIsNotAControl}}, Typeset`size$$ = Automatic, 
+        Typeset`update$$ = 0, Typeset`initDone$$ = False, 
+        Typeset`skipInitDone$$ = True}, 
+       DynamicBox[
+        Manipulate`ManipulateBoxes[
+        1, StandardForm, "Variables" :> {}, "ControllerVariables" :> {}, 
+         "OtherVariables" :> {
+          Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+           Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+           Typeset`specs$$, Typeset`size$$, Typeset`update$$, 
+           Typeset`initDone$$, Typeset`skipInitDone$$}, "Body" :> Dynamic[
+           Graphics[{
+             $CellContext`eh$$[$CellContext`pt1$$], 
+             $CellContext`eh1$$[$CellContext`pt2$$, $CellContext`init$$], 
+             $CellContext`eh2$$[$CellContext`pt3$$], 
+             $CellContext`eh3$$[$CellContext`pt4$$, $CellContext`init2$$], 
+             $CellContext`eh4$$[$CellContext`pt5$$], 
+             $CellContext`eh5$$[$CellContext`pt6$$, $CellContext`init3$$], 
+             $CellContext`eh6$$[$CellContext`pt7$$, $CellContext`init1$$], 
+             $CellContext`eh7$$[$CellContext`pt8$$], 
+             $CellContext`eh8$$[$CellContext`pt9$$], 
+             $CellContext`eh9$$[$CellContext`pt10$$], 
+             $CellContext`eh10$$[$CellContext`pt11$$], 
+             $CellContext`eh11$$[$CellContext`pt12$$, $CellContext`init4$$], 
+             $CellContext`eh12$$[$CellContext`pt13$$, $CellContext`init5$$], 
+             Blue, 
+             Thickness[0.005], $CellContext`l1$$ = 
+             Line[{{-40, 13}, {-35, 1}, {-15, 1}, {-10, 13}, {-40, 13}}], 
+             Red, $CellContext`l2$$ = 
+             Line[{{-15, 35}, {-10, 21}, {10, 21}, {15, 35}, {-15, 35}}], 
+             Black, $CellContext`l3$$ = 
+             Line[{{10, 13}, {15, 1}, {35, 1}, {40, 13}, {10, 13}}], Black, 
+             Thickness[0.001], $CellContext`l4$$ = 
+             Line[{{-44, 0.2}, {44, 0.2}, {44, 40}, {-44, 40}, {-44, 0.2}}], 
+             Blue, FontSize -> 20, 
+             Text["A", {-40, 2}], Red, 
+             Text["A\[Intersection]B", {0, 38}], Black, 
+             Text["B", {10, 2}]}, ImageSize -> 750, 
+            PlotRange -> {{-45, 45}, {0, 40}}, Axes -> False], None], 
+         "Specifications" :> {
+           Button["Valuta!", 
+            If[
+             And[
+             Factorial[$CellContext`colSix$$] Red, $CellContext`colEighteen$$ == 
+              Red, $CellContext`colTwelve$$ == Red], 
+             Speak["Very good"], 
+             Speak["You can do better"]]]}, "Options" :> {}, 
+         "DefaultOptions" :> {}], SingleEvaluation -> True], 
+       DynamicModuleValues :> {}, Deinitialization :> None, 
+       UntrackedVariables :> {Typeset`size$$}, SynchronousInitialization -> 
+       True, UnsavedVariables :> {Typeset`initDone$$}, 
+       UndoTrackedVariables :> {Typeset`show$$, Typeset`bookmarkMode$$}], 
+      "Manipulate", Deployed -> True, StripOnInput -> False], 
+     Manipulate`InterpretManipulate[1]],TagBox[
      StyleBox[
       DynamicModuleBox[{$CellContext`a$$ = 10, Typeset`show$$ = True, 
         Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
@@ -63144,12 +63198,12 @@ $CellContext`eh12$$, $CellContext`l1$$ =
             Hold[$CellContext`a$$], 10, "A \[Intersection] B"}, 10, 20, 1}}, 
         Typeset`size$$ = {360., {175., 182.}}, Typeset`update$$ = 0, 
         Typeset`initDone$$, Typeset`skipInitDone$$ = 
-        True, $CellContext`a$40533$$ = 0}, 
+        True, $CellContext`a$14952$$ = 0}, 
        DynamicBox[
         Manipulate`ManipulateBoxes[
         1, StandardForm, "Variables" :> {$CellContext`a$$ = 10}, 
          "ControllerVariables" :> {
-           Hold[$CellContext`a$$, $CellContext`a$40533$$, 0]}, 
+           Hold[$CellContext`a$$, $CellContext`a$14952$$, 0]}, 
          "OtherVariables" :> {
           Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
            Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -63174,12 +63228,7 @@ $CellContext`eh12$$, $CellContext`l1$$ =
              10]}, {$CellContext`x, -8, 8}, {$CellContext`y, -8, 8}, 
            PlotStyle -> {Black, Blue, Red}, ImageSize -> Medium, Epilog -> {
              Text[
-              Style["A\[Intersection]B", Red, Italic, 15], {0, -4.5}]}, 
-           Epilog -> {
-             Text[
-              Style["\[Intersection]]", Red, Italic, 24], {0, -4.5}]}, Epilog -> {
-             Text[
-              Style["B", Black, Italic, 24], {1, -4.5}]}], 
+              Style["A\[Intersection]B", Red, Italic, 15], {0, -4.5}]}], 
          "Specifications" :> {{{$CellContext`a$$, 10, "A \[Intersection] B"}, 
             10, 20, 1}}, "Options" :> {}, "DefaultOptions" :> {}], 
         ImageSizeCache -> {407., {220., 227.}}, SingleEvaluation -> True], 
@@ -63190,7 +63239,7 @@ $CellContext`eh12$$, $CellContext`l1$$ =
        UntrackedVariables :> {Typeset`size$$}], "Manipulate", Deployed -> 
       True, StripOnInput -> False], 
      Manipulate`InterpretManipulate[1]]},
-   "RowDefault"],
+   "RowWithSeparators"],
   DynamicModuleValues:>{{DownValues[$CellContext`eh1$$] = {HoldPattern[
          $CellContext`eh1$$[
           Pattern[$CellContext`val1$, 
@@ -63232,7 +63281,7 @@ $CellContext`eh12$$, $CellContext`l1$$ =
               15], 
              
              If[$CellContext`oneTimeOut$$ == 
-              1, $CellContext`val1$ = {0, 15}; $CellContext`oneTimeOut$$ = 
+              1, $CellContext`val1$ = {-34, 7}; $CellContext`oneTimeOut$$ = 
                0]])}]}, Attributes[$CellContext`eh$$] = {HoldAll}}, {
     DownValues[$CellContext`eh2$$] = {HoldPattern[
          $CellContext`eh2$$[
@@ -63253,7 +63302,7 @@ $CellContext`eh12$$, $CellContext`l1$$ =
               15], 
              
              If[$CellContext`oneTimeOut$$ == 
-              1, $CellContext`val1$ = {0, 15}; $CellContext`oneTimeOut$$ = 
+              1, $CellContext`val1$ = {-28, 7}; $CellContext`oneTimeOut$$ = 
                0]])}]}, Attributes[$CellContext`eh2$$] = {HoldAll}}, {
     DownValues[$CellContext`eh3$$] = {HoldPattern[
          $CellContext`eh3$$[
@@ -63296,7 +63345,7 @@ $CellContext`eh12$$, $CellContext`l1$$ =
               15], 
              
              If[$CellContext`oneTimeOut$$ == 
-              1, $CellContext`val1$ = {0, 15}; $CellContext`oneTimeOut$$ = 
+              1, $CellContext`val1$ = {-20, 7}; $CellContext`oneTimeOut$$ = 
                0]])}]}, Attributes[$CellContext`eh4$$] = {HoldAll}}, {
     DownValues[$CellContext`eh5$$] = {HoldPattern[
          $CellContext`eh5$$[
@@ -63362,7 +63411,7 @@ $CellContext`eh12$$, $CellContext`l1$$ =
               15], 
              
              If[$CellContext`oneTimeOut$$ == 
-              1, $CellContext`val1$ = {0, 15}; $CellContext`oneTimeOut$$ = 
+              1, $CellContext`val1$ = {19, 7}; $CellContext`oneTimeOut$$ = 
                0]])}]}, Attributes[$CellContext`eh7$$] = {HoldAll}}, {
     DownValues[$CellContext`eh8$$] = {HoldPattern[
          $CellContext`eh8$$[
@@ -63383,7 +63432,7 @@ $CellContext`eh12$$, $CellContext`l1$$ =
               15], 
              
              If[$CellContext`oneTimeOut$$ == 
-              1, $CellContext`val1$ = {0, 15}; $CellContext`oneTimeOut$$ = 
+              1, $CellContext`val1$ = {23, 7}; $CellContext`oneTimeOut$$ = 
                0]])}]}, Attributes[$CellContext`eh8$$] = {HoldAll}}, {
     DownValues[$CellContext`eh9$$] = {HoldPattern[
          $CellContext`eh9$$[
@@ -63404,7 +63453,7 @@ $CellContext`eh12$$, $CellContext`l1$$ =
               15], 
              
              If[$CellContext`oneTimeOut$$ == 
-              1, $CellContext`val1$ = {0, 15}; $CellContext`oneTimeOut$$ = 
+              1, $CellContext`val1$ = {31, 7}; $CellContext`oneTimeOut$$ = 
                0]])}]}, Attributes[$CellContext`eh9$$] = {HoldAll}}, {
     DownValues[$CellContext`eh10$$] = {HoldPattern[
          $CellContext`eh10$$[
@@ -63532,7 +63581,7 @@ $CellContext`eh12$$, $CellContext`l1$$ =
             Part[$CellContext`val1$, 1] < 15], 
           
           If[$CellContext`oneTimeOut$$ == 
-           1, $CellContext`val1$ = {0, 15}; $CellContext`oneTimeOut$$ = 
+           1, $CellContext`val1$ = {-34, 7}; $CellContext`oneTimeOut$$ = 
             0]])}]; $CellContext`eh1$$[
       Pattern[$CellContext`val1$, 
        Blank[]], 
@@ -63569,7 +63618,7 @@ $CellContext`eh12$$, $CellContext`l1$$ =
             Part[$CellContext`val1$, 1] < 15], 
           
           If[$CellContext`oneTimeOut$$ == 
-           1, $CellContext`val1$ = {0, 15}; $CellContext`oneTimeOut$$ = 
+           1, $CellContext`val1$ = {-28, 7}; $CellContext`oneTimeOut$$ = 
             0]])}]; $CellContext`eh3$$[
       Pattern[$CellContext`val1$, 
        Blank[]], 
@@ -63606,7 +63655,7 @@ $CellContext`eh12$$, $CellContext`l1$$ =
             Part[$CellContext`val1$, 1] < 15], 
           
           If[$CellContext`oneTimeOut$$ == 
-           1, $CellContext`val1$ = {0, 15}; $CellContext`oneTimeOut$$ = 
+           1, $CellContext`val1$ = {-20, 7}; $CellContext`oneTimeOut$$ = 
             0]])}]; $CellContext`eh5$$[
       Pattern[$CellContext`val1$, 
        Blank[]], 
@@ -63662,7 +63711,7 @@ $CellContext`eh12$$, $CellContext`l1$$ =
             Part[$CellContext`val1$, 1] < 15], 
           
           If[$CellContext`oneTimeOut$$ == 
-           1, $CellContext`val1$ = {0, 15}; $CellContext`oneTimeOut$$ = 
+           1, $CellContext`val1$ = {19, 7}; $CellContext`oneTimeOut$$ = 
             0]])}]; $CellContext`eh8$$[
       Pattern[$CellContext`val1$, 
        Blank[]]] := EventHandler[{
@@ -63680,7 +63729,7 @@ $CellContext`eh12$$, $CellContext`l1$$ =
             Part[$CellContext`val1$, 1] < 15], 
           
           If[$CellContext`oneTimeOut$$ == 
-           1, $CellContext`val1$ = {0, 15}; $CellContext`oneTimeOut$$ = 
+           1, $CellContext`val1$ = {23, 7}; $CellContext`oneTimeOut$$ = 
             0]])}]; $CellContext`eh9$$[
       Pattern[$CellContext`val1$, 
        Blank[]]] := EventHandler[{
@@ -63698,7 +63747,7 @@ $CellContext`eh12$$, $CellContext`l1$$ =
             Part[$CellContext`val1$, 1] < 15], 
           
           If[$CellContext`oneTimeOut$$ == 
-           1, $CellContext`val1$ = {0, 15}; $CellContext`oneTimeOut$$ = 
+           1, $CellContext`val1$ = {31, 7}; $CellContext`oneTimeOut$$ = 
             0]])}]; $CellContext`eh10$$[
       Pattern[$CellContext`val1$, 
        Blank[]]] := EventHandler[{
@@ -63809,8 +63858,20 @@ $CellContext`eh12$$, $CellContext`l1$$ =
    3.7027958220220947`*^9, 3.7027961632439537`*^9, 3.702796299019044*^9, 
    3.7027964758747883`*^9, {3.702796540226302*^9, 3.702796548888316*^9}, 
    3.702796583326748*^9, 3.7027966282234507`*^9, 3.702797274767643*^9, 
-   3.7027974014156513`*^9}]
+   3.7027974014156513`*^9, {3.702821965849859*^9, 3.702821968792922*^9}, 
+   3.702822563940812*^9, 3.702822678847694*^9, 3.702822751443302*^9, 
+   3.7028228164463167`*^9, {3.7028228645581007`*^9, 3.70282289060701*^9}, {
+   3.7028229563636837`*^9, 3.7028229951767797`*^9}, 3.702823090956196*^9, 
+   3.70282317662521*^9, 3.702823215061975*^9, 3.7028234126993847`*^9, 
+   3.7028234668033857`*^9, 3.702823603227004*^9, 3.702823692255748*^9, {
+   3.702823754725112*^9, 3.7028237724003773`*^9}, {3.7028238450757713`*^9, 
+   3.702823867518672*^9}, 3.702823947071609*^9, 3.702824250380644*^9, 
+   3.702824333979141*^9, 3.702824391327409*^9, 3.702824612724925*^9}]
 }, Open  ]],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.702822273572421*^9, 3.702822273572939*^9}, 
+   3.702823699041587*^9}],
 
 Cell[CellGroupData[{
 
@@ -63821,7 +63882,7 @@ Cell[BoxData[
 Cell[BoxData[
  SubscriptBox["\[Placeholder]", "\[Placeholder]"]], "Output",
  CellChangeTimes->{3.7024709055694933`*^9, 3.7027875390635033`*^9, 
-  3.702793124220722*^9, 3.702795118570356*^9}]
+  3.702793124220722*^9, 3.702795118570356*^9, 3.70282196596586*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -63858,32 +63919,33 @@ Notebook[{
 Cell[558, 20, 1432, 40, 187, "Input"],
 Cell[CellGroupData[{
 Cell[2015, 64, 35764, 766, 1925, "Input"],
-Cell[37782, 832, 1482, 25, 417, "Output"]
+Cell[37782, 832, 1499, 25, 54, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[39301, 862, 3775, 110, 165, "Input"],
-Cell[43079, 974, 3644, 74, 560, "Output"]
+Cell[39318, 862, 3775, 110, 165, "Input"],
+Cell[43096, 974, 3664, 74, 560, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[46760, 1053, 14795, 309, 825, "Input"],
-Cell[61558, 1364, 3652769, 59935, 417, "Output"]
+Cell[46797, 1053, 14795, 309, 825, "Input"],
+Cell[61595, 1364, 3652793, 59935, 417, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[3714364, 61304, 11983, 265, 363, "Input"],
-Cell[3726350, 61571, 2817, 56, 590, "Output"]
+Cell[3714425, 61304, 11983, 265, 363, "Input"],
+Cell[3726411, 61571, 2781, 54, 590, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[3729204, 61632, 65368, 1444, 4037, "Input"],
-Cell[3794575, 63078, 36077, 733, 464, "Output"]
+Cell[3729229, 61630, 67165, 1461, 4125, "Input"],
+Cell[3796397, 63093, 38597, 775, 464, "Output"]
+}, Open  ]],
+Cell[3835009, 63871, 118, 2, 32, "Input"],
+Cell[CellGroupData[{
+Cell[3835152, 63877, 116, 2, 32, "Input"],
+Cell[3835271, 63881, 211, 3, 32, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[3830689, 63816, 116, 2, 32, "Input"],
-Cell[3830808, 63820, 190, 3, 32, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[3831035, 63828, 210, 4, 103, "Subtitle"],
-Cell[3831248, 63834, 138, 2, 33, "Text"],
-Cell[3831389, 63838, 16, 0, 33, "Text"]
+Cell[3835519, 63889, 210, 4, 103, "Subtitle"],
+Cell[3835732, 63895, 138, 2, 33, "Text"],
+Cell[3835873, 63899, 16, 0, 33, "Text"]
 }, Open  ]]
 }
 ]
