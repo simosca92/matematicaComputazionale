@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[   3831415,      63370]
-NotebookOptionsPosition[   3830382,      63335]
-NotebookOutlinePosition[   3830716,      63350]
-CellTagsIndexPosition[   3830673,      63347]
+NotebookDataLength[   3881416,      64316]
+NotebookOptionsPosition[   3880344,      64280]
+NotebookOutlinePosition[   3880678,      64295]
+CellTagsIndexPosition[   3880635,      64292]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -352,8 +352,7 @@ Cell[BoxData[
 Cell[BoxData[
  DynamicModuleBox[{$CellContext`a$$ = 4, $CellContext`col$$ = GrayLevel[
   1], $CellContext`col2$$ = GrayLevel[1], $CellContext`col3$$ = GrayLevel[
-  1], $CellContext`val$$ = {5.000845356176735, 
-  1.235159302675083}, $CellContext`level$$ = 0}, 
+  1], $CellContext`val$$, $CellContext`level$$ = 0}, 
   TemplateBox[{"      ","\"      \"",TagBox[
      DynamicBox[
       ToBoxes[
@@ -405,7 +404,7 @@ $CellContext`col3$$}, BoundaryStyle -> {Thick, Gray, Thick, Red}, ImageSize ->
  CellChangeTimes->{3.702361189584628*^9, 3.7023872141167593`*^9, 
   3.702470905153817*^9, 3.7027875382946672`*^9, 3.702793123011175*^9, 
   3.702795117859599*^9, 3.7028219654908333`*^9, 3.702879149885075*^9, 
-  3.7032208850577717`*^9}]
+  3.7032208850577717`*^9, 3.703250413344481*^9}]
 }, Open  ]],
 
 Cell[BoxData["\[IndentingNewLine]"], "Input",
@@ -455,12 +454,13 @@ Cell[BoxData[{
  RowBox[{"gamePart", "[", "]"}], "\[IndentingNewLine]", 
  RowBox[{"gameInter", "[", "]"}], "\[IndentingNewLine]", 
  RowBox[{"gameApp", "[", "]"}], "\[IndentingNewLine]", 
- RowBox[{"gameApp2", "[", "]"}], "\[IndentingNewLine]"}], "Input",
+ RowBox[{"gameApp2", "[", "]"}], "\[IndentingNewLine]", 
+ RowBox[{"gameUnion", "[", "]"}], "\[IndentingNewLine]"}], "Input",
  CellChangeTimes->{{3.703220919480852*^9, 3.703220949665656*^9}, {
   3.703221247189453*^9, 3.703221284845868*^9}, {3.7032214299066963`*^9, 
   3.703221434421275*^9}, {3.703221566599865*^9, 3.703221569527699*^9}, {
   3.703221787457847*^9, 3.7032217903358393`*^9}, {3.7032220903958263`*^9, 
-  3.703222094072852*^9}}],
+  3.703222094072852*^9}, {3.703255514341051*^9, 3.703255518951434*^9}}],
 
 Cell[BoxData["\<\"/home/simone/Scrivania/MC\"\>"], "Output",
  CellChangeTimes->{{3.703220924469872*^9, 3.703220951035761*^9}, 
@@ -468,7 +468,9 @@ Cell[BoxData["\<\"/home/simone/Scrivania/MC\"\>"], "Output",
    3.703221428020347*^9, 3.703221436105895*^9}, {3.703221564824704*^9, 
    3.703221570560319*^9}, {3.703221791428142*^9, 3.703221809061511*^9}, {
    3.70322208754284*^9, 3.703222108021743*^9}, 3.7032221840618896`*^9, 
-   3.7032233493154383`*^9, 3.703229396330044*^9}],
+   3.7032233493154383`*^9, 3.703229396330044*^9, 3.703250413523706*^9, 
+   3.703255521294973*^9, {3.703255970528111*^9, 3.703255974483564*^9}, 
+   3.703256264482581*^9, {3.703256521667674*^9, 3.703256537867765*^9}}],
 
 Cell[BoxData[
  DynamicModuleBox[{$CellContext`project`Private`pt3b$$ = {-34, 
@@ -577,7 +579,7 @@ Private`pt18n$$], Blue,
              Line[{{-44, 0.2}, {44, 0.2}, {44, 40}, {-44, 40}, {-44, 0.2}}], 
              Blue, FontSize -> 20, 
              Text["A", {-40, 2}], Red, 
-             Text["A'\\'B", {0, 38}], Black, 
+             Text["A-B", {0, 38}], Black, 
              Text["B", {10, 2}]}, ImageSize -> 750, 
             PlotRange -> {{-45, 45}, {0, 40}}, Axes -> False], None], 
          "Specifications" :> {
@@ -601,10 +603,10 @@ Private`pt18n$$], Blue,
         True, Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
         Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
         "\"untitled\"", Typeset`specs$$ = {{{
-            Hold[$CellContext`project`Private`a$$], 10, "A'\\'B"}, 10, 20, 
-           1}}, Typeset`size$$ = {360., {175., 182.}}, Typeset`update$$ = 0, 
+            Hold[$CellContext`project`Private`a$$], 10, "A-B"}, 10, 20, 1}}, 
+        Typeset`size$$ = {360., {175., 182.}}, Typeset`update$$ = 0, 
         Typeset`initDone$$, Typeset`skipInitDone$$ = 
-        True, $CellContext`project`Private`a$1283$$ = 0}, 
+        True, $CellContext`project`Private`a$2730$$ = 0}, 
        DynamicBox[
         Manipulate`ManipulateBoxes[
         1, StandardForm, 
@@ -612,7 +614,7 @@ Private`pt18n$$], Blue,
          "ControllerVariables" :> {
            
            Hold[$CellContext`project`Private`a$$, \
-$CellContext`project`Private`a$1283$$, 0]}, 
+$CellContext`project`Private`a$2730$$, 0]}, 
          "OtherVariables" :> {
           Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
            Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -634,13 +636,14 @@ $CellContext`project`Private`a$$/5)^2 + $CellContext`project`Private`y^2 < 10,
              Not[($CellContext`project`Private`x - \
 $CellContext`project`Private`a$$/5)^2 + $CellContext`project`Private`y^2 < 
               10]]}, {$CellContext`project`Private`x, -8, 
-            8}, {$CellContext`project`Private`y, -8, 8}, 
-           PlotStyle -> {Black, Black, Red}, ImageSize -> Medium, Epilog -> {
+            8}, {$CellContext`project`Private`y, -8, 8}, PlotStyle -> 
+           If[$CellContext`project`Private`a$$ > 15, {Black, Black, Blue}, {
+             Black, Black, Red}], ImageSize -> Medium, Epilog -> {
              Text[
-              Style["A'\\'B", Red, Italic, 15], {0, -4.5}]}], 
-         "Specifications" :> {{{$CellContext`project`Private`a$$, 10, 
-             "A'\\'B"}, 10, 20, 1}}, "Options" :> {}, "DefaultOptions" :> {}],
-         ImageSizeCache -> {407., {220., 227.}}, SingleEvaluation -> True], 
+              Style["A-B", Red, Italic, 15], {0, -4.5}]}], 
+         "Specifications" :> {{{$CellContext`project`Private`a$$, 10, "A-B"}, 
+            10, 20, 1}}, "Options" :> {}, "DefaultOptions" :> {}], 
+        ImageSizeCache -> {407., {220., 227.}}, SingleEvaluation -> True], 
        Deinitialization :> None, DynamicModuleValues :> {}, 
        SynchronousInitialization -> True, 
        UndoTrackedVariables :> {Typeset`show$$, Typeset`bookmarkMode$$}, 
@@ -669,7 +672,8 @@ $CellContext`project`Private`a$$/5)^2 + $CellContext`project`Private`y^2 <
               Part[$CellContext`project`Private`val1$, 1] > -15, 
               Part[$CellContext`project`Private`val1$, 1] < 
               15], $CellContext`project`Private`val1$ = {-5, 
-               28}; $CellContext`project`Private`colThree$$ = Red; Null]}]}, 
+               28}; $CellContext`project`Private`colThree$$ = 
+              Red; $CellContext`project`Private`ok1$$ = 1]}]}, 
      Attributes[$CellContext`project`Private`eh3b$$] = {HoldAll}}, {
     DownValues[$CellContext`project`Private`eh6b$$] = {HoldPattern[
          $CellContext`project`Private`eh6b$$[
@@ -713,7 +717,8 @@ $CellContext`project`Private`a$$/5)^2 + $CellContext`project`Private`y^2 <
               Part[$CellContext`project`Private`val1$, 1] > -15, 
               Part[$CellContext`project`Private`val1$, 1] < 
               15], $CellContext`project`Private`val1$ = {0, 
-               28}; $CellContext`project`Private`colNine$$ = Red; Null]}]}, 
+               28}; $CellContext`project`Private`colNine$$ = 
+              Red; $CellContext`project`Private`ok2$$ = 1]}]}, 
      Attributes[$CellContext`project`Private`eh9b$$] = {HoldAll}}, {
     DownValues[$CellContext`project`Private`eh12b$$] = {HoldPattern[
          $CellContext`project`Private`eh12b$$[
@@ -757,8 +762,9 @@ $CellContext`project`Private`a$$/5)^2 + $CellContext`project`Private`y^2 <
               Part[$CellContext`project`Private`val1$, 1] > -15, 
               Part[$CellContext`project`Private`val1$, 1] < 
               15], $CellContext`project`Private`val1$ = {5, 
-               28}; $CellContext`project`Private`colFifteen$$ = Red; Null]}]},
-      Attributes[$CellContext`project`Private`eh15b$$] = {HoldAll}}, {
+               28}; $CellContext`project`Private`colFifteen$$ = 
+              Red; $CellContext`project`Private`ok3$$ = 1]}]}, 
+     Attributes[$CellContext`project`Private`eh15b$$] = {HoldAll}}, {
     DownValues[$CellContext`project`Private`eh18b$$] = {HoldPattern[
          $CellContext`project`Private`eh18b$$[
           Pattern[$CellContext`project`Private`val1$, 
@@ -997,8 +1003,9 @@ $CellContext`project`Private`poly]], 2 Pi, -Pi]] 2^(-1)/Pi] != 0;
            Part[$CellContext`project`Private`val1$, 1] > -15, 
            Part[$CellContext`project`Private`val1$, 1] < 
            15], $CellContext`project`Private`val1$ = {-5, 
-            28}; $CellContext`project`Private`colThree$$ = Red; 
-          Null]}]; $CellContext`project`Private`eh6b$$[
+            28}; $CellContext`project`Private`colThree$$ = 
+           Red; $CellContext`project`Private`ok1$$ = 
+           1]}]; $CellContext`project`Private`eh6b$$[
       Pattern[$CellContext`project`Private`val1$, 
        Blank[]]] := EventHandler[{
        Text[
@@ -1036,8 +1043,9 @@ $CellContext`project`Private`poly]], 2 Pi, -Pi]] 2^(-1)/Pi] != 0;
            Part[$CellContext`project`Private`val1$, 1] > -15, 
            Part[$CellContext`project`Private`val1$, 1] < 
            15], $CellContext`project`Private`val1$ = {0, 
-            28}; $CellContext`project`Private`colNine$$ = Red; 
-          Null]}]; $CellContext`project`Private`eh12b$$[
+            28}; $CellContext`project`Private`colNine$$ = 
+           Red; $CellContext`project`Private`ok2$$ = 
+           1]}]; $CellContext`project`Private`eh12b$$[
       Pattern[$CellContext`project`Private`val1$, 
        Blank[]]] := EventHandler[{
        Text[
@@ -1075,8 +1083,9 @@ $CellContext`project`Private`poly]], 2 Pi, -Pi]] 2^(-1)/Pi] != 0;
            Part[$CellContext`project`Private`val1$, 1] > -15, 
            Part[$CellContext`project`Private`val1$, 1] < 
            15], $CellContext`project`Private`val1$ = {5, 
-            28}; $CellContext`project`Private`colFifteen$$ = Red; 
-          Null]}]; $CellContext`project`Private`eh18b$$[
+            28}; $CellContext`project`Private`colFifteen$$ = 
+           Red; $CellContext`project`Private`ok3$$ = 
+           1]}]; $CellContext`project`Private`eh18b$$[
       Pattern[$CellContext`project`Private`val1$, 
        Blank[]]] := EventHandler[{
        Text[
@@ -1242,16 +1251,18 @@ $CellContext`project`Private`poly]], 2 Pi, -Pi]] 2^(-1)/Pi] != 0;
    3.703221428020347*^9, 3.703221436105895*^9}, {3.703221564824704*^9, 
    3.703221570560319*^9}, {3.703221791428142*^9, 3.703221809061511*^9}, {
    3.70322208754284*^9, 3.703222108021743*^9}, 3.7032221840618896`*^9, 
-   3.7032233493154383`*^9, 3.703229397843513*^9}],
+   3.7032233493154383`*^9, 3.703229396330044*^9, 3.703250413523706*^9, 
+   3.703255521294973*^9, {3.703255970528111*^9, 3.703255974483564*^9}, 
+   3.703256264482581*^9, {3.703256521667674*^9, 3.703256538655468*^9}}],
 
 Cell[BoxData[
- DynamicModuleBox[{$CellContext`project`Private`pt1$$ = {-24, 
-  29}, $CellContext`project`Private`pt2$$ = {14, 
-  35}, $CellContext`project`Private`pt3$$ = {10, 
-  24}, $CellContext`project`Private`pt4$$ = {12, 
-  24}, $CellContext`project`Private`pt5$$ = {-31, 
-  32}, $CellContext`project`Private`pt6$$ = {-34, 
-  18}, $CellContext`project`Private`eh1$$, $CellContext`project`Private`eh$$, \
+ DynamicModuleBox[{$CellContext`project`Private`pt1$$ = {-31, 
+  34}, $CellContext`project`Private`pt2$$ = {35, 
+  22}, $CellContext`project`Private`pt3$$ = {-16, 
+  30}, $CellContext`project`Private`pt4$$ = {17, 
+  30}, $CellContext`project`Private`pt5$$ = {-34, 
+  17}, $CellContext`project`Private`pt6$$ = {-27, 
+  23}, $CellContext`project`Private`eh1$$, $CellContext`project`Private`eh$$, \
 $CellContext`project`Private`eh2$$, $CellContext`project`Private`l1$$ = 
   Line[{{-40, 8}, {-35, 1}, {-25, 1}, {-20, 8}, {-40, 
    8}}], $CellContext`project`Private`l2$$ = 
@@ -1579,7 +1590,9 @@ $CellContext`project`Private`poly]], 2 Pi, -Pi]] 2^(-1)/Pi] != 0;
    3.703221428020347*^9, 3.703221436105895*^9}, {3.703221564824704*^9, 
    3.703221570560319*^9}, {3.703221791428142*^9, 3.703221809061511*^9}, {
    3.70322208754284*^9, 3.703222108021743*^9}, 3.7032221840618896`*^9, 
-   3.7032233493154383`*^9, 3.703229397880802*^9}],
+   3.7032233493154383`*^9, 3.703229396330044*^9, 3.703250413523706*^9, 
+   3.703255521294973*^9, {3.703255970528111*^9, 3.703255974483564*^9}, 
+   3.703256264482581*^9, {3.703256521667674*^9, 3.703256538786965*^9}}],
 
 Cell[BoxData[
  DynamicModuleBox[{$CellContext`project`Private`pt1$$ = {-10, 
@@ -2418,7 +2431,9 @@ pt10$$, $CellContext`project`Private`init10$$], Blue,
    3.703221428020347*^9, 3.703221436105895*^9}, {3.703221564824704*^9, 
    3.703221570560319*^9}, {3.703221791428142*^9, 3.703221809061511*^9}, {
    3.70322208754284*^9, 3.703222108021743*^9}, 3.7032221840618896`*^9, 
-   3.7032233493154383`*^9, 3.703229398071492*^9}],
+   3.7032233493154383`*^9, 3.703229396330044*^9, 3.703250413523706*^9, 
+   3.703255521294973*^9, {3.703255970528111*^9, 3.703255974483564*^9}, 
+   3.703256264482581*^9, {3.703256521667674*^9, 3.703256538791008*^9}}],
 
 Cell[BoxData[
  DynamicModuleBox[{$CellContext`project`Private`pt1$$ = {-34, 
@@ -2560,7 +2575,7 @@ pt13$$, $CellContext`project`Private`init5$$], Blue,
             "A \[Intersection] B"}, 10, 20, 1}}, 
         Typeset`size$$ = {360., {175., 182.}}, Typeset`update$$ = 0, 
         Typeset`initDone$$, Typeset`skipInitDone$$ = 
-        True, $CellContext`project`Private`a$1717$$ = 0}, 
+        True, $CellContext`project`Private`a$3023$$ = 0}, 
        DynamicBox[
         Manipulate`ManipulateBoxes[
         1, StandardForm, 
@@ -2568,7 +2583,7 @@ pt13$$, $CellContext`project`Private`init5$$], Blue,
          "ControllerVariables" :> {
            
            Hold[$CellContext`project`Private`a$$, \
-$CellContext`project`Private`a$1717$$, 0]}, 
+$CellContext`project`Private`a$3023$$, 0]}, 
          "OtherVariables" :> {
           Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
            Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -3285,7 +3300,9 @@ $CellContext`project`Private`inEighteen$$ + 1];
    3.703221428020347*^9, 3.703221436105895*^9}, {3.703221564824704*^9, 
    3.703221570560319*^9}, {3.703221791428142*^9, 3.703221809061511*^9}, {
    3.70322208754284*^9, 3.703222108021743*^9}, 3.7032221840618896`*^9, 
-   3.7032233493154383`*^9, 3.703229398199315*^9}],
+   3.7032233493154383`*^9, 3.703229396330044*^9, 3.703250413523706*^9, 
+   3.703255521294973*^9, {3.703255970528111*^9, 3.703255974483564*^9}, 
+   3.703256264482581*^9, {3.703256521667674*^9, 3.703256538848098*^9}}],
 
 Cell[BoxData[
  TemplateBox[{"  ","\"  \"",GraphicsBox[{
@@ -63235,7 +63252,9 @@ D785/9Y3HTU9/kL44tPv218qvjz0yupV90zQzMPXaa/nZgvfKL45/Jb1tvdd
    3.703221428020347*^9, 3.703221436105895*^9}, {3.703221564824704*^9, 
    3.703221570560319*^9}, {3.703221791428142*^9, 3.703221809061511*^9}, {
    3.70322208754284*^9, 3.703222108021743*^9}, 3.7032221840618896`*^9, 
-   3.7032233493154383`*^9, 3.703229398733925*^9}],
+   3.7032233493154383`*^9, 3.703229396330044*^9, 3.703250413523706*^9, 
+   3.703255521294973*^9, {3.703255970528111*^9, 3.703255974483564*^9}, 
+   3.703256264482581*^9, {3.703256521667674*^9, 3.703256539236931*^9}}],
 
 Cell[BoxData[
  TagBox[
@@ -63247,13 +63266,13 @@ Cell[BoxData[
        Hold[$CellContext`project`Private`pts$$], {{0, 0}, {-2, -2}, {2, -2}, {
        0, 2}}}, {-3, -3}, {3, 3}}}, Typeset`size$$ = {400., {234., 241.}}, 
     Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = 
-    False, $CellContext`project`Private`pts$1870$$ = {0, 0}}, 
+    False, $CellContext`project`Private`pts$3175$$ = {0, 0}}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, 
       "Variables" :> {$CellContext`project`Private`pts$$ = {{0, 
          0}, {-2, -2}, {2, -2}, {0, 2}}}, "ControllerVariables" :> {
         Hold[$CellContext`project`Private`pts$$, \
-$CellContext`project`Private`pts$1870$$, {0, 0}]}, 
+$CellContext`project`Private`pts$3175$$, {0, 0}]}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -63315,7 +63334,933 @@ $CellContext`project`Private`poly]], 2 Pi, -Pi]] 2^(-1)/Pi] != 0}};
    3.703221428020347*^9, 3.703221436105895*^9}, {3.703221564824704*^9, 
    3.703221570560319*^9}, {3.703221791428142*^9, 3.703221809061511*^9}, {
    3.70322208754284*^9, 3.703222108021743*^9}, 3.7032221840618896`*^9, 
-   3.7032233493154383`*^9, 3.7032293992702923`*^9}]
+   3.7032233493154383`*^9, 3.703229396330044*^9, 3.703250413523706*^9, 
+   3.703255521294973*^9, {3.703255970528111*^9, 3.703255974483564*^9}, 
+   3.703256264482581*^9, {3.703256521667674*^9, 3.703256539557849*^9}}],
+
+Cell[BoxData[
+ DynamicModuleBox[{$CellContext`project`Private`pt1$$ = {-34, 
+  7}, $CellContext`project`Private`pt2$$ = {-31, 
+  7}, $CellContext`project`Private`pt3$$ = {-28, 
+  7}, $CellContext`project`Private`pt4$$ = {-24, 
+  7}, $CellContext`project`Private`pt5$$ = {-20, 
+  7}, $CellContext`project`Private`pt6$$ = {-16, 
+  7}, $CellContext`project`Private`pt7$$ = {16, 
+  7}, $CellContext`project`Private`pt8$$ = {19, 
+  7}, $CellContext`project`Private`pt9$$ = {23, 
+  7}, $CellContext`project`Private`pt10$$ = {31, 
+  7}, $CellContext`project`Private`pt11$$ = {35, 
+  7}, $CellContext`project`Private`pt12$$ = {27, 
+  7}, $CellContext`project`Private`pt13$$ = {25, 
+  4}, $CellContext`project`Private`eh1$$, $CellContext`project`Private`eh$$, \
+$CellContext`project`Private`eh2$$, $CellContext`project`Private`eh3$$, \
+$CellContext`project`Private`eh4$$, $CellContext`project`Private`eh5$$, \
+$CellContext`project`Private`eh6$$, $CellContext`project`Private`eh7$$, \
+$CellContext`project`Private`eh8$$, $CellContext`project`Private`eh9$$, \
+$CellContext`project`Private`eh10$$, $CellContext`project`Private`eh11$$, \
+$CellContext`project`Private`eh12$$, $CellContext`project`Private`l1$$ = 
+  Line[{{-40, 13}, {-35, 1}, {-15, 1}, {-10, 13}, {-40, 
+   13}}], $CellContext`project`Private`l2$$ = 
+  Line[{{-15, 35}, {-10, 21}, {10, 21}, {15, 35}, {-15, 
+   35}}], $CellContext`project`Private`l3$$ = 
+  Line[{{10, 13}, {15, 1}, {35, 1}, {40, 13}, {10, 
+   13}}], $CellContext`project`Private`l4$$ = 
+  Line[{{-44, 0.2}, {44, 0.2}, {44, 40}, {-44, 
+    40}, {-44, 0.2}}], $CellContext`project`Private`inSix$$ = 
+  0, $CellContext`project`Private`inTwelve$$ = 
+  0, $CellContext`project`Private`inEighteen$$ = 
+  0, $CellContext`project`Private`oneTime$$ = 
+  1, $CellContext`project`Private`oneTimeOut$$ = 
+  1, $CellContext`project`Private`prec$$, $CellContext`project`Private`init$$ \
+= 1, $CellContext`project`Private`init1$$ = 
+  1, $CellContext`project`Private`init2$$ = 
+  1, $CellContext`project`Private`init3$$ = 
+  1, $CellContext`project`Private`init4$$ = 
+  1, $CellContext`project`Private`init5$$ = 
+  1, $CellContext`project`Private`init6$$ = 
+  1, $CellContext`project`Private`init9$$ = 
+  1, $CellContext`project`Private`init15$$ = 
+  1, $CellContext`project`Private`init10$$ = 
+  1, $CellContext`project`Private`init16$$ = 
+  1, $CellContext`project`Private`init8$$ = 
+  1, $CellContext`project`Private`init14$$ = 
+  1, $CellContext`project`Private`colEight$$ = GrayLevel[
+  0], $CellContext`project`Private`colSix$$ = RGBColor[
+  0, 0, 1], $CellContext`project`Private`colSix1$$ = GrayLevel[
+  0], $CellContext`project`Private`colTwelve$$ = RGBColor[
+  0, 0, 1], $CellContext`project`Private`colFuorteen$$ = GrayLevel[
+  0], $CellContext`project`Private`colTwelve1$$ = GrayLevel[
+  0], $CellContext`project`Private`colEighteen$$ = RGBColor[
+  0, 0, 1], $CellContext`project`Private`colEighteen1$$ = GrayLevel[
+  0], $CellContext`project`Private`colThree$$ = RGBColor[
+  0, 0, 1], $CellContext`project`Private`colNine$$ = RGBColor[
+  0, 0, 1], $CellContext`project`Private`colFifteen$$ = RGBColor[
+  0, 0, 1], $CellContext`project`Private`colTen$$ = GrayLevel[
+  0], $CellContext`project`Private`colSixteen$$ = GrayLevel[
+  0], $CellContext`project`Private`ok1$$ = 
+  0, $CellContext`project`Private`ok2$$ = 
+  0, $CellContext`project`Private`ok3$$ = 
+  0, $CellContext`project`Private`ok4$$ = 
+  0, $CellContext`project`Private`ok5$$ = 
+  0, $CellContext`project`Private`ok6$$ = 
+  0, $CellContext`project`Private`ok7$$ = 
+  0, $CellContext`project`Private`ok8$$ = 
+  0, $CellContext`project`Private`ok9$$ = 
+  0, $CellContext`project`Private`ok10$$ = 0}, 
+  TemplateBox[{"    ","\"    \"",TagBox[
+     StyleBox[
+      DynamicModuleBox[{
+       Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
+        Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, 
+        Typeset`animvar$$ = 1, Typeset`name$$ = "\"untitled\"", 
+        Typeset`specs$$ = {{
+           Hold[
+            Button["Valuta!", 
+             If[
+              
+              And[$CellContext`project`Private`ok1$$ == 
+               1, $CellContext`project`Private`ok2$$ == 
+               1, $CellContext`project`Private`ok3$$ == 
+               1, $CellContext`project`Private`ok4$$ == 
+               1, $CellContext`project`Private`ok5$$ == 
+               1, $CellContext`project`Private`ok6$$ == 
+               1 $CellContext`project`Private`ok7$$ == 
+               1, $CellContext`project`Private`ok8$$ == 
+               1, $CellContext`project`Private`ok9$$ == 
+               1, $CellContext`project`Private`ok10$$ == 1], 
+              Speak["Very good"], 
+              Speak["You can do better"]]]], 
+           Manipulate`Dump`ThisIsNotAControl}}, Typeset`size$$ = Automatic, 
+        Typeset`update$$ = 0, Typeset`initDone$$ = False, 
+        Typeset`skipInitDone$$ = True}, 
+       DynamicBox[
+        Manipulate`ManipulateBoxes[
+        1, StandardForm, "Variables" :> {}, "ControllerVariables" :> {}, 
+         "OtherVariables" :> {
+          Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+           Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+           Typeset`specs$$, Typeset`size$$, Typeset`update$$, 
+           Typeset`initDone$$, Typeset`skipInitDone$$}, "Body" :> Dynamic[
+           Graphics[{
+             $CellContext`project`Private`eh$$[$CellContext`project`Private`\
+pt1$$, $CellContext`project`Private`init6$$], 
+             $CellContext`project`Private`eh1$$[$CellContext`project`Private`\
+pt2$$, $CellContext`project`Private`init$$], 
+             $CellContext`project`Private`eh2$$[$CellContext`project`Private`\
+pt3$$, $CellContext`project`Private`init9$$], 
+             $CellContext`project`Private`eh3$$[$CellContext`project`Private`\
+pt4$$, $CellContext`project`Private`init2$$], 
+             $CellContext`project`Private`eh4$$[$CellContext`project`Private`\
+pt5$$, $CellContext`project`Private`init15$$], 
+             $CellContext`project`Private`eh5$$[$CellContext`project`Private`\
+pt6$$, $CellContext`project`Private`init3$$], 
+             $CellContext`project`Private`eh6$$[$CellContext`project`Private`\
+pt7$$, $CellContext`project`Private`init1$$], 
+             $CellContext`project`Private`eh7$$[$CellContext`project`Private`\
+pt8$$, $CellContext`project`Private`init8$$], 
+             $CellContext`project`Private`eh8$$[$CellContext`project`Private`\
+pt9$$, $CellContext`project`Private`init10$$], 
+             $CellContext`project`Private`eh9$$[$CellContext`project`Private`\
+pt10$$, $CellContext`project`Private`init14$$], 
+             $CellContext`project`Private`eh10$$[$CellContext`project`Private`\
+pt11$$, $CellContext`project`Private`init16$$], 
+             $CellContext`project`Private`eh11$$[$CellContext`project`Private`\
+pt12$$, $CellContext`project`Private`init4$$], 
+             $CellContext`project`Private`eh12$$[$CellContext`project`Private`\
+pt13$$, $CellContext`project`Private`init5$$], Blue, 
+             Thickness[0.005], $CellContext`project`Private`l1$$ = 
+             Line[{{-40, 13}, {-35, 1}, {-15, 1}, {-10, 13}, {-40, 13}}], 
+             Red, $CellContext`project`Private`l2$$ = 
+             Line[{{-15, 35}, {-10, 21}, {10, 21}, {15, 35}, {-15, 35}}], 
+             Black, $CellContext`project`Private`l3$$ = 
+             Line[{{10, 13}, {15, 1}, {35, 1}, {40, 13}, {10, 13}}], Black, 
+             Thickness[0.001], $CellContext`project`Private`l4$$ = 
+             Line[{{-44, 0.2}, {44, 0.2}, {44, 40}, {-44, 40}, {-44, 0.2}}], 
+             Blue, FontSize -> 20, 
+             Text["A", {-40, 2}], Red, 
+             Text["A\[Union]B", {0, 38}], Black, 
+             Text["B", {10, 2}]}, ImageSize -> 750, 
+            PlotRange -> {{-45, 45}, {0, 40}}, Axes -> False], None], 
+         "Specifications" :> {
+           Button["Valuta!", 
+            If[
+             
+             And[$CellContext`project`Private`ok1$$ == 
+              1, $CellContext`project`Private`ok2$$ == 
+              1, $CellContext`project`Private`ok3$$ == 
+              1, $CellContext`project`Private`ok4$$ == 
+              1, $CellContext`project`Private`ok5$$ == 
+              1, $CellContext`project`Private`ok6$$ == 
+              1 $CellContext`project`Private`ok7$$ == 
+              1, $CellContext`project`Private`ok8$$ == 
+              1, $CellContext`project`Private`ok9$$ == 
+              1, $CellContext`project`Private`ok10$$ == 1], 
+             Speak["Very good"], 
+             Speak["You can do better"]]]}, "Options" :> {}, 
+         "DefaultOptions" :> {}], SingleEvaluation -> True], 
+       DynamicModuleValues :> {}, Deinitialization :> None, 
+       UntrackedVariables :> {Typeset`size$$}, SynchronousInitialization -> 
+       True, UnsavedVariables :> {Typeset`initDone$$}, 
+       UndoTrackedVariables :> {Typeset`show$$, Typeset`bookmarkMode$$}], 
+      "Manipulate", Deployed -> True, StripOnInput -> False], 
+     Manipulate`InterpretManipulate[1]],TagBox[
+     StyleBox[
+      DynamicModuleBox[{$CellContext`project`Private`a$$ = 10, Typeset`show$$ = 
+        True, Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+        Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+        "\"untitled\"", Typeset`specs$$ = {{{
+            Hold[$CellContext`project`Private`a$$], 10, "A\[Union]B"}, 10, 20,
+            1}}, Typeset`size$$ = {360., {175., 182.}}, Typeset`update$$ = 0, 
+        Typeset`initDone$$, Typeset`skipInitDone$$ = 
+        True, $CellContext`project`Private`a$3292$$ = 0}, 
+       DynamicBox[
+        Manipulate`ManipulateBoxes[
+        1, StandardForm, 
+         "Variables" :> {$CellContext`project`Private`a$$ = 10}, 
+         "ControllerVariables" :> {
+           
+           Hold[$CellContext`project`Private`a$$, \
+$CellContext`project`Private`a$3292$$, 0]}, 
+         "OtherVariables" :> {
+          Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+           Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+           Typeset`specs$$, Typeset`size$$, Typeset`update$$, 
+           Typeset`initDone$$, Typeset`skipInitDone$$}, "Body" :> 
+         RegionPlot[{
+            
+            And[($CellContext`project`Private`x - \
+$CellContext`project`Private`a$$/5)^2 + $CellContext`project`Private`y^2 < 10, 
+             
+             Not[($CellContext`project`Private`x + \
+$CellContext`project`Private`a$$/5)^2 + $CellContext`project`Private`y^2 < 
+              10]], 
+            
+            And[($CellContext`project`Private`x + \
+$CellContext`project`Private`a$$/5)^2 + $CellContext`project`Private`y^2 < 10, 
+             
+             Not[($CellContext`project`Private`x - \
+$CellContext`project`Private`a$$/5)^2 + $CellContext`project`Private`y^2 < 
+              10]], 
+            
+            And[($CellContext`project`Private`x - \
+$CellContext`project`Private`a$$/5)^2 + $CellContext`project`Private`y^2 < 
+             10, ($CellContext`project`Private`x + \
+$CellContext`project`Private`a$$/5)^2 + $CellContext`project`Private`y^2 < 
+             10]}, {$CellContext`project`Private`x, -8, 
+            8}, {$CellContext`project`Private`y, -8, 8}, PlotStyle -> 
+           If[$CellContext`project`Private`a$$ > 15, {Black, Blue, Blue}, {
+             Red, Red, Red}], ImageSize -> Medium, Epilog -> {
+             Text[
+              Style["A\[Union]B", Red, Italic, 15], {0, -4.5}]}], 
+         "Specifications" :> {{{$CellContext`project`Private`a$$, 10, 
+             "A\[Union]B"}, 10, 20, 1}}, "Options" :> {}, 
+         "DefaultOptions" :> {}], ImageSizeCache -> {407., {220., 227.}}, 
+        SingleEvaluation -> True], Deinitialization :> None, 
+       DynamicModuleValues :> {}, SynchronousInitialization -> True, 
+       UndoTrackedVariables :> {Typeset`show$$, Typeset`bookmarkMode$$}, 
+       UnsavedVariables :> {Typeset`initDone$$}, 
+       UntrackedVariables :> {Typeset`size$$}], "Manipulate", Deployed -> 
+      True, StripOnInput -> False], 
+     Manipulate`InterpretManipulate[1]]},
+   "RowWithSeparators"],
+  DynamicModuleValues:>{{
+    DownValues[$CellContext`project`Private`eh1$$] = {HoldPattern[
+         $CellContext`project`Private`eh1$$[
+          Pattern[$CellContext`project`Private`val1$, 
+           Blank[]], 
+          Pattern[$CellContext`project`Private`oneTimeloc$, 
+           Blank[]]]] :> EventHandler[{
+          Text[
+           Style["6", $CellContext`project`Private`colSix$$, Italic, 20], 
+           Dynamic[$CellContext`project`Private`val1$]]}, {
+         "MouseClicked" :> ($CellContext`project`Private`val1$ = {1, 1}), 
+          "MouseDragged" :> 
+          If[$CellContext`project`Private`oneTimeloc$ == 
+             1, $CellContext`project`Private`val1$ = 
+              MousePosition["Graphics"]; Null] If[
+             And[
+             Part[$CellContext`project`Private`val1$, 2] > 25, 
+              Part[$CellContext`project`Private`val1$, 1] > -15, 
+              Part[$CellContext`project`Private`val1$, 1] < 
+              15], $CellContext`project`Private`val1$ = {-7, 31}; 
+             If[$CellContext`project`Private`oneTimeloc$ == 
+               1, $CellContext`project`Private`oneTimeloc$ = 
+                0; $CellContext`project`Private`inSix$$ = \
+$CellContext`project`Private`inSix$$ + 1]; 
+             If[$CellContext`project`Private`inSix$$ == 
+               2, $CellContext`project`Private`colSix$$ = 
+                Red; $CellContext`project`Private`colSix1$$ = 
+                Red; $CellContext`project`Private`ok1$$ = 1]; Null]}]}, 
+     Attributes[$CellContext`project`Private`eh1$$] = {HoldAll}}, {
+    DownValues[$CellContext`project`Private`eh$$] = {HoldPattern[
+         $CellContext`project`Private`eh$$[
+          Pattern[$CellContext`project`Private`val1$, 
+           Blank[]], 
+          Pattern[$CellContext`project`Private`oneTimeloc$, 
+           Blank[]]]] :> EventHandler[{
+          Text[
+           Style["3", $CellContext`project`Private`colThree$$, Italic, 20], 
+           Dynamic[$CellContext`project`Private`val1$]]}, {
+         "MouseClicked" :> ($CellContext`project`Private`val1$ = {1, 1}), 
+          "MouseDragged" :> (
+           If[$CellContext`project`Private`oneTimeloc$ == 
+             1, $CellContext`project`Private`val1$ = 
+             MousePosition["Graphics"]]; If[
+             And[
+             Part[$CellContext`project`Private`val1$, 2] > 25, 
+              Part[$CellContext`project`Private`val1$, 1] > -15, 
+              Part[$CellContext`project`Private`val1$, 1] < 15], 
+             
+             If[$CellContext`project`Private`oneTimeloc$ == 
+              1, $CellContext`project`Private`val1$ = {-10, 
+                31}; $CellContext`project`Private`colThree$$ = 
+               Red; $CellContext`project`Private`ok4$$ = 1]])}]}, 
+     Attributes[$CellContext`project`Private`eh$$] = {HoldAll}}, {
+    DownValues[$CellContext`project`Private`eh2$$] = {HoldPattern[
+         $CellContext`project`Private`eh2$$[
+          Pattern[$CellContext`project`Private`val1$, 
+           Blank[]], 
+          Pattern[$CellContext`project`Private`oneTimeloc$, 
+           Blank[]]]] :> EventHandler[{
+          Text[
+           Style["9", $CellContext`project`Private`colNine$$, Italic, 20], 
+           Dynamic[$CellContext`project`Private`val1$]]}, {
+         "MouseClicked" :> ($CellContext`project`Private`val1$ = {1, 1}), 
+          "MouseDragged" :> (
+           If[$CellContext`project`Private`oneTimeloc$ == 
+             1, $CellContext`project`Private`val1$ = 
+             MousePosition["Graphics"]]; If[
+             And[
+             Part[$CellContext`project`Private`val1$, 2] > 25, 
+              Part[$CellContext`project`Private`val1$, 1] > -15, 
+              Part[$CellContext`project`Private`val1$, 1] < 15], 
+             
+             If[$CellContext`project`Private`oneTimeloc$ == 
+              1, $CellContext`project`Private`val1$ = {-1, 
+                31}; $CellContext`project`Private`colNine$$ = 
+               Red; $CellContext`project`Private`ok5$$ = 1]])}]}, 
+     Attributes[$CellContext`project`Private`eh2$$] = {HoldAll}}, {
+    DownValues[$CellContext`project`Private`eh3$$] = {HoldPattern[
+         $CellContext`project`Private`eh3$$[
+          Pattern[$CellContext`project`Private`val1$, 
+           Blank[]], 
+          Pattern[$CellContext`project`Private`oneTimeloc$, 
+           Blank[]]]] :> EventHandler[{
+          Text[
+           Style["12", $CellContext`project`Private`colTwelve$$, Italic, 20], 
+           
+           Dynamic[$CellContext`project`Private`val1$]]}, {
+         "MouseClicked" :> ($CellContext`project`Private`val1$ = {1, 1}), 
+          "MouseDragged" :> 
+          If[$CellContext`project`Private`oneTimeloc$ == 
+             1, $CellContext`project`Private`val1$ = 
+              MousePosition["Graphics"]; Null] If[
+             And[
+             Part[$CellContext`project`Private`val1$, 2] > 25, 
+              Part[$CellContext`project`Private`val1$, 1] > -15, 
+              Part[$CellContext`project`Private`val1$, 1] < 
+              15], $CellContext`project`Private`val1$ = {6, 31}; 
+             If[$CellContext`project`Private`oneTimeloc$ == 
+               1, $CellContext`project`Private`oneTimeloc$ = 
+                0; $CellContext`project`Private`inTwelve$$ = \
+$CellContext`project`Private`inTwelve$$ + 1]; 
+             If[$CellContext`project`Private`inTwelve$$ == 
+               2, $CellContext`project`Private`colTwelve$$ = 
+                Red; $CellContext`project`Private`colTwelve1$$ = 
+                Red; $CellContext`project`Private`ok2$$ = 1]; Null]}]}, 
+     Attributes[$CellContext`project`Private`eh3$$] = {HoldAll}}, {
+    DownValues[$CellContext`project`Private`eh4$$] = {HoldPattern[
+         $CellContext`project`Private`eh4$$[
+          Pattern[$CellContext`project`Private`val1$, 
+           Blank[]], 
+          Pattern[$CellContext`project`Private`oneTimeloc$, 
+           Blank[]]]] :> EventHandler[{
+          Text[
+           Style["15", $CellContext`project`Private`colFifteen$$, Italic, 20], 
+           Dynamic[$CellContext`project`Private`val1$]]}, {
+         "MouseClicked" :> ($CellContext`project`Private`val1$ = {1, 1}), 
+          "MouseDragged" :> (
+           If[$CellContext`project`Private`oneTimeloc$ == 
+             1, $CellContext`project`Private`val1$ = 
+             MousePosition["Graphics"]]; If[
+             And[
+             Part[$CellContext`project`Private`val1$, 2] > 25, 
+              Part[$CellContext`project`Private`val1$, 1] > -15, 
+              Part[$CellContext`project`Private`val1$, 1] < 15], 
+             
+             If[$CellContext`project`Private`oneTimeloc$ == 
+              1, $CellContext`project`Private`val1$ = {-3, 
+                26}; $CellContext`project`Private`colFifteen$$ = 
+               Red; $CellContext`project`Private`ok6$$ = 1]])}]}, 
+     Attributes[$CellContext`project`Private`eh4$$] = {HoldAll}}, {
+    DownValues[$CellContext`project`Private`eh5$$] = {HoldPattern[
+         $CellContext`project`Private`eh5$$[
+          Pattern[$CellContext`project`Private`val1$, 
+           Blank[]], 
+          Pattern[$CellContext`project`Private`oneTimeloc$, 
+           Blank[]]]] :> EventHandler[{
+          Text[
+           Style[
+           "18", $CellContext`project`Private`colEighteen$$, Italic, 20], 
+           Dynamic[$CellContext`project`Private`val1$]]}, {
+         "MouseClicked" :> ($CellContext`project`Private`val1$ = {1, 1}), 
+          "MouseDragged" :> 
+          If[$CellContext`project`Private`oneTimeloc$ == 
+             1, $CellContext`project`Private`val1$ = 
+              MousePosition["Graphics"]; Null] If[
+             And[
+             Part[$CellContext`project`Private`val1$, 2] > 25, 
+              Part[$CellContext`project`Private`val1$, 1] > -15, 
+              Part[$CellContext`project`Private`val1$, 1] < 
+              15], $CellContext`project`Private`val1$ = {5, 26}; 
+             If[$CellContext`project`Private`oneTimeloc$ == 
+               1, $CellContext`project`Private`oneTimeloc$ = 
+                0; $CellContext`project`Private`inEighteen$$ = \
+$CellContext`project`Private`inEighteen$$ + 1]; 
+             If[$CellContext`project`Private`inEighteen$$ == 
+               2, $CellContext`project`Private`colEighteen$$ = 
+                Red; $CellContext`project`Private`colEighteen1$$ = 
+                Red; $CellContext`project`Private`ok3$$ = 1]; Null]}]}, 
+     Attributes[$CellContext`project`Private`eh5$$] = {HoldAll}}, {
+    DownValues[$CellContext`project`Private`eh6$$] = {HoldPattern[
+         $CellContext`project`Private`eh6$$[
+          Pattern[$CellContext`project`Private`val1$, 
+           Blank[]], 
+          Pattern[$CellContext`project`Private`oneTimeloc$, 
+           Blank[]]]] :> EventHandler[{
+          Text[
+           Style["6", $CellContext`project`Private`colSix1$$, Italic, 20], 
+           Dynamic[$CellContext`project`Private`val1$]]}, {
+         "MouseClicked" :> ($CellContext`project`Private`val1$ = {1, 1}), 
+          "MouseDragged" :> 
+          If[$CellContext`project`Private`oneTimeloc$ == 
+             1, $CellContext`project`Private`val1$ = 
+              MousePosition["Graphics"]; Null] If[
+             And[
+             Part[$CellContext`project`Private`val1$, 2] > 25, 
+              Part[$CellContext`project`Private`val1$, 1] > -15, 
+              Part[$CellContext`project`Private`val1$, 1] < 
+              15], $CellContext`project`Private`val1$ = {-7, 31}; 
+             If[$CellContext`project`Private`oneTimeloc$ == 
+               1, $CellContext`project`Private`oneTimeloc$ = 
+                0; $CellContext`project`Private`inSix$$ = \
+$CellContext`project`Private`inSix$$ + 1]; 
+             If[$CellContext`project`Private`inSix$$ == 
+               2, $CellContext`project`Private`colSix1$$ = 
+                Red; $CellContext`project`Private`colSix$$ = 
+                Red; $CellContext`project`Private`ok1$$ = 1]; Null]}]}, 
+     Attributes[$CellContext`project`Private`eh6$$] = {HoldAll}}, {
+    DownValues[$CellContext`project`Private`eh7$$] = {HoldPattern[
+         $CellContext`project`Private`eh7$$[
+          Pattern[$CellContext`project`Private`val1$, 
+           Blank[]], 
+          Pattern[$CellContext`project`Private`oneTimeloc$, 
+           Blank[]]]] :> EventHandler[{
+          Text[
+           Style["8", $CellContext`project`Private`colEight$$, Italic, 20], 
+           Dynamic[$CellContext`project`Private`val1$]]}, {
+         "MouseClicked" :> ($CellContext`project`Private`val1$ = {1, 1}), 
+          "MouseDragged" :> (
+           If[$CellContext`project`Private`oneTimeloc$ == 
+             1, $CellContext`project`Private`val1$ = 
+             MousePosition["Graphics"]]; If[
+             And[
+             Part[$CellContext`project`Private`val1$, 2] > 25, 
+              Part[$CellContext`project`Private`val1$, 1] > -15, 
+              Part[$CellContext`project`Private`val1$, 1] < 15], 
+             
+             If[$CellContext`project`Private`oneTimeloc$ == 
+              1, $CellContext`project`Private`val1$ = {-4, 
+                31}; $CellContext`project`Private`colEight$$ = 
+               Red; $CellContext`project`Private`ok7$$ = 1]])}]}, 
+     Attributes[$CellContext`project`Private`eh7$$] = {HoldAll}}, {
+    DownValues[$CellContext`project`Private`eh8$$] = {HoldPattern[
+         $CellContext`project`Private`eh8$$[
+          Pattern[$CellContext`project`Private`val1$, 
+           Blank[]], 
+          Pattern[$CellContext`project`Private`oneTimeloc$, 
+           Blank[]]]] :> EventHandler[{
+          Text[
+           Style["10", $CellContext`project`Private`colTen$$, Italic, 20], 
+           Dynamic[$CellContext`project`Private`val1$]]}, {
+         "MouseClicked" :> ($CellContext`project`Private`val1$ = {1, 1}), 
+          "MouseDragged" :> (
+           If[$CellContext`project`Private`oneTimeloc$ == 
+             1, $CellContext`project`Private`val1$ = 
+             MousePosition["Graphics"]]; If[
+             And[
+             Part[$CellContext`project`Private`val1$, 2] > 25, 
+              Part[$CellContext`project`Private`val1$, 1] > -15, 
+              Part[$CellContext`project`Private`val1$, 1] < 15], 
+             
+             If[$CellContext`project`Private`oneTimeloc$ == 
+              1, $CellContext`project`Private`val1$ = {2, 
+                31}; $CellContext`project`Private`colTen$$ = 
+               Red; $CellContext`project`Private`ok8$$ = 1]])}]}, 
+     Attributes[$CellContext`project`Private`eh8$$] = {HoldAll}}, {
+    DownValues[$CellContext`project`Private`eh9$$] = {HoldPattern[
+         $CellContext`project`Private`eh9$$[
+          Pattern[$CellContext`project`Private`val1$, 
+           Blank[]], 
+          Pattern[$CellContext`project`Private`oneTimeloc$, 
+           Blank[]]]] :> EventHandler[{
+          Text[
+           Style[
+           "14", $CellContext`project`Private`colFuorteen$$, Italic, 20], 
+           Dynamic[$CellContext`project`Private`val1$]]}, {
+         "MouseClicked" :> ($CellContext`project`Private`val1$ = {1, 1}), 
+          "MouseDragged" :> (
+           If[$CellContext`project`Private`oneTimeloc$ == 
+             1, $CellContext`project`Private`val1$ = 
+             MousePosition["Graphics"]]; If[
+             And[
+             Part[$CellContext`project`Private`val1$, 2] > 25, 
+              Part[$CellContext`project`Private`val1$, 1] > -15, 
+              Part[$CellContext`project`Private`val1$, 1] < 15], 
+             
+             If[$CellContext`project`Private`oneTimeloc$ == 
+              1, $CellContext`project`Private`val1$ = {10, 
+                31}; $CellContext`project`Private`colFuorteen$$ = 
+               Red; $CellContext`project`Private`ok9$$ = 1]])}]}, 
+     Attributes[$CellContext`project`Private`eh9$$] = {HoldAll}}, {
+    DownValues[$CellContext`project`Private`eh10$$] = {HoldPattern[
+         $CellContext`project`Private`eh10$$[
+          Pattern[$CellContext`project`Private`val1$, 
+           Blank[]], 
+          Pattern[$CellContext`project`Private`oneTimeloc$, 
+           Blank[]]]] :> EventHandler[{
+          Text[
+           Style["16", $CellContext`project`Private`colSixteen$$, Italic, 20], 
+           Dynamic[$CellContext`project`Private`val1$]]}, {
+         "MouseClicked" :> ($CellContext`project`Private`val1$ = {1, 1}), 
+          "MouseDragged" :> (
+           If[$CellContext`project`Private`oneTimeloc$ == 
+             1, $CellContext`project`Private`val1$ = 
+             MousePosition["Graphics"]]; If[
+             And[
+             Part[$CellContext`project`Private`val1$, 2] > 25, 
+              Part[$CellContext`project`Private`val1$, 1] > -15, 
+              Part[$CellContext`project`Private`val1$, 1] < 15], 
+             
+             If[$CellContext`project`Private`oneTimeloc$ == 
+              1, $CellContext`project`Private`val1$ = {1, 
+                26}; $CellContext`project`Private`colSixteen$$ = 
+               Red; $CellContext`project`Private`ok10$$ = 1]])}]}, 
+     Attributes[$CellContext`project`Private`eh10$$] = {HoldAll}}, {
+    DownValues[$CellContext`project`Private`eh11$$] = {HoldPattern[
+         $CellContext`project`Private`eh11$$[
+          Pattern[$CellContext`project`Private`val1$, 
+           Blank[]], 
+          Pattern[$CellContext`project`Private`oneTimeloc$, 
+           Blank[]]]] :> EventHandler[{
+          Text[
+           Style["12", $CellContext`project`Private`colTwelve1$$, Italic, 20], 
+           Dynamic[$CellContext`project`Private`val1$]]}, {
+         "MouseClicked" :> ($CellContext`project`Private`val1$ = {1, 1}), 
+          "MouseDragged" :> 
+          If[$CellContext`project`Private`oneTimeloc$ == 
+             1, $CellContext`project`Private`val1$ = 
+              MousePosition["Graphics"]; Null] If[
+             And[
+             Part[$CellContext`project`Private`val1$, 2] > 25, 
+              Part[$CellContext`project`Private`val1$, 1] > -15, 
+              Part[$CellContext`project`Private`val1$, 1] < 
+              15], $CellContext`project`Private`val1$ = {6, 31}; 
+             If[$CellContext`project`Private`oneTimeloc$ == 
+               1, $CellContext`project`Private`oneTimeloc$ = 
+                0; $CellContext`project`Private`inTwelve$$ = \
+$CellContext`project`Private`inTwelve$$ + 1]; 
+             If[$CellContext`project`Private`inTwelve$$ == 
+               2, $CellContext`project`Private`colTwelve$$ = 
+                Red; $CellContext`project`Private`colTwelve1$$ = 
+                Red; $CellContext`project`Private`ok2$$ = 1]; Null]}]}, 
+     Attributes[$CellContext`project`Private`eh11$$] = {HoldAll}}, {
+    DownValues[$CellContext`project`Private`eh12$$] = {HoldPattern[
+         $CellContext`project`Private`eh12$$[
+          Pattern[$CellContext`project`Private`val1$, 
+           Blank[]], 
+          Pattern[$CellContext`project`Private`oneTimeloc$, 
+           Blank[]]]] :> EventHandler[{
+          Text[
+           Style[
+           "18", $CellContext`project`Private`colEighteen1$$, Italic, 20], 
+           Dynamic[$CellContext`project`Private`val1$]]}, {
+         "MouseClicked" :> ($CellContext`project`Private`val1$ = {1, 1}), 
+          "MouseDragged" :> 
+          If[$CellContext`project`Private`oneTimeloc$ == 
+             1, $CellContext`project`Private`val1$ = 
+              MousePosition["Graphics"]; Null] If[
+             And[
+             Part[$CellContext`project`Private`val1$, 2] > 25, 
+              Part[$CellContext`project`Private`val1$, 1] > -15, 
+              Part[$CellContext`project`Private`val1$, 1] < 
+              15], $CellContext`project`Private`val1$ = {5, 26}; 
+             If[$CellContext`project`Private`oneTimeloc$ == 
+               1, $CellContext`project`Private`oneTimeloc$ = 
+                0; $CellContext`project`Private`inEighteen$$ = \
+$CellContext`project`Private`inEighteen$$ + 1]; 
+             If[$CellContext`project`Private`inEighteen$$ == 
+               2, $CellContext`project`Private`colEighteen$$ = 
+                Red; $CellContext`project`Private`colEighteen1$$ = 
+                Red; $CellContext`project`Private`ok3$$ = 1]; Null]}]}, 
+     Attributes[$CellContext`project`Private`eh12$$] = {HoldAll}}, {
+    Attributes[$CellContext`project`Private`l1$$] = {HoldAll}}, {
+    Attributes[$CellContext`project`Private`l2$$] = {HoldAll}}, {
+    Attributes[$CellContext`project`Private`l3$$] = {HoldAll}}, {
+    Attributes[$CellContext`project`Private`l4$$] = {HoldAll}}, {
+    Attributes[$CellContext`project`Private`inSix$$] = {HoldAll}}, {
+    Attributes[$CellContext`project`Private`inTwelve$$] = {HoldAll}}, {
+    Attributes[$CellContext`project`Private`inEighteen$$] = {HoldAll}}},
+  Initialization:>($CellContext`project`Private`testpoint[
+      Pattern[$CellContext`project`Private`poly, 
+       Blank[]], 
+      Pattern[$CellContext`project`Private`pt, 
+       Blank[]]] := Round[Total[
+         Mod[
+          (# - RotateRight[#]& )[
+           Map[
+           Apply[ArcTan, $CellContext`project`Private`pt - #]& , \
+$CellContext`project`Private`poly]], 2 Pi, -Pi]] 2^(-1)/Pi] != 0; 
+   SetAttributes[$CellContext`project`Private`eh1$$, HoldAll]; 
+   SetAttributes[$CellContext`project`Private`eh$$, HoldAll]; 
+   SetAttributes[$CellContext`project`Private`eh2$$, HoldAll]; 
+   SetAttributes[$CellContext`project`Private`eh3$$, HoldAll]; 
+   SetAttributes[$CellContext`project`Private`eh4$$, HoldAll]; 
+   SetAttributes[$CellContext`project`Private`eh5$$, HoldAll]; 
+   SetAttributes[$CellContext`project`Private`eh6$$, HoldAll]; 
+   SetAttributes[$CellContext`project`Private`eh7$$, HoldAll]; 
+   SetAttributes[$CellContext`project`Private`eh8$$, HoldAll]; 
+   SetAttributes[$CellContext`project`Private`eh9$$, HoldAll]; 
+   SetAttributes[$CellContext`project`Private`eh10$$, HoldAll]; 
+   SetAttributes[$CellContext`project`Private`eh11$$, HoldAll]; 
+   SetAttributes[$CellContext`project`Private`eh12$$, HoldAll]; 
+   SetAttributes[$CellContext`project`Private`l1$$, HoldAll]; 
+   SetAttributes[$CellContext`project`Private`l2$$, HoldAll]; 
+   SetAttributes[$CellContext`project`Private`l3$$, HoldAll]; 
+   SetAttributes[$CellContext`project`Private`l4$$, HoldAll]; 
+   SetAttributes[$CellContext`project`Private`inSix$$, HoldAll]; 
+   SetAttributes[$CellContext`project`Private`inEighteen$$, HoldAll]; 
+   SetAttributes[$CellContext`project`Private`inTwelve$$, 
+     HoldAll]; $CellContext`project`Private`eh$$[
+      Pattern[$CellContext`project`Private`val1$, 
+       Blank[]], 
+      Pattern[$CellContext`project`Private`oneTimeloc$, 
+       Blank[]]] := EventHandler[{
+       Text[
+        Style["3", $CellContext`project`Private`colThree$$, Italic, 20], 
+        Dynamic[$CellContext`project`Private`val1$]]}, {
+      "MouseClicked" :> ($CellContext`project`Private`val1$ = {1, 1}), 
+       "MouseDragged" :> (
+        If[$CellContext`project`Private`oneTimeloc$ == 
+          1, $CellContext`project`Private`val1$ = MousePosition["Graphics"]]; 
+        If[
+          And[
+          Part[$CellContext`project`Private`val1$, 2] > 25, 
+           Part[$CellContext`project`Private`val1$, 1] > -15, 
+           Part[$CellContext`project`Private`val1$, 1] < 15], 
+          
+          If[$CellContext`project`Private`oneTimeloc$ == 
+           1, $CellContext`project`Private`val1$ = {-10, 
+             31}; $CellContext`project`Private`colThree$$ = 
+            Red; $CellContext`project`Private`ok4$$ = 
+            1]])}]; $CellContext`project`Private`eh1$$[
+      Pattern[$CellContext`project`Private`val1$, 
+       Blank[]], 
+      Pattern[$CellContext`project`Private`oneTimeloc$, 
+       Blank[]]] := EventHandler[{
+       Text[
+        Style["6", $CellContext`project`Private`colSix$$, Italic, 20], 
+        Dynamic[$CellContext`project`Private`val1$]]}, {
+      "MouseClicked" :> ($CellContext`project`Private`val1$ = {1, 1}), 
+       "MouseDragged" :> 
+       If[$CellContext`project`Private`oneTimeloc$ == 
+          1, $CellContext`project`Private`val1$ = MousePosition["Graphics"]; 
+          Null] If[
+          And[
+          Part[$CellContext`project`Private`val1$, 2] > 25, 
+           Part[$CellContext`project`Private`val1$, 1] > -15, 
+           Part[$CellContext`project`Private`val1$, 1] < 
+           15], $CellContext`project`Private`val1$ = {-7, 31}; 
+          If[$CellContext`project`Private`oneTimeloc$ == 
+            1, $CellContext`project`Private`oneTimeloc$ = 
+             0; $CellContext`project`Private`inSix$$ = \
+$CellContext`project`Private`inSix$$ + 1]; 
+          If[$CellContext`project`Private`inSix$$ == 
+            2, $CellContext`project`Private`colSix$$ = 
+             Red; $CellContext`project`Private`colSix1$$ = 
+             Red; $CellContext`project`Private`ok1$$ = 1]; 
+          Null]}]; $CellContext`project`Private`eh2$$[
+      Pattern[$CellContext`project`Private`val1$, 
+       Blank[]], 
+      Pattern[$CellContext`project`Private`oneTimeloc$, 
+       Blank[]]] := EventHandler[{
+       Text[
+        Style["9", $CellContext`project`Private`colNine$$, Italic, 20], 
+        Dynamic[$CellContext`project`Private`val1$]]}, {
+      "MouseClicked" :> ($CellContext`project`Private`val1$ = {1, 1}), 
+       "MouseDragged" :> (
+        If[$CellContext`project`Private`oneTimeloc$ == 
+          1, $CellContext`project`Private`val1$ = MousePosition["Graphics"]]; 
+        If[
+          And[
+          Part[$CellContext`project`Private`val1$, 2] > 25, 
+           Part[$CellContext`project`Private`val1$, 1] > -15, 
+           Part[$CellContext`project`Private`val1$, 1] < 15], 
+          
+          If[$CellContext`project`Private`oneTimeloc$ == 
+           1, $CellContext`project`Private`val1$ = {-1, 
+             31}; $CellContext`project`Private`colNine$$ = 
+            Red; $CellContext`project`Private`ok5$$ = 
+            1]])}]; $CellContext`project`Private`eh3$$[
+      Pattern[$CellContext`project`Private`val1$, 
+       Blank[]], 
+      Pattern[$CellContext`project`Private`oneTimeloc$, 
+       Blank[]]] := EventHandler[{
+       Text[
+        Style["12", $CellContext`project`Private`colTwelve$$, Italic, 20], 
+        Dynamic[$CellContext`project`Private`val1$]]}, {
+      "MouseClicked" :> ($CellContext`project`Private`val1$ = {1, 1}), 
+       "MouseDragged" :> 
+       If[$CellContext`project`Private`oneTimeloc$ == 
+          1, $CellContext`project`Private`val1$ = MousePosition["Graphics"]; 
+          Null] If[
+          And[
+          Part[$CellContext`project`Private`val1$, 2] > 25, 
+           Part[$CellContext`project`Private`val1$, 1] > -15, 
+           Part[$CellContext`project`Private`val1$, 1] < 
+           15], $CellContext`project`Private`val1$ = {6, 31}; 
+          If[$CellContext`project`Private`oneTimeloc$ == 
+            1, $CellContext`project`Private`oneTimeloc$ = 
+             0; $CellContext`project`Private`inTwelve$$ = \
+$CellContext`project`Private`inTwelve$$ + 1]; 
+          If[$CellContext`project`Private`inTwelve$$ == 
+            2, $CellContext`project`Private`colTwelve$$ = 
+             Red; $CellContext`project`Private`colTwelve1$$ = 
+             Red; $CellContext`project`Private`ok2$$ = 1]; 
+          Null]}]; $CellContext`project`Private`eh4$$[
+      Pattern[$CellContext`project`Private`val1$, 
+       Blank[]], 
+      Pattern[$CellContext`project`Private`oneTimeloc$, 
+       Blank[]]] := EventHandler[{
+       Text[
+        Style["15", $CellContext`project`Private`colFifteen$$, Italic, 20], 
+        Dynamic[$CellContext`project`Private`val1$]]}, {
+      "MouseClicked" :> ($CellContext`project`Private`val1$ = {1, 1}), 
+       "MouseDragged" :> (
+        If[$CellContext`project`Private`oneTimeloc$ == 
+          1, $CellContext`project`Private`val1$ = MousePosition["Graphics"]]; 
+        If[
+          And[
+          Part[$CellContext`project`Private`val1$, 2] > 25, 
+           Part[$CellContext`project`Private`val1$, 1] > -15, 
+           Part[$CellContext`project`Private`val1$, 1] < 15], 
+          
+          If[$CellContext`project`Private`oneTimeloc$ == 
+           1, $CellContext`project`Private`val1$ = {-3, 
+             26}; $CellContext`project`Private`colFifteen$$ = 
+            Red; $CellContext`project`Private`ok6$$ = 
+            1]])}]; $CellContext`project`Private`eh5$$[
+      Pattern[$CellContext`project`Private`val1$, 
+       Blank[]], 
+      Pattern[$CellContext`project`Private`oneTimeloc$, 
+       Blank[]]] := EventHandler[{
+       Text[
+        Style["18", $CellContext`project`Private`colEighteen$$, Italic, 20], 
+        Dynamic[$CellContext`project`Private`val1$]]}, {
+      "MouseClicked" :> ($CellContext`project`Private`val1$ = {1, 1}), 
+       "MouseDragged" :> 
+       If[$CellContext`project`Private`oneTimeloc$ == 
+          1, $CellContext`project`Private`val1$ = MousePosition["Graphics"]; 
+          Null] If[
+          And[
+          Part[$CellContext`project`Private`val1$, 2] > 25, 
+           Part[$CellContext`project`Private`val1$, 1] > -15, 
+           Part[$CellContext`project`Private`val1$, 1] < 
+           15], $CellContext`project`Private`val1$ = {5, 26}; 
+          If[$CellContext`project`Private`oneTimeloc$ == 
+            1, $CellContext`project`Private`oneTimeloc$ = 
+             0; $CellContext`project`Private`inEighteen$$ = \
+$CellContext`project`Private`inEighteen$$ + 1]; 
+          If[$CellContext`project`Private`inEighteen$$ == 
+            2, $CellContext`project`Private`colEighteen$$ = 
+             Red; $CellContext`project`Private`colEighteen1$$ = 
+             Red; $CellContext`project`Private`ok3$$ = 1]; 
+          Null]}]; $CellContext`project`Private`eh6$$[
+      Pattern[$CellContext`project`Private`val1$, 
+       Blank[]], 
+      Pattern[$CellContext`project`Private`oneTimeloc$, 
+       Blank[]]] := EventHandler[{
+       Text[
+        Style["6", $CellContext`project`Private`colSix1$$, Italic, 20], 
+        Dynamic[$CellContext`project`Private`val1$]]}, {
+      "MouseClicked" :> ($CellContext`project`Private`val1$ = {1, 1}), 
+       "MouseDragged" :> 
+       If[$CellContext`project`Private`oneTimeloc$ == 
+          1, $CellContext`project`Private`val1$ = MousePosition["Graphics"]; 
+          Null] If[
+          And[
+          Part[$CellContext`project`Private`val1$, 2] > 25, 
+           Part[$CellContext`project`Private`val1$, 1] > -15, 
+           Part[$CellContext`project`Private`val1$, 1] < 
+           15], $CellContext`project`Private`val1$ = {-7, 31}; 
+          If[$CellContext`project`Private`oneTimeloc$ == 
+            1, $CellContext`project`Private`oneTimeloc$ = 
+             0; $CellContext`project`Private`inSix$$ = \
+$CellContext`project`Private`inSix$$ + 1]; 
+          If[$CellContext`project`Private`inSix$$ == 
+            2, $CellContext`project`Private`colSix1$$ = 
+             Red; $CellContext`project`Private`colSix$$ = 
+             Red; $CellContext`project`Private`ok1$$ = 1]; 
+          Null]}]; $CellContext`project`Private`eh7$$[
+      Pattern[$CellContext`project`Private`val1$, 
+       Blank[]], 
+      Pattern[$CellContext`project`Private`oneTimeloc$, 
+       Blank[]]] := EventHandler[{
+       Text[
+        Style["8", $CellContext`project`Private`colEight$$, Italic, 20], 
+        Dynamic[$CellContext`project`Private`val1$]]}, {
+      "MouseClicked" :> ($CellContext`project`Private`val1$ = {1, 1}), 
+       "MouseDragged" :> (
+        If[$CellContext`project`Private`oneTimeloc$ == 
+          1, $CellContext`project`Private`val1$ = MousePosition["Graphics"]]; 
+        If[
+          And[
+          Part[$CellContext`project`Private`val1$, 2] > 25, 
+           Part[$CellContext`project`Private`val1$, 1] > -15, 
+           Part[$CellContext`project`Private`val1$, 1] < 15], 
+          
+          If[$CellContext`project`Private`oneTimeloc$ == 
+           1, $CellContext`project`Private`val1$ = {-4, 
+             31}; $CellContext`project`Private`colEight$$ = 
+            Red; $CellContext`project`Private`ok7$$ = 
+            1]])}]; $CellContext`project`Private`eh8$$[
+      Pattern[$CellContext`project`Private`val1$, 
+       Blank[]], 
+      Pattern[$CellContext`project`Private`oneTimeloc$, 
+       Blank[]]] := EventHandler[{
+       Text[
+        Style["10", $CellContext`project`Private`colTen$$, Italic, 20], 
+        Dynamic[$CellContext`project`Private`val1$]]}, {
+      "MouseClicked" :> ($CellContext`project`Private`val1$ = {1, 1}), 
+       "MouseDragged" :> (
+        If[$CellContext`project`Private`oneTimeloc$ == 
+          1, $CellContext`project`Private`val1$ = MousePosition["Graphics"]]; 
+        If[
+          And[
+          Part[$CellContext`project`Private`val1$, 2] > 25, 
+           Part[$CellContext`project`Private`val1$, 1] > -15, 
+           Part[$CellContext`project`Private`val1$, 1] < 15], 
+          
+          If[$CellContext`project`Private`oneTimeloc$ == 
+           1, $CellContext`project`Private`val1$ = {2, 
+             31}; $CellContext`project`Private`colTen$$ = 
+            Red; $CellContext`project`Private`ok8$$ = 
+            1]])}]; $CellContext`project`Private`eh9$$[
+      Pattern[$CellContext`project`Private`val1$, 
+       Blank[]], 
+      Pattern[$CellContext`project`Private`oneTimeloc$, 
+       Blank[]]] := EventHandler[{
+       Text[
+        Style["14", $CellContext`project`Private`colFuorteen$$, Italic, 20], 
+        Dynamic[$CellContext`project`Private`val1$]]}, {
+      "MouseClicked" :> ($CellContext`project`Private`val1$ = {1, 1}), 
+       "MouseDragged" :> (
+        If[$CellContext`project`Private`oneTimeloc$ == 
+          1, $CellContext`project`Private`val1$ = MousePosition["Graphics"]]; 
+        If[
+          And[
+          Part[$CellContext`project`Private`val1$, 2] > 25, 
+           Part[$CellContext`project`Private`val1$, 1] > -15, 
+           Part[$CellContext`project`Private`val1$, 1] < 15], 
+          
+          If[$CellContext`project`Private`oneTimeloc$ == 
+           1, $CellContext`project`Private`val1$ = {10, 
+             31}; $CellContext`project`Private`colFuorteen$$ = 
+            Red; $CellContext`project`Private`ok9$$ = 
+            1]])}]; $CellContext`project`Private`eh10$$[
+      Pattern[$CellContext`project`Private`val1$, 
+       Blank[]], 
+      Pattern[$CellContext`project`Private`oneTimeloc$, 
+       Blank[]]] := EventHandler[{
+       Text[
+        Style["16", $CellContext`project`Private`colSixteen$$, Italic, 20], 
+        Dynamic[$CellContext`project`Private`val1$]]}, {
+      "MouseClicked" :> ($CellContext`project`Private`val1$ = {1, 1}), 
+       "MouseDragged" :> (
+        If[$CellContext`project`Private`oneTimeloc$ == 
+          1, $CellContext`project`Private`val1$ = MousePosition["Graphics"]]; 
+        If[
+          And[
+          Part[$CellContext`project`Private`val1$, 2] > 25, 
+           Part[$CellContext`project`Private`val1$, 1] > -15, 
+           Part[$CellContext`project`Private`val1$, 1] < 15], 
+          
+          If[$CellContext`project`Private`oneTimeloc$ == 
+           1, $CellContext`project`Private`val1$ = {1, 
+             26}; $CellContext`project`Private`colSixteen$$ = 
+            Red; $CellContext`project`Private`ok10$$ = 
+            1]])}]; $CellContext`project`Private`eh11$$[
+      Pattern[$CellContext`project`Private`val1$, 
+       Blank[]], 
+      Pattern[$CellContext`project`Private`oneTimeloc$, 
+       Blank[]]] := EventHandler[{
+       Text[
+        Style["12", $CellContext`project`Private`colTwelve1$$, Italic, 20], 
+        Dynamic[$CellContext`project`Private`val1$]]}, {
+      "MouseClicked" :> ($CellContext`project`Private`val1$ = {1, 1}), 
+       "MouseDragged" :> 
+       If[$CellContext`project`Private`oneTimeloc$ == 
+          1, $CellContext`project`Private`val1$ = MousePosition["Graphics"]; 
+          Null] If[
+          And[
+          Part[$CellContext`project`Private`val1$, 2] > 25, 
+           Part[$CellContext`project`Private`val1$, 1] > -15, 
+           Part[$CellContext`project`Private`val1$, 1] < 
+           15], $CellContext`project`Private`val1$ = {6, 31}; 
+          If[$CellContext`project`Private`oneTimeloc$ == 
+            1, $CellContext`project`Private`oneTimeloc$ = 
+             0; $CellContext`project`Private`inTwelve$$ = \
+$CellContext`project`Private`inTwelve$$ + 1]; 
+          If[$CellContext`project`Private`inTwelve$$ == 
+            2, $CellContext`project`Private`colTwelve$$ = 
+             Red; $CellContext`project`Private`colTwelve1$$ = 
+             Red; $CellContext`project`Private`ok2$$ = 1]; 
+          Null]}]; $CellContext`project`Private`eh12$$[
+      Pattern[$CellContext`project`Private`val1$, 
+       Blank[]], 
+      Pattern[$CellContext`project`Private`oneTimeloc$, 
+       Blank[]]] := EventHandler[{
+       Text[
+        Style["18", $CellContext`project`Private`colEighteen1$$, Italic, 20], 
+        
+        Dynamic[$CellContext`project`Private`val1$]]}, {
+      "MouseClicked" :> ($CellContext`project`Private`val1$ = {1, 1}), 
+       "MouseDragged" :> 
+       If[$CellContext`project`Private`oneTimeloc$ == 
+          1, $CellContext`project`Private`val1$ = MousePosition["Graphics"]; 
+          Null] If[
+          And[
+          Part[$CellContext`project`Private`val1$, 2] > 25, 
+           Part[$CellContext`project`Private`val1$, 1] > -15, 
+           Part[$CellContext`project`Private`val1$, 1] < 
+           15], $CellContext`project`Private`val1$ = {5, 26}; 
+          If[$CellContext`project`Private`oneTimeloc$ == 
+            1, $CellContext`project`Private`oneTimeloc$ = 
+             0; $CellContext`project`Private`inEighteen$$ = \
+$CellContext`project`Private`inEighteen$$ + 1]; 
+          If[$CellContext`project`Private`inEighteen$$ == 
+            2, $CellContext`project`Private`colEighteen$$ = 
+             Red; $CellContext`project`Private`colEighteen1$$ = 
+             Red; $CellContext`project`Private`ok3$$ = 1]; Null]}]; 
+   Null)]], "Output",
+ CellChangeTimes->{{3.703220924469872*^9, 3.703220951035761*^9}, 
+   3.7032212444818707`*^9, {3.703221279302746*^9, 3.703221285716197*^9}, {
+   3.703221428020347*^9, 3.703221436105895*^9}, {3.703221564824704*^9, 
+   3.703221570560319*^9}, {3.703221791428142*^9, 3.703221809061511*^9}, {
+   3.70322208754284*^9, 3.703222108021743*^9}, 3.7032221840618896`*^9, 
+   3.7032233493154383`*^9, 3.703229396330044*^9, 3.703250413523706*^9, 
+   3.703255521294973*^9, {3.703255970528111*^9, 3.703255974483564*^9}, 
+   3.703256264482581*^9, {3.703256521667674*^9, 3.703256539612452*^9}}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -63354,23 +64299,24 @@ Cell[929, 27, 220, 3, 32, "Input"],
 Cell[1152, 32, 3572, 48, 32, "Input"],
 Cell[CellGroupData[{
 Cell[4749, 84, 11983, 265, 363, "Input"],
-Cell[16735, 351, 2874, 56, 590, "Output"]
+Cell[16735, 351, 2852, 55, 590, "Output"]
 }, Open  ]],
-Cell[19624, 410, 1972, 26, 55, "Input"],
+Cell[19602, 409, 1972, 26, 55, "Input"],
 Cell[CellGroupData[{
-Cell[21621, 440, 1095, 22, 253, InheritFromParent],
-Cell[22719, 464, 469, 6, 32, "Output"],
-Cell[23191, 472, 40622, 772, 464, "Output"],
-Cell[63816, 1246, 18098, 335, 415, "Output"],
-Cell[81917, 1583, 44901, 837, 508, "Output"],
-Cell[126821, 2422, 45594, 865, 464, "Output"],
-Cell[172418, 3289, 3653600, 59948, 417, "Output"],
-Cell[3826021, 63239, 3938, 78, 560, "Output"]
+Cell[21599, 439, 1199, 23, 275, "Input"],
+Cell[22801, 464, 635, 8, 32, "Output"],
+Cell[23439, 474, 41139, 781, 464, "Output"],
+Cell[64581, 1257, 18265, 337, 415, "Output"],
+Cell[82849, 1596, 45067, 839, 508, "Output"],
+Cell[127919, 2437, 45760, 867, 464, "Output"],
+Cell[173682, 3306, 3653766, 59950, 417, "Output"],
+Cell[3827451, 63258, 4102, 80, 560, "Output"],
+Cell[3831556, 63340, 48365, 922, 464, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[3829996, 63322, 210, 4, 103, "Subtitle"],
-Cell[3830209, 63328, 138, 2, 33, "Text"],
-Cell[3830350, 63332, 16, 0, 33, "Text"]
+Cell[3879958, 64267, 210, 4, 103, "Subtitle"],
+Cell[3880171, 64273, 138, 2, 33, "Text"],
+Cell[3880312, 64277, 16, 0, 33, "Text"]
 }, Open  ]]
 }
 ]
