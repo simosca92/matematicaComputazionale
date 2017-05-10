@@ -1,13 +1,9 @@
 (* ::Package:: *)
 
 (* :Context: Introduzione all insiemistica
-
  :Authors:Simone Scala, Andrea Zuccarini 
-
  :Anno Accademico: 2016/2017 corso di Matematica Computazionale Laurea Magistrale Informatica
-
  :Summary: Package contenente un'esemplificazione delle basi dell insiemistica	
-
  :Sources:   biblio *)
 
 
@@ -90,7 +86,16 @@
 		       If[ok1 == 1 && ok2 == 1 && ok3 == 1 && ok4 == 1 && ok5 == 1 && 
 			 ok6 == 1 ok7 == 1 && ok8 == 1 && ok9 == 1 && ok10 == 1 , 
 			Speak["Very good"], 
-						Speak["You can do better"]]]],
+						Speak["You can do better"]]],
+		      		      Button["Reset!",pt1 = {-34, 7}; pt2 = {-31, 7}; pt3 = {-28, 7}; 
+		    				    pt4 = {-24, 7}; pt5 = {-20, 7}; pt6 = {-16, 7}; 
+						        pt7 = {16, 7};  pt8 = {19, 7}; pt9 = {23, 7}; pt10 = {31, 7};pt11 = {35, 7};pt12 = {27, 7}; pt13 = {25, 4} ; inSix = 0; 
+		    		    inTwelve = 0; inEighteen = 0; oneTime = 1; oneTimeOut = 1; 
+		     init = 1; init1 = 1; init2 = 1; init3 = 1; init4 = 1; 
+		    init5 = 1; init6 = 1; init9 = 1; init15 = 1; init10 = 1;
+		    init16 = 1;    init8 = 1; init14 = 1; colEight = Black; colSix = Blue; 
+		    colSix1 = Black; colTwelve = Blue; colFuorteen = Black;   colTwelve1 = Black; colEighteen = Blue; 
+		    colEighteen1 = Black; colThree = Blue; colNine = Blue; colFifteen = Blue; colTen = Black; colSixteen = Black;   ok1 = 0; ok2 = 0; ok3 = 0; ok4 = 0; ok5 = 0; ok6 = 0;   ok7 = 0;ok8 = 0; ok9 = 0; ok10 = 0]],
 		     		     Manipulate[
 		      		      RegionPlot[{(x - (a/5))^2 + y^2 < 
 			  			  
@@ -104,8 +109,8 @@
 		       		       ImageSize -> Medium, 
 		       		       Epilog -> {Text[
 			  			  Style["A\[Union]B", Red, Italic, 
-			   			   15], {0, -4.5}]}], {{a, 10, "A\[Union]B"}, 10, 20, 1}]
-		     		    }, "    "],
+			   			   15], {0, -4.5}]}], {{a, 20, "A\[Union]B"}, 20, 10, 1}]
+		     		    }],
 		   		   Initialization :> (
 		     		     testpoint[poly_, pt_] := 
 		      		      Round[(Total@
@@ -136,7 +141,7 @@
 		     		     
 		     		     eh[val1_, oneTimeloc_] := 
 		      		      EventHandler[{Text[Style["3", colThree, Italic, 20], 
-			 			 Dynamic@val1]}, {"MouseClicked" :> (val1 = {1, 1}), 
+			 			 Dynamic@val1]}, {"MouseClicked" :> (val1 = {0,15}), 
 					
 			"MouseDragged" :> (If[ oneTimeloc == 1 , 
 			   val1 = MousePosition["Graphics"]];
@@ -152,7 +157,7 @@
 						}];
 		     		      eh1[val1_, oneTimeloc_] := 
 		      		      EventHandler[{Text[Style["6", colSix, Italic, 20], 
-			 			 Dynamic@val1]}, {"MouseClicked" :> (val1 = {1, 1}), 
+			 			 Dynamic@val1]}, {"MouseClicked" :> (val1 = {0,15}), 
 						"MouseDragged" :> ( 
 			  			  If[oneTimeloc == 1, val1 = MousePosition["Graphics"];]
 			   			   (*se inserisco il numero sei nell'insieme unione*)
@@ -170,7 +175,7 @@
 						}];
 		     		      eh2[val1_, oneTimeloc_] := 
 		      		      EventHandler[{Text[Style["9", colNine, Italic, 20], 
-			 			 Dynamic@val1]}, {"MouseClicked" :> (val1 = {1, 1}), 
+			 			 Dynamic@val1]}, {"MouseClicked" :> (val1 = {0,15}), 
 					
 			"MouseDragged" :> (If[ oneTimeloc == 1 , 
 			   val1 = MousePosition["Graphics"]];
@@ -186,7 +191,7 @@
 						}];
 		     		      eh3[val1_, oneTimeloc_] := 
 		      		      EventHandler[{Text[Style["12", colTwelve, Italic, 20], 
-			 			 Dynamic@val1]}, {"MouseClicked" :> (val1 = {1, 1}), 
+			 			 Dynamic@val1]}, {"MouseClicked" :> (val1 = {0,15}), 
 						"MouseDragged" :> ( 
 			  			  If[oneTimeloc == 1, val1 = MousePosition["Graphics"];]
 			   			   (*se inserisco il numero sei nell'insieme \
@@ -210,7 +215,7 @@
 		     		         eh4[val1_, oneTimeloc_] := 
 		      		      
 		      EventHandler[{Text[Style["15", colFifteen, Italic, 20], 
-			 			 Dynamic@val1]}, {"MouseClicked" :> (val1 = {1, 1}), 
+			 			 Dynamic@val1]}, {"MouseClicked" :> (val1 = {0,15}), 
 					
 			"MouseDragged" :> (If[ oneTimeloc == 1 , 
 			   val1 = MousePosition["Graphics"]];
@@ -226,7 +231,7 @@
 						}];
 		     		       eh5[val1_, oneTimeloc_] := 
 		      		      EventHandler[{Text[Style["18", colEighteen, Italic, 20], 
-			 			 Dynamic@val1]}, {"MouseClicked" :> (val1 = {1, 1}), 
+			 			 Dynamic@val1]}, {"MouseClicked" :> (val1 = {0,15}), 
 						"MouseDragged" :> ( 
 			  			  If[oneTimeloc == 1, val1 = MousePosition["Graphics"];]
 			   			   (*se inserisco il numero sei nell'insieme \
@@ -250,7 +255,7 @@
 						}];
 		     		      eh6[val1_, oneTimeloc_] := 
 		      		      EventHandler[{Text[Style["6", colSix1, Italic, 20], 
-			 			 Dynamic@val1]}, {"MouseClicked" :> (val1 = {1, 1}), 
+			 			 Dynamic@val1]}, {"MouseClicked" :> (val1 = {0,15}), 
 						"MouseDragged" :> ( 
 			  			  If[oneTimeloc == 1, val1 = MousePosition["Graphics"];]
 			   			   (*se inserisco il numero sei nell'insieme \
@@ -272,7 +277,7 @@
 						}];
 		     		       eh7[val1_, oneTimeloc_] := 
 		      		      EventHandler[{Text[Style["8", colEight, Italic, 20], 
-			 			 Dynamic@val1]}, {"MouseClicked" :> (val1 = {1, 1}), 
+			 			 Dynamic@val1]}, {"MouseClicked" :> (val1 = {0,15}), 
 					
 			"MouseDragged" :> (If[ oneTimeloc == 1 , 
 			   val1 = MousePosition["Graphics"]];
@@ -288,7 +293,7 @@
 						}];
 		     		       eh8[val1_, oneTimeloc_] := 
 		      		      EventHandler[{Text[Style["10", colTen, Italic, 20], 
-			 			 Dynamic@val1]}, {"MouseClicked" :> (val1 = {1, 1}), 
+			 			 Dynamic@val1]}, {"MouseClicked" :> (val1 = {0,15}), 
 					
 			"MouseDragged" :> (If[ oneTimeloc == 1 , 
 			   val1 = MousePosition["Graphics"]];
@@ -304,7 +309,7 @@
 						}];
 		     		     eh9[val1_, oneTimeloc_] := 
 		      		      EventHandler[{Text[Style["14", colFuorteen, Italic, 20], 
-			 			 Dynamic@val1]}, {"MouseClicked" :> (val1 = {1, 1}), 
+			 			 Dynamic@val1]}, {"MouseClicked" :> (val1 = {0,15}), 
 					
 			"MouseDragged" :> (If[ oneTimeloc == 1 , 
 			   val1 = MousePosition["Graphics"]];
@@ -321,7 +326,7 @@
 		     		     eh10[val1_, oneTimeloc_] := 
 		      		      
 		      EventHandler[{Text[Style["16", colSixteen, Italic, 20], 
-			 			 Dynamic@val1]}, {"MouseClicked" :> (val1 = {1, 1}), 
+			 			 Dynamic@val1]}, {"MouseClicked" :> (val1 = {0,15}), 
 					
 			"MouseDragged" :> (If[ oneTimeloc == 1 , 
 			   val1 = MousePosition["Graphics"]];
@@ -338,7 +343,7 @@
 		     		     eh11[val1_, oneTimeloc_] := 
 		      		      
 		      EventHandler[{Text[Style["12", colTwelve1, Italic, 20], 
-			 			 Dynamic@val1]}, {"MouseClicked" :> (val1 = {1, 1}), 
+			 			 Dynamic@val1]}, {"MouseClicked" :> (val1 = {0,15}), 
 						"MouseDragged" :> ( 
 			  			  If[oneTimeloc == 1, val1 = MousePosition["Graphics"];]
 			   			   (*se inserisco il numero sei nell'insieme \
@@ -363,7 +368,7 @@
 		     		      eh12[val1_, oneTimeloc_] := 
 		      		      
 		      EventHandler[{Text[Style["18", colEighteen1, Italic, 20], 
-			 			 Dynamic@val1]}, {"MouseClicked" :> (val1 = {1, 1}), 
+			 			 Dynamic@val1]}, {"MouseClicked" :> (val1 = {0,15}), 
 						"MouseDragged" :> ( 
 			  			  If[oneTimeloc == 1, val1 = MousePosition["Graphics"];]
 			   			   (*se inserisco il numero sei nell'insieme \
@@ -446,8 +451,6 @@
 			   yesNoTest4 == False && yesNoTest6 == True, 
 			  Speak["Very Good!"], Speak["You can do better!"]]]}}, 
 		      Frame -> All]]}, "  "])
-
-
 		gameInter[] :=(
 		DynamicModule[{pt1 = {-34, 7}, pt2 = {-31, 7}, pt3 = {-28, 7}, 
 		    pt4 = {-24, 7}, pt5 = {-20, 7}, pt6 = {-16, 7}, pt7 = {16, 7}, 
@@ -532,7 +535,7 @@
 		     
 		     eh[val1_] := 
 		      EventHandler[{Text[Style["3", Blue, Italic, 20], 
-			 Dynamic@val1]}, {"MouseClicked" :> (val1 = {1, 1}), 
+			 Dynamic@val1]}, {"MouseClicked" :> (val1 = {0,15}), 
 			"MouseDragged" :> (If[ oneTimeOut == 1 , 
 			   val1 = MousePosition["Graphics"];, 
 			   If[ oneTimeOut == 0, oneTimeOut = 1]; ];
@@ -546,7 +549,7 @@
 			}];
 		      eh1[val1_, oneTimeloc_] := 
 		      EventHandler[{Text[Style["6", colSix, Italic, 20], 
-			 Dynamic@val1]}, {"MouseClicked" :> (val1 = {1, 1}), 
+			 Dynamic@val1]}, {"MouseClicked" :> (val1 = {0,15}), 
 			"MouseDragged" :> ( 
 			  If[oneTimeloc == 1, val1 = MousePosition["Graphics"];]
 			   (*se inserisco il numero sei nell'insieme intersezione*)
@@ -563,7 +566,7 @@
 			}];
 		      eh2[val1_] := 
 		      EventHandler[{Text[Style["9", Blue, Italic, 20], 
-			 Dynamic@val1]}, {"MouseClicked" :> (val1 = {1, 1}), 
+			 Dynamic@val1]}, {"MouseClicked" :> (val1 = {0,15}), 
 			"MouseDragged" :> (If[ oneTimeOut == 1 , 
 			   val1 = MousePosition["Graphics"];, 
 			   If[ oneTimeOut == 0, oneTimeOut = 1]; ];
@@ -577,7 +580,7 @@
 			}];
 		      eh3[val1_, oneTimeloc_] := 
 		      EventHandler[{Text[Style["12", colTwelve, Italic, 20], 
-			 Dynamic@val1]}, {"MouseClicked" :> (val1 = {1, 1}), 
+			 Dynamic@val1]}, {"MouseClicked" :> (val1 = {0,15}), 
 			"MouseDragged" :> ( 
 			  If[oneTimeloc == 1, val1 = MousePosition["Graphics"];]
 			   (*se inserisco il numero sei nell'insieme intersezione*)
@@ -597,7 +600,7 @@
 			}];
 		      eh4[val1_] := 
 		      EventHandler[{Text[Style["15", Blue, Italic, 20], 
-			 Dynamic@val1]}, {"MouseClicked" :> (val1 = {1, 1}), 
+			 Dynamic@val1]}, {"MouseClicked" :> (val1 = {0,15}), 
 			"MouseDragged" :> (If[ oneTimeOut == 1 , 
 			   val1 = MousePosition["Graphics"];, 
 			   If[ oneTimeOut == 0, oneTimeOut = 1]; ];
@@ -611,7 +614,7 @@
 			}];
 		       eh5[val1_, oneTimeloc_] := 
 		      EventHandler[{Text[Style["18", colEighteen, Italic, 20], 
-			 Dynamic@val1]}, {"MouseClicked" :> (val1 = {1, 1}), 
+			 Dynamic@val1]}, {"MouseClicked" :> (val1 = {0,15}), 
 			"MouseDragged" :> ( 
 			  If[oneTimeloc == 1, val1 = MousePosition["Graphics"];]
 			   (*se inserisco il numero sei nell'insieme intersezione*)
@@ -631,7 +634,7 @@
 			}];
 		      eh6[val1_, oneTimeloc_] := 
 		      EventHandler[{Text[Style["6", colSix1, Italic, 20], 
-			 Dynamic@val1]}, {"MouseClicked" :> (val1 = {1, 1}), 
+			 Dynamic@val1]}, {"MouseClicked" :> (val1 = {0,15}), 
 			"MouseDragged" :> ( 
 			  If[oneTimeloc == 1, val1 = MousePosition["Graphics"];]
 			   (*se inserisco il numero sei nell'insieme intersezione*)
@@ -650,7 +653,7 @@
 			}];
 		      eh7[val1_] := 
 		      EventHandler[{Text[Style["8", Black, Italic, 20], 
-			 Dynamic@val1]}, {"MouseClicked" :> (val1 = {1, 1}), 
+			 Dynamic@val1]}, {"MouseClicked" :> (val1 = {0,15}), 
 			"MouseDragged" :> (If[ oneTimeOut == 1 , 
 			   val1 = MousePosition["Graphics"];, 
 			   If[ oneTimeOut == 0, oneTimeOut = 1]; ];
@@ -664,7 +667,7 @@
 			}];
 		      eh8[val1_] := 
 		      EventHandler[{Text[Style["10", Black, Italic, 20], 
-			 Dynamic@val1]}, {"MouseClicked" :> (val1 = {1, 1}), 
+			 Dynamic@val1]}, {"MouseClicked" :> (val1 = {0,15}), 
 			"MouseDragged" :> (If[ oneTimeOut == 1 , 
 			   val1 = MousePosition["Graphics"];, 
 			   If[ oneTimeOut == 0, oneTimeOut = 1]; ];
@@ -678,7 +681,7 @@
 			}];
 		      eh9[val1_] := 
 		      EventHandler[{Text[Style["14", Black, Italic, 20], 
-			 Dynamic@val1]}, {"MouseClicked" :> (val1 = {1, 1}), 
+			 Dynamic@val1]}, {"MouseClicked" :> (val1 = {0,15}), 
 			"MouseDragged" :> (If[ oneTimeOut == 1 , 
 			   val1 = MousePosition["Graphics"];, 
 			   If[ oneTimeOut == 0, oneTimeOut = 1]; ];
@@ -692,7 +695,7 @@
 			}];
 		     eh10[val1_] := 
 		      EventHandler[{Text[Style["16", Black, Italic, 20], 
-			 Dynamic@val1]}, {"MouseClicked" :> (val1 = {1, 1}), 
+			 Dynamic@val1]}, {"MouseClicked" :> (val1 = {0,15}), 
 			"MouseDragged" :> (If[ oneTimeOut == 1 , 
 			   val1 = MousePosition["Graphics"];, 
 			   If[ oneTimeOut == 0, oneTimeOut = 1]; ];
@@ -706,7 +709,7 @@
 			}];
 		     eh11[val1_, oneTimeloc_] := 
 		      EventHandler[{Text[Style["12", colTwelve1, Italic, 20], 
-			 Dynamic@val1]}, {"MouseClicked" :> (val1 = {1, 1}), 
+			 Dynamic@val1]}, {"MouseClicked" :> (val1 = {0,15}), 
 			"MouseDragged" :> ( 
 			  If[oneTimeloc == 1, val1 = MousePosition["Graphics"];]
 			   (*se inserisco il numero sei nell'insieme intersezione*)
@@ -727,7 +730,7 @@
 			}];
 		      eh12[val1_, oneTimeloc_] := 
 		      EventHandler[{Text[Style["18", colEighteen1, Italic, 20], 
-			 Dynamic@val1]}, {"MouseClicked" :> (val1 = {1, 1}), 
+			 Dynamic@val1]}, {"MouseClicked" :> (val1 = {0,15}), 
 			"MouseDragged" :> ( 
 			  If[oneTimeloc == 1, val1 = MousePosition["Graphics"];]
 			   (*se inserisco il numero sei nell'insieme intersezione*)
@@ -748,8 +751,6 @@
 		     
 		     )
 		   ])
-
-
 		gameApp2[] := (
 		  Manipulate[
 		   With[{p = Rest@pts, pt = First@pts}, 
@@ -758,7 +759,7 @@
 		     PlotLabel -> 
 		      Text[Style[If[testpoint[p, pt], "True ", "False"], Bold, 
 			Italic]]]], {{pts, {{0, 0}, {-2, -2}, {2, -2}, {0, 2}}}, 
-		    Sequence @@ (3 {{-1, -1}, {1, 1}}), Locator, 
+		    Sequence @@ (3 {{-1, -1}, {1,1}}), Locator, 
 		    LocatorAutoCreate -> {4, Infinity}}, SaveDefinitions -> True, 
 		    Initialization :> {(*test if point pt inside polygon poly*)
 		    testpoint[poly_, pt_] := 
@@ -844,7 +845,7 @@
 		     SetAttributes[inFifteen, HoldAll];
 		     eh3b[val1_, oneTimeloc_] := 
 		      EventHandler[{Text[Style["3", colThree, Italic, 20], 
-			 Dynamic@val1]}, {"MouseClicked" :> (val1 = {1, 1}),
+			 Dynamic@val1]}, {"MouseClicked" :> (val1 = {0,15}),
 			"MouseDragged" :> (If[oneTimeloc == 1, 
 			    val1 = MousePosition["Graphics"];]
 			   (*se inserisco il numero tre blu nell'insieme intersezione*) 
@@ -854,7 +855,7 @@
 		     
 		     eh6b[val1_] := 
 		      EventHandler[{Text[Style["6", Blue, Italic, 20], 
-			 Dynamic@val1]}, {"MouseClicked" :> (val1 = {1, 1}), 
+			 Dynamic@val1]}, {"MouseClicked" :> (val1 = {0,15}), 
 			"MouseDragged" :> (If[oneTimeOut == 1, 
 			   val1 = MousePosition["Graphics"];, 
 			   If[oneTimeOut == 0, oneTimeOut = 1];];
@@ -865,7 +866,7 @@
 		     
 		     eh9b[val1_, oneTimeloc_] := 
 		      EventHandler[{Text[Style["9", colNine, Italic, 20], 
-			 Dynamic@val1]}, {"MouseClicked" :> (val1 = {1, 1}), 
+			 Dynamic@val1]}, {"MouseClicked" :> (val1 = {0,15}), 
 			"MouseDragged" :> (If[oneTimeloc == 1, 
 			    val1 = MousePosition["Graphics"];]
 			   (*se inserisco il numero nove blu nell'insieme \
@@ -876,7 +877,7 @@
 		     
 		     eh12b[val1_] := 
 		      EventHandler[{Text[Style["12", Blue, Italic, 20], 
-			 Dynamic@val1]}, {"MouseClicked" :> (val1 = {1, 1}), 
+			 Dynamic@val1]}, {"MouseClicked" :> (val1 = {0,15}), 
 			"MouseDragged" :> (If[oneTimeOut == 1, 
 			   val1 = MousePosition["Graphics"];, 
 			   If[oneTimeOut == 0, oneTimeOut = 1];];
@@ -888,7 +889,7 @@
 		     
 		     eh15b[val1_, oneTimeloc_] := 
 		      EventHandler[{Text[Style["15", colFifteen, Italic, 20], 
-			 Dynamic@val1]}, {"MouseClicked" :> (val1 = {1, 1}), 
+			 Dynamic@val1]}, {"MouseClicked" :> (val1 = {0,15}), 
 			"MouseDragged" :> (If[oneTimeloc == 1, 
 			    val1 = MousePosition["Graphics"];]
 			   (*se inserisco il numero quindici blu nell'insieme \
@@ -899,7 +900,7 @@
 		     
 		     eh18b[val1_] := 
 		      EventHandler[{Text[Style["18", Blue, Italic, 20], 
-			 Dynamic@val1]}, {"MouseClicked" :> (val1 = {1, 1}), 
+			 Dynamic@val1]}, {"MouseClicked" :> (val1 = {0,15}), 
 			"MouseDragged" :> (If[oneTimeOut == 1, 
 			   val1 = MousePosition["Graphics"];, 
 			   If[oneTimeOut == 0, oneTimeOut = 1];];
@@ -911,7 +912,7 @@
 		     
 		     eh6n[val1_] := 
 		      EventHandler[{Text[Style["6", Black, Italic, 20], 
-			 Dynamic@val1]}, {"MouseClicked" :> (val1 = {1, 1}), 
+			 Dynamic@val1]}, {"MouseClicked" :> (val1 = {0,15}), 
 			"MouseDragged" :> (If[oneTimeOut == 1, 
 			   val1 = MousePosition["Graphics"];, 
 			   If[oneTimeOut == 0, oneTimeOut = 1];];
@@ -922,7 +923,7 @@
 		     
 		     eh8n[val1_] := 
 		      EventHandler[{Text[Style["8", Black, Italic, 20], 
-			 Dynamic@val1]}, {"MouseClicked" :> (val1 = {1, 1}), 
+			 Dynamic@val1]}, {"MouseClicked" :> (val1 = {0,15}), 
 			"MouseDragged" :> (If[oneTimeOut == 1, 
 			   val1 = MousePosition["Graphics"];, 
 			   If[oneTimeOut == 0, oneTimeOut = 1];];
@@ -934,7 +935,7 @@
 		     
 		     eh10n[val1_] := 
 		      EventHandler[{Text[Style["10", Black, Italic, 20], 
-			 Dynamic@val1]}, {"MouseClicked" :> (val1 = {1, 1}), 
+			 Dynamic@val1]}, {"MouseClicked" :> (val1 = {0,15}), 
 			"MouseDragged" :> (If[oneTimeOut == 1, 
 			   val1 = MousePosition["Graphics"];, 
 			   If[oneTimeOut == 0, oneTimeOut = 1];];
@@ -945,7 +946,7 @@
 			    "Very Bad!"];*)]])}];
 		     eh12n[val1_] := 
 		      EventHandler[{Text[Style["12", Black, Italic, 20], 
-			 Dynamic@val1]}, {"MouseClicked" :> (val1 = {1, 1}), 
+			 Dynamic@val1]}, {"MouseClicked" :> (val1 = {0,15}), 
 			"MouseDragged" :> (If[oneTimeOut == 1, 
 			   val1 = MousePosition["Graphics"];, 
 			   If[oneTimeOut == 0, oneTimeOut = 1];];
@@ -957,7 +958,7 @@
 		     
 		     eh14n[val1_] := 
 		      EventHandler[{Text[Style["14", Black, Italic, 20], 
-			 Dynamic@val1]}, {"MouseClicked" :> (val1 = {1, 1}), 
+			 Dynamic@val1]}, {"MouseClicked" :> (val1 = {0,15}), 
 			"MouseDragged" :> (If[oneTimeOut == 1, 
 			   val1 = MousePosition["Graphics"];, 
 			   If[oneTimeOut == 0, oneTimeOut = 1];];
@@ -969,7 +970,7 @@
 		     
 		     eh16n[val1_] := 
 		      EventHandler[{Text[Style["16", Black, Italic, 20], 
-			 Dynamic@val1]}, {"MouseClicked" :> (val1 = {1, 1}), 
+			 Dynamic@val1]}, {"MouseClicked" :> (val1 = {0,15}), 
 			"MouseDragged" :> (If[oneTimeOut == 1, 
 			   val1 = MousePosition["Graphics"];, 
 			   If[oneTimeOut == 0, oneTimeOut = 1];];
@@ -980,7 +981,7 @@
 			    "Very Bad!"];*)]])}];
 		     eh18n[val1_] := 
 		      EventHandler[{Text[Style["18", Black, Italic, 20], 
-			 Dynamic@val1]}, {"MouseClicked" :> (val1 = {1, 1}), 
+			 Dynamic@val1]}, {"MouseClicked" :> (val1 = {0,15}), 
 			"MouseDragged" :> (If[oneTimeOut == 1, 
 			   val1 = MousePosition["Graphics"];, 
 			   If[oneTimeOut == 0, oneTimeOut = 1];];
@@ -1039,7 +1040,7 @@
 		     SetAttributes[prec, HoldAll];
 		     eh1[val1_] := 
 		      EventHandler[{Inset[mela, Dynamic@val1, Automatic, 
-			 5]}, {"MouseClicked" :> (val1 = {1, 1}), 
+			 5]}, {"MouseClicked" :> (val1 = {0,15}), 
 			"MouseDragged" :> (If[ inMela == 0 && oneTimeOut == 1 , 
 			   val1 = MousePosition["Graphics"];, 
 			   If[ oneTimeOut == 0, oneTimeOut = 1]; inMela = 1;];
@@ -1064,7 +1065,7 @@
 			}];
 		     eh[val_] := 
 		      EventHandler[{Inset[banana, Dynamic@val, Automatic, 
-			 5]}, {"MouseClicked" :> (val = {1, 1}), 
+			 5]}, {"MouseClicked" :> (val = {0,15}), 
 			"MouseDragged" :> (If[ inBanana == 0 && oneTimeOut == 1, 
 			   val = MousePosition["Graphics"], 
 			   If[ oneTimeOut == 0, oneTimeOut = 1]; inBanana = 1;]; 
@@ -1087,7 +1088,7 @@
 			}];
 		     eh2[val2_] := 
 		      EventHandler[{Inset[pera, Dynamic@val2, Automatic, 
-			 5]}, {"MouseClicked" :> (val2 = {1, 1}), 
+			 5]}, {"MouseClicked" :> (val2 = {0,15}), 
 			"MouseDragged" :> (If[ inPera == 0 && oneTimeOut == 1, 
 			   val2 = MousePosition["Graphics"], 
 			   If[ oneTimeOut == 0, oneTimeOut = 1]; inPera = 1;]; 
@@ -1169,7 +1170,7 @@
 		     SetAttributes[l4, HoldAll];
 		      eh1[val1_, oneTimeloc_] := 
 		      EventHandler[{Text[Style["1", colOne, Italic, 20], 
-			 Dynamic@val1]}, {"MouseClicked" :> (val1 = {1, 1}), 
+			 Dynamic@val1]}, {"MouseClicked" :> (val1 = {0,15}), 
 			"MouseDragged" :> ( 
 			  If[oneTimeloc == 1, val1 = MousePosition["Graphics"]; 
 			    If[ oneTimeOut == 0, oneTimeOut = 1];]
@@ -1191,7 +1192,7 @@
 			}];
 		      eh2[val1_, oneTimeloc_] := 
 		      EventHandler[{Text[Style["2", colTwo, Italic, 20], 
-			 Dynamic@val1]}, {"MouseClicked" :> (val1 = {1, 1}), 
+			 Dynamic@val1]}, {"MouseClicked" :> (val1 = {0,15}), 
 			"MouseDragged" :> ( 
 			  If[oneTimeloc == 1, val1 = MousePosition["Graphics"]; 
 			     If[ oneTimeOut == 0, oneTimeOut = 1];]
@@ -1212,7 +1213,7 @@
 			}];
 		       eh3[val1_, oneTimeloc_] := 
 		      EventHandler[{Text[Style["3", colThree, Italic, 20], 
-			 Dynamic@val1]}, {"MouseClicked" :> (val1 = {1, 1}), 
+			 Dynamic@val1]}, {"MouseClicked" :> (val1 = {0,15}), 
 			"MouseDragged" :> ( 
 			  If[oneTimeloc == 1, val1 = MousePosition["Graphics"]; 
 			     If[ oneTimeOut == 0, oneTimeOut = 1];]
@@ -1233,7 +1234,7 @@
 			}];
 			eh4[val1_, oneTimeloc_] := 
 		      EventHandler[{Text[Style["4", colFour, Italic, 20], 
-			 Dynamic@val1]}, {"MouseClicked" :> (val1 = {1, 1}), 
+			 Dynamic@val1]}, {"MouseClicked" :> (val1 = {0,15}), 
 			"MouseDragged" :> ( 
 			  If[oneTimeloc == 1, val1 = MousePosition["Graphics"]; 
 			     If[ oneTimeOut == 0, oneTimeOut = 1];]
@@ -1254,7 +1255,7 @@
 			}];
 		      eh5[val1_, oneTimeloc_] := 
 		      EventHandler[{Text[Style["5", colFive, Italic, 20], 
-			 Dynamic@val1]}, {"MouseClicked" :> (val1 = {1, 1}), 
+			 Dynamic@val1]}, {"MouseClicked" :> (val1 = {0,15}), 
 			"MouseDragged" :> ( 
 			  If[oneTimeloc == 1, val1 = MousePosition["Graphics"]; 
 			     If[ oneTimeOut == 0, oneTimeOut = 1];]
@@ -1275,7 +1276,7 @@
 			}];
 		      eh6[val1_, oneTimeloc_] := 
 		      EventHandler[{Text[Style["6", colSix, Italic, 20], 
-			 Dynamic@val1]}, {"MouseClicked" :> (val1 = {1, 1}), 
+			 Dynamic@val1]}, {"MouseClicked" :> (val1 = {0,15}), 
 			"MouseDragged" :> ( 
 			  If[oneTimeloc == 1, val1 = MousePosition["Graphics"]; 
 			     If[ oneTimeOut == 0, oneTimeOut = 1];]
@@ -1296,7 +1297,7 @@
 			}];
 		      eh7[val1_, oneTimeloc_] := 
 		      EventHandler[{Text[Style["7", colSeven, Italic, 20], 
-			 Dynamic@val1]}, {"MouseClicked" :> (val1 = {1, 1}), 
+			 Dynamic@val1]}, {"MouseClicked" :> (val1 = {0,15}), 
 			"MouseDragged" :> ( 
 			  If[oneTimeloc == 1, val1 = MousePosition["Graphics"]; 
 			     If[ oneTimeOut == 0, oneTimeOut = 1];]
@@ -1317,7 +1318,7 @@
 			}];
 		      eh8[val1_, oneTimeloc_] := 
 		      EventHandler[{Text[Style["8", colEight, Italic, 20], 
-			 Dynamic@val1]}, {"MouseClicked" :> (val1 = {1, 1}), 
+			 Dynamic@val1]}, {"MouseClicked" :> (val1 = {0,15}), 
 			"MouseDragged" :> ( 
 			  If[oneTimeloc == 1, val1 = MousePosition["Graphics"]; 
 			     If[ oneTimeOut == 0, oneTimeOut = 1];]
@@ -1338,7 +1339,7 @@
 			}];
 		      eh9[val1_, oneTimeloc_] := 
 		      EventHandler[{Text[Style["9", colNine, Italic, 20], 
-			 Dynamic@val1]}, {"MouseClicked" :> (val1 = {1, 1}), 
+			 Dynamic@val1]}, {"MouseClicked" :> (val1 = {0,15}), 
 			"MouseDragged" :> ( 
 			  If[oneTimeloc == 1, val1 = MousePosition["Graphics"]; 
 			     If[ oneTimeOut == 0, oneTimeOut = 1];]
@@ -1359,7 +1360,7 @@
 			}];
 		      eh10[val1_, oneTimeloc_] := 
 		      EventHandler[{Text[Style["10", colTen, Italic, 20], 
-			 Dynamic@val1]}, {"MouseClicked" :> (val1 = {1, 1}), 
+			 Dynamic@val1]}, {"MouseClicked" :> (val1 = {0,15}), 
 			"MouseDragged" :> ( 
 			  If[oneTimeloc == 1, val1 = MousePosition["Graphics"]; 
 			     If[ oneTimeOut == 0, oneTimeOut = 1];]
@@ -1388,14 +1389,8 @@ EndPackage[ ]
 
 
 
-
-
-
-
-
-
-
-
+"Global`project`Private`"
+{}
 
 
 
