@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     87196,       1860]
-NotebookOptionsPosition[     86860,       1843]
-NotebookOutlinePosition[     87215,       1859]
-CellTagsIndexPosition[     87172,       1856]
+NotebookDataLength[     85381,       1811]
+NotebookOptionsPosition[     85066,       1795]
+NotebookOutlinePosition[     85400,       1810]
+CellTagsIndexPosition[     85357,       1807]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -22,7 +22,7 @@ Notebook[{
 Cell[CellGroupData[{
 Cell[BoxData[{
  RowBox[{
-  RowBox[{"gameTemp", "[", "]"}], " ", ":=", " ", 
+  RowBox[{"gameExercise1", "[", "]"}], " ", ":=", " ", 
   RowBox[{"(", "\n", "  \t\t", 
    RowBox[{"DynamicModule", "[", 
     RowBox[{
@@ -214,17 +214,17 @@ Cell[BoxData[{
                 RowBox[{
                  RowBox[{"{", 
                   RowBox[{
-                   RowBox[{"-", "15"}], ",", " ", "35"}], "}"}], ",", " ", 
+                   RowBox[{"-", "15"}], ",", " ", "37"}], "}"}], ",", " ", 
                  RowBox[{"{", 
                   RowBox[{
-                   RowBox[{"-", "10"}], ",", " ", "21"}], "}"}], ",", " ", 
+                   RowBox[{"-", "10"}], ",", " ", "23"}], "}"}], ",", " ", 
                  RowBox[{"{", 
-                  RowBox[{"10", ",", " ", "21"}], "}"}], ",", " ", 
+                  RowBox[{"10", ",", " ", "23"}], "}"}], ",", " ", 
                  RowBox[{"{", 
-                  RowBox[{"15", ",", " ", "35"}], "}"}], ",", " ", 
+                  RowBox[{"15", ",", " ", "37"}], "}"}], ",", " ", 
                  RowBox[{"{", 
                   RowBox[{
-                   RowBox[{"-", "15"}], ",", " ", "\n", "\t\t\t     ", "35"}],
+                   RowBox[{"-", "15"}], ",", " ", "\n", "\t\t\t     ", "37"}],
                    "}"}]}], "}"}], "]"}]}], ",", " ", "\n", "\t\t\t \t\t\t ", 
              "Black", ",", " ", 
              RowBox[{"Thickness", "[", "0.001", "]"}], ",", "\n", 
@@ -287,16 +287,7 @@ Cell[BoxData[{
           RowBox[{
            RowBox[{
             RowBox[{"ok1", " ", "==", " ", "1"}], " ", "&&", " ", 
-            RowBox[{"ok2", " ", "==", " ", "1"}], " ", "&&", " ", 
-            RowBox[{"ok3", " ", "==", " ", "1"}], " ", "&&", " ", 
-            RowBox[{"ok4", " ", "==", " ", "1"}], " ", "&&", " ", 
-            RowBox[{"ok5", " ", "==", " ", "1"}], " ", "&&", " ", "\n", 
-            "\t\t\t ", 
-            RowBox[{"ok6", " ", "==", " ", 
-             RowBox[{"1", " ", "ok7"}], " ", "==", " ", "1"}], " ", "&&", " ", 
-            RowBox[{"ok8", " ", "==", " ", "1"}], " ", "&&", " ", 
-            RowBox[{"ok9", " ", "==", " ", "1"}], " ", "&&", " ", 
-            RowBox[{"ok10", " ", "==", " ", "1"}]}], " ", ",", " ", "\n", 
+            RowBox[{"ok3", " ", "==", " ", "1"}]}], " ", ",", " ", "\n", 
            "\t\t\t", 
            RowBox[{"Speak", "[", "\"\<Very good\>\"", "]"}], ",", " ", "\n", 
            "\t\t\t\t\t\t", 
@@ -384,38 +375,6 @@ Cell[BoxData[{
      RowBox[{"Initialization", " ", ":>", " ", 
       RowBox[{"(", "\n", "\t\t     \t\t     ", 
        RowBox[{
-        RowBox[{
-         RowBox[{"testpoint", "[", 
-          RowBox[{"poly_", ",", " ", "pt_"}], "]"}], " ", ":=", " ", "\n", 
-         "\t\t      \t\t      ", 
-         RowBox[{
-          RowBox[{"Round", "[", 
-           RowBox[{"(", 
-            RowBox[{
-             RowBox[{
-              RowBox[{
-              "Total", "@", "\n", "\t\t\t    \t\t\t    ", "\n", "\t\t\t    ", 
-               
-               RowBox[{"Mod", "[", 
-                RowBox[{
-                 RowBox[{
-                  RowBox[{
-                   RowBox[{"(", 
-                    RowBox[{"#", " ", "-", " ", 
-                    RowBox[{"RotateRight", "[", "#", "]"}]}], ")"}], " ", 
-                   "&"}], "@", 
-                  RowBox[{"(", 
-                   RowBox[{
-                    RowBox[{
-                    RowBox[{"ArcTan", " ", "@@", " ", 
-                    RowBox[{"(", 
-                    RowBox[{"pt", " ", "-", " ", "#"}], ")"}]}], " ", "&"}], 
-                    " ", "/@", " ", "\n", "\t\t\t\t", "poly"}], ")"}]}], ",", 
-                 "\n", "\t\t\t     \t\t\t      ", 
-                 RowBox[{"2", " ", "Pi"}], ",", " ", 
-                 RowBox[{"-", "Pi"}]}], "]"}]}], "/", "2"}], "/", "Pi"}], 
-            ")"}], "]"}], " ", "!=", " ", "0"}]}], ";", "\n", 
-        "\t\t     \t\t     ", 
         RowBox[{"SetAttributes", "[", 
          RowBox[{"eh1", ",", " ", "HoldAll"}], "]"}], ";", "\n", 
         "\t\t     \t\t     ", 
@@ -518,7 +477,7 @@ Cell[BoxData[{
                   RowBox[{
                    RowBox[{"val1", " ", "=", " ", 
                     RowBox[{"{", 
-                    RowBox[{"0", ",", " ", "31"}], "}"}]}], ";", "\n", 
+                    RowBox[{"0", ",", " ", "33"}], "}"}]}], ";", "\n", 
                    "\t\t\t    \t\t\t    ", "\n", "\t\t\t    \t\t\t    ", 
                    RowBox[{"If", "[", 
                     RowBox[{
@@ -601,7 +560,7 @@ Cell[BoxData[{
                   RowBox[{
                    RowBox[{"val1", " ", "=", " ", 
                     RowBox[{"{", 
-                    RowBox[{"0", ",", " ", "25"}], "}"}]}], ";", "\n", 
+                    RowBox[{"0", ",", " ", "27"}], "}"}]}], ";", "\n", 
                    "\t\t\t    \t\t\t    ", "\n", "\t\t\t    \t\t\t    ", 
                    RowBox[{"If", "[", 
                     RowBox[{
@@ -621,8 +580,8 @@ Cell[BoxData[{
                     RowBox[{"inCate", " ", "==", " ", "2"}], ",", " ", 
                     RowBox[{
                     RowBox[{"colCate", " ", "=", " ", "Red"}], ";", " ", 
-                    RowBox[{"colCate", " ", "=", " ", "Red"}], ";", " ", 
-                    RowBox[{"ok1", " ", "=", " ", "1"}]}]}], "]"}], ";"}]}], 
+                    RowBox[{"colCate2", " ", "=", " ", "Red"}], ";", " ", 
+                    RowBox[{"ok3", " ", "=", " ", "1"}]}]}], "]"}], ";"}]}], 
                  "\n", "\t\t\t    \t\t\t    ", "]"}]}], "\n", 
                "\t\t\t  \t\t\t  ", ")"}]}]}], "\n", "\t\t\t\t\t\t", "}"}]}], 
           "]"}]}], ";", "\n", "\t\t     \t\t      ", 
@@ -876,7 +835,7 @@ Cell[BoxData[{
                   RowBox[{
                    RowBox[{"val1", " ", "=", " ", 
                     RowBox[{"{", 
-                    RowBox[{"0", ",", " ", "25"}], "}"}]}], ";", "\n", 
+                    RowBox[{"0", ",", " ", "27"}], "}"}]}], ";", "\n", 
                    "\t\t\t    \t\t\t    ", "\n", "\t\t\t    \t\t\t    ", 
                    RowBox[{"If", "[", 
                     RowBox[{
@@ -895,8 +854,8 @@ Cell[BoxData[{
                     RowBox[{
                     RowBox[{"inCate", " ", "==", " ", "2"}], ",", " ", 
                     RowBox[{
-                    RowBox[{"colCate2", " ", "=", " ", "Red"}], ";", " ", 
-                    "\n", "\t\t\t     ", 
+                    RowBox[{"colCate", " ", "=", " ", "Red"}], ";", " ", "\n",
+                     "\t\t\t     ", 
                     RowBox[{"colCate2", " ", "=", " ", "Red"}], ";", "\n", 
                     "\t\t\t     \t\t\t      ", 
                     RowBox[{"ok3", " ", "=", " ", "1"}]}]}], "]"}], ";"}]}], 
@@ -963,7 +922,7 @@ Cell[BoxData[{
                   RowBox[{
                    RowBox[{"val1", " ", "=", " ", 
                     RowBox[{"{", 
-                    RowBox[{"0", ",", " ", "31"}], "}"}]}], ";", "\n", 
+                    RowBox[{"0", ",", " ", "33"}], "}"}]}], ";", "\n", 
                    "\t\t\t    \t\t\t    ", "\n", "\t\t\t    \t\t\t    ", 
                    RowBox[{"If", "[", 
                     RowBox[{
@@ -1234,20 +1193,24 @@ Cell[BoxData[{
             "}"}]}], "]"}]}], ";"}], "\n", "\t\t     \t\t     ", "\n", 
        "\t\t     \t\t     ", "\n", "\t\t     \t\t     ", ")"}]}]}], "\n", 
     "\t\t   \t\t   ", "]"}], ")"}]}], "\[IndentingNewLine]", 
- RowBox[{"gameTemp", "[", "]"}]}], "Input",
+ RowBox[{"gameExercise1", "[", "]"}]}], "Input",
  CellChangeTimes->{{3.703515888332224*^9, 3.703515889611026*^9}, {
-  3.7035159359214277`*^9, 3.7035159392620363`*^9}, {3.7035160091787357`*^9, 
-  3.703516051832919*^9}, {3.70351617977089*^9, 3.703516355646294*^9}, {
-  3.703516474338687*^9, 3.703516551319398*^9}, {3.703516621315559*^9, 
-  3.703516627536302*^9}, {3.703516700194227*^9, 3.703516703823505*^9}, {
-  3.7035167525212307`*^9, 3.7035167655029793`*^9}, {3.703516812338999*^9, 
-  3.703516890772379*^9}, {3.703516952037278*^9, 3.703517022001987*^9}, {
-  3.7035170732342*^9, 3.703517074532271*^9}, {3.7035171339290667`*^9, 
-  3.703517135583583*^9}, {3.703517232542441*^9, 3.7035172473728027`*^9}, {
-  3.7035172888327723`*^9, 3.703517345055173*^9}, {3.703517384500803*^9, 
-  3.703517385406743*^9}, {3.703517426532404*^9, 3.7035174593215837`*^9}, {
-  3.7035174906468287`*^9, 3.7035175817005987`*^9}, {3.7035176626032267`*^9, 
-  3.7035178837205343`*^9}}],
+   3.7035159359214277`*^9, 3.7035159392620363`*^9}, {3.7035160091787357`*^9, 
+   3.703516051832919*^9}, {3.70351617977089*^9, 3.703516355646294*^9}, {
+   3.703516474338687*^9, 3.703516551319398*^9}, {3.703516621315559*^9, 
+   3.703516627536302*^9}, {3.703516700194227*^9, 3.703516703823505*^9}, {
+   3.7035167525212307`*^9, 3.7035167655029793`*^9}, {3.703516812338999*^9, 
+   3.703516890772379*^9}, {3.703516952037278*^9, 3.703517022001987*^9}, {
+   3.7035170732342*^9, 3.703517074532271*^9}, {3.7035171339290667`*^9, 
+   3.703517135583583*^9}, {3.703517232542441*^9, 3.7035172473728027`*^9}, {
+   3.7035172888327723`*^9, 3.703517345055173*^9}, {3.703517384500803*^9, 
+   3.703517385406743*^9}, {3.703517426532404*^9, 3.7035174593215837`*^9}, {
+   3.7035174906468287`*^9, 3.7035175817005987`*^9}, {3.7035176626032267`*^9, 
+   3.7035178837205343`*^9}, 3.703518658770371*^9, 3.703518710410645*^9, {
+   3.7035187914504547`*^9, 3.703518843950218*^9}, {3.703518970097159*^9, 
+   3.7035190075481157`*^9}, {3.703519105031448*^9, 3.7035191127724047`*^9}, {
+   3.703519213682254*^9, 3.7035192137520733`*^9}, {3.7035194352949953`*^9, 
+   3.70351943664916*^9}, {3.70352087900698*^9, 3.703520900285108*^9}}],
 
 Cell[BoxData[
  DynamicModuleBox[{$CellContext`pt1$$ = {-36, 6}, $CellContext`pt2$$ = {-24, 
@@ -1266,8 +1229,8 @@ $CellContext`eh12$$, $CellContext`l1$$ =
    8}}], $CellContext`l2$$ = 
   Line[{{-13, 8}, {-7, 1}, {8, 1}, {13, 8}, {-13, 8}}], $CellContext`l3$$ = 
   Line[{{18, 8}, {23, 1}, {38, 1}, {43, 8}, {18, 8}}], $CellContext`l4$$ = 
-  Line[{{-15, 35}, {-10, 21}, {10, 21}, {15, 35}, {-15, 
-   35}}], $CellContext`l5$$ = 
+  Line[{{-15, 37}, {-10, 23}, {10, 23}, {15, 37}, {-15, 
+   37}}], $CellContext`l5$$ = 
   Line[{{-44, 0.2}, {44, 0.2}, {44, 40}, {-44, 
     40}, {-44, 0.2}}], $CellContext`inMauro$$ = 0, $CellContext`inCate$$ = 
   0, $CellContext`oneTime$$ = 1, $CellContext`oneTimeOut$$ = 
@@ -1292,12 +1255,7 @@ $CellContext`eh12$$, $CellContext`l1$$ =
        Hold[
         Button["Valuta!", 
          If[
-          
-          And[$CellContext`ok1$$ == 1, $CellContext`ok2$$ == 
-           1, $CellContext`ok3$$ == 1, $CellContext`ok4$$ == 
-           1, $CellContext`ok5$$ == 1, $CellContext`ok6$$ == 
-           1 $CellContext`ok7$$ == 1, $CellContext`ok8$$ == 
-           1, $CellContext`ok9$$ == 1, $CellContext`ok10$$ == 1], 
+          And[$CellContext`ok1$$ == 1, $CellContext`ok3$$ == 1], 
           Speak["Very good"], 
           Speak["You can do better"]]]], Manipulate`Dump`ThisIsNotAControl}, {
       
@@ -1325,7 +1283,7 @@ $CellContext`eh12$$, $CellContext`l1$$ =
           0; $CellContext`ok7$$ = 0; $CellContext`ok8$$ = 
           0; $CellContext`ok9$$ = 0; $CellContext`ok10$$ = 0]], 
        Manipulate`Dump`ThisIsNotAControl}}, Typeset`size$$ = {
-     950., {209., 213.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+     950., {208., 214.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
      Typeset`skipInitDone$$ = True}, 
      DynamicBox[Manipulate`ManipulateBoxes[
       1, StandardForm, "Variables" :> {}, "ControllerVariables" :> {}, 
@@ -1354,7 +1312,7 @@ $CellContext`eh12$$, $CellContext`l1$$ =
            Green, $CellContext`l3$$ = 
            Line[{{18, 8}, {23, 1}, {38, 1}, {43, 8}, {18, 8}}], 
            Red, $CellContext`l4$$ = 
-           Line[{{-15, 35}, {-10, 21}, {10, 21}, {15, 35}, {-15, 35}}], Black, 
+           Line[{{-15, 37}, {-10, 23}, {10, 23}, {15, 37}, {-15, 37}}], Black, 
            Thickness[0.001], $CellContext`l5$$ = 
            Line[{{-44, 0.2}, {44, 0.2}, {44, 40}, {-44, 40}, {-44, 0.2}}], 
            Blue, FontSize -> 20, 
@@ -1365,12 +1323,7 @@ $CellContext`eh12$$, $CellContext`l1$$ =
        "Specifications" :> {
          Button["Valuta!", 
           If[
-           
-           And[$CellContext`ok1$$ == 1, $CellContext`ok2$$ == 
-            1, $CellContext`ok3$$ == 1, $CellContext`ok4$$ == 
-            1, $CellContext`ok5$$ == 1, $CellContext`ok6$$ == 
-            1 $CellContext`ok7$$ == 1, $CellContext`ok8$$ == 
-            1, $CellContext`ok9$$ == 1, $CellContext`ok10$$ == 1], 
+           And[$CellContext`ok1$$ == 1, $CellContext`ok3$$ == 1], 
            Speak["Very good"], 
            Speak["You can do better"]]], 
          Button[
@@ -1396,11 +1349,12 @@ $CellContext`eh12$$, $CellContext`l1$$ =
            0; $CellContext`ok7$$ = 0; $CellContext`ok8$$ = 
            0; $CellContext`ok9$$ = 0; $CellContext`ok10$$ = 0]}, 
        "Options" :> {}, "DefaultOptions" :> {}],
-      ImageSizeCache->{995., {270., 275.}},
+      ImageSizeCache->{997., {266., 273.}},
       SingleEvaluation->True],
      Deinitialization:>None,
      DynamicModuleValues:>{},
      SynchronousInitialization->True,
+     UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
      UnsavedVariables:>{Typeset`initDone$$},
      UntrackedVariables:>{Typeset`size$$}], "Manipulate",
     Deployed->True,
@@ -1421,13 +1375,13 @@ $CellContext`eh12$$, $CellContext`l1$$ =
              And[
              Part[$CellContext`val1$, 2] > 25, 
               Part[$CellContext`val1$, 1] > -15, Part[$CellContext`val1$, 1] < 
-              15], $CellContext`val1$ = {0, 25}; 
+              15], $CellContext`val1$ = {0, 27}; 
              If[$CellContext`oneTimeloc$ == 
                1, $CellContext`oneTimeloc$ = 
                 0; $CellContext`inCate$$ = $CellContext`inCate$$ + 1]; 
              If[$CellContext`inCate$$ == 
-               2, $CellContext`colCate$$ = Red; $CellContext`colCate$$ = 
-                Red; $CellContext`ok1$$ = 1]; Null]}]}, 
+               2, $CellContext`colCate$$ = Red; $CellContext`colCate2$$ = 
+                Red; $CellContext`ok3$$ = 1]; Null]}]}, 
      Attributes[$CellContext`eh1$$] = {HoldAll}}, {
     DownValues[$CellContext`eh$$] = {HoldPattern[
          $CellContext`eh$$[
@@ -1445,7 +1399,7 @@ $CellContext`eh12$$, $CellContext`l1$$ =
              And[
              Part[$CellContext`val1$, 2] > 25, 
               Part[$CellContext`val1$, 1] > -15, Part[$CellContext`val1$, 1] < 
-              15], $CellContext`val1$ = {0, 31}; 
+              15], $CellContext`val1$ = {0, 33}; 
              If[$CellContext`oneTimeloc$ == 
                1, $CellContext`oneTimeloc$ = 
                 0; $CellContext`inMauro$$ = $CellContext`inMauro$$ + 1]; 
@@ -1521,12 +1475,12 @@ $CellContext`eh12$$, $CellContext`l1$$ =
              And[
              Part[$CellContext`val1$, 2] > 25, 
               Part[$CellContext`val1$, 1] > -15, Part[$CellContext`val1$, 1] < 
-              15], $CellContext`val1$ = {0, 25}; 
+              15], $CellContext`val1$ = {0, 27}; 
              If[$CellContext`oneTimeloc$ == 
                1, $CellContext`oneTimeloc$ = 
                 0; $CellContext`inCate$$ = $CellContext`inCate$$ + 1]; 
              If[$CellContext`inCate$$ == 
-               2, $CellContext`colCate2$$ = Red; $CellContext`colCate2$$ = 
+               2, $CellContext`colCate$$ = Red; $CellContext`colCate2$$ = 
                 Red; $CellContext`ok3$$ = 1]; Null]}]}, 
      Attributes[$CellContext`eh5$$] = {HoldAll}}, {
     DownValues[$CellContext`eh6$$] = {HoldPattern[
@@ -1544,7 +1498,7 @@ $CellContext`eh12$$, $CellContext`l1$$ =
              And[
              Part[$CellContext`val1$, 2] > 25, 
               Part[$CellContext`val1$, 1] > -15, Part[$CellContext`val1$, 1] < 
-              15], $CellContext`val1$ = {0, 31}; 
+              15], $CellContext`val1$ = {0, 33}; 
              If[$CellContext`oneTimeloc$ == 
                1, $CellContext`oneTimeloc$ = 
                 0; $CellContext`inMauro$$ = $CellContext`inMauro$$ + 1]; 
@@ -1628,15 +1582,7 @@ $CellContext`eh12$$, $CellContext`l1$$ =
     Attributes[$CellContext`eh12$$] = {HoldAll}}, {
     Attributes[$CellContext`inMauro$$] = {HoldAll}}, {
     Attributes[$CellContext`inCate$$] = {HoldAll}}},
-  Initialization:>($CellContext`testpoint[
-      Pattern[$CellContext`poly, 
-       Blank[]], 
-      Pattern[$CellContext`pt, 
-       Blank[]]] := Round[(Total[
-          Mod[
-           (# - RotateRight[#]& )[
-            Map[Apply[ArcTan, $CellContext`pt - #]& , $CellContext`poly]], 2 
-           Pi, -Pi]]/2)/Pi] != 0; SetAttributes[$CellContext`eh1$$, HoldAll]; 
+  Initialization:>(SetAttributes[$CellContext`eh1$$, HoldAll]; 
    SetAttributes[$CellContext`eh$$, HoldAll]; 
    SetAttributes[$CellContext`eh2$$, HoldAll]; 
    SetAttributes[$CellContext`eh3$$, HoldAll]; 
@@ -1664,7 +1610,7 @@ $CellContext`eh12$$, $CellContext`l1$$ =
           MousePosition["Graphics"]]; If[
           And[
           Part[$CellContext`val1$, 2] > 25, Part[$CellContext`val1$, 1] > -15,
-            Part[$CellContext`val1$, 1] < 15], $CellContext`val1$ = {0, 31}; 
+            Part[$CellContext`val1$, 1] < 15], $CellContext`val1$ = {0, 33}; 
           If[$CellContext`oneTimeloc$ == 
             1, $CellContext`oneTimeloc$ = 
              0; $CellContext`inMauro$$ = $CellContext`inMauro$$ + 1]; 
@@ -1683,13 +1629,13 @@ $CellContext`eh12$$, $CellContext`l1$$ =
           1, $CellContext`val1$ = MousePosition["Graphics"]; Null] If[
           And[
           Part[$CellContext`val1$, 2] > 25, Part[$CellContext`val1$, 1] > -15,
-            Part[$CellContext`val1$, 1] < 15], $CellContext`val1$ = {0, 25}; 
+            Part[$CellContext`val1$, 1] < 15], $CellContext`val1$ = {0, 27}; 
           If[$CellContext`oneTimeloc$ == 
             1, $CellContext`oneTimeloc$ = 
              0; $CellContext`inCate$$ = $CellContext`inCate$$ + 1]; 
           If[$CellContext`inCate$$ == 
-            2, $CellContext`colCate$$ = Red; $CellContext`colCate$$ = 
-             Red; $CellContext`ok1$$ = 1]; Null]}]; $CellContext`eh2$$[
+            2, $CellContext`colCate$$ = Red; $CellContext`colCate2$$ = 
+             Red; $CellContext`ok3$$ = 1]; Null]}]; $CellContext`eh2$$[
       Pattern[$CellContext`val1, 
        Blank[]], 
       Pattern[$CellContext`oneTimeloc, 
@@ -1746,12 +1692,12 @@ $CellContext`eh12$$, $CellContext`l1$$ =
           1, $CellContext`val1$ = MousePosition["Graphics"]; Null] If[
           And[
           Part[$CellContext`val1$, 2] > 25, Part[$CellContext`val1$, 1] > -15,
-            Part[$CellContext`val1$, 1] < 15], $CellContext`val1$ = {0, 25}; 
+            Part[$CellContext`val1$, 1] < 15], $CellContext`val1$ = {0, 27}; 
           If[$CellContext`oneTimeloc$ == 
             1, $CellContext`oneTimeloc$ = 
              0; $CellContext`inCate$$ = $CellContext`inCate$$ + 1]; 
           If[$CellContext`inCate$$ == 
-            2, $CellContext`colCate2$$ = Red; $CellContext`colCate2$$ = 
+            2, $CellContext`colCate$$ = Red; $CellContext`colCate2$$ = 
              Red; $CellContext`ok3$$ = 1]; Null]}]; $CellContext`eh6$$[
       Pattern[$CellContext`val1$, 
        Blank[]], 
@@ -1765,7 +1711,7 @@ $CellContext`eh12$$, $CellContext`l1$$ =
           1, $CellContext`val1$ = MousePosition["Graphics"]; Null] If[
           And[
           Part[$CellContext`val1$, 2] > 25, Part[$CellContext`val1$, 1] > -15,
-            Part[$CellContext`val1$, 1] < 15], $CellContext`val1$ = {0, 31}; 
+            Part[$CellContext`val1$, 1] < 15], $CellContext`val1$ = {0, 33}; 
           If[$CellContext`oneTimeloc$ == 
             1, $CellContext`oneTimeloc$ = 
              0; $CellContext`inMauro$$ = $CellContext`inMauro$$ + 1]; 
@@ -1838,13 +1784,18 @@ $CellContext`eh12$$, $CellContext`l1$$ =
    3.703516708763085*^9, 3.703516897926668*^9, 3.703517079243204*^9, 
    3.703517352659758*^9, 3.70351738936296*^9, 3.703517462863888*^9, 
    3.703517670104849*^9, {3.7035177032631483`*^9, 3.70351772891986*^9}, 
-   3.703517954374263*^9}]
+   3.703517954374263*^9, {3.7035182289396467`*^9, 3.703518261117305*^9}, {
+   3.703518303501343*^9, 3.703518339484807*^9}, {3.703518405263214*^9, 
+   3.7035184112665358`*^9}, 3.703518567515403*^9, 3.70351862235504*^9, {
+   3.7035186674423943`*^9, 3.703518675781651*^9}, {3.7035187560990887`*^9, 
+   3.703518770374905*^9}, 3.703518808702286*^9, 3.703518849581773*^9, 
+   3.7035190089304447`*^9, 3.703519118933914*^9, 3.703519232079089*^9, {
+   3.7035209060519333`*^9, 3.7035209189866858`*^9}}]
 }, Open  ]]
 },
-WindowSize->{1108, 615},
-WindowMargins->{{Automatic, 82}, {Automatic, 55}},
-FrontEndVersion->"10.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (June 27, \
-2014)",
+WindowSize->{1366, 704},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"10.4 for Linux x86 (64-bit) (April 11, 2016)",
 StyleDefinitions->"Default.nb"
 ]
 (* End of Notebook Content *)
@@ -1859,11 +1810,10 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 57620, 1227, 4670, "Input"],
-Cell[58203, 1251, 28641, 589, 562, "Output"]
+Cell[580, 22, 56117, 1190, 5885, "Input"],
+Cell[56700, 1214, 28350, 578, 556, "Output"]
 }, Open  ]]
 }
 ]
 *)
 
-(* End of internal cache information *)

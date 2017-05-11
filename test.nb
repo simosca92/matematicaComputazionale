@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    126343,       2604]
-NotebookOptionsPosition[    125509,       2573]
-NotebookOutlinePosition[    125846,       2588]
-CellTagsIndexPosition[    125803,       2585]
+NotebookDataLength[     76807,       1615]
+NotebookOptionsPosition[     76298,       1594]
+NotebookOutlinePosition[     76632,       1609]
+CellTagsIndexPosition[     76589,       1606]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -352,7 +352,8 @@ Cell[BoxData[
 Cell[BoxData[
  DynamicModuleBox[{$CellContext`a$$ = 4, $CellContext`col$$ = GrayLevel[
   1], $CellContext`col2$$ = GrayLevel[1], $CellContext`col3$$ = GrayLevel[
-  1], $CellContext`val$$, $CellContext`level$$ = 0}, 
+  1], $CellContext`val$$ = {
+  9.819375563570784, -4.926547941088066}, $CellContext`level$$ = 0}, 
   TemplateBox[{"      ","\"      \"",TagBox[
      DynamicBox[
       ToBoxes[
@@ -435,8 +436,6 @@ Cell[BoxData["\[IndentingNewLine]"], "Input",
    3.7028848055992517`*^9, 3.7028849302161627`*^9}, {3.7028849851210403`*^9, 
    3.70288515875913*^9}, {3.703221416600478*^9, 3.703221420091095*^9}}],
 
-Cell[CellGroupData[{
-
 Cell[BoxData[{
  RowBox[{
   RowBox[{"SetDirectory", "[", 
@@ -448,7 +447,7 @@ Cell[BoxData[{
   "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
  RowBox[{"<<", " ", "project.m"}], "\[IndentingNewLine]", 
  RowBox[{
-  RowBox[{"gameTemp", "[", "]"}], " ", ":=", " ", 
+  RowBox[{"gameExercise313", "[", "]"}], " ", ":=", " ", 
   RowBox[{"(", "\n", "  \t\t", 
    RowBox[{"DynamicModule", "[", 
     RowBox[{
@@ -506,11 +505,8 @@ Cell[BoxData[{
         "\n", "\t\t    ", "eh5", ",", " ", "eh6", ",", "\n", 
        "\t\t    \t\t     ", "eh7", ",", " ", "eh8", ",", " ", "eh9", ",", " ",
         "eh10", ",", " ", "eh11", ",", " ", "eh12", ",", " ", "l1", ",", " ", 
-       "l2", ",", " ", "l3", ",", " ", "l4", ",", "l5", ",", " ", 
-       RowBox[{"inSix", " ", "=", " ", "0"}], ",", " ", "\n", 
-       "\t\t    \t\t    ", 
-       RowBox[{"inTwelve", " ", "=", " ", "0"}], ",", " ", 
-       RowBox[{"inEighteen", " ", "=", " ", "0"}], ",", " ", 
+       "l2", ",", " ", "l3", ",", " ", "l4", ",", "l5", ",", " ", "\n", 
+       "\t\t    \t\t     ", 
        RowBox[{"oneTime", " ", "=", " ", "1"}], ",", " ", 
        RowBox[{"oneTimeOut", " ", "=", " ", "1"}], ",", " ", "\n", "\t\t    ",
         "prec", ",", " ", "\n", "\t\t    \t\t    ", 
@@ -527,35 +523,10 @@ Cell[BoxData[{
        RowBox[{"init16", " ", "=", " ", "1"}], ",", "\n", "\t\t    \t\t    ", 
        
        RowBox[{"init8", " ", "=", " ", "1"}], ",", " ", 
-       RowBox[{"init14", " ", "=", " ", "1"}], ",", " ", 
-       RowBox[{"colEight", " ", "=", " ", "Black"}], ",", " ", 
-       RowBox[{"colSix", " ", "=", " ", "Blue"}], ",", " ", "\n", "\t\t    ", 
-       
-       RowBox[{"colSix1", " ", "=", " ", "Black"}], ",", " ", 
-       RowBox[{"colTwelve", " ", "=", " ", "Blue"}], ",", " ", 
-       RowBox[{"colFuorteen", " ", "=", " ", "Black"}], ",", " ", "\n", 
-       "\t\t    \t\t    ", 
-       RowBox[{"colTwelve1", " ", "=", " ", "Black"}], ",", " ", 
-       RowBox[{"colEighteen", " ", "=", " ", "Blue"}], ",", " ", "\n", 
-       "\t\t    ", 
-       RowBox[{"colEighteen1", " ", "=", " ", "Black"}], ",", " ", 
-       RowBox[{"colThree", " ", "=", " ", "Blue"}], ",", " ", 
-       RowBox[{"colNine", " ", "=", " ", "Blue"}], ",", " ", "\n", "\t\t    ", 
-       RowBox[{"colFifteen", " ", "=", " ", "Blue"}], ",", " ", 
-       RowBox[{"colTen", " ", "=", " ", "Black"}], ",", " ", 
-       RowBox[{"colSixteen", " ", "=", " ", "Black"}], ",", 
-       "\[IndentingNewLine]", "\t\t", 
-       RowBox[{"colMauro", "=", "Blue"}], ",", 
-       RowBox[{"colCate", "=", "Blue"}], ",", 
-       RowBox[{"colLuca", "=", "Blue"}], ",", 
-       RowBox[{"colGiac", "=", "Blue"}], ",", 
-       RowBox[{"colLuigi", "=", "Black"}], ",", 
-       RowBox[{"colMauro2", "=", "Black"}], ",", 
-       RowBox[{"colCate2", "=", "Black"}], ",", 
-       RowBox[{"colMarco", "=", "Black"}], ",", 
-       RowBox[{"colCarlo", "=", "Green"}], ",", 
-       RowBox[{"colFederico", "=", "Green"}], ",", 
-       RowBox[{"colElisa", "=", "Green"}], ",", "\n", "\t\t    \t\t    ", 
+       RowBox[{"init14", " ", "=", " ", "1"}], ",", "\[IndentingNewLine]", 
+       "\t\t", 
+       RowBox[{"colGiacomo", "=", "Blue"}], ",", 
+       RowBox[{"colLuca", "=", "Blue"}], ",", "\n", "\t\t    \t\t    ", 
        RowBox[{"ok1", " ", "=", " ", "0"}], ",", " ", 
        RowBox[{"ok2", " ", "=", " ", "0"}], ",", " ", 
        RowBox[{"ok3", " ", "=", " ", "0"}], ",", " ", 
@@ -664,17 +635,17 @@ Cell[BoxData[{
                 RowBox[{
                  RowBox[{"{", 
                   RowBox[{
-                   RowBox[{"-", "15"}], ",", " ", "35"}], "}"}], ",", " ", 
+                   RowBox[{"-", "15"}], ",", " ", "37"}], "}"}], ",", " ", 
                  RowBox[{"{", 
                   RowBox[{
-                   RowBox[{"-", "10"}], ",", " ", "21"}], "}"}], ",", " ", 
+                   RowBox[{"-", "10"}], ",", " ", "23"}], "}"}], ",", " ", 
                  RowBox[{"{", 
-                  RowBox[{"10", ",", " ", "21"}], "}"}], ",", " ", 
+                  RowBox[{"10", ",", " ", "23"}], "}"}], ",", " ", 
                  RowBox[{"{", 
-                  RowBox[{"15", ",", " ", "35"}], "}"}], ",", " ", 
+                  RowBox[{"15", ",", " ", "37"}], "}"}], ",", " ", 
                  RowBox[{"{", 
                   RowBox[{
-                   RowBox[{"-", "15"}], ",", " ", "\n", "\t\t\t     ", "35"}],
+                   RowBox[{"-", "15"}], ",", " ", "\n", "\t\t\t     ", "37"}],
                    "}"}]}], "}"}], "]"}]}], ",", " ", "\n", "\t\t\t \t\t\t ", 
              "Black", ",", " ", 
              RowBox[{"Thickness", "[", "0.001", "]"}], ",", "\n", 
@@ -737,16 +708,7 @@ Cell[BoxData[{
           RowBox[{
            RowBox[{
             RowBox[{"ok1", " ", "==", " ", "1"}], " ", "&&", " ", 
-            RowBox[{"ok2", " ", "==", " ", "1"}], " ", "&&", " ", 
-            RowBox[{"ok3", " ", "==", " ", "1"}], " ", "&&", " ", 
-            RowBox[{"ok4", " ", "==", " ", "1"}], " ", "&&", " ", 
-            RowBox[{"ok5", " ", "==", " ", "1"}], " ", "&&", " ", "\n", 
-            "\t\t\t ", 
-            RowBox[{"ok6", " ", "==", " ", 
-             RowBox[{"1", " ", "ok7"}], " ", "==", " ", "1"}], " ", "&&", " ", 
-            RowBox[{"ok8", " ", "==", " ", "1"}], " ", "&&", " ", 
-            RowBox[{"ok9", " ", "==", " ", "1"}], " ", "&&", " ", 
-            RowBox[{"ok10", " ", "==", " ", "1"}]}], " ", ",", " ", "\n", 
+            RowBox[{"ok3", " ", "==", " ", "1"}]}], " ", ",", " ", "\n", 
            "\t\t\t", 
            RowBox[{"Speak", "[", "\"\<Very good\>\"", "]"}], ",", " ", "\n", 
            "\t\t\t\t\t\t", 
@@ -796,11 +758,8 @@ Cell[BoxData[{
           "\t\t    ", 
           RowBox[{"pt11", " ", "=", " ", 
            RowBox[{"{", 
-            RowBox[{"29", ",", " ", "3"}], "}"}]}], ";", " ", 
-          RowBox[{"inSix", " ", "=", " ", "0"}], ";", " ", "\n", 
+            RowBox[{"29", ",", " ", "3"}], "}"}]}], ";", " ", "\n", 
           "\t\t    \t\t    ", 
-          RowBox[{"inTwelve", " ", "=", " ", "0"}], ";", " ", 
-          RowBox[{"inEighteen", " ", "=", " ", "0"}], ";", " ", 
           RowBox[{"oneTime", " ", "=", " ", "1"}], ";", " ", 
           RowBox[{"oneTimeOut", " ", "=", " ", "1"}], ";", " ", "\n", 
           "\t\t     ", 
@@ -817,17 +776,8 @@ Cell[BoxData[{
           RowBox[{"init16", " ", "=", " ", "1"}], ";", "    ", 
           RowBox[{"init8", " ", "=", " ", "1"}], ";", " ", 
           RowBox[{"init14", " ", "=", " ", "1"}], ";", 
-          RowBox[{"colMauro", "=", "Blue"}], ";", 
-          RowBox[{"colCate", "=", "Blue"}], ";", 
-          RowBox[{"colLuca", "=", "Blue"}], ";", "\[IndentingNewLine]", 
-          RowBox[{"colLuigi", "=", "Black"}], ";", 
-          RowBox[{"colMauro2", "=", "Black"}], ";", 
-          RowBox[{"colCate2", "=", "Black"}], ";", 
-          RowBox[{"colMarco", "=", "Black"}], ";", "\[IndentingNewLine]", 
-          RowBox[{"colCarlo", "=", "Green"}], ";", 
-          RowBox[{"colFederico", "=", "Green"}], ";", 
-          RowBox[{"colElisa", "=", "Green"}], ";", 
-          RowBox[{"colGiac", "=", "Blue"}], ";", "   ", 
+          RowBox[{"colLuca", "=", "Blue"}], ";", 
+          RowBox[{"colGiacomo", "=", "Blue"}], ";", "   ", 
           RowBox[{"ok1", " ", "=", " ", "0"}], ";", " ", 
           RowBox[{"ok2", " ", "=", " ", "0"}], ";", " ", 
           RowBox[{"ok3", " ", "=", " ", "0"}], ";", " ", 
@@ -842,38 +792,6 @@ Cell[BoxData[{
      RowBox[{"Initialization", " ", ":>", " ", 
       RowBox[{"(", "\n", "\t\t     \t\t     ", 
        RowBox[{
-        RowBox[{
-         RowBox[{"testpoint", "[", 
-          RowBox[{"poly_", ",", " ", "pt_"}], "]"}], " ", ":=", " ", "\n", 
-         "\t\t      \t\t      ", 
-         RowBox[{
-          RowBox[{"Round", "[", 
-           RowBox[{"(", 
-            RowBox[{
-             RowBox[{
-              RowBox[{
-              "Total", "@", "\n", "\t\t\t    \t\t\t    ", "\n", "\t\t\t    ", 
-               
-               RowBox[{"Mod", "[", 
-                RowBox[{
-                 RowBox[{
-                  RowBox[{
-                   RowBox[{"(", 
-                    RowBox[{"#", " ", "-", " ", 
-                    RowBox[{"RotateRight", "[", "#", "]"}]}], ")"}], " ", 
-                   "&"}], "@", 
-                  RowBox[{"(", 
-                   RowBox[{
-                    RowBox[{
-                    RowBox[{"ArcTan", " ", "@@", " ", 
-                    RowBox[{"(", 
-                    RowBox[{"pt", " ", "-", " ", "#"}], ")"}]}], " ", "&"}], 
-                    " ", "/@", " ", "\n", "\t\t\t\t", "poly"}], ")"}]}], ",", 
-                 "\n", "\t\t\t     \t\t\t      ", 
-                 RowBox[{"2", " ", "Pi"}], ",", " ", 
-                 RowBox[{"-", "Pi"}]}], "]"}]}], "/", "2"}], "/", "Pi"}], 
-            ")"}], "]"}], " ", "!=", " ", "0"}]}], ";", "\n", 
-        "\t\t     \t\t     ", 
         RowBox[{"SetAttributes", "[", 
          RowBox[{"eh1", ",", " ", "HoldAll"}], "]"}], ";", "\n", 
         "\t\t     \t\t     ", 
@@ -912,16 +830,7 @@ Cell[BoxData[{
         "\t\t     \t\t     ", 
         RowBox[{"SetAttributes", "[", 
          RowBox[{"eh12", ",", " ", "HoldAll"}], "]"}], ";", "\n", 
-        "\t\t     \t\t     ", 
-        RowBox[{"SetAttributes", "[", 
-         RowBox[{"inSix", ",", " ", "HoldAll"}], "]"}], ";", "\n", 
-        "\t\t     \t\t     ", 
-        RowBox[{"SetAttributes", "[", 
-         RowBox[{"inEighteen", ",", " ", "HoldAll"}], "]"}], ";", "\n", 
-        "\t\t     \t\t     ", 
-        RowBox[{"SetAttributes", "[", 
-         RowBox[{"inTwelve", ",", " ", "HoldAll"}], "]"}], ";", "\n", 
-        "\t\t     \t\t     ", "\n", "\t\t     \t\t     ", 
+        "\t\t     \t\t   ", "\n", "\t\t     \t\t     ", 
         RowBox[{
          RowBox[{"eh", "[", 
           RowBox[{"val1_", ",", " ", "oneTimeloc_"}], "]"}], " ", ":=", " ", 
@@ -933,8 +842,8 @@ Cell[BoxData[{
              RowBox[{
               RowBox[{"Style", "[", 
                RowBox[{
-               "\"\<Mauro\>\"", ",", " ", "colMauro", ",", " ", "Italic", ",",
-                 " ", "20"}], "]"}], ",", " ", "\n", "\t\t\t \t\t\t ", 
+               "\"\<Mauro\>\"", ",", " ", "Blue", ",", " ", "Italic", ",", 
+                " ", "20"}], "]"}], ",", " ", "\n", "\t\t\t \t\t\t ", 
               RowBox[{"Dynamic", "@", "val1"}]}], "]"}], "}"}], ",", " ", 
            RowBox[{"{", 
             RowBox[{
@@ -960,8 +869,7 @@ Cell[BoxData[{
                  "se", " ", "inserisco", " ", "il", " ", "numero", " ", "tre",
                    " ", 
                   RowBox[{"nell", "'"}], "insieme", " ", "unione"}], "*)"}], 
-                "\n", "\t\t                                                   \
-      ", "\n", "\t\t      \t\t                             ", 
+                "\[IndentingNewLine]", 
                 RowBox[{"If", "[", 
                  RowBox[{
                   RowBox[{
@@ -976,26 +884,13 @@ Cell[BoxData[{
                    RowBox[{
                     RowBox[{"val1", "[", 
                     RowBox[{"[", "1", "]"}], "]"}], " ", "<", " ", "15"}]}], 
-                  " ", ",", " ", "\n", "\t\t\t   \t\t\t               ", "\n",
-                   "\t\t\t                                              ", 
-                  RowBox[{"If", "[", 
-                   RowBox[{
-                    RowBox[{"oneTimeloc", " ", "==", " ", "1"}], ",", " ", 
-                    RowBox[{
-                    RowBox[{"val1", " ", "=", " ", 
+                  " ", ",", "\n", "\t\t\t    \t\t\t    ", 
+                  RowBox[{
+                   RowBox[{"val1", " ", "=", " ", 
                     RowBox[{"{", 
                     RowBox[{
-                    RowBox[{"-", "10"}], ",", " ", "31"}], "}"}]}], ";", " ", 
-                    
-                    RowBox[{"colMauro", " ", "=", " ", "Red"}], ";", " ", 
-                    "\n", "\t\t\t                                             \
-   ", 
-                    RowBox[{"ok4", " ", "=", " ", "1"}]}]}], 
-                   RowBox[{"(*", 
-                    RowBox[{
-                    RowBox[{
-                    "Speak", "[", "\n", "\t\t\t    \t\t\t    ", 
-                    "\"\<Very Bad!\>\"", "]"}], ";"}], "*)"}], "]"}]}], 
+                    RowBox[{"-", "36"}], ",", " ", "6"}], "}"}]}], ";"}]}], 
+                 "\n", "\t\t\t    \t\t", "\n", "\t\t\t    \t\t\t    ", 
                  "]"}]}], "\n", "\t\t\t  \t\t\t  ", ")"}]}]}], "\n", 
             "\t\t\t\t\t\t", "}"}]}], "]"}]}], ";", "\n", 
         "\t\t     \t\t      ", 
@@ -1010,8 +905,8 @@ Cell[BoxData[{
              RowBox[{
               RowBox[{"Style", "[", 
                RowBox[{
-               "\"\<Caterina\>\"", ",", " ", "colCate", ",", " ", "Italic", 
-                ",", " ", "20"}], "]"}], ",", " ", "\n", "\t\t\t \t\t\t ", 
+               "\"\<Caterina\>\"", ",", " ", "Blue", ",", " ", "Italic", ",", 
+                " ", "20"}], "]"}], ",", " ", "\n", "\t\t\t \t\t\t ", 
               RowBox[{"Dynamic", "@", "val1"}]}], "]"}], "}"}], ",", " ", 
            RowBox[{"{", 
             RowBox[{
@@ -1022,7 +917,7 @@ Cell[BoxData[{
                  RowBox[{"0", ",", "15"}], "}"}]}], ")"}]}], ",", " ", "\n", 
              "\t\t\t\t\t\t", 
              RowBox[{"\"\<MouseDragged\>\"", " ", ":>", " ", 
-              RowBox[{"(", " ", "\n", "\t\t\t  \t\t\t  ", 
+              RowBox[{"(", " ", 
                RowBox[{
                 RowBox[{"If", "[", 
                  RowBox[{
@@ -1057,28 +952,8 @@ Cell[BoxData[{
                    RowBox[{"val1", " ", "=", " ", 
                     RowBox[{"{", 
                     RowBox[{
-                    RowBox[{"-", "7"}], ",", " ", "31"}], "}"}]}], ";", "\n", 
-                   "\t\t\t    \t\t\t    ", "\n", "\t\t\t    \t\t\t    ", 
-                   RowBox[{"If", "[", 
-                    RowBox[{
-                    RowBox[{"oneTimeloc", " ", "==", " ", "1"}], ",", " ", 
-                    RowBox[{
-                    RowBox[{"oneTimeloc", " ", "=", " ", "0"}], ";", " ", 
-                    "\n", "\t\t\t     \t\t\t     ", 
-                    RowBox[{"inSix", " ", "=", " ", 
-                    RowBox[{"inSix", " ", "+", " ", "1"}]}]}]}], 
-                    RowBox[{"(*", 
-                    RowBox[{
-                    RowBox[{"Speak", "[", "\"\<Very Bad!\>\"", "]"}], ";"}], 
-                    "*)"}], "]"}], ";", "\n", "\t\t\t    \t\t\t    ", "\n", 
-                   "\t\t\t                                    ", 
-                   RowBox[{"If", "[", 
-                    RowBox[{
-                    RowBox[{"inSix", " ", "==", " ", "2"}], ",", " ", 
-                    RowBox[{
-                    RowBox[{"colCate", " ", "=", " ", "Red"}], ";", " ", 
-                    RowBox[{"colCate", " ", "=", " ", "Red"}], ";", " ", 
-                    RowBox[{"ok1", " ", "=", " ", "1"}]}]}], "]"}], ";"}]}], 
+                    RowBox[{"-", "24"}], ",", " ", "6"}], "}"}]}], ";"}]}], 
+                 "\n", "\t\t\t    \t\t\t    ", "\n", "\t\t\t    \t\t\t ", 
                  "\n", "\t\t\t    \t\t\t    ", "]"}]}], "\n", 
                "\t\t\t  \t\t\t  ", ")"}]}]}], "\n", "\t\t\t\t\t\t", "}"}]}], 
           "]"}]}], ";", "\n", "\t\t     \t\t      ", 
@@ -1094,6 +969,526 @@ Cell[BoxData[{
               RowBox[{"Style", "[", 
                RowBox[{
                "\"\<Luca\>\"", ",", " ", "colLuca", ",", " ", "Italic", ",", 
+                " ", "20"}], "]"}], ",", " ", "\n", "\t\t\t \t\t\t ", 
+              RowBox[{"Dynamic", "@", "val1"}]}], "]"}], "}"}], ",", " ", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"\"\<MouseClicked\>\"", " ", ":>", " ", 
+              RowBox[{"(", 
+               RowBox[{"val1", " ", "=", " ", 
+                RowBox[{"{", 
+                 RowBox[{"0", ",", "15"}], "}"}]}], ")"}]}], ",", " ", "\n", 
+             "\t\t\t\t\t", "\n", "\t\t\t\t\t\t\t", 
+             RowBox[{"\"\<MouseDragged\>\"", " ", ":>", " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"If", "[", " ", 
+                 RowBox[{
+                  RowBox[{"oneTimeloc", " ", "==", " ", "1"}], " ", ",", " ", 
+                  "\n", "\t\t\t   ", 
+                  RowBox[{"val1", " ", "=", " ", 
+                   RowBox[{
+                   "MousePosition", "[", "\"\<Graphics\>\"", "]"}]}]}], "]"}],
+                 ";", "\n", "\t\t\t  \t\t\t  ", 
+                RowBox[{"(*", 
+                 RowBox[{
+                 "se", " ", "inserisco", " ", "il", " ", "numero", " ", "tre",
+                   " ", 
+                  RowBox[{"nell", "'"}], "insieme", " ", "unione"}], "*)"}], 
+                "\n", "\t\t  ", "\n", "\t\t      \t\t    ", 
+                RowBox[{"If", "[", " ", 
+                 RowBox[{
+                  RowBox[{
+                   RowBox[{
+                    RowBox[{"val1", "[", 
+                    RowBox[{"[", "2", "]"}], "]"}], " ", ">", " ", "25"}], 
+                   " ", "&&", " ", 
+                   RowBox[{
+                    RowBox[{"val1", "[", 
+                    RowBox[{"[", "1", "]"}], "]"}], " ", ">", " ", 
+                    RowBox[{"-", "15"}]}], " ", "&&", " ", 
+                   RowBox[{
+                    RowBox[{"val1", "[", 
+                    RowBox[{"[", "1", "]"}], "]"}], " ", "<", " ", "15"}]}], 
+                  " ", ",", " ", "\n", "\t\t\t   \t\t\t   ", 
+                  RowBox[{
+                   RowBox[{"val1", " ", "=", " ", 
+                    RowBox[{"{", 
+                    RowBox[{"0", ",", " ", "33"}], "}"}]}], ";", "\n", 
+                   "\t\t\t  ", 
+                   RowBox[{"If", "[", 
+                    RowBox[{
+                    RowBox[{"oneTimeloc", " ", "==", " ", "1"}], ",", " ", 
+                    RowBox[{
+                    RowBox[{"oneTimeloc", " ", "=", " ", "0"}], ";"}]}], " ", 
+                    "\n", "\t\t\t     \t\t\t  ", "]"}], ";", "\n", 
+                   "\t\t\t   ", 
+                   RowBox[{"colLuca", " ", "=", " ", "Red"}], ";", " ", "\n", 
+                   "\t\t\t      ", 
+                   RowBox[{"ok1", " ", "=", " ", "1"}]}]}], 
+                 "\[IndentingNewLine]", "\[IndentingNewLine]", "\t\t\t\t", 
+                 "]"}]}], "\n", "\t\t\t  \t\t\t  ", ")"}]}]}], "\n", 
+            "\t\t\t\t\t\t", "}"}]}], "]"}]}], ";", "\n", 
+        "\t\t     \t\t      ", 
+        RowBox[{
+         RowBox[{"eh3", "[", 
+          RowBox[{"val1_", ",", " ", "oneTimeloc_"}], "]"}], " ", ":=", " ", 
+         "\n", "\t\t      \t\t     ", 
+         RowBox[{"EventHandler", "[", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"Text", "[", 
+             RowBox[{
+              RowBox[{"Style", "[", 
+               RowBox[{
+               "\"\<Giacomo\>\"", ",", " ", "colGiacomo", ",", " ", "Italic", 
+                ",", " ", "20"}], "]"}], ",", " ", "\n", "\t\t\t \t\t\t ", 
+              RowBox[{"Dynamic", "@", "val1"}]}], "]"}], "}"}], ",", " ", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"\"\<MouseClicked\>\"", " ", ":>", " ", 
+              RowBox[{"(", 
+               RowBox[{"val1", " ", "=", " ", 
+                RowBox[{"{", 
+                 RowBox[{"0", ",", "15"}], "}"}]}], ")"}]}], ",", " ", "\n", 
+             "\t\t\t\t\t\t", 
+             RowBox[{"\"\<MouseDragged\>\"", " ", ":>", " ", 
+              RowBox[{"(", " ", "\n", "\t\t\t  \t\t\t  ", 
+               RowBox[{
+                RowBox[{"If", "[", 
+                 RowBox[{
+                  RowBox[{"oneTimeloc", " ", "==", " ", "1"}], ",", " ", 
+                  RowBox[{
+                   RowBox[{"val1", " ", "=", " ", 
+                    RowBox[{"MousePosition", "[", "\"\<Graphics\>\"", "]"}]}],
+                    ";"}]}], "]"}], "\n", "\t\t\t   \t\t\t   ", 
+                RowBox[{"(*", 
+                 RowBox[{
+                 "se", " ", "inserisco", " ", "il", " ", "numero", " ", "sei",
+                   " ", 
+                  RowBox[{"nell", "'"}], 
+                  RowBox[{"insieme", " ", "\\\n", "\t\t", "intersezione"}]}], 
+                 "*)"}], "\n", "\t\t\t   \t\t  ", "\n", 
+                "\t\t\t   \t\t\t\t    ", "\n", "\t\t\t   \t\t\t   ", "\n", 
+                "\t\t\t   ", 
+                RowBox[{"If", "[", 
+                 RowBox[{
+                  RowBox[{
+                   RowBox[{
+                    RowBox[{"val1", "[", 
+                    RowBox[{"[", "2", "]"}], "]"}], " ", ">", " ", "25"}], 
+                   " ", "&&", " ", 
+                   RowBox[{
+                    RowBox[{"val1", "[", 
+                    RowBox[{"[", "1", "]"}], "]"}], " ", ">", " ", 
+                    RowBox[{"-", "15"}]}], " ", "&&", " ", 
+                   RowBox[{
+                    RowBox[{"val1", "[", 
+                    RowBox[{"[", "1", "]"}], "]"}], " ", "<", " ", "15"}]}], 
+                  " ", ",", "\n", "\t\t\t    \t\t\t    ", 
+                  RowBox[{
+                   RowBox[{"val1", " ", "=", " ", 
+                    RowBox[{"{", 
+                    RowBox[{"0", ",", " ", "27"}], "}"}]}], ";", "\n", 
+                   "\t\t\t    \t\t\t    ", "\n", "\t\t\t    \t\t\t    ", 
+                   RowBox[{"If", "[", 
+                    RowBox[{
+                    RowBox[{"oneTimeloc", " ", "==", " ", "1"}], ",", " ", 
+                    RowBox[{
+                    RowBox[{"oneTimeloc", " ", "=", " ", "0"}], ";"}]}], " ", 
+                    "\n", "\t\t\t     \t\t\t  ", "]"}], ";", "\n", 
+                   "\t\t\t   ", 
+                   RowBox[{"colGiacomo", " ", "=", " ", "Red"}], ";", " ", 
+                   "\n", "\t\t\t      ", 
+                   RowBox[{"ok3", " ", "=", " ", "1"}]}]}], "\n", 
+                 "\t\t\t    \t\t\t    ", "]"}]}], "\n", "\t\t\t  \t\t\t  ", 
+               ")"}]}]}], "\n", "\t\t\t\t\t\t", "}"}]}], "]"}]}], ";", "\n", 
+        "\t\t     \t\t         ", 
+        RowBox[{
+         RowBox[{"eh4", "[", 
+          RowBox[{"val1_", ",", " ", "oneTimeloc_"}], "]"}], " ", ":=", " ", 
+         "\n", "\t\t      \t\t      ", "\n", "\t\t      ", 
+         RowBox[{"EventHandler", "[", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"Text", "[", 
+             RowBox[{
+              RowBox[{"Style", "[", 
+               RowBox[{
+               "\"\<Luigi\>\"", ",", " ", "Black", ",", " ", "Italic", ",", 
+                " ", "20"}], "]"}], ",", " ", "\n", "\t\t\t \t\t\t ", 
+              RowBox[{"Dynamic", "@", "val1"}]}], "]"}], "}"}], ",", " ", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"\"\<MouseClicked\>\"", " ", ":>", " ", 
+              RowBox[{"(", 
+               RowBox[{"val1", " ", "=", " ", 
+                RowBox[{"{", 
+                 RowBox[{"0", ",", "15"}], "}"}]}], ")"}]}], ",", " ", "\n", 
+             "\t\t\t\t\t", "\n", "\t\t\t", 
+             RowBox[{"\"\<MouseDragged\>\"", " ", ":>", " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"If", "[", " ", 
+                 RowBox[{
+                  RowBox[{"oneTimeloc", " ", "==", " ", "1"}], " ", ",", " ", 
+                  "\n", "\t\t\t   ", 
+                  RowBox[{"val1", " ", "=", " ", 
+                   RowBox[{
+                   "MousePosition", "[", "\"\<Graphics\>\"", "]"}]}]}], "]"}],
+                 ";", "\n", "\t\t\t  \t\t\t  ", 
+                RowBox[{"(*", 
+                 RowBox[{
+                 "se", " ", "inserisco", " ", "il", " ", "numero", " ", "tre",
+                   " ", 
+                  RowBox[{"nell", "'"}], "insieme", " ", "unione"}], "*)"}], 
+                "\n", "\t\t", "\n", "\t\t      \t\t    ", 
+                RowBox[{"If", "[", " ", 
+                 RowBox[{
+                  RowBox[{
+                   RowBox[{
+                    RowBox[{"val1", "[", 
+                    RowBox[{"[", "2", "]"}], "]"}], " ", ">", " ", "25"}], 
+                   " ", "&&", " ", 
+                   RowBox[{
+                    RowBox[{"val1", "[", 
+                    RowBox[{"[", "1", "]"}], "]"}], " ", ">", " ", 
+                    RowBox[{"-", "15"}]}], " ", "&&", " ", 
+                   RowBox[{
+                    RowBox[{"val1", "[", 
+                    RowBox[{"[", "1", "]"}], "]"}], " ", "<", " ", "15"}]}], 
+                  " ", ",", " ", "\n", "\t\t\t   \t\t\t   ", "\n", 
+                  "\t\t\t   ", 
+                  RowBox[{
+                   RowBox[{"val1", " ", "=", " ", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"-", "7"}], ",", " ", "6"}], "}"}]}], ";"}]}], 
+                 " ", "]"}]}], "\n", "\t\t\t  \t\t\t  ", ")"}]}]}], "\n", 
+            "\t\t\t\t\t\t", "}"}]}], "]"}]}], ";", "\n", 
+        "\t\t     \t\t       ", 
+        RowBox[{
+         RowBox[{"eh5", "[", 
+          RowBox[{"val1_", ",", " ", "oneTimeloc_"}], "]"}], " ", ":=", " ", 
+         "\n", "\t\t      \t\t      ", 
+         RowBox[{"EventHandler", "[", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"Text", "[", 
+             RowBox[{
+              RowBox[{"Style", "[", 
+               RowBox[{
+               "\"\<Caterina\>\"", ",", " ", "Black", ",", " ", "Italic", ",",
+                 " ", "20"}], "]"}], ",", " ", "\n", "\t\t\t \t\t\t ", 
+              RowBox[{"Dynamic", "@", "val1"}]}], "]"}], "}"}], ",", " ", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"\"\<MouseClicked\>\"", " ", ":>", " ", 
+              RowBox[{"(", 
+               RowBox[{"val1", " ", "=", " ", 
+                RowBox[{"{", 
+                 RowBox[{"0", ",", "15"}], "}"}]}], ")"}]}], ",", " ", "\n", 
+             "\t\t\t\t\t\t", 
+             RowBox[{"\"\<MouseDragged\>\"", " ", ":>", " ", 
+              RowBox[{"(", " ", "\n", "\t\t\t  \t\t\t  ", 
+               RowBox[{
+                RowBox[{"If", "[", 
+                 RowBox[{
+                  RowBox[{"oneTimeloc", " ", "==", " ", "1"}], ",", " ", 
+                  RowBox[{
+                   RowBox[{"val1", " ", "=", " ", 
+                    RowBox[{"MousePosition", "[", "\"\<Graphics\>\"", "]"}]}],
+                    ";"}]}], "]"}], "\n", "\t\t\t   \t\t\t   ", 
+                RowBox[{"(*", 
+                 RowBox[{
+                 "se", " ", "inserisco", " ", "il", " ", "numero", " ", "sei",
+                   " ", 
+                  RowBox[{"nell", "'"}], 
+                  RowBox[{"insieme", " ", "\\\n", "\t\t", "intersezione"}]}], 
+                 "*)"}], "\n", "\t\t\t   \t\t  ", "\n", 
+                "\t\t\t   \t\t\t\t    ", "\n", "\t\t\t   \t\t\t   ", "\n", 
+                "\t\t\t   ", 
+                RowBox[{"If", "[", 
+                 RowBox[{
+                  RowBox[{
+                   RowBox[{
+                    RowBox[{"val1", "[", 
+                    RowBox[{"[", "2", "]"}], "]"}], " ", ">", " ", "25"}], 
+                   " ", "&&", " ", 
+                   RowBox[{
+                    RowBox[{"val1", "[", 
+                    RowBox[{"[", "1", "]"}], "]"}], " ", ">", " ", 
+                    RowBox[{"-", "15"}]}], " ", "&&", " ", 
+                   RowBox[{
+                    RowBox[{"val1", "[", 
+                    RowBox[{"[", "1", "]"}], "]"}], " ", "<", " ", "15"}]}], 
+                  " ", ",", "\n", "\t\t\t    \t\t\t    ", 
+                  RowBox[{
+                   RowBox[{"val1", " ", "=", " ", 
+                    RowBox[{"{", 
+                    RowBox[{"6", ",", " ", "6"}], "}"}]}], ";"}]}], "\n", 
+                 "\t\t\t    \t\t\t    ", "]"}]}], "\n", "\t\t\t  \t\t\t  ", 
+               ")"}]}]}], "\n", "\t\t\t\t\t\t", "}"}]}], "]"}]}], ";", "\n", 
+        "\t\t     \t\t      ", 
+        RowBox[{
+         RowBox[{"eh6", "[", 
+          RowBox[{"val1_", ",", " ", "oneTimeloc_"}], "]"}], " ", ":=", " ", 
+         "\n", "\t\t      \t\t      ", 
+         RowBox[{"EventHandler", "[", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"Text", "[", 
+             RowBox[{
+              RowBox[{"Style", "[", 
+               RowBox[{
+               "\"\<Mauro\>\"", ",", " ", "Black", ",", " ", "Italic", ",", 
+                " ", "20"}], "]"}], ",", " ", "\n", "\t\t\t \t\t\t ", 
+              RowBox[{"Dynamic", "@", "val1"}]}], "]"}], "}"}], ",", " ", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"\"\<MouseClicked\>\"", " ", ":>", " ", 
+              RowBox[{"(", 
+               RowBox[{"val1", " ", "=", " ", 
+                RowBox[{"{", 
+                 RowBox[{"0", ",", "15"}], "}"}]}], ")"}]}], ",", " ", "\n", 
+             "\t\t\t\t\t\t", 
+             RowBox[{"\"\<MouseDragged\>\"", " ", ":>", " ", 
+              RowBox[{"(", " ", "\n", "\t\t\t  \t\t\t  ", 
+               RowBox[{
+                RowBox[{"If", "[", 
+                 RowBox[{
+                  RowBox[{"oneTimeloc", " ", "==", " ", "1"}], ",", " ", 
+                  RowBox[{
+                   RowBox[{"val1", " ", "=", " ", 
+                    RowBox[{"MousePosition", "[", "\"\<Graphics\>\"", "]"}]}],
+                    ";"}]}], "]"}], "\n", "\t\t\t   \t\t\t   ", 
+                RowBox[{"(*", 
+                 RowBox[{
+                 "se", " ", "inserisco", " ", "il", " ", "numero", " ", "sei",
+                   " ", 
+                  RowBox[{"nell", "'"}], 
+                  RowBox[{"insieme", " ", "\\\n", "\t\t", "intersezione"}]}], 
+                 "*)"}], "\n", "\t\t\t   \t\t  ", "\n", 
+                "\t\t\t   \t\t\t\t    ", "\n", "\t\t\t   \t\t\t   ", "\n", 
+                "\t\t\t   ", 
+                RowBox[{"If", "[", 
+                 RowBox[{
+                  RowBox[{
+                   RowBox[{
+                    RowBox[{"val1", "[", 
+                    RowBox[{"[", "2", "]"}], "]"}], " ", ">", " ", "25"}], 
+                   " ", "&&", " ", 
+                   RowBox[{
+                    RowBox[{"val1", "[", 
+                    RowBox[{"[", "1", "]"}], "]"}], " ", ">", " ", 
+                    RowBox[{"-", "15"}]}], " ", "&&", " ", 
+                   RowBox[{
+                    RowBox[{"val1", "[", 
+                    RowBox[{"[", "1", "]"}], "]"}], " ", "<", " ", "15"}]}], 
+                  " ", ",", "\n", "\t\t\t    \t\t\t    ", 
+                  RowBox[{
+                   RowBox[{"val1", " ", "=", " ", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"-", "4"}], ",", " ", "3"}], "}"}]}], ";"}]}], 
+                 "\n", "\t\t\t    \t", "\n", "\t\t\t    \t\t\t    ", "]"}]}], 
+               "\n", "\t\t\t  \t\t\t  ", "\n", "\t\t\t  \t\t\t  ", ")"}]}]}], 
+            "\n", "\t\t\t\t\t\t", "}"}]}], "]"}]}], ";", "\n", 
+        "\t\t     \t\t       ", 
+        RowBox[{
+         RowBox[{"eh7", "[", 
+          RowBox[{"val1_", ",", " ", "oneTimeloc_"}], "]"}], " ", ":=", " ", 
+         "\n", "\t\t      \t\t      ", 
+         RowBox[{"EventHandler", "[", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"Text", "[", 
+             RowBox[{
+              RowBox[{"Style", "[", 
+               RowBox[{
+               "\"\<Marco\>\"", ",", " ", "Black", ",", " ", "Italic", ",", 
+                " ", "20"}], "]"}], ",", " ", "\n", "\t\t\t \t\t\t ", 
+              RowBox[{"Dynamic", "@", "val1"}]}], "]"}], "}"}], ",", " ", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"\"\<MouseClicked\>\"", " ", ":>", " ", 
+              RowBox[{"(", 
+               RowBox[{"val1", " ", "=", " ", 
+                RowBox[{"{", 
+                 RowBox[{"0", ",", "15"}], "}"}]}], ")"}]}], ",", " ", "\n", 
+             "\t\t\t\t\t", "\n", "\t\t\t", 
+             RowBox[{"\"\<MouseDragged\>\"", " ", ":>", " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"If", "[", " ", 
+                 RowBox[{
+                  RowBox[{"oneTimeloc", " ", "==", " ", "1"}], " ", ",", " ", 
+                  "\n", "\t\t\t   ", 
+                  RowBox[{"val1", " ", "=", " ", 
+                   RowBox[{
+                   "MousePosition", "[", "\"\<Graphics\>\"", "]"}]}]}], "]"}],
+                 ";", "\n", "\t\t\t  \t\t\t  ", 
+                RowBox[{"(*", 
+                 RowBox[{
+                 "se", " ", "inserisco", " ", "il", " ", "numero", " ", "tre",
+                   " ", 
+                  RowBox[{"nell", "'"}], "insieme", " ", "unione"}], "*)"}], 
+                "\n", "\t\t ", "\n", "\t\t      \t\t    ", 
+                RowBox[{"If", "[", "\n", "\t\t\t   \t\t\t   ", 
+                 RowBox[{
+                  RowBox[{
+                   RowBox[{
+                    RowBox[{"val1", "[", 
+                    RowBox[{"[", "2", "]"}], "]"}], " ", ">", " ", "25"}], 
+                   " ", "&&", " ", 
+                   RowBox[{
+                    RowBox[{"val1", "[", 
+                    RowBox[{"[", "1", "]"}], "]"}], " ", ">", " ", 
+                    RowBox[{"-", "15"}]}], " ", "&&", " ", 
+                   RowBox[{
+                    RowBox[{"val1", "[", 
+                    RowBox[{"[", "1", "]"}], "]"}], " ", "<", " ", "15"}]}], 
+                  " ", ",", " ", "\n", "\t\t\t   \t\t\t   ", "\n", 
+                  "\t\t\t   ", 
+                  RowBox[{
+                   RowBox[{"val1", " ", "=", " ", 
+                    RowBox[{"{", 
+                    RowBox[{"4", ",", " ", "3"}], "}"}]}], ";"}]}], "]"}]}], 
+               "\n", "\t\t\t  \t\t\t  ", ")"}]}]}], "\n", "\t\t\t\t\t\t", 
+            "}"}]}], "]"}]}], ";", "\n", "\t\t     \t\t       ", 
+        RowBox[{
+         RowBox[{"eh8", "[", 
+          RowBox[{"val1_", ",", " ", "oneTimeloc_"}], "]"}], " ", ":=", " ", 
+         "\n", "\t\t      \t\t      ", 
+         RowBox[{"EventHandler", "[", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"Text", "[", 
+             RowBox[{
+              RowBox[{"Style", "[", 
+               RowBox[{
+               "\"\<Carlo\>\"", ",", " ", "Green", ",", " ", "Italic", ",", 
+                " ", "20"}], "]"}], ",", " ", "\n", "\t\t\t \t\t\t ", 
+              RowBox[{"Dynamic", "@", "val1"}]}], "]"}], "}"}], ",", " ", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"\"\<MouseClicked\>\"", " ", ":>", " ", 
+              RowBox[{"(", 
+               RowBox[{"val1", " ", "=", " ", 
+                RowBox[{"{", 
+                 RowBox[{"0", ",", "15"}], "}"}]}], ")"}]}], ",", " ", "\n", 
+             "\t\t\t\t\t", "\n", "\t\t\t", 
+             RowBox[{"\"\<MouseDragged\>\"", " ", ":>", " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"If", "[", " ", 
+                 RowBox[{
+                  RowBox[{"oneTimeloc", " ", "==", " ", "1"}], " ", ",", " ", 
+                  "\n", "\t\t\t   ", 
+                  RowBox[{"val1", " ", "=", " ", 
+                   RowBox[{
+                   "MousePosition", "[", "\"\<Graphics\>\"", "]"}]}]}], "]"}],
+                 ";", "\n", "\t\t\t  \t\t\t  ", 
+                RowBox[{"(*", 
+                 RowBox[{
+                 "se", " ", "inserisco", " ", "il", " ", "numero", " ", "tre",
+                   " ", 
+                  RowBox[{"nell", "'"}], "insieme", " ", "unione"}], "*)"}], 
+                "\n", "\t\t ", "\n", "\t\t      \t\t    ", 
+                RowBox[{"If", "[", "\n", "\t\t\t   \t\t\t   ", 
+                 RowBox[{
+                  RowBox[{
+                   RowBox[{
+                    RowBox[{"val1", "[", 
+                    RowBox[{"[", "2", "]"}], "]"}], " ", ">", " ", "25"}], 
+                   " ", "&&", " ", 
+                   RowBox[{
+                    RowBox[{"val1", "[", 
+                    RowBox[{"[", "1", "]"}], "]"}], " ", ">", " ", 
+                    RowBox[{"-", "15"}]}], " ", "&&", " ", 
+                   RowBox[{
+                    RowBox[{"val1", "[", 
+                    RowBox[{"[", "1", "]"}], "]"}], " ", "<", " ", "15"}]}], 
+                  " ", ",", " ", "\n", "\t\t\t   \t\t\t   ", "\n", 
+                  "\t\t\t   ", 
+                  RowBox[{
+                   RowBox[{"val1", " ", "=", " ", 
+                    RowBox[{"{", 
+                    RowBox[{"23", ",", " ", "6"}], "}"}]}], ";"}]}], " ", 
+                 "]"}]}], "\n", "\t\t\t  \t\t\t  ", ")"}]}]}], "\n", 
+            "\t\t\t\t\t\t", "}"}]}], "]"}]}], ";", "\n", "\t\t     \t\t     ", 
+        RowBox[{
+         RowBox[{"eh9", "[", 
+          RowBox[{"val1_", ",", " ", "oneTimeloc_"}], "]"}], " ", ":=", " ", 
+         "\n", "\t\t      \t\t      ", 
+         RowBox[{"EventHandler", "[", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"Text", "[", 
+             RowBox[{
+              RowBox[{"Style", "[", 
+               RowBox[{
+               "\"\<Federico\>\"", ",", " ", "Green", ",", " ", "Italic", ",",
+                 " ", "20"}], "]"}], ",", " ", "\n", "\t\t\t \t\t\t ", 
+              RowBox[{"Dynamic", "@", "val1"}]}], "]"}], "}"}], ",", " ", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"\"\<MouseClicked\>\"", " ", ":>", " ", 
+              RowBox[{"(", 
+               RowBox[{"val1", " ", "=", " ", 
+                RowBox[{"{", 
+                 RowBox[{"0", ",", "15"}], "}"}]}], ")"}]}], ",", " ", "\n", 
+             "\t\t\t\t\t", "\n", "\t\t\t", 
+             RowBox[{"\"\<MouseDragged\>\"", " ", ":>", " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"If", "[", " ", 
+                 RowBox[{
+                  RowBox[{"oneTimeloc", " ", "==", " ", "1"}], " ", ",", " ", 
+                  "\n", "\t\t\t   ", 
+                  RowBox[{"val1", " ", "=", " ", 
+                   RowBox[{
+                   "MousePosition", "[", "\"\<Graphics\>\"", "]"}]}]}], "]"}],
+                 ";", "\n", "\t\t\t  \t\t\t  ", 
+                RowBox[{"(*", 
+                 RowBox[{
+                 "se", " ", "inserisco", " ", "il", " ", "numero", " ", "tre",
+                   " ", 
+                  RowBox[{"nell", "'"}], "insieme", " ", "unione"}], "*)"}], 
+                "\n", "\t\t", "\n", "\t\t      \t\t    ", 
+                RowBox[{"If", "[", 
+                 RowBox[{
+                  RowBox[{
+                   RowBox[{
+                    RowBox[{"val1", "[", 
+                    RowBox[{"[", "2", "]"}], "]"}], " ", ">", " ", "25"}], 
+                   " ", "&&", " ", 
+                   RowBox[{
+                    RowBox[{"val1", "[", 
+                    RowBox[{"[", "1", "]"}], "]"}], " ", ">", " ", 
+                    RowBox[{"-", "15"}]}], " ", "&&", " ", 
+                   RowBox[{
+                    RowBox[{"val1", "[", 
+                    RowBox[{"[", "1", "]"}], "]"}], " ", "<", " ", "15"}]}], 
+                  " ", ",", " ", "\n", "\t\t\t   \t\t\t   ", "\n", 
+                  "\t\t\t   ", 
+                  RowBox[{"val1", " ", "=", " ", 
+                   RowBox[{"{", 
+                    RowBox[{"35", ",", " ", "6"}], "}"}]}]}], "]"}]}], "\n", 
+               "\t\t\t  \t\t\t  ", ")"}]}]}], "\n", "\t\t\t\t\t\t", "}"}]}], 
+          "]"}]}], ";", "\n", "\t\t     \t\t     ", 
+        RowBox[{
+         RowBox[{"eh10", "[", 
+          RowBox[{"val1_", ",", " ", "oneTimeloc_"}], "]"}], " ", ":=", " ", 
+         "\n", "\t\t      \t\t      ", "\n", "\t\t      ", 
+         RowBox[{"EventHandler", "[", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"Text", "[", 
+             RowBox[{
+              RowBox[{"Style", "[", 
+               RowBox[{
+               "\"\<Elisa\>\"", ",", " ", "Green", ",", " ", "Italic", ",", 
                 " ", "20"}], "]"}], ",", " ", "\n", "\t\t\t \t\t\t ", 
               RowBox[{"Dynamic", "@", "val1"}]}], "]"}], "}"}], ",", " ", 
            RowBox[{"{", 
@@ -1137,653 +1532,15 @@ Cell[BoxData[{
                     RowBox[{"[", "1", "]"}], "]"}], " ", "<", " ", "15"}]}], 
                   " ", ",", " ", "\n", "\t\t\t   \t\t\t   ", "\n", 
                   "\t\t\t   ", 
-                  RowBox[{"If", "[", 
-                   RowBox[{
-                    RowBox[{"oneTimeloc", " ", "==", " ", "1"}], ",", " ", 
-                    RowBox[{
-                    RowBox[{"val1", " ", "=", " ", 
-                    RowBox[{"{", 
-                    RowBox[{
-                    RowBox[{"-", "1"}], ",", " ", "31"}], "}"}]}], ";", " ", 
-                    RowBox[{"colLuca", " ", "=", " ", "Red"}], ";", " ", "\n",
-                     "\t\t\t    ", 
-                    RowBox[{"ok5", " ", "=", " ", "1"}]}]}], 
-                   RowBox[{"(*", 
-                    RowBox[{
-                    RowBox[{
-                    "Speak", "[", "\n", "\t\t\t    \t\t\t    ", 
-                    "\"\<Very Bad!\>\"", "]"}], ";"}], "*)"}], "]"}]}], 
-                 "]"}]}], "\n", "\t\t\t  \t\t\t  ", ")"}]}]}], "\n", 
-            "\t\t\t\t\t\t", "}"}]}], "]"}]}], ";", "\n", 
-        "\t\t     \t\t      ", 
-        RowBox[{
-         RowBox[{"eh3", "[", 
-          RowBox[{"val1_", ",", " ", "oneTimeloc_"}], "]"}], " ", ":=", " ", 
-         "\n", "\t\t      \t\t      ", 
-         RowBox[{"EventHandler", "[", 
-          RowBox[{
-           RowBox[{"{", 
-            RowBox[{"Text", "[", 
-             RowBox[{
-              RowBox[{"Style", "[", 
-               RowBox[{
-               "\"\<Giacomo\>\"", ",", " ", "colGiac", ",", " ", "Italic", 
-                ",", " ", "20"}], "]"}], ",", " ", "\n", "\t\t\t \t\t\t ", 
-              RowBox[{"Dynamic", "@", "val1"}]}], "]"}], "}"}], ",", " ", 
-           RowBox[{"{", 
-            RowBox[{
-             RowBox[{"\"\<MouseClicked\>\"", " ", ":>", " ", 
-              RowBox[{"(", 
-               RowBox[{"val1", " ", "=", " ", 
-                RowBox[{"{", 
-                 RowBox[{"0", ",", "15"}], "}"}]}], ")"}]}], ",", " ", "\n", 
-             "\t\t\t\t\t\t", 
-             RowBox[{"\"\<MouseDragged\>\"", " ", ":>", " ", 
-              RowBox[{"(", " ", "\n", "\t\t\t  \t\t\t  ", 
-               RowBox[{
-                RowBox[{"If", "[", 
-                 RowBox[{
-                  RowBox[{"oneTimeloc", " ", "==", " ", "1"}], ",", " ", 
-                  RowBox[{
-                   RowBox[{"val1", " ", "=", " ", 
-                    RowBox[{"MousePosition", "[", "\"\<Graphics\>\"", "]"}]}],
-                    ";"}]}], "]"}], "\n", "\t\t\t   \t\t\t   ", 
-                RowBox[{"(*", 
-                 RowBox[{
-                 "se", " ", "inserisco", " ", "il", " ", "numero", " ", "sei",
-                   " ", 
-                  RowBox[{"nell", "'"}], 
-                  RowBox[{"insieme", " ", "\\\n", "\t\t", "intersezione"}]}], 
-                 "*)"}], "\n", "\t\t\t   \t\t  ", "\n", 
-                "\t\t\t   \t\t\t\t    ", "\n", "\t\t\t   \t\t\t   ", "\n", 
-                "\t\t\t   ", 
-                RowBox[{"If", "[", 
-                 RowBox[{
-                  RowBox[{
-                   RowBox[{
-                    RowBox[{"val1", "[", 
-                    RowBox[{"[", "2", "]"}], "]"}], " ", ">", " ", "25"}], 
-                   " ", "&&", " ", 
-                   RowBox[{
-                    RowBox[{"val1", "[", 
-                    RowBox[{"[", "1", "]"}], "]"}], " ", ">", " ", 
-                    RowBox[{"-", "15"}]}], " ", "&&", " ", 
-                   RowBox[{
-                    RowBox[{"val1", "[", 
-                    RowBox[{"[", "1", "]"}], "]"}], " ", "<", " ", "15"}]}], 
-                  " ", ",", "\n", "\t\t\t    \t\t\t    ", 
                   RowBox[{
                    RowBox[{"val1", " ", "=", " ", 
                     RowBox[{"{", 
-                    RowBox[{"6", ",", " ", "31"}], "}"}]}], ";", "\n", 
-                   "\t\t\t    \t\t\t    ", "\n", "\t\t\t    \t\t\t    ", 
-                   RowBox[{"If", "[", 
-                    RowBox[{
-                    RowBox[{"oneTimeloc", " ", "==", " ", "1"}], ",", " ", 
-                    RowBox[{
-                    RowBox[{"oneTimeloc", " ", "=", " ", "0"}], ";", " ", 
-                    "\n", "\t\t\t     \t\t\t     ", 
-                    RowBox[{"inTwelve", " ", "=", " ", 
-                    RowBox[{"inTwelve", " ", "+", " ", "1"}]}]}]}], 
-                    RowBox[{"(*", 
-                    RowBox[{
-                    RowBox[{"Speak", "[", "\"\<Very Bad!\>\"", "]"}], ";"}], 
-                    "*)"}], "]"}], ";", "\n", "\t\t\t    \t\t\t    ", "\n", 
-                   "\t\t\t    \t\t\t    ", "\n", "\t\t\t    ", 
-                   RowBox[{"If", "[", 
-                    RowBox[{
-                    RowBox[{"inTwelve", " ", "==", " ", "2"}], ",", " ", 
-                    RowBox[{
-                    RowBox[{"colGiac", " ", "=", " ", "Red"}], ";", " ", 
-                    RowBox[{"colGiac", " ", "=", " ", "Red"}], ";", " ", "\n",
-                     "\t\t\t     \t\t\t     ", 
-                    RowBox[{"ok2", " ", "=", " ", "1"}]}]}], "]"}], ";"}]}], 
-                 "\n", "\t\t\t    \t\t\t    ", "\n", "\t\t\t    \t\t\t    ", 
-                 "]"}]}], "\n", "\t\t\t  \t\t\t  ", ")"}]}]}], "\n", 
-            "\t\t\t\t\t\t", "}"}]}], "]"}]}], ";", "\n", 
-        "\t\t     \t\t         ", 
-        RowBox[{
-         RowBox[{"eh4", "[", 
-          RowBox[{"val1_", ",", " ", "oneTimeloc_"}], "]"}], " ", ":=", " ", 
-         "\n", "\t\t      \t\t      ", "\n", "\t\t      ", 
-         RowBox[{"EventHandler", "[", 
-          RowBox[{
-           RowBox[{"{", 
-            RowBox[{"Text", "[", 
-             RowBox[{
-              RowBox[{"Style", "[", 
-               RowBox[{
-               "\"\<Luigi\>\"", ",", " ", "colLuigi", ",", " ", "Italic", ",",
-                 " ", "20"}], "]"}], ",", " ", "\n", "\t\t\t \t\t\t ", 
-              RowBox[{"Dynamic", "@", "val1"}]}], "]"}], "}"}], ",", " ", 
-           RowBox[{"{", 
-            RowBox[{
-             RowBox[{"\"\<MouseClicked\>\"", " ", ":>", " ", 
-              RowBox[{"(", 
-               RowBox[{"val1", " ", "=", " ", 
-                RowBox[{"{", 
-                 RowBox[{"0", ",", "15"}], "}"}]}], ")"}]}], ",", " ", "\n", 
-             "\t\t\t\t\t", "\n", "\t\t\t", 
-             RowBox[{"\"\<MouseDragged\>\"", " ", ":>", " ", 
-              RowBox[{"(", 
-               RowBox[{
-                RowBox[{"If", "[", " ", 
-                 RowBox[{
-                  RowBox[{"oneTimeloc", " ", "==", " ", "1"}], " ", ",", " ", 
-                  "\n", "\t\t\t   ", 
-                  RowBox[{"val1", " ", "=", " ", 
-                   RowBox[{
-                   "MousePosition", "[", "\"\<Graphics\>\"", "]"}]}]}], "]"}],
-                 ";", "\n", "\t\t\t  \t\t\t  ", 
-                RowBox[{"(*", 
-                 RowBox[{
-                 "se", " ", "inserisco", " ", "il", " ", "numero", " ", "tre",
-                   " ", 
-                  RowBox[{"nell", "'"}], "insieme", " ", "unione"}], "*)"}], 
-                "\n", "\t\t", "\n", "\t\t      \t\t    ", 
-                RowBox[{"If", "[", " ", 
-                 RowBox[{
-                  RowBox[{
-                   RowBox[{
-                    RowBox[{"val1", "[", 
-                    RowBox[{"[", "2", "]"}], "]"}], " ", ">", " ", "25"}], 
-                   " ", "&&", " ", 
-                   RowBox[{
-                    RowBox[{"val1", "[", 
-                    RowBox[{"[", "1", "]"}], "]"}], " ", ">", " ", 
-                    RowBox[{"-", "15"}]}], " ", "&&", " ", 
-                   RowBox[{
-                    RowBox[{"val1", "[", 
-                    RowBox[{"[", "1", "]"}], "]"}], " ", "<", " ", "15"}]}], 
-                  " ", ",", " ", "\n", "\t\t\t   \t\t\t   ", "\n", 
-                  "\t\t\t   ", 
-                  RowBox[{"If", "[", 
-                   RowBox[{
-                    RowBox[{"oneTimeloc", " ", "==", " ", "1"}], ",", " ", 
-                    RowBox[{
-                    RowBox[{"val1", " ", "=", " ", 
-                    RowBox[{"{", 
-                    RowBox[{
-                    RowBox[{"-", "3"}], ",", " ", "26"}], "}"}]}], ";", " ", 
-                    RowBox[{"colLuigi", " ", "=", " ", "Red"}], ";", " ", 
-                    "\n", "\t\t\t    ", 
-                    RowBox[{"ok6", " ", "=", " ", "1"}]}]}], 
-                   RowBox[{"(*", 
-                    RowBox[{
-                    RowBox[{
-                    "Speak", "[", "\n", "\t\t\t    \t\t\t    ", 
-                    "\"\<Very Bad!\>\"", "]"}], ";"}], "*)"}], "]"}]}], 
-                 "]"}]}], "\n", "\t\t\t  \t\t\t  ", ")"}]}]}], "\n", 
-            "\t\t\t\t\t\t", "}"}]}], "]"}]}], ";", "\n", 
-        "\t\t     \t\t       ", 
-        RowBox[{
-         RowBox[{"eh5", "[", 
-          RowBox[{"val1_", ",", " ", "oneTimeloc_"}], "]"}], " ", ":=", " ", 
-         "\n", "\t\t      \t\t      ", 
-         RowBox[{"EventHandler", "[", 
-          RowBox[{
-           RowBox[{"{", 
-            RowBox[{"Text", "[", 
-             RowBox[{
-              RowBox[{"Style", "[", 
-               RowBox[{
-               "\"\<Caterina\>\"", ",", " ", "colCate2", ",", " ", "Italic", 
-                ",", " ", "20"}], "]"}], ",", " ", "\n", "\t\t\t \t\t\t ", 
-              RowBox[{"Dynamic", "@", "val1"}]}], "]"}], "}"}], ",", " ", 
-           RowBox[{"{", 
-            RowBox[{
-             RowBox[{"\"\<MouseClicked\>\"", " ", ":>", " ", 
-              RowBox[{"(", 
-               RowBox[{"val1", " ", "=", " ", 
-                RowBox[{"{", 
-                 RowBox[{"0", ",", "15"}], "}"}]}], ")"}]}], ",", " ", "\n", 
-             "\t\t\t\t\t\t", 
-             RowBox[{"\"\<MouseDragged\>\"", " ", ":>", " ", 
-              RowBox[{"(", " ", "\n", "\t\t\t  \t\t\t  ", 
-               RowBox[{
-                RowBox[{"If", "[", 
-                 RowBox[{
-                  RowBox[{"oneTimeloc", " ", "==", " ", "1"}], ",", " ", 
-                  RowBox[{
-                   RowBox[{"val1", " ", "=", " ", 
-                    RowBox[{"MousePosition", "[", "\"\<Graphics\>\"", "]"}]}],
-                    ";"}]}], "]"}], "\n", "\t\t\t   \t\t\t   ", 
-                RowBox[{"(*", 
-                 RowBox[{
-                 "se", " ", "inserisco", " ", "il", " ", "numero", " ", "sei",
-                   " ", 
-                  RowBox[{"nell", "'"}], 
-                  RowBox[{"insieme", " ", "\\\n", "\t\t", "intersezione"}]}], 
-                 "*)"}], "\n", "\t\t\t   \t\t  ", "\n", 
-                "\t\t\t   \t\t\t\t    ", "\n", "\t\t\t   \t\t\t   ", "\n", 
-                "\t\t\t   ", 
-                RowBox[{"If", "[", 
-                 RowBox[{
-                  RowBox[{
-                   RowBox[{
-                    RowBox[{"val1", "[", 
-                    RowBox[{"[", "2", "]"}], "]"}], " ", ">", " ", "25"}], 
-                   " ", "&&", " ", 
-                   RowBox[{
-                    RowBox[{"val1", "[", 
-                    RowBox[{"[", "1", "]"}], "]"}], " ", ">", " ", 
-                    RowBox[{"-", "15"}]}], " ", "&&", " ", 
-                   RowBox[{
-                    RowBox[{"val1", "[", 
-                    RowBox[{"[", "1", "]"}], "]"}], " ", "<", " ", "15"}]}], 
-                  " ", ",", "\n", "\t\t\t    \t\t\t    ", 
-                  RowBox[{
-                   RowBox[{"val1", " ", "=", " ", 
-                    RowBox[{"{", 
-                    RowBox[{"5", ",", " ", "26"}], "}"}]}], ";", "\n", 
-                   "\t\t\t    \t\t\t    ", "\n", "\t\t\t    \t\t\t    ", 
-                   RowBox[{"If", "[", 
-                    RowBox[{
-                    RowBox[{"oneTimeloc", " ", "==", " ", "1"}], ",", " ", 
-                    RowBox[{
-                    RowBox[{"oneTimeloc", " ", "=", " ", "0"}], ";", " ", 
-                    "\n", "\t\t\t     \t\t\t     ", 
-                    RowBox[{"inEighteen", " ", "=", " ", 
-                    RowBox[{"inEighteen", " ", "+", " ", "1"}]}]}]}], 
-                    RowBox[{"(*", 
-                    RowBox[{
-                    RowBox[{"Speak", "[", "\"\<Very Bad!\>\"", "]"}], ";"}], 
-                    "*)"}], "]"}], ";", "\n", "\t\t\t    \t\t\t    ", "\n", 
-                   "\t\t\t    \t\t\t    ", "\n", "\t\t\t    ", 
-                   RowBox[{"If", "[", 
-                    RowBox[{
-                    RowBox[{"inEighteen", " ", "==", " ", "2"}], ",", " ", 
-                    RowBox[{
-                    RowBox[{"colCate2", " ", "=", " ", "Red"}], ";", " ", 
-                    "\n", "\t\t\t     ", 
-                    RowBox[{"colCate2", " ", "=", " ", "Red"}], ";", "\n", 
-                    "\t\t\t     \t\t\t      ", 
-                    RowBox[{"ok3", " ", "=", " ", "1"}]}]}], "]"}], ";"}]}], 
-                 "\n", "\t\t\t    \t\t\t    ", "\n", "\t\t\t    \t\t\t    ", 
-                 "]"}]}], "\n", "\t\t\t  \t\t\t  ", ")"}]}]}], "\n", 
-            "\t\t\t\t\t\t", "}"}]}], "]"}]}], ";", "\n", 
-        "\t\t     \t\t      ", 
-        RowBox[{
-         RowBox[{"eh6", "[", 
-          RowBox[{"val1_", ",", " ", "oneTimeloc_"}], "]"}], " ", ":=", " ", 
-         "\n", "\t\t      \t\t      ", 
-         RowBox[{"EventHandler", "[", 
-          RowBox[{
-           RowBox[{"{", 
-            RowBox[{"Text", "[", 
-             RowBox[{
-              RowBox[{"Style", "[", 
-               RowBox[{
-               "\"\<Mauro\>\"", ",", " ", "colMauro2", ",", " ", "Italic", 
-                ",", " ", "20"}], "]"}], ",", " ", "\n", "\t\t\t \t\t\t ", 
-              RowBox[{"Dynamic", "@", "val1"}]}], "]"}], "}"}], ",", " ", 
-           RowBox[{"{", 
-            RowBox[{
-             RowBox[{"\"\<MouseClicked\>\"", " ", ":>", " ", 
-              RowBox[{"(", 
-               RowBox[{"val1", " ", "=", " ", 
-                RowBox[{"{", 
-                 RowBox[{"0", ",", "15"}], "}"}]}], ")"}]}], ",", " ", "\n", 
-             "\t\t\t\t\t\t", 
-             RowBox[{"\"\<MouseDragged\>\"", " ", ":>", " ", 
-              RowBox[{"(", " ", "\n", "\t\t\t  \t\t\t  ", 
-               RowBox[{
-                RowBox[{"If", "[", 
-                 RowBox[{
-                  RowBox[{"oneTimeloc", " ", "==", " ", "1"}], ",", " ", 
-                  RowBox[{
-                   RowBox[{"val1", " ", "=", " ", 
-                    RowBox[{"MousePosition", "[", "\"\<Graphics\>\"", "]"}]}],
-                    ";"}]}], "]"}], "\n", "\t\t\t   \t\t\t   ", 
-                RowBox[{"(*", 
-                 RowBox[{
-                 "se", " ", "inserisco", " ", "il", " ", "numero", " ", "sei",
-                   " ", 
-                  RowBox[{"nell", "'"}], 
-                  RowBox[{"insieme", " ", "\\\n", "\t\t", "intersezione"}]}], 
-                 "*)"}], "\n", "\t\t\t   \t\t  ", "\n", 
-                "\t\t\t   \t\t\t\t    ", "\n", "\t\t\t   \t\t\t   ", "\n", 
-                "\t\t\t   ", 
-                RowBox[{"If", "[", 
-                 RowBox[{
-                  RowBox[{
-                   RowBox[{
-                    RowBox[{"val1", "[", 
-                    RowBox[{"[", "2", "]"}], "]"}], " ", ">", " ", "25"}], 
-                   " ", "&&", " ", 
-                   RowBox[{
-                    RowBox[{"val1", "[", 
-                    RowBox[{"[", "1", "]"}], "]"}], " ", ">", " ", 
-                    RowBox[{"-", "15"}]}], " ", "&&", " ", 
-                   RowBox[{
-                    RowBox[{"val1", "[", 
-                    RowBox[{"[", "1", "]"}], "]"}], " ", "<", " ", "15"}]}], 
-                  " ", ",", "\n", "\t\t\t    \t\t\t    ", 
-                  RowBox[{
-                   RowBox[{"val1", " ", "=", " ", 
-                    RowBox[{"{", 
-                    RowBox[{
-                    RowBox[{"-", "7"}], ",", " ", "31"}], "}"}]}], ";", "\n", 
-                   "\t\t\t    \t\t\t    ", "\n", "\t\t\t    \t\t\t    ", 
-                   RowBox[{"If", "[", 
-                    RowBox[{
-                    RowBox[{"oneTimeloc", " ", "==", " ", "1"}], ",", " ", 
-                    RowBox[{
-                    RowBox[{"oneTimeloc", " ", "=", " ", "0"}], ";", " ", 
-                    "\n", "\t\t\t     \t\t\t     ", 
-                    RowBox[{"inSix", " ", "=", " ", 
-                    RowBox[{"inSix", " ", "+", " ", "1"}]}]}]}], 
-                    RowBox[{"(*", 
-                    RowBox[{
-                    RowBox[{"Speak", "[", "\"\<Very Bad!\>\"", "]"}], ";"}], 
-                    "*)"}], "]"}], ";", "\n", "\t\t\t    \t\t\t    ", "\n", 
-                   "\t\t\t    ", 
-                   RowBox[{"If", "[", 
-                    RowBox[{
-                    RowBox[{"inSix", " ", "==", " ", "2"}], ",", " ", 
-                    RowBox[{
-                    RowBox[{"colSix1", " ", "=", " ", "Red"}], ";", " ", 
-                    RowBox[{"colMauro2", " ", "=", " ", "Red"}], ";", " ", 
-                    RowBox[{"ok1", " ", "=", " ", "1"}]}]}], "]"}], ";"}]}], 
-                 "\n", "\t\t\t    \t\t\t    ", "\n", "\t\t\t    \t\t\t    ", 
-                 "]"}]}], "\n", "\t\t\t  \t\t\t  ", "\n", "\t\t\t  \t\t\t  ", 
-               ")"}]}]}], "\n", "\t\t\t\t\t\t", "}"}]}], "]"}]}], ";", "\n", 
-        "\t\t     \t\t       ", 
-        RowBox[{
-         RowBox[{"eh7", "[", 
-          RowBox[{"val1_", ",", " ", "oneTimeloc_"}], "]"}], " ", ":=", " ", 
-         "\n", "\t\t      \t\t      ", 
-         RowBox[{"EventHandler", "[", 
-          RowBox[{
-           RowBox[{"{", 
-            RowBox[{"Text", "[", 
-             RowBox[{
-              RowBox[{"Style", "[", 
-               RowBox[{
-               "\"\<Marco\>\"", ",", " ", "colMarco", ",", " ", "Italic", ",",
-                 " ", "20"}], "]"}], ",", " ", "\n", "\t\t\t \t\t\t ", 
-              RowBox[{"Dynamic", "@", "val1"}]}], "]"}], "}"}], ",", " ", 
-           RowBox[{"{", 
-            RowBox[{
-             RowBox[{"\"\<MouseClicked\>\"", " ", ":>", " ", 
-              RowBox[{"(", 
-               RowBox[{"val1", " ", "=", " ", 
-                RowBox[{"{", 
-                 RowBox[{"0", ",", "15"}], "}"}]}], ")"}]}], ",", " ", "\n", 
-             "\t\t\t\t\t", "\n", "\t\t\t", 
-             RowBox[{"\"\<MouseDragged\>\"", " ", ":>", " ", 
-              RowBox[{"(", 
-               RowBox[{
-                RowBox[{"If", "[", " ", 
-                 RowBox[{
-                  RowBox[{"oneTimeloc", " ", "==", " ", "1"}], " ", ",", " ", 
-                  "\n", "\t\t\t   ", 
-                  RowBox[{"val1", " ", "=", " ", 
-                   RowBox[{
-                   "MousePosition", "[", "\"\<Graphics\>\"", "]"}]}]}], "]"}],
-                 ";", "\n", "\t\t\t  \t\t\t  ", 
-                RowBox[{"(*", 
-                 RowBox[{
-                 "se", " ", "inserisco", " ", "il", " ", "numero", " ", "tre",
-                   " ", 
-                  RowBox[{"nell", "'"}], "insieme", " ", "unione"}], "*)"}], 
-                "\n", "\t\t ", "\n", "\t\t      \t\t    ", 
-                RowBox[{"If", "[", "\n", "\t\t\t   \t\t\t   ", 
-                 RowBox[{
-                  RowBox[{
-                   RowBox[{
-                    RowBox[{"val1", "[", 
-                    RowBox[{"[", "2", "]"}], "]"}], " ", ">", " ", "25"}], 
-                   " ", "&&", " ", 
-                   RowBox[{
-                    RowBox[{"val1", "[", 
-                    RowBox[{"[", "1", "]"}], "]"}], " ", ">", " ", 
-                    RowBox[{"-", "15"}]}], " ", "&&", " ", 
-                   RowBox[{
-                    RowBox[{"val1", "[", 
-                    RowBox[{"[", "1", "]"}], "]"}], " ", "<", " ", "15"}]}], 
-                  " ", ",", " ", "\n", "\t\t\t   \t\t\t   ", "\n", 
-                  "\t\t\t   ", 
-                  RowBox[{"If", "[", 
-                   RowBox[{
-                    RowBox[{"oneTimeloc", " ", "==", " ", "1"}], ",", " ", 
-                    RowBox[{
-                    RowBox[{"val1", " ", "=", " ", 
-                    RowBox[{"{", 
-                    RowBox[{
-                    RowBox[{"-", "4"}], ",", " ", "31"}], "}"}]}], ";", " ", 
-                    RowBox[{"colMarco", " ", "=", " ", "Red"}], ";", " ", 
-                    "\n", "\t\t\t    ", 
-                    RowBox[{"ok7", " ", "=", " ", "1"}]}]}], 
-                   RowBox[{"(*", 
-                    RowBox[{
-                    RowBox[{
-                    "Speak", "[", "\n", "\t\t\t    \t\t\t    ", 
-                    "\"\<Very Bad!\>\"", "]"}], ";"}], "*)"}], "]"}]}], 
-                 "]"}]}], "\n", "\t\t\t  \t\t\t  ", ")"}]}]}], "\n", 
-            "\t\t\t\t\t\t", "}"}]}], "]"}]}], ";", "\n", 
-        "\t\t     \t\t       ", 
-        RowBox[{
-         RowBox[{"eh8", "[", 
-          RowBox[{"val1_", ",", " ", "oneTimeloc_"}], "]"}], " ", ":=", " ", 
-         "\n", "\t\t      \t\t      ", 
-         RowBox[{"EventHandler", "[", 
-          RowBox[{
-           RowBox[{"{", 
-            RowBox[{"Text", "[", 
-             RowBox[{
-              RowBox[{"Style", "[", 
-               RowBox[{
-               "\"\<Carlo\>\"", ",", " ", "colCarlo", ",", " ", "Italic", ",",
-                 " ", "20"}], "]"}], ",", " ", "\n", "\t\t\t \t\t\t ", 
-              RowBox[{"Dynamic", "@", "val1"}]}], "]"}], "}"}], ",", " ", 
-           RowBox[{"{", 
-            RowBox[{
-             RowBox[{"\"\<MouseClicked\>\"", " ", ":>", " ", 
-              RowBox[{"(", 
-               RowBox[{"val1", " ", "=", " ", 
-                RowBox[{"{", 
-                 RowBox[{"0", ",", "15"}], "}"}]}], ")"}]}], ",", " ", "\n", 
-             "\t\t\t\t\t", "\n", "\t\t\t", 
-             RowBox[{"\"\<MouseDragged\>\"", " ", ":>", " ", 
-              RowBox[{"(", 
-               RowBox[{
-                RowBox[{"If", "[", " ", 
-                 RowBox[{
-                  RowBox[{"oneTimeloc", " ", "==", " ", "1"}], " ", ",", " ", 
-                  "\n", "\t\t\t   ", 
-                  RowBox[{"val1", " ", "=", " ", 
-                   RowBox[{
-                   "MousePosition", "[", "\"\<Graphics\>\"", "]"}]}]}], "]"}],
-                 ";", "\n", "\t\t\t  \t\t\t  ", 
-                RowBox[{"(*", 
-                 RowBox[{
-                 "se", " ", "inserisco", " ", "il", " ", "numero", " ", "tre",
-                   " ", 
-                  RowBox[{"nell", "'"}], "insieme", " ", "unione"}], "*)"}], 
-                "\n", "\t\t ", "\n", "\t\t      \t\t    ", 
-                RowBox[{"If", "[", "\n", "\t\t\t   \t\t\t   ", 
-                 RowBox[{
-                  RowBox[{
-                   RowBox[{
-                    RowBox[{"val1", "[", 
-                    RowBox[{"[", "2", "]"}], "]"}], " ", ">", " ", "25"}], 
-                   " ", "&&", " ", 
-                   RowBox[{
-                    RowBox[{"val1", "[", 
-                    RowBox[{"[", "1", "]"}], "]"}], " ", ">", " ", 
-                    RowBox[{"-", "15"}]}], " ", "&&", " ", 
-                   RowBox[{
-                    RowBox[{"val1", "[", 
-                    RowBox[{"[", "1", "]"}], "]"}], " ", "<", " ", "15"}]}], 
-                  " ", ",", " ", "\n", "\t\t\t   \t\t\t   ", "\n", 
-                  "\t\t\t   ", 
-                  RowBox[{"If", "[", 
-                   RowBox[{
-                    RowBox[{"oneTimeloc", " ", "==", " ", "1"}], ",", " ", 
-                    RowBox[{
-                    RowBox[{"val1", " ", "=", " ", 
-                    RowBox[{"{", 
-                    RowBox[{"2", ",", " ", "31"}], "}"}]}], ";", " ", 
-                    RowBox[{"colCarlo", " ", "=", " ", "Red"}], ";", " ", 
-                    "\n", "\t\t\t    ", 
-                    RowBox[{"ok8", " ", "=", " ", "1"}]}]}], 
-                   RowBox[{"(*", 
-                    RowBox[{
-                    RowBox[{
-                    "Speak", "[", "\n", "\t\t\t    \t\t\t    ", 
-                    "\"\<Very Bad!\>\"", "]"}], ";"}], "*)"}], "]"}]}], 
-                 "]"}]}], "\n", "\t\t\t  \t\t\t  ", ")"}]}]}], "\n", 
-            "\t\t\t\t\t\t", "}"}]}], "]"}]}], ";", "\n", "\t\t     \t\t     ", 
-        RowBox[{
-         RowBox[{"eh9", "[", 
-          RowBox[{"val1_", ",", " ", "oneTimeloc_"}], "]"}], " ", ":=", " ", 
-         "\n", "\t\t      \t\t      ", 
-         RowBox[{"EventHandler", "[", 
-          RowBox[{
-           RowBox[{"{", 
-            RowBox[{"Text", "[", 
-             RowBox[{
-              RowBox[{"Style", "[", 
-               RowBox[{
-               "\"\<Federico\>\"", ",", " ", "colFederico", ",", " ", 
-                "Italic", ",", " ", "20"}], "]"}], ",", " ", "\n", 
-              "\t\t\t \t\t\t ", 
-              RowBox[{"Dynamic", "@", "val1"}]}], "]"}], "}"}], ",", " ", 
-           RowBox[{"{", 
-            RowBox[{
-             RowBox[{"\"\<MouseClicked\>\"", " ", ":>", " ", 
-              RowBox[{"(", 
-               RowBox[{"val1", " ", "=", " ", 
-                RowBox[{"{", 
-                 RowBox[{"0", ",", "15"}], "}"}]}], ")"}]}], ",", " ", "\n", 
-             "\t\t\t\t\t", "\n", "\t\t\t", 
-             RowBox[{"\"\<MouseDragged\>\"", " ", ":>", " ", 
-              RowBox[{"(", 
-               RowBox[{
-                RowBox[{"If", "[", " ", 
-                 RowBox[{
-                  RowBox[{"oneTimeloc", " ", "==", " ", "1"}], " ", ",", " ", 
-                  "\n", "\t\t\t   ", 
-                  RowBox[{"val1", " ", "=", " ", 
-                   RowBox[{
-                   "MousePosition", "[", "\"\<Graphics\>\"", "]"}]}]}], "]"}],
-                 ";", "\n", "\t\t\t  \t\t\t  ", 
-                RowBox[{"(*", 
-                 RowBox[{
-                 "se", " ", "inserisco", " ", "il", " ", "numero", " ", "tre",
-                   " ", 
-                  RowBox[{"nell", "'"}], "insieme", " ", "unione"}], "*)"}], 
-                "\n", "\t\t", "\n", "\t\t      \t\t    ", 
-                RowBox[{"If", "[", 
-                 RowBox[{
-                  RowBox[{
-                   RowBox[{
-                    RowBox[{"val1", "[", 
-                    RowBox[{"[", "2", "]"}], "]"}], " ", ">", " ", "25"}], 
-                   " ", "&&", " ", 
-                   RowBox[{
-                    RowBox[{"val1", "[", 
-                    RowBox[{"[", "1", "]"}], "]"}], " ", ">", " ", 
-                    RowBox[{"-", "15"}]}], " ", "&&", " ", 
-                   RowBox[{
-                    RowBox[{"val1", "[", 
-                    RowBox[{"[", "1", "]"}], "]"}], " ", "<", " ", "15"}]}], 
-                  " ", ",", " ", "\n", "\t\t\t   \t\t\t   ", "\n", 
-                  "\t\t\t   ", 
-                  RowBox[{"If", "[", 
-                   RowBox[{
-                    RowBox[{"oneTimeloc", " ", "==", " ", "1"}], ",", " ", 
-                    RowBox[{
-                    RowBox[{"val1", " ", "=", " ", 
-                    RowBox[{"{", 
-                    RowBox[{"10", ",", " ", "31"}], "}"}]}], ";", " ", 
-                    RowBox[{"colFederico", " ", "=", " ", "Red"}], ";", " ", 
-                    "\n", "\t\t\t    ", 
-                    RowBox[{"ok9", " ", "=", " ", "1"}]}]}], 
-                   RowBox[{"(*", 
-                    RowBox[{
-                    RowBox[{
-                    "Speak", "[", "\n", "\t\t\t    \t\t\t    ", 
-                    "\"\<Very Bad!\>\"", "]"}], ";"}], "*)"}], "]"}]}], 
-                 "]"}]}], "\n", "\t\t\t  \t\t\t  ", ")"}]}]}], "\n", 
-            "\t\t\t\t\t\t", "}"}]}], "]"}]}], ";", "\n", "\t\t     \t\t     ", 
-        RowBox[{
-         RowBox[{"eh10", "[", 
-          RowBox[{"val1_", ",", " ", "oneTimeloc_"}], "]"}], " ", ":=", " ", 
-         "\n", "\t\t      \t\t      ", "\n", "\t\t      ", 
-         RowBox[{"EventHandler", "[", 
-          RowBox[{
-           RowBox[{"{", 
-            RowBox[{"Text", "[", 
-             RowBox[{
-              RowBox[{"Style", "[", 
-               RowBox[{
-               "\"\<Elisa\>\"", ",", " ", "colElisa", ",", " ", "Italic", ",",
-                 " ", "20"}], "]"}], ",", " ", "\n", "\t\t\t \t\t\t ", 
-              RowBox[{"Dynamic", "@", "val1"}]}], "]"}], "}"}], ",", " ", 
-           RowBox[{"{", 
-            RowBox[{
-             RowBox[{"\"\<MouseClicked\>\"", " ", ":>", " ", 
-              RowBox[{"(", 
-               RowBox[{"val1", " ", "=", " ", 
-                RowBox[{"{", 
-                 RowBox[{"0", ",", "15"}], "}"}]}], ")"}]}], ",", " ", "\n", 
-             "\t\t\t\t\t", "\n", "\t\t\t", 
-             RowBox[{"\"\<MouseDragged\>\"", " ", ":>", " ", 
-              RowBox[{"(", 
-               RowBox[{
-                RowBox[{"If", "[", " ", 
-                 RowBox[{
-                  RowBox[{"oneTimeloc", " ", "==", " ", "1"}], " ", ",", " ", 
-                  "\n", "\t\t\t   ", 
-                  RowBox[{"val1", " ", "=", " ", 
-                   RowBox[{
-                   "MousePosition", "[", "\"\<Graphics\>\"", "]"}]}]}], "]"}],
-                 ";", "\n", "\t\t\t  \t\t\t  ", 
-                RowBox[{"(*", 
-                 RowBox[{
-                 "se", " ", "inserisco", " ", "il", " ", "numero", " ", "tre",
-                   " ", 
-                  RowBox[{"nell", "'"}], "insieme", " ", "unione"}], "*)"}], 
-                "\n", "\t\t  ", "\n", "\t\t      \t\t    ", 
-                RowBox[{"If", "[", "\n", "\t\t\t   \t\t\t   ", 
-                 RowBox[{
-                  RowBox[{
-                   RowBox[{
-                    RowBox[{"val1", "[", 
-                    RowBox[{"[", "2", "]"}], "]"}], " ", ">", " ", "25"}], 
-                   " ", "&&", " ", 
-                   RowBox[{
-                    RowBox[{"val1", "[", 
-                    RowBox[{"[", "1", "]"}], "]"}], " ", ">", " ", 
-                    RowBox[{"-", "15"}]}], " ", "&&", " ", 
-                   RowBox[{
-                    RowBox[{"val1", "[", 
-                    RowBox[{"[", "1", "]"}], "]"}], " ", "<", " ", "15"}]}], 
-                  " ", ",", " ", "\n", "\t\t\t   \t\t\t   ", "\n", 
-                  "\t\t\t   ", 
-                  RowBox[{"If", "[", 
-                   RowBox[{
-                    RowBox[{"oneTimeloc", " ", "==", " ", "1"}], ",", " ", 
-                    RowBox[{
-                    RowBox[{"val1", " ", "=", " ", 
-                    RowBox[{"{", 
-                    RowBox[{"1", ",", " ", "26"}], "}"}]}], ";", " ", 
-                    RowBox[{"colElisa", " ", "=", " ", "Red"}], ";", " ", 
-                    "\n", "\t\t\t    ", 
-                    RowBox[{"ok10", " ", "=", " ", "1"}]}]}], 
-                   RowBox[{"(*", 
-                    RowBox[{
-                    RowBox[{
-                    "Speak", "[", "\n", "\t\t\t    \t\t\t    ", 
-                    "\"\<Very Bad!\>\"", "]"}], ";"}], "*)"}], "]"}]}], 
-                 "]"}]}], "\n", "\t\t\t  \t\t\t  ", ")"}]}]}], "\n", 
-            "\t\t\t\t\t\t", "}"}]}], "]"}]}], ";"}], "\n", 
-       "\t\t     \t\t     ", "\n", "\t\t     \t\t     ", "\n", 
-       "\t\t     \t\t     ", ")"}]}]}], "\n", "\t\t   \t\t   ", "]"}], 
-   ")"}]}], "\[IndentingNewLine]", 
- RowBox[{"gameTemp", "[", "]"}], "\[IndentingNewLine]"}], "Input",
+                    RowBox[{"29", ",", " ", "3"}], "}"}]}], ";"}]}], "]"}]}], 
+               "\n", "\t\t\t  \t\t\t  ", ")"}]}]}], "\n", "\t\t\t\t\t\t", 
+            "}"}]}], "]"}]}], ";"}], "\n", "\t\t     \t\t     ", "\n", 
+       "\t\t     \t\t     ", "\n", "\t\t     \t\t     ", ")"}]}]}], "\n", 
+    "\t\t   \t\t   ", "]"}], ")"}]}], "\[IndentingNewLine]", 
+ RowBox[{"gameExercise3", "[", "]"}], "\[IndentingNewLine]"}], "Input",
  CellChangeTimes->{{3.703220919480852*^9, 3.703220949665656*^9}, {
    3.703221247189453*^9, 3.703221284845868*^9}, {3.7032214299066963`*^9, 
    3.703221434421275*^9}, {3.703221566599865*^9, 3.703221569527699*^9}, {
@@ -1819,760 +1576,24 @@ Cell[BoxData[{
    3.703401220149661*^9}, {3.703401280758573*^9, 3.703401293470786*^9}, {
    3.703401327988714*^9, 3.703401336158971*^9}, 3.703401381100173*^9, {
    3.70340152394844*^9, 3.7034015451428556`*^9}, {3.703401578026374*^9, 
-   3.703401594264388*^9}, {3.7034016804754753`*^9, 3.7034017309554663`*^9}}],
-
-Cell[BoxData["\<\"/home/simone/Scrivania/MC\"\>"], "Output",
- CellChangeTimes->{{3.703220924469872*^9, 3.703220951035761*^9}, 
-   3.7032212444818707`*^9, {3.703221279302746*^9, 3.703221285716197*^9}, {
-   3.703221428020347*^9, 3.703221436105895*^9}, {3.703221564824704*^9, 
-   3.703221570560319*^9}, {3.703221791428142*^9, 3.703221809061511*^9}, {
-   3.70322208754284*^9, 3.703222108021743*^9}, 3.7032221840618896`*^9, 
-   3.7032233493154383`*^9, 3.703229396330044*^9, 3.703250413523706*^9, 
-   3.703255521294973*^9, {3.703255970528111*^9, 3.703255974483564*^9}, 
-   3.703256264482581*^9, {3.703256521667674*^9, 3.703256537867765*^9}, 
-   3.703394233917923*^9, 3.7033942976962137`*^9, 3.703394515026293*^9, 
-   3.703394572206009*^9, 3.703395259327516*^9, 3.70339573637579*^9, 
-   3.703395850221772*^9, 3.703396313539228*^9, 3.703396348738698*^9, 
-   3.703396510745653*^9, 3.703396640747295*^9, 3.7033967094811363`*^9, 
-   3.703397132666472*^9, {3.703397165478228*^9, 3.703397189983143*^9}, 
-   3.703397250822815*^9, 3.703397489112446*^9, 3.703397541582253*^9, 
-   3.7033976636789227`*^9, 3.703397732746099*^9, 3.703397843687565*^9, 
-   3.703398349416477*^9, 3.703398397579439*^9, 3.703398494152916*^9, 
-   3.70339885204473*^9, 3.703399271744467*^9, 3.703399341203265*^9, {
-   3.7033995490449266`*^9, 3.703399561127078*^9}, 3.703399842368918*^9, 
-   3.703400051291329*^9, 3.703400184295761*^9, 3.703400229967229*^9, 
-   3.7034002787630367`*^9, 3.703400324405636*^9, 3.703400776338381*^9, 
-   3.703400894859086*^9, {3.7034009691716557`*^9, 3.703400992683043*^9}, 
-   3.7034010328613462`*^9, 3.703401300236092*^9, 3.703401342020056*^9, 
-   3.703401394223707*^9, {3.703401584014702*^9, 3.7034015993884277`*^9}, 
-   3.7034017370822277`*^9}],
-
-Cell[BoxData[
- RowBox[{"{", "}"}]], "Output",
- CellChangeTimes->{{3.703220924469872*^9, 3.703220951035761*^9}, 
-   3.7032212444818707`*^9, {3.703221279302746*^9, 3.703221285716197*^9}, {
-   3.703221428020347*^9, 3.703221436105895*^9}, {3.703221564824704*^9, 
-   3.703221570560319*^9}, {3.703221791428142*^9, 3.703221809061511*^9}, {
-   3.70322208754284*^9, 3.703222108021743*^9}, 3.7032221840618896`*^9, 
-   3.7032233493154383`*^9, 3.703229396330044*^9, 3.703250413523706*^9, 
-   3.703255521294973*^9, {3.703255970528111*^9, 3.703255974483564*^9}, 
-   3.703256264482581*^9, {3.703256521667674*^9, 3.703256537867765*^9}, 
-   3.703394233917923*^9, 3.7033942976962137`*^9, 3.703394515026293*^9, 
-   3.703394572206009*^9, 3.703395259327516*^9, 3.70339573637579*^9, 
-   3.703395850221772*^9, 3.703396313539228*^9, 3.703396348738698*^9, 
-   3.703396510745653*^9, 3.703396640747295*^9, 3.7033967094811363`*^9, 
-   3.703397132666472*^9, {3.703397165478228*^9, 3.703397189983143*^9}, 
-   3.703397250822815*^9, 3.703397489112446*^9, 3.703397541582253*^9, 
-   3.7033976636789227`*^9, 3.703397732746099*^9, 3.703397843687565*^9, 
-   3.703398349416477*^9, 3.703398397579439*^9, 3.703398494152916*^9, 
-   3.70339885204473*^9, 3.703399271744467*^9, 3.703399341203265*^9, {
-   3.7033995490449266`*^9, 3.703399561127078*^9}, 3.703399842368918*^9, 
-   3.703400051291329*^9, 3.703400184295761*^9, 3.703400229967229*^9, 
-   3.7034002787630367`*^9, 3.703400324405636*^9, 3.703400776338381*^9, 
-   3.703400894859086*^9, {3.7034009691716557`*^9, 3.703400992683043*^9}, 
-   3.7034010328613462`*^9, 3.703401300236092*^9, 3.703401342020056*^9, 
-   3.703401394223707*^9, {3.703401584014702*^9, 3.7034015993884277`*^9}, 
-   3.7034017373717117`*^9}],
-
-Cell[BoxData[
- DynamicModuleBox[{$CellContext`pt1$$ = {-36, 6}, $CellContext`pt2$$ = {-24, 
-  6}, $CellContext`pt3$$ = {-35, 3}, $CellContext`pt4$$ = {-27, 
-  3}, $CellContext`pt5$$ = {-7, 6}, $CellContext`pt6$$ = {6, 
-  6}, $CellContext`pt7$$ = {-4, 3}, $CellContext`pt8$$ = {4, 
-  3}, $CellContext`pt9$$ = {23, 6}, $CellContext`pt10$$ = {35, 
-  6}, $CellContext`pt11$$ = {29, 3}, $CellContext`pt12$$ = {27, 
-  7}, $CellContext`pt13$$ = {25, 
-  4}, $CellContext`eh1$$, $CellContext`eh$$, $CellContext`eh2$$, \
-$CellContext`eh3$$, $CellContext`eh4$$, $CellContext`eh5$$, \
-$CellContext`eh6$$, $CellContext`eh7$$, $CellContext`eh8$$, \
-$CellContext`eh9$$, $CellContext`eh10$$, $CellContext`eh11$$, \
-$CellContext`eh12$$, $CellContext`l1$$ = 
-  Line[{{-42, 8}, {-37, 1}, {-22, 1}, {-17, 8}, {-42, 
-   8}}], $CellContext`l2$$ = 
-  Line[{{-13, 8}, {-7, 1}, {8, 1}, {13, 8}, {-13, 8}}], $CellContext`l3$$ = 
-  Line[{{18, 8}, {23, 1}, {38, 1}, {43, 8}, {18, 8}}], $CellContext`l4$$ = 
-  Line[{{-15, 35}, {-10, 21}, {10, 21}, {15, 35}, {-15, 
-   35}}], $CellContext`l5$$ = 
-  Line[{{-44, 0.2}, {44, 0.2}, {44, 40}, {-44, 
-    40}, {-44, 0.2}}], $CellContext`inSix$$ = 0, $CellContext`inTwelve$$ = 
-  0, $CellContext`inEighteen$$ = 0, $CellContext`oneTime$$ = 
-  1, $CellContext`oneTimeOut$$ = 1, $CellContext`prec$$, $CellContext`init$$ =
-   1, $CellContext`init1$$ = 1, $CellContext`init2$$ = 
-  1, $CellContext`init3$$ = 1, $CellContext`init4$$ = 
-  1, $CellContext`init5$$ = 1, $CellContext`init6$$ = 
-  1, $CellContext`init9$$ = 1, $CellContext`init15$$ = 
-  1, $CellContext`init10$$ = 1, $CellContext`init16$$ = 
-  1, $CellContext`init8$$ = 1, $CellContext`init14$$ = 
-  1, $CellContext`colEight$$ = GrayLevel[0], $CellContext`colSix$$ = RGBColor[
-  0, 0, 1], $CellContext`colSix1$$ = GrayLevel[0], $CellContext`colTwelve$$ = 
-  RGBColor[0, 0, 1], $CellContext`colFuorteen$$ = GrayLevel[
-  0], $CellContext`colTwelve1$$ = GrayLevel[0], $CellContext`colEighteen$$ = 
-  RGBColor[0, 0, 1], $CellContext`colEighteen1$$ = GrayLevel[
-  0], $CellContext`colThree$$ = RGBColor[0, 0, 1], $CellContext`colNine$$ = 
-  RGBColor[0, 0, 1], $CellContext`colFifteen$$ = RGBColor[
-  0, 0, 1], $CellContext`colTen$$ = GrayLevel[0], $CellContext`colSixteen$$ = 
-  GrayLevel[0], $CellContext`colMauro$$ = RGBColor[
-  0, 0, 1], $CellContext`colCate$$ = RGBColor[
-  0, 0, 1], $CellContext`colLuca$$ = RGBColor[
-  0, 0, 1], $CellContext`colGiac$$ = RGBColor[
-  0, 0, 1], $CellContext`colLuigi$$ = GrayLevel[0], $CellContext`colMauro2$$ =
-   GrayLevel[0], $CellContext`colCate2$$ = GrayLevel[
-  0], $CellContext`colMarco$$ = GrayLevel[0], $CellContext`colCarlo$$ = 
-  RGBColor[0, 1, 0], $CellContext`colFederico$$ = RGBColor[
-  0, 1, 0], $CellContext`colElisa$$ = RGBColor[0, 1, 0], $CellContext`ok1$$ = 
-  0, $CellContext`ok2$$ = 0, $CellContext`ok3$$ = 0, $CellContext`ok4$$ = 
-  0, $CellContext`ok5$$ = 0, $CellContext`ok6$$ = 0, $CellContext`ok7$$ = 
-  0, $CellContext`ok8$$ = 0, $CellContext`ok9$$ = 0, $CellContext`ok10$$ = 0}, 
-  TagBox[
-   StyleBox[
-    DynamicModuleBox[{Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
-     Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ = 
-     1, Typeset`name$$ = "\"untitled\"", Typeset`specs$$ = {{
-       Hold[
-        Button["Valuta!", 
-         If[
-          
-          And[$CellContext`ok1$$ == 1, $CellContext`ok2$$ == 
-           1, $CellContext`ok3$$ == 1, $CellContext`ok4$$ == 
-           1, $CellContext`ok5$$ == 1, $CellContext`ok6$$ == 
-           1 $CellContext`ok7$$ == 1, $CellContext`ok8$$ == 
-           1, $CellContext`ok9$$ == 1, $CellContext`ok10$$ == 1], 
-          Speak["Very good"], 
-          Speak["You can do better"]]]], Manipulate`Dump`ThisIsNotAControl}, {
-      
-       Hold[
-        Button[
-        "Reset!", $CellContext`pt1$$ = {-36, 6}; $CellContext`pt2$$ = {-24, 
-           6}; $CellContext`pt3$$ = {-35, 3}; $CellContext`pt4$$ = {-27, 
-           3}; $CellContext`pt5$$ = {-7, 6}; $CellContext`pt6$$ = {6, 
-           6}; $CellContext`pt7$$ = {-4, 3}; $CellContext`pt8$$ = {4, 
-           3}; $CellContext`pt9$$ = {23, 6}; $CellContext`pt10$$ = {35, 
-           6}; $CellContext`pt11$$ = {29, 3}; $CellContext`inSix$$ = 
-          0; $CellContext`inTwelve$$ = 0; $CellContext`inEighteen$$ = 
-          0; $CellContext`oneTime$$ = 1; $CellContext`oneTimeOut$$ = 
-          1; $CellContext`init$$ = 1; $CellContext`init1$$ = 
-          1; $CellContext`init2$$ = 1; $CellContext`init3$$ = 
-          1; $CellContext`init4$$ = 1; $CellContext`init5$$ = 
-          1; $CellContext`init6$$ = 1; $CellContext`init9$$ = 
-          1; $CellContext`init15$$ = 1; $CellContext`init10$$ = 
-          1; $CellContext`init16$$ = 1; $CellContext`init8$$ = 
-          1; $CellContext`init14$$ = 1; $CellContext`colMauro$$ = 
-          Blue; $CellContext`colCate$$ = Blue; $CellContext`colLuca$$ = 
-          Blue; $CellContext`colLuigi$$ = Black; $CellContext`colMauro2$$ = 
-          Black; $CellContext`colCate2$$ = Black; $CellContext`colMarco$$ = 
-          Black; $CellContext`colCarlo$$ = Green; $CellContext`colFederico$$ = 
-          Green; $CellContext`colElisa$$ = Green; $CellContext`colGiac$$ = 
-          Blue; $CellContext`ok1$$ = 0; $CellContext`ok2$$ = 
-          0; $CellContext`ok3$$ = 0; $CellContext`ok4$$ = 
-          0; $CellContext`ok5$$ = 0; $CellContext`ok6$$ = 
-          0; $CellContext`ok7$$ = 0; $CellContext`ok8$$ = 
-          0; $CellContext`ok9$$ = 0; $CellContext`ok10$$ = 0]], 
-       Manipulate`Dump`ThisIsNotAControl}}, Typeset`size$$ = {
-     950., {208., 214.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
-     Typeset`skipInitDone$$ = True}, 
-     DynamicBox[Manipulate`ManipulateBoxes[
-      1, StandardForm, "Variables" :> {}, "ControllerVariables" :> {}, 
-       "OtherVariables" :> {
-        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
-         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
-         Typeset`specs$$, Typeset`size$$, Typeset`update$$, 
-         Typeset`initDone$$, Typeset`skipInitDone$$}, "Body" :> Dynamic[
-         Graphics[{
-           $CellContext`eh$$[$CellContext`pt1$$, $CellContext`init6$$], 
-           $CellContext`eh1$$[$CellContext`pt2$$, $CellContext`init$$], 
-           $CellContext`eh2$$[$CellContext`pt3$$, $CellContext`init9$$], 
-           $CellContext`eh3$$[$CellContext`pt4$$, $CellContext`init2$$], 
-           $CellContext`eh4$$[$CellContext`pt5$$, $CellContext`init15$$], 
-           $CellContext`eh5$$[$CellContext`pt6$$, $CellContext`init3$$], 
-           $CellContext`eh6$$[$CellContext`pt7$$, $CellContext`init1$$], 
-           $CellContext`eh7$$[$CellContext`pt8$$, $CellContext`init8$$], 
-           $CellContext`eh8$$[$CellContext`pt9$$, $CellContext`init10$$], 
-           $CellContext`eh9$$[$CellContext`pt10$$, $CellContext`init14$$], 
-           $CellContext`eh10$$[$CellContext`pt11$$, $CellContext`init16$$], 
-           Blue, 
-           Thickness[0.005], $CellContext`l1$$ = 
-           Line[{{-42, 8}, {-37, 1}, {-22, 1}, {-17, 8}, {-42, 8}}], 
-           Black, $CellContext`l2$$ = 
-           Line[{{-13, 8}, {-7, 1}, {8, 1}, {13, 8}, {-13, 8}}], 
-           Green, $CellContext`l3$$ = 
-           Line[{{18, 8}, {23, 1}, {38, 1}, {43, 8}, {18, 8}}], 
-           Red, $CellContext`l4$$ = 
-           Line[{{-15, 35}, {-10, 21}, {10, 21}, {15, 35}, {-15, 35}}], Black, 
-           Thickness[0.001], $CellContext`l5$$ = 
-           Line[{{-44, 0.2}, {44, 0.2}, {44, 40}, {-44, 40}, {-44, 0.2}}], 
-           Blue, FontSize -> 20, 
-           Text["A", {-40, 2}], Green, 
-           Text["C", {20, 2}], Black, 
-           Text["B", {-10, 2}]}, ImageSize -> 950, 
-          PlotRange -> {{-45, 45}, {0, 40}}, Axes -> False], None], 
-       "Specifications" :> {
-         Button["Valuta!", 
-          If[
-           
-           And[$CellContext`ok1$$ == 1, $CellContext`ok2$$ == 
-            1, $CellContext`ok3$$ == 1, $CellContext`ok4$$ == 
-            1, $CellContext`ok5$$ == 1, $CellContext`ok6$$ == 
-            1 $CellContext`ok7$$ == 1, $CellContext`ok8$$ == 
-            1, $CellContext`ok9$$ == 1, $CellContext`ok10$$ == 1], 
-           Speak["Very good"], 
-           Speak["You can do better"]]], 
-         Button[
-         "Reset!", $CellContext`pt1$$ = {-36, 6}; $CellContext`pt2$$ = {-24, 
-            6}; $CellContext`pt3$$ = {-35, 3}; $CellContext`pt4$$ = {-27, 
-            3}; $CellContext`pt5$$ = {-7, 6}; $CellContext`pt6$$ = {6, 
-            6}; $CellContext`pt7$$ = {-4, 3}; $CellContext`pt8$$ = {4, 
-            3}; $CellContext`pt9$$ = {23, 6}; $CellContext`pt10$$ = {35, 
-            6}; $CellContext`pt11$$ = {29, 3}; $CellContext`inSix$$ = 
-           0; $CellContext`inTwelve$$ = 0; $CellContext`inEighteen$$ = 
-           0; $CellContext`oneTime$$ = 1; $CellContext`oneTimeOut$$ = 
-           1; $CellContext`init$$ = 1; $CellContext`init1$$ = 
-           1; $CellContext`init2$$ = 1; $CellContext`init3$$ = 
-           1; $CellContext`init4$$ = 1; $CellContext`init5$$ = 
-           1; $CellContext`init6$$ = 1; $CellContext`init9$$ = 
-           1; $CellContext`init15$$ = 1; $CellContext`init10$$ = 
-           1; $CellContext`init16$$ = 1; $CellContext`init8$$ = 
-           1; $CellContext`init14$$ = 1; $CellContext`colMauro$$ = 
-           Blue; $CellContext`colCate$$ = Blue; $CellContext`colLuca$$ = 
-           Blue; $CellContext`colLuigi$$ = Black; $CellContext`colMauro2$$ = 
-           Black; $CellContext`colCate2$$ = Black; $CellContext`colMarco$$ = 
-           Black; $CellContext`colCarlo$$ = Green; $CellContext`colFederico$$ = 
-           Green; $CellContext`colElisa$$ = Green; $CellContext`colGiac$$ = 
-           Blue; $CellContext`ok1$$ = 0; $CellContext`ok2$$ = 
-           0; $CellContext`ok3$$ = 0; $CellContext`ok4$$ = 
-           0; $CellContext`ok5$$ = 0; $CellContext`ok6$$ = 
-           0; $CellContext`ok7$$ = 0; $CellContext`ok8$$ = 
-           0; $CellContext`ok9$$ = 0; $CellContext`ok10$$ = 0]}, 
-       "Options" :> {}, "DefaultOptions" :> {}],
-      ImageSizeCache->{997., {266., 273.}},
-      SingleEvaluation->True],
-     Deinitialization:>None,
-     DynamicModuleValues:>{},
-     SynchronousInitialization->True,
-     UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
-     UnsavedVariables:>{Typeset`initDone$$},
-     UntrackedVariables:>{Typeset`size$$}], "Manipulate",
-    Deployed->True,
-    StripOnInput->False],
-   Manipulate`InterpretManipulate[1]],
-  DynamicModuleValues:>{{DownValues[$CellContext`eh1$$] = {HoldPattern[
-         $CellContext`eh1$$[
-          Pattern[$CellContext`val1$, 
-           Blank[]], 
-          Pattern[$CellContext`oneTimeloc$, 
-           Blank[]]]] :> EventHandler[{
-          Text[
-           Style["Caterina", $CellContext`colCate$$, Italic, 20], 
-           Dynamic[$CellContext`val1$]]}, {
-         "MouseClicked" :> ($CellContext`val1$ = {0, 15}), "MouseDragged" :> 
-          If[$CellContext`oneTimeloc$ == 
-             1, $CellContext`val1$ = MousePosition["Graphics"]; Null] If[
-             And[
-             Part[$CellContext`val1$, 2] > 25, 
-              Part[$CellContext`val1$, 1] > -15, Part[$CellContext`val1$, 1] < 
-              15], $CellContext`val1$ = {-7, 31}; 
-             If[$CellContext`oneTimeloc$ == 
-               1, $CellContext`oneTimeloc$ = 
-                0; $CellContext`inSix$$ = $CellContext`inSix$$ + 1]; 
-             If[$CellContext`inSix$$ == 
-               2, $CellContext`colCate$$ = Red; $CellContext`colCate$$ = 
-                Red; $CellContext`ok1$$ = 1]; Null]}]}, 
-     Attributes[$CellContext`eh1$$] = {HoldAll}}, {
-    DownValues[$CellContext`eh$$] = {HoldPattern[
-         $CellContext`eh$$[
-          Pattern[$CellContext`val1$, 
-           Blank[]], 
-          Pattern[$CellContext`oneTimeloc$, 
-           Blank[]]]] :> EventHandler[{
-          Text[
-           Style["Mauro", $CellContext`colMauro$$, Italic, 20], 
-           Dynamic[$CellContext`val1$]]}, {
-         "MouseClicked" :> ($CellContext`val1$ = {0, 15}), 
-          "MouseDragged" :> (
-           If[$CellContext`oneTimeloc$ == 1, $CellContext`val1$ = 
-             MousePosition["Graphics"]]; If[
-             And[
-             Part[$CellContext`val1$, 2] > 25, 
-              Part[$CellContext`val1$, 1] > -15, Part[$CellContext`val1$, 1] < 
-              15], 
-             
-             If[$CellContext`oneTimeloc$ == 
-              1, $CellContext`val1$ = {-10, 31}; $CellContext`colMauro$$ = 
-               Red; $CellContext`ok4$$ = 1]])}]}, 
-     Attributes[$CellContext`eh$$] = {HoldAll}}, {
-    DownValues[$CellContext`eh2$$] = {HoldPattern[
-         $CellContext`eh2$$[
-          Pattern[$CellContext`val1$, 
-           Blank[]], 
-          Pattern[$CellContext`oneTimeloc$, 
-           Blank[]]]] :> EventHandler[{
-          Text[
-           Style["Luca", $CellContext`colLuca$$, Italic, 20], 
-           Dynamic[$CellContext`val1$]]}, {
-         "MouseClicked" :> ($CellContext`val1$ = {0, 15}), 
-          "MouseDragged" :> (
-           If[$CellContext`oneTimeloc$ == 1, $CellContext`val1$ = 
-             MousePosition["Graphics"]]; If[
-             And[
-             Part[$CellContext`val1$, 2] > 25, 
-              Part[$CellContext`val1$, 1] > -15, Part[$CellContext`val1$, 1] < 
-              15], 
-             
-             If[$CellContext`oneTimeloc$ == 
-              1, $CellContext`val1$ = {-1, 31}; $CellContext`colLuca$$ = 
-               Red; $CellContext`ok5$$ = 1]])}]}, 
-     Attributes[$CellContext`eh2$$] = {HoldAll}}, {
-    DownValues[$CellContext`eh3$$] = {HoldPattern[
-         $CellContext`eh3$$[
-          Pattern[$CellContext`val1$, 
-           Blank[]], 
-          Pattern[$CellContext`oneTimeloc$, 
-           Blank[]]]] :> EventHandler[{
-          Text[
-           Style["Giacomo", $CellContext`colGiac$$, Italic, 20], 
-           Dynamic[$CellContext`val1$]]}, {
-         "MouseClicked" :> ($CellContext`val1$ = {0, 15}), "MouseDragged" :> 
-          If[$CellContext`oneTimeloc$ == 
-             1, $CellContext`val1$ = MousePosition["Graphics"]; Null] If[
-             And[
-             Part[$CellContext`val1$, 2] > 25, 
-              Part[$CellContext`val1$, 1] > -15, Part[$CellContext`val1$, 1] < 
-              15], $CellContext`val1$ = {6, 31}; 
-             If[$CellContext`oneTimeloc$ == 
-               1, $CellContext`oneTimeloc$ = 
-                0; $CellContext`inTwelve$$ = $CellContext`inTwelve$$ + 1]; 
-             If[$CellContext`inTwelve$$ == 
-               2, $CellContext`colGiac$$ = Red; $CellContext`colGiac$$ = 
-                Red; $CellContext`ok2$$ = 1]; Null]}]}, 
-     Attributes[$CellContext`eh3$$] = {HoldAll}}, {
-    DownValues[$CellContext`eh4$$] = {HoldPattern[
-         $CellContext`eh4$$[
-          Pattern[$CellContext`val1$, 
-           Blank[]], 
-          Pattern[$CellContext`oneTimeloc$, 
-           Blank[]]]] :> EventHandler[{
-          Text[
-           Style["Luigi", $CellContext`colLuigi$$, Italic, 20], 
-           Dynamic[$CellContext`val1$]]}, {
-         "MouseClicked" :> ($CellContext`val1$ = {0, 15}), 
-          "MouseDragged" :> (
-           If[$CellContext`oneTimeloc$ == 1, $CellContext`val1$ = 
-             MousePosition["Graphics"]]; If[
-             And[
-             Part[$CellContext`val1$, 2] > 25, 
-              Part[$CellContext`val1$, 1] > -15, Part[$CellContext`val1$, 1] < 
-              15], 
-             
-             If[$CellContext`oneTimeloc$ == 
-              1, $CellContext`val1$ = {-3, 26}; $CellContext`colLuigi$$ = 
-               Red; $CellContext`ok6$$ = 1]])}]}, 
-     Attributes[$CellContext`eh4$$] = {HoldAll}}, {
-    DownValues[$CellContext`eh5$$] = {HoldPattern[
-         $CellContext`eh5$$[
-          Pattern[$CellContext`val1$, 
-           Blank[]], 
-          Pattern[$CellContext`oneTimeloc$, 
-           Blank[]]]] :> EventHandler[{
-          Text[
-           Style["Caterina", $CellContext`colCate2$$, Italic, 20], 
-           Dynamic[$CellContext`val1$]]}, {
-         "MouseClicked" :> ($CellContext`val1$ = {0, 15}), "MouseDragged" :> 
-          If[$CellContext`oneTimeloc$ == 
-             1, $CellContext`val1$ = MousePosition["Graphics"]; Null] If[
-             And[
-             Part[$CellContext`val1$, 2] > 25, 
-              Part[$CellContext`val1$, 1] > -15, Part[$CellContext`val1$, 1] < 
-              15], $CellContext`val1$ = {5, 26}; 
-             If[$CellContext`oneTimeloc$ == 
-               1, $CellContext`oneTimeloc$ = 
-                0; $CellContext`inEighteen$$ = $CellContext`inEighteen$$ + 1]; 
-             If[$CellContext`inEighteen$$ == 
-               2, $CellContext`colCate2$$ = Red; $CellContext`colCate2$$ = 
-                Red; $CellContext`ok3$$ = 1]; Null]}]}, 
-     Attributes[$CellContext`eh5$$] = {HoldAll}}, {
-    DownValues[$CellContext`eh6$$] = {HoldPattern[
-         $CellContext`eh6$$[
-          Pattern[$CellContext`val1$, 
-           Blank[]], 
-          Pattern[$CellContext`oneTimeloc$, 
-           Blank[]]]] :> EventHandler[{
-          Text[
-           Style["Mauro", $CellContext`colMauro2$$, Italic, 20], 
-           Dynamic[$CellContext`val1$]]}, {
-         "MouseClicked" :> ($CellContext`val1$ = {0, 15}), "MouseDragged" :> 
-          If[$CellContext`oneTimeloc$ == 
-             1, $CellContext`val1$ = MousePosition["Graphics"]; Null] If[
-             And[
-             Part[$CellContext`val1$, 2] > 25, 
-              Part[$CellContext`val1$, 1] > -15, Part[$CellContext`val1$, 1] < 
-              15], $CellContext`val1$ = {-7, 31}; 
-             If[$CellContext`oneTimeloc$ == 
-               1, $CellContext`oneTimeloc$ = 
-                0; $CellContext`inSix$$ = $CellContext`inSix$$ + 1]; 
-             If[$CellContext`inSix$$ == 
-               2, $CellContext`colSix1$$ = Red; $CellContext`colMauro2$$ = 
-                Red; $CellContext`ok1$$ = 1]; Null]}]}, 
-     Attributes[$CellContext`eh6$$] = {HoldAll}}, {
-    DownValues[$CellContext`eh7$$] = {HoldPattern[
-         $CellContext`eh7$$[
-          Pattern[$CellContext`val1$, 
-           Blank[]], 
-          Pattern[$CellContext`oneTimeloc$, 
-           Blank[]]]] :> EventHandler[{
-          Text[
-           Style["Marco", $CellContext`colMarco$$, Italic, 20], 
-           Dynamic[$CellContext`val1$]]}, {
-         "MouseClicked" :> ($CellContext`val1$ = {0, 15}), 
-          "MouseDragged" :> (
-           If[$CellContext`oneTimeloc$ == 1, $CellContext`val1$ = 
-             MousePosition["Graphics"]]; If[
-             And[
-             Part[$CellContext`val1$, 2] > 25, 
-              Part[$CellContext`val1$, 1] > -15, Part[$CellContext`val1$, 1] < 
-              15], 
-             
-             If[$CellContext`oneTimeloc$ == 
-              1, $CellContext`val1$ = {-4, 31}; $CellContext`colMarco$$ = 
-               Red; $CellContext`ok7$$ = 1]])}]}, 
-     Attributes[$CellContext`eh7$$] = {HoldAll}}, {
-    DownValues[$CellContext`eh8$$] = {HoldPattern[
-         $CellContext`eh8$$[
-          Pattern[$CellContext`val1$, 
-           Blank[]], 
-          Pattern[$CellContext`oneTimeloc$, 
-           Blank[]]]] :> EventHandler[{
-          Text[
-           Style["Carlo", $CellContext`colCarlo$$, Italic, 20], 
-           Dynamic[$CellContext`val1$]]}, {
-         "MouseClicked" :> ($CellContext`val1$ = {0, 15}), 
-          "MouseDragged" :> (
-           If[$CellContext`oneTimeloc$ == 1, $CellContext`val1$ = 
-             MousePosition["Graphics"]]; If[
-             And[
-             Part[$CellContext`val1$, 2] > 25, 
-              Part[$CellContext`val1$, 1] > -15, Part[$CellContext`val1$, 1] < 
-              15], 
-             
-             If[$CellContext`oneTimeloc$ == 
-              1, $CellContext`val1$ = {2, 31}; $CellContext`colCarlo$$ = 
-               Red; $CellContext`ok8$$ = 1]])}]}, 
-     Attributes[$CellContext`eh8$$] = {HoldAll}}, {
-    DownValues[$CellContext`eh9$$] = {HoldPattern[
-         $CellContext`eh9$$[
-          Pattern[$CellContext`val1$, 
-           Blank[]], 
-          Pattern[$CellContext`oneTimeloc$, 
-           Blank[]]]] :> EventHandler[{
-          Text[
-           Style["Federico", $CellContext`colFederico$$, Italic, 20], 
-           Dynamic[$CellContext`val1$]]}, {
-         "MouseClicked" :> ($CellContext`val1$ = {0, 15}), 
-          "MouseDragged" :> (
-           If[$CellContext`oneTimeloc$ == 1, $CellContext`val1$ = 
-             MousePosition["Graphics"]]; If[
-             And[
-             Part[$CellContext`val1$, 2] > 25, 
-              Part[$CellContext`val1$, 1] > -15, Part[$CellContext`val1$, 1] < 
-              15], 
-             
-             If[$CellContext`oneTimeloc$ == 
-              1, $CellContext`val1$ = {10, 31}; $CellContext`colFederico$$ = 
-               Red; $CellContext`ok9$$ = 1]])}]}, 
-     Attributes[$CellContext`eh9$$] = {HoldAll}}, {
-    DownValues[$CellContext`eh10$$] = {HoldPattern[
-         $CellContext`eh10$$[
-          Pattern[$CellContext`val1$, 
-           Blank[]], 
-          Pattern[$CellContext`oneTimeloc$, 
-           Blank[]]]] :> EventHandler[{
-          Text[
-           Style["Elisa", $CellContext`colElisa$$, Italic, 20], 
-           Dynamic[$CellContext`val1$]]}, {
-         "MouseClicked" :> ($CellContext`val1$ = {0, 15}), 
-          "MouseDragged" :> (
-           If[$CellContext`oneTimeloc$ == 1, $CellContext`val1$ = 
-             MousePosition["Graphics"]]; If[
-             And[
-             Part[$CellContext`val1$, 2] > 25, 
-              Part[$CellContext`val1$, 1] > -15, Part[$CellContext`val1$, 1] < 
-              15], 
-             
-             If[$CellContext`oneTimeloc$ == 
-              1, $CellContext`val1$ = {1, 26}; $CellContext`colElisa$$ = 
-               Red; $CellContext`ok10$$ = 1]])}]}, 
-     Attributes[$CellContext`eh10$$] = {HoldAll}}, {
-    Attributes[$CellContext`eh11$$] = {HoldAll}}, {
-    Attributes[$CellContext`eh12$$] = {HoldAll}}, {
-    Attributes[$CellContext`inSix$$] = {HoldAll}}, {
-    Attributes[$CellContext`inTwelve$$] = {HoldAll}}, {
-    Attributes[$CellContext`inEighteen$$] = {HoldAll}}},
-  Initialization:>($CellContext`testpoint[
-      Pattern[$CellContext`poly, 
-       Blank[]], 
-      Pattern[$CellContext`pt, 
-       Blank[]]] := Round[(Total[
-          Mod[
-           (# - RotateRight[#]& )[
-            Map[Apply[ArcTan, $CellContext`pt - #]& , $CellContext`poly]], 2 
-           Pi, -Pi]]/2)/Pi] != 0; SetAttributes[$CellContext`eh1$$, HoldAll]; 
-   SetAttributes[$CellContext`eh$$, HoldAll]; 
-   SetAttributes[$CellContext`eh2$$, HoldAll]; 
-   SetAttributes[$CellContext`eh3$$, HoldAll]; 
-   SetAttributes[$CellContext`eh4$$, HoldAll]; 
-   SetAttributes[$CellContext`eh5$$, HoldAll]; 
-   SetAttributes[$CellContext`eh6$$, HoldAll]; 
-   SetAttributes[$CellContext`eh7$$, HoldAll]; 
-   SetAttributes[$CellContext`eh8$$, HoldAll]; 
-   SetAttributes[$CellContext`eh9$$, HoldAll]; 
-   SetAttributes[$CellContext`eh10$$, HoldAll]; 
-   SetAttributes[$CellContext`eh11$$, HoldAll]; 
-   SetAttributes[$CellContext`eh12$$, HoldAll]; 
-   SetAttributes[$CellContext`inSix$$, HoldAll]; 
-   SetAttributes[$CellContext`inEighteen$$, HoldAll]; 
-   SetAttributes[$CellContext`inTwelve$$, HoldAll]; $CellContext`eh$$[
-      Pattern[$CellContext`val1$, 
-       Blank[]], 
-      Pattern[$CellContext`oneTimeloc$, 
-       Blank[]]] := EventHandler[{
-       Text[
-        Style["Mauro", $CellContext`colMauro$$, Italic, 20], 
-        Dynamic[$CellContext`val1$]]}, {
-      "MouseClicked" :> ($CellContext`val1$ = {0, 15}), 
-       "MouseDragged" :> (
-        If[$CellContext`oneTimeloc$ == 1, $CellContext`val1$ = 
-          MousePosition["Graphics"]]; If[
-          And[
-          Part[$CellContext`val1$, 2] > 25, Part[$CellContext`val1$, 1] > -15,
-            Part[$CellContext`val1$, 1] < 15], 
-          
-          If[$CellContext`oneTimeloc$ == 
-           1, $CellContext`val1$ = {-10, 31}; $CellContext`colMauro$$ = 
-            Red; $CellContext`ok4$$ = 1]])}]; $CellContext`eh1$$[
-      Pattern[$CellContext`val1$, 
-       Blank[]], 
-      Pattern[$CellContext`oneTimeloc$, 
-       Blank[]]] := EventHandler[{
-       Text[
-        Style["Caterina", $CellContext`colCate$$, Italic, 20], 
-        Dynamic[$CellContext`val1$]]}, {
-      "MouseClicked" :> ($CellContext`val1$ = {0, 15}), "MouseDragged" :> 
-       If[$CellContext`oneTimeloc$ == 
-          1, $CellContext`val1$ = MousePosition["Graphics"]; Null] If[
-          And[
-          Part[$CellContext`val1$, 2] > 25, Part[$CellContext`val1$, 1] > -15,
-            Part[$CellContext`val1$, 1] < 15], $CellContext`val1$ = {-7, 31}; 
-          If[$CellContext`oneTimeloc$ == 
-            1, $CellContext`oneTimeloc$ = 
-             0; $CellContext`inSix$$ = $CellContext`inSix$$ + 1]; 
-          If[$CellContext`inSix$$ == 
-            2, $CellContext`colCate$$ = Red; $CellContext`colCate$$ = 
-             Red; $CellContext`ok1$$ = 1]; Null]}]; $CellContext`eh2$$[
-      Pattern[$CellContext`val1$, 
-       Blank[]], 
-      Pattern[$CellContext`oneTimeloc$, 
-       Blank[]]] := EventHandler[{
-       Text[
-        Style["Luca", $CellContext`colLuca$$, Italic, 20], 
-        Dynamic[$CellContext`val1$]]}, {
-      "MouseClicked" :> ($CellContext`val1$ = {0, 15}), 
-       "MouseDragged" :> (
-        If[$CellContext`oneTimeloc$ == 1, $CellContext`val1$ = 
-          MousePosition["Graphics"]]; If[
-          And[
-          Part[$CellContext`val1$, 2] > 25, Part[$CellContext`val1$, 1] > -15,
-            Part[$CellContext`val1$, 1] < 15], 
-          
-          If[$CellContext`oneTimeloc$ == 
-           1, $CellContext`val1$ = {-1, 31}; $CellContext`colLuca$$ = 
-            Red; $CellContext`ok5$$ = 1]])}]; $CellContext`eh3$$[
-      Pattern[$CellContext`val1$, 
-       Blank[]], 
-      Pattern[$CellContext`oneTimeloc$, 
-       Blank[]]] := EventHandler[{
-       Text[
-        Style["Giacomo", $CellContext`colGiac$$, Italic, 20], 
-        Dynamic[$CellContext`val1$]]}, {
-      "MouseClicked" :> ($CellContext`val1$ = {0, 15}), "MouseDragged" :> 
-       If[$CellContext`oneTimeloc$ == 
-          1, $CellContext`val1$ = MousePosition["Graphics"]; Null] If[
-          And[
-          Part[$CellContext`val1$, 2] > 25, Part[$CellContext`val1$, 1] > -15,
-            Part[$CellContext`val1$, 1] < 15], $CellContext`val1$ = {6, 31}; 
-          If[$CellContext`oneTimeloc$ == 
-            1, $CellContext`oneTimeloc$ = 
-             0; $CellContext`inTwelve$$ = $CellContext`inTwelve$$ + 1]; 
-          If[$CellContext`inTwelve$$ == 
-            2, $CellContext`colGiac$$ = Red; $CellContext`colGiac$$ = 
-             Red; $CellContext`ok2$$ = 1]; Null]}]; $CellContext`eh4$$[
-      Pattern[$CellContext`val1$, 
-       Blank[]], 
-      Pattern[$CellContext`oneTimeloc$, 
-       Blank[]]] := EventHandler[{
-       Text[
-        Style["Luigi", $CellContext`colLuigi$$, Italic, 20], 
-        Dynamic[$CellContext`val1$]]}, {
-      "MouseClicked" :> ($CellContext`val1$ = {0, 15}), 
-       "MouseDragged" :> (
-        If[$CellContext`oneTimeloc$ == 1, $CellContext`val1$ = 
-          MousePosition["Graphics"]]; If[
-          And[
-          Part[$CellContext`val1$, 2] > 25, Part[$CellContext`val1$, 1] > -15,
-            Part[$CellContext`val1$, 1] < 15], 
-          
-          If[$CellContext`oneTimeloc$ == 
-           1, $CellContext`val1$ = {-3, 26}; $CellContext`colLuigi$$ = 
-            Red; $CellContext`ok6$$ = 1]])}]; $CellContext`eh5$$[
-      Pattern[$CellContext`val1$, 
-       Blank[]], 
-      Pattern[$CellContext`oneTimeloc$, 
-       Blank[]]] := EventHandler[{
-       Text[
-        Style["Caterina", $CellContext`colCate2$$, Italic, 20], 
-        Dynamic[$CellContext`val1$]]}, {
-      "MouseClicked" :> ($CellContext`val1$ = {0, 15}), "MouseDragged" :> 
-       If[$CellContext`oneTimeloc$ == 
-          1, $CellContext`val1$ = MousePosition["Graphics"]; Null] If[
-          And[
-          Part[$CellContext`val1$, 2] > 25, Part[$CellContext`val1$, 1] > -15,
-            Part[$CellContext`val1$, 1] < 15], $CellContext`val1$ = {5, 26}; 
-          If[$CellContext`oneTimeloc$ == 
-            1, $CellContext`oneTimeloc$ = 
-             0; $CellContext`inEighteen$$ = $CellContext`inEighteen$$ + 1]; 
-          If[$CellContext`inEighteen$$ == 
-            2, $CellContext`colCate2$$ = Red; $CellContext`colCate2$$ = 
-             Red; $CellContext`ok3$$ = 1]; Null]}]; $CellContext`eh6$$[
-      Pattern[$CellContext`val1$, 
-       Blank[]], 
-      Pattern[$CellContext`oneTimeloc$, 
-       Blank[]]] := EventHandler[{
-       Text[
-        Style["Mauro", $CellContext`colMauro2$$, Italic, 20], 
-        Dynamic[$CellContext`val1$]]}, {
-      "MouseClicked" :> ($CellContext`val1$ = {0, 15}), "MouseDragged" :> 
-       If[$CellContext`oneTimeloc$ == 
-          1, $CellContext`val1$ = MousePosition["Graphics"]; Null] If[
-          And[
-          Part[$CellContext`val1$, 2] > 25, Part[$CellContext`val1$, 1] > -15,
-            Part[$CellContext`val1$, 1] < 15], $CellContext`val1$ = {-7, 31}; 
-          If[$CellContext`oneTimeloc$ == 
-            1, $CellContext`oneTimeloc$ = 
-             0; $CellContext`inSix$$ = $CellContext`inSix$$ + 1]; 
-          If[$CellContext`inSix$$ == 
-            2, $CellContext`colSix1$$ = Red; $CellContext`colMauro2$$ = 
-             Red; $CellContext`ok1$$ = 1]; Null]}]; $CellContext`eh7$$[
-      Pattern[$CellContext`val1$, 
-       Blank[]], 
-      Pattern[$CellContext`oneTimeloc$, 
-       Blank[]]] := EventHandler[{
-       Text[
-        Style["Marco", $CellContext`colMarco$$, Italic, 20], 
-        Dynamic[$CellContext`val1$]]}, {
-      "MouseClicked" :> ($CellContext`val1$ = {0, 15}), 
-       "MouseDragged" :> (
-        If[$CellContext`oneTimeloc$ == 1, $CellContext`val1$ = 
-          MousePosition["Graphics"]]; If[
-          And[
-          Part[$CellContext`val1$, 2] > 25, Part[$CellContext`val1$, 1] > -15,
-            Part[$CellContext`val1$, 1] < 15], 
-          
-          If[$CellContext`oneTimeloc$ == 
-           1, $CellContext`val1$ = {-4, 31}; $CellContext`colMarco$$ = 
-            Red; $CellContext`ok7$$ = 1]])}]; $CellContext`eh8$$[
-      Pattern[$CellContext`val1$, 
-       Blank[]], 
-      Pattern[$CellContext`oneTimeloc$, 
-       Blank[]]] := EventHandler[{
-       Text[
-        Style["Carlo", $CellContext`colCarlo$$, Italic, 20], 
-        Dynamic[$CellContext`val1$]]}, {
-      "MouseClicked" :> ($CellContext`val1$ = {0, 15}), 
-       "MouseDragged" :> (
-        If[$CellContext`oneTimeloc$ == 1, $CellContext`val1$ = 
-          MousePosition["Graphics"]]; If[
-          And[
-          Part[$CellContext`val1$, 2] > 25, Part[$CellContext`val1$, 1] > -15,
-            Part[$CellContext`val1$, 1] < 15], 
-          
-          If[$CellContext`oneTimeloc$ == 
-           1, $CellContext`val1$ = {2, 31}; $CellContext`colCarlo$$ = 
-            Red; $CellContext`ok8$$ = 1]])}]; $CellContext`eh9$$[
-      Pattern[$CellContext`val1$, 
-       Blank[]], 
-      Pattern[$CellContext`oneTimeloc$, 
-       Blank[]]] := EventHandler[{
-       Text[
-        Style["Federico", $CellContext`colFederico$$, Italic, 20], 
-        Dynamic[$CellContext`val1$]]}, {
-      "MouseClicked" :> ($CellContext`val1$ = {0, 15}), 
-       "MouseDragged" :> (
-        If[$CellContext`oneTimeloc$ == 1, $CellContext`val1$ = 
-          MousePosition["Graphics"]]; If[
-          And[
-          Part[$CellContext`val1$, 2] > 25, Part[$CellContext`val1$, 1] > -15,
-            Part[$CellContext`val1$, 1] < 15], 
-          
-          If[$CellContext`oneTimeloc$ == 
-           1, $CellContext`val1$ = {10, 31}; $CellContext`colFederico$$ = 
-            Red; $CellContext`ok9$$ = 1]])}]; $CellContext`eh10$$[
-      Pattern[$CellContext`val1$, 
-       Blank[]], 
-      Pattern[$CellContext`oneTimeloc$, 
-       Blank[]]] := EventHandler[{
-       Text[
-        Style["Elisa", $CellContext`colElisa$$, Italic, 20], 
-        Dynamic[$CellContext`val1$]]}, {
-      "MouseClicked" :> ($CellContext`val1$ = {0, 15}), 
-       "MouseDragged" :> (
-        If[$CellContext`oneTimeloc$ == 1, $CellContext`val1$ = 
-          MousePosition["Graphics"]]; If[
-          And[
-          Part[$CellContext`val1$, 2] > 25, Part[$CellContext`val1$, 1] > -15,
-            Part[$CellContext`val1$, 1] < 15], 
-          If[$CellContext`oneTimeloc$ == 
-           1, $CellContext`val1$ = {1, 26}; $CellContext`colElisa$$ = 
-            Red; $CellContext`ok10$$ = 1]])}]; Null)]], "Output",
- CellChangeTimes->{{3.703220924469872*^9, 3.703220951035761*^9}, 
-   3.7032212444818707`*^9, {3.703221279302746*^9, 3.703221285716197*^9}, {
-   3.703221428020347*^9, 3.703221436105895*^9}, {3.703221564824704*^9, 
-   3.703221570560319*^9}, {3.703221791428142*^9, 3.703221809061511*^9}, {
-   3.70322208754284*^9, 3.703222108021743*^9}, 3.7032221840618896`*^9, 
-   3.7032233493154383`*^9, 3.703229396330044*^9, 3.703250413523706*^9, 
-   3.703255521294973*^9, {3.703255970528111*^9, 3.703255974483564*^9}, 
-   3.703256264482581*^9, {3.703256521667674*^9, 3.703256537867765*^9}, 
-   3.703394233917923*^9, 3.7033942976962137`*^9, 3.703394515026293*^9, 
-   3.703394572206009*^9, 3.703395259327516*^9, 3.70339573637579*^9, 
-   3.703395850221772*^9, 3.703396313539228*^9, 3.703396348738698*^9, 
-   3.703396510745653*^9, 3.703396640747295*^9, 3.7033967094811363`*^9, 
-   3.703397132666472*^9, {3.703397165478228*^9, 3.703397189983143*^9}, 
-   3.703397250822815*^9, 3.703397489112446*^9, 3.703397541582253*^9, 
-   3.7033976636789227`*^9, 3.703397732746099*^9, 3.703397843687565*^9, 
-   3.703398349416477*^9, 3.703398397579439*^9, 3.703398494152916*^9, 
-   3.70339885204473*^9, 3.703399271744467*^9, 3.703399341203265*^9, {
-   3.7033995490449266`*^9, 3.703399561127078*^9}, 3.703399842368918*^9, 
-   3.703400051291329*^9, 3.703400184295761*^9, 3.703400229967229*^9, 
-   3.7034002787630367`*^9, 3.703400324405636*^9, 3.703400776338381*^9, 
-   3.703400894859086*^9, {3.7034009691716557`*^9, 3.703400992683043*^9}, 
-   3.7034010328613462`*^9, 3.703401300236092*^9, 3.703401342020056*^9, 
-   3.703401394223707*^9, {3.703401584014702*^9, 3.7034015993884277`*^9}, 
-   3.703401737491488*^9}]
-}, Open  ]],
-
-Cell[CellGroupData[{
-
-Cell[TextData[StyleBox["CONCETTO", "Title"]], "Subtitle",
- CellFrame->6,
- CellChangeTimes->{{3.700971633393548*^9, 3.700971654164226*^9}, {
-  3.70097175503893*^9, 3.700971801315381*^9}},
- TextAlignment->Center],
-
-Cell["prova pro", "Text",
- CellChangeTimes->{{3.700973519857327*^9, 3.70097353275412*^9}, {
-  3.700977143015222*^9, 3.70097714431185*^9}}],
-
-Cell["", "Text"]
-}, Open  ]]
+   3.703401594264388*^9}, {3.7034016804754753`*^9, 3.7034017309554663`*^9}, {
+   3.7034883007733717`*^9, 3.703488305380116*^9}, {3.7034883449008207`*^9, 
+   3.7034883505132093`*^9}, {3.703488432338049*^9, 3.703488446401415*^9}, {
+   3.703519362329584*^9, 3.7035193733746862`*^9}, {3.7035194241178303`*^9, 
+   3.703519426021422*^9}, 3.7035196814873238`*^9, {3.703519726400309*^9, 
+   3.703519745711673*^9}, {3.703519786289441*^9, 3.7035198636557426`*^9}, {
+   3.7035199662052603`*^9, 3.7035200200714006`*^9}, 3.703520056586187*^9, {
+   3.703520150757111*^9, 3.703520192768909*^9}, {3.703520267750388*^9, 
+   3.70352033884766*^9}, {3.7035204207898493`*^9, 3.703520456659029*^9}, {
+   3.703520526185862*^9, 3.703520534661995*^9}, {3.70352057483424*^9, 
+   3.703520575129551*^9}, {3.703520623970286*^9, 3.703520712057357*^9}, 
+   3.7035207481895113`*^9, {3.703520779843649*^9, 3.703520782411831*^9}, {
+   3.7035209286624107`*^9, 3.703520939422657*^9}, {3.7035211720224943`*^9, 
+   3.703521202380959*^9}, 3.703521237164651*^9, {3.703521366011153*^9, 
+   3.703521366134575*^9}, {3.703521398877479*^9, 3.7035213989480133`*^9}}]
 },
 WindowSize->{1366, 704},
-WindowMargins->{{-10, Automatic}, {Automatic, -8}},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
 FrontEndVersion->"10.4 for Linux x86 (64-bit) (April 11, 2016)",
 StyleDefinitions->"Default.nb"
 ]
@@ -2592,20 +1613,10 @@ Cell[929, 27, 220, 3, 32, "Input"],
 Cell[1152, 32, 3572, 48, 32, "Input"],
 Cell[CellGroupData[{
 Cell[4749, 84, 11983, 265, 363, "Input"],
-Cell[16735, 351, 2852, 55, 590, "Output"]
+Cell[16735, 351, 2897, 56, 590, "Output"]
 }, Open  ]],
-Cell[19602, 409, 1972, 26, 55, "Input"],
-Cell[CellGroupData[{
-Cell[21599, 439, 66111, 1382, 6699, "Input"],
-Cell[87713, 1823, 1735, 24, 32, "Output"],
-Cell[89451, 1849, 1720, 25, 32, "Output"],
-Cell[91174, 1876, 33912, 679, 556, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[125123, 2560, 210, 4, 103, "Subtitle"],
-Cell[125336, 2566, 138, 2, 33, "Text"],
-Cell[125477, 2570, 16, 0, 33, "Text"]
-}, Open  ]]
+Cell[19647, 410, 1972, 26, 55, "Input"],
+Cell[21622, 438, 54672, 1154, 5621, "Input"]
 }
 ]
 *)
