@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     91292,       1918]
-NotebookOptionsPosition[     90955,       1901]
-NotebookOutlinePosition[     91311,       1917]
-CellTagsIndexPosition[     91268,       1914]
+NotebookDataLength[     91586,       1920]
+NotebookOptionsPosition[     91271,       1904]
+NotebookOutlinePosition[     91605,       1919]
+CellTagsIndexPosition[     91562,       1916]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -22,7 +22,7 @@ Notebook[{
 Cell[CellGroupData[{
 Cell[BoxData[{
  RowBox[{
-  RowBox[{"gameTemp", "[", "]"}], " ", ":=", " ", 
+  RowBox[{"gameExercise2", "[", "]"}], " ", ":=", " ", 
   RowBox[{"(", "\n", "  \t\t", 
    RowBox[{"DynamicModule", "[", 
     RowBox[{
@@ -215,25 +215,26 @@ Cell[BoxData[{
                   RowBox[{"43", ",", " ", "8"}], "}"}], ",", " ", 
                  RowBox[{"{", 
                   RowBox[{"18", ",", " ", "8"}], "}"}]}], "}"}], "]"}]}], ",",
-              "\n", "\t\t\t \t\t\t  ", "Red", ",", "\n", "\t\t\t ", 
-             RowBox[{"l4", "=", 
+              "\n", "\t\t\t \t\t\t  ", "Red", ",", "\n", "\t\t\t", 
+             RowBox[{"l4", " ", "=", "  ", 
               RowBox[{"Line", "[", 
                RowBox[{"{", 
                 RowBox[{
                  RowBox[{"{", 
                   RowBox[{
-                   RowBox[{"-", "15"}], ",", "37"}], "}"}], ",", 
+                   RowBox[{"-", "15"}], ",", " ", "37"}], "}"}], ",", " ", 
                  RowBox[{"{", 
                   RowBox[{
-                   RowBox[{"-", "10"}], ",", "23"}], "}"}], ",", 
+                   RowBox[{"-", "10"}], ",", " ", "23"}], "}"}], ",", " ", 
                  RowBox[{"{", 
-                  RowBox[{"10", ",", "23"}], "}"}], ",", 
+                  RowBox[{"10", ",", " ", "23"}], "}"}], ",", " ", 
                  RowBox[{"{", 
-                  RowBox[{"15", ",", "37"}], "}"}], ",", 
+                  RowBox[{"15", ",", " ", "37"}], "}"}], ",", " ", 
                  RowBox[{"{", 
                   RowBox[{
-                   RowBox[{"-", "15"}], ",", "37"}], "}"}]}], "}"}], "]"}]}], 
-             ",", " ", "\n", "\t\t\t \t\t\t ", "Black", ",", " ", 
+                   RowBox[{"-", "15"}], ",", " ", "\n", "\t\t\t     ", "37"}],
+                   "}"}]}], "}"}], "]"}]}], ",", " ", "\n", "\t\t\t \t\t\t ", 
+             "Black", ",", " ", 
              RowBox[{"Thickness", "[", "0.001", "]"}], ",", "\n", 
              "\t\t\t \t\t\t ", 
              RowBox[{"l5", " ", "=", " ", "\n", "\t\t\t  \t\t\t  ", 
@@ -1261,7 +1262,7 @@ Cell[BoxData[{
           "]"}]}], ";"}], "\n", "\t\t     \t\t     ", "\n", 
        "\t\t     \t\t     ", "\n", "\t\t     \t\t     ", ")"}]}]}], "\n", 
     "\t\t   \t\t   ", "]"}], ")"}]}], "\[IndentingNewLine]", 
- RowBox[{"gameTemp", "[", "]"}]}], "Input",
+ RowBox[{"gameExercise2", "[", "]"}]}], "Input",
  CellChangeTimes->{
   3.70351898298594*^9, {3.703519126057808*^9, 3.7035191520350723`*^9}, {
    3.703519528899927*^9, 3.7035195325238037`*^9}, {3.70351958287177*^9, 
@@ -1275,15 +1276,16 @@ Cell[BoxData[{
    3.703520911696371*^9, 3.70352091445313*^9}, {3.703520946511911*^9, 
    3.7035209837290907`*^9}, {3.703521047356196*^9, 3.7035210975266457`*^9}, {
    3.7035211595440273`*^9, 3.7035213773108377`*^9}, {3.703521440315331*^9, 
-   3.70352144315479*^9}}],
+   3.70352144315479*^9}, 3.703521717818253*^9, {3.703521892528536*^9, 
+   3.7035219085671043`*^9}}],
 
 Cell[BoxData[
- DynamicModuleBox[{$CellContext`pt1$$ = {-10, 34}, $CellContext`pt2$$ = {0, 
-  34}, $CellContext`pt3$$ = {10, 34}, $CellContext`pt4$$ = {-8, 
-  30}, $CellContext`pt5$$ = {0, 30}, $CellContext`pt6$$ = {0, 
-  34}, $CellContext`pt7$$ = {-10, 34}, $CellContext`pt8$$ = {8, 
-  30}, $CellContext`pt9$$ = {-8, 26}, $CellContext`pt10$$ = {0, 
-  26}, $CellContext`pt11$$ = {8, 26}, $CellContext`pt12$$ = {27, 
+ DynamicModuleBox[{$CellContext`pt1$$ = {-36, 6}, $CellContext`pt2$$ = {-24, 
+  6}, $CellContext`pt3$$ = {-35, 3}, $CellContext`pt4$$ = {-27, 
+  3}, $CellContext`pt5$$ = {-7, 6}, $CellContext`pt6$$ = {6, 
+  6}, $CellContext`pt7$$ = {-4, 3}, $CellContext`pt8$$ = {4, 
+  3}, $CellContext`pt9$$ = {23, 6}, $CellContext`pt10$$ = {35, 
+  6}, $CellContext`pt11$$ = {29, 3}, $CellContext`pt12$$ = {27, 
   7}, $CellContext`pt13$$ = {25, 
   4}, $CellContext`eh1$$, $CellContext`eh$$, $CellContext`eh2$$, \
 $CellContext`eh3$$, $CellContext`eh4$$, $CellContext`eh5$$, \
@@ -1297,28 +1299,26 @@ $CellContext`eh12$$, $CellContext`l1$$ =
   Line[{{-15, 37}, {-10, 23}, {10, 23}, {15, 37}, {-15, 
    37}}], $CellContext`l5$$ = 
   Line[{{-44, 0.2}, {44, 0.2}, {44, 40}, {-44, 
-    40}, {-44, 0.2}}], $CellContext`inMauro$$ = 2, $CellContext`inCate$$ = 
-  2, $CellContext`oneTime$$ = 1, $CellContext`oneTimeOut$$ = 
-  1, $CellContext`prec$$, $CellContext`init$$ = 0, $CellContext`init1$$ = 
-  0, $CellContext`init2$$ = 1, $CellContext`init3$$ = 
-  0, $CellContext`init4$$ = 1, $CellContext`init5$$ = 
-  1, $CellContext`init6$$ = 0, $CellContext`init9$$ = 
+    40}, {-44, 0.2}}], $CellContext`inMauro$$ = 0, $CellContext`inCate$$ = 
+  0, $CellContext`oneTime$$ = 1, $CellContext`oneTimeOut$$ = 
+  1, $CellContext`prec$$, $CellContext`init$$ = 1, $CellContext`init1$$ = 
+  1, $CellContext`init2$$ = 1, $CellContext`init3$$ = 
+  1, $CellContext`init4$$ = 1, $CellContext`init5$$ = 
+  1, $CellContext`init6$$ = 1, $CellContext`init9$$ = 
   1, $CellContext`init15$$ = 1, $CellContext`init10$$ = 
   1, $CellContext`init16$$ = 1, $CellContext`init8$$ = 
   1, $CellContext`init14$$ = 1, $CellContext`colMauro$$ = RGBColor[
-  1, 0, 0], $CellContext`colCate$$ = RGBColor[
-  1, 0, 0], $CellContext`colMauro2$$ = RGBColor[
-  1, 0, 0], $CellContext`colCate2$$ = RGBColor[
-  1, 0, 0], $CellContext`colLuca$$ = RGBColor[
-  1, 0, 0], $CellContext`colGiac$$ = RGBColor[
-  1, 0, 0], $CellContext`colLuigi$$ = RGBColor[
-  1, 0, 0], $CellContext`colMarco$$ = RGBColor[
-  1, 0, 0], $CellContext`colCarlo$$ = RGBColor[
-  1, 0, 0], $CellContext`colFederico$$ = RGBColor[
-  1, 0, 0], $CellContext`colElisa$$ = RGBColor[1, 0, 0], $CellContext`ok1$$ = 
-  1, $CellContext`ok2$$ = 1, $CellContext`ok3$$ = 1, $CellContext`ok4$$ = 
-  1, $CellContext`ok5$$ = 1, $CellContext`ok6$$ = 1, $CellContext`ok7$$ = 
-  1, $CellContext`ok8$$ = 1, $CellContext`ok9$$ = 1, $CellContext`ok10$$ = 0}, 
+  0, 0, 1], $CellContext`colCate$$ = RGBColor[
+  0, 0, 1], $CellContext`colMauro2$$ = GrayLevel[0], $CellContext`colCate2$$ =
+   GrayLevel[0], $CellContext`colLuca$$ = RGBColor[
+  0, 0, 1], $CellContext`colGiac$$ = RGBColor[
+  0, 0, 1], $CellContext`colLuigi$$ = GrayLevel[0], $CellContext`colMarco$$ = 
+  GrayLevel[0], $CellContext`colCarlo$$ = RGBColor[
+  0, 1, 0], $CellContext`colFederico$$ = RGBColor[
+  0, 1, 0], $CellContext`colElisa$$ = RGBColor[0, 1, 0], $CellContext`ok1$$ = 
+  0, $CellContext`ok2$$ = 0, $CellContext`ok3$$ = 0, $CellContext`ok4$$ = 
+  0, $CellContext`ok5$$ = 0, $CellContext`ok6$$ = 0, $CellContext`ok7$$ = 
+  0, $CellContext`ok8$$ = 0, $CellContext`ok9$$ = 0, $CellContext`ok10$$ = 0}, 
   TagBox[
    StyleBox[
     DynamicModuleBox[{Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
@@ -1363,7 +1363,7 @@ $CellContext`eh12$$, $CellContext`l1$$ =
           0; $CellContext`ok6$$ = 0; $CellContext`ok7$$ = 
           0; $CellContext`ok8$$ = 0; $CellContext`ok9$$ = 0; Null]], 
        Manipulate`Dump`ThisIsNotAControl}}, Typeset`size$$ = {
-     950., {209., 213.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+     950., {208., 214.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
      Typeset`skipInitDone$$ = True}, 
      DynamicBox[Manipulate`ManipulateBoxes[
       1, StandardForm, "Variables" :> {}, "ControllerVariables" :> {}, 
@@ -1437,11 +1437,12 @@ $CellContext`eh12$$, $CellContext`l1$$ =
            0; $CellContext`ok6$$ = 0; $CellContext`ok7$$ = 
            0; $CellContext`ok8$$ = 0; $CellContext`ok9$$ = 0; Null]}, 
        "Options" :> {}, "DefaultOptions" :> {}],
-      ImageSizeCache->{995., {270., 275.}},
+      ImageSizeCache->{997., {266., 273.}},
       SingleEvaluation->True],
      Deinitialization:>None,
      DynamicModuleValues:>{},
      SynchronousInitialization->True,
+     UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
      UnsavedVariables:>{Typeset`initDone$$},
      UntrackedVariables:>{Typeset`size$$}], "Manipulate",
     Deployed->True,
@@ -1896,13 +1897,14 @@ $CellContext`eh12$$, $CellContext`l1$$ =
    3.703520719986453*^9, 3.703520750712102*^9, {3.703520846493772*^9, 
    3.703520871764145*^9}, 3.703520918030154*^9, {3.703520964878807*^9, 
    3.7035209874086847`*^9}, 3.703521053233664*^9, 3.7035212502610292`*^9, 
-   3.703521346985615*^9, 3.703521379716586*^9, 3.703521451526909*^9}]
+   3.703521346985615*^9, 3.703521379716586*^9, 3.703521451526909*^9, 
+   3.70352167436504*^9, 3.7035217274092417`*^9, 3.7035218384932528`*^9, 
+   3.703521925111704*^9}]
 }, Open  ]]
 },
-WindowSize->{1071, 624},
-WindowMargins->{{Automatic, 137}, {Automatic, 30}},
-FrontEndVersion->"10.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (June 27, \
-2014)",
+WindowSize->{1366, 704},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"10.4 for Linux x86 (64-bit) (April 11, 2016)",
 StyleDefinitions->"Default.nb"
 ]
 (* End of Notebook Content *)
@@ -1917,11 +1919,10 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 59237, 1255, 4772, "Input"],
-Cell[59820, 1279, 31119, 619, 562, "Output"]
+Cell[580, 22, 59416, 1257, 6193, "Input"],
+Cell[59999, 1281, 31256, 620, 556, "Output"]
 }, Open  ]]
 }
 ]
 *)
 
-(* End of internal cache information *)
