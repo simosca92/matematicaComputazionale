@@ -515,8 +515,8 @@
 		       ImageSize -> Medium, 
 		       Epilog -> {Text[
 			  Style["C=A \[Intersection] B", Red, Italic, 
-			   15], {0, -4.5}]}], {{a, 10, "C=A \[Intersection] B"}, 10, 
-		       							  20, 1}]
+			   15], {0, -4.5}]}], {{a, 20, "C=A \[Intersection] B"}, 20, 
+		       							  10, 1}]
 		     
 		     }],
 		   Initialization :> (
@@ -769,8 +769,8 @@
 		    Graphics[{If[testpoint[p, pt], Pink, Orange], Polygon@p}, 
 		     PlotRange -> 3 {{-1, 1}, {-1, 1}}, ImageSize -> {400, 475}, 
 		     PlotLabel -> 
-		      Text[Style[If[testpoint[p, pt], "True ", "False"], Bold, 
-			Italic]]]], {{pts, {{0, 0}, {-2, -2}, {2, -2}, {0, 2}}}, 
+		      Text[Style[If[testpoint[p, pt], "\[Element]", "\[NotElement]"], Bold, 
+			Italic,Large]]]], {{pts, {{0, 0}, {-2, -2}, {2, -2}, {0, 2}}}, 
 		    Sequence @@ (3 {{-1, -1}, {1,1}}), Locator, 
 		    LocatorAutoCreate -> {4, Infinity}}, SaveDefinitions -> True, 
 		    Initialization :> {(*test if point pt inside polygon poly*)
@@ -833,8 +833,8 @@
 		       PlotStyle -> If[a>15,{Black, Black, Blue},{Black, Black, Red}], 
 		       ImageSize -> Medium, 
 		       Epilog -> {Text[
-			  Style["C=A\B", Red, Italic, 15], {0, -4.5}]}], {{a, 10, 
-			"C=A\B"}, 10, 20, 1}]
+			  Style["C=A\B", Red, Italic, 15], {0, -4.5}]}], {{a, 20, 
+			"C=A\B"}, 20, 10, 1}]
 		     
 		     }],
 		   Initialization :> (testpoint[poly_, pt_] := 
@@ -1162,8 +1162,8 @@
 			   0.2}}], Blue, FontSize -> 20,
 		       
 		       
-		       Text["D(A)", {-39, 23}], Red, Text["A", {-13, 2}], Black , 
-		       Text["P(A)", {11, 23}]
+		       Text["D", {-39, 23}], Red, Text["A", {-13, 2}], Black , 
+		       Text["P", {11, 23}]
 		       },
 		      ImageSize -> 900, PlotRange -> {{-45, 45}, {0, 40}}, 
 		      Axes -> False], None], 

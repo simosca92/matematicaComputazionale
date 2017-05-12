@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[   4006717,      66797]
-NotebookOptionsPosition[   4004850,      66731]
-NotebookOutlinePosition[   4005184,      66746]
-CellTagsIndexPosition[   4005141,      66743]
+NotebookDataLength[   4015053,      67001]
+NotebookOptionsPosition[   4013058,      66931]
+NotebookOutlinePosition[   4013392,      66946]
+CellTagsIndexPosition[   4013349,      66943]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -66726,8 +66726,208 @@ D785/9Y3HTU9/kL44tPv218qvjz0yupV90zQzMPXaa/nZgvfKL45/Jb1tvdd
  CellChangeTimes->{3.703570501844008*^9}]
 }, Open  ]],
 
-Cell[BoxData[""], "Input",
- CellChangeTimes->{{3.703522631193513*^9, 3.7035226315558443`*^9}}]
+Cell[BoxData[
+ RowBox[{"\t", 
+  RowBox[{
+   RowBox[{"gameApp22", "[", "]"}], " ", ":=", " ", 
+   RowBox[{"(", "\n", "\t\t  ", 
+    RowBox[{"Manipulate", "[", "\n", "\t\t   ", 
+     RowBox[{
+      RowBox[{"With", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"p", " ", "=", " ", 
+           RowBox[{"Rest", "@", "pts"}]}], ",", " ", 
+          RowBox[{"pt", " ", "=", " ", 
+           RowBox[{"First", "@", "pts"}]}]}], "}"}], ",", " ", "\n", 
+        "\t\t    ", 
+        RowBox[{"Graphics", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"If", "[", 
+             RowBox[{
+              RowBox[{"testpoint", "[", 
+               RowBox[{"p", ",", " ", "pt"}], "]"}], ",", " ", "Pink", ",", 
+              " ", "Orange"}], "]"}], ",", " ", 
+            RowBox[{"Polygon", "@", "p"}]}], "}"}], ",", " ", "\n", 
+          "\t\t     ", 
+          RowBox[{"PlotRange", " ", "->", " ", 
+           RowBox[{"3", " ", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"{", 
+               RowBox[{
+                RowBox[{"-", "1"}], ",", " ", "1"}], "}"}], ",", " ", 
+              RowBox[{"{", 
+               RowBox[{
+                RowBox[{"-", "1"}], ",", " ", "1"}], "}"}]}], "}"}]}]}], ",", 
+          " ", 
+          RowBox[{"ImageSize", " ", "->", " ", 
+           RowBox[{"{", 
+            RowBox[{"400", ",", " ", "475"}], "}"}]}], ",", " ", "\n", 
+          "\t\t     ", 
+          RowBox[{"PlotLabel", " ", "->", " ", "\n", "\t\t      ", 
+           RowBox[{"Text", "[", 
+            RowBox[{"Style", "[", 
+             RowBox[{
+              RowBox[{"If", "[", 
+               RowBox[{
+                RowBox[{"testpoint", "[", 
+                 RowBox[{"p", ",", " ", "pt"}], "]"}], ",", " ", 
+                "\"\<\[Element]\>\"", ",", " ", "\"\<\[NotElement]\>\""}], 
+               "]"}], ",", " ", "Bold", ",", " ", "\n", "\t\t\t", "Italic", 
+              ",", "Large"}], "]"}], "]"}]}]}], "]"}]}], "]"}], ",", " ", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"pts", ",", " ", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"{", 
+             RowBox[{"0", ",", " ", "0"}], "}"}], ",", " ", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"-", "2"}], ",", " ", 
+              RowBox[{"-", "2"}]}], "}"}], ",", " ", 
+            RowBox[{"{", 
+             RowBox[{"2", ",", " ", 
+              RowBox[{"-", "2"}]}], "}"}], ",", " ", 
+            RowBox[{"{", 
+             RowBox[{"0", ",", " ", "2"}], "}"}]}], "}"}]}], "}"}], ",", " ", 
+        "\n", "\t\t    ", 
+        RowBox[{"Sequence", " ", "@@", " ", 
+         RowBox[{"(", 
+          RowBox[{"3", " ", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{"-", "1"}], ",", " ", 
+               RowBox[{"-", "1"}]}], "}"}], ",", " ", 
+             RowBox[{"{", 
+              RowBox[{"1", ",", "1"}], "}"}]}], "}"}]}], ")"}]}], ",", " ", 
+        "Locator", ",", " ", "\n", "\t\t    ", 
+        RowBox[{"LocatorAutoCreate", " ", "->", " ", 
+         RowBox[{"{", 
+          RowBox[{"4", ",", " ", "Infinity"}], "}"}]}]}], "}"}], ",", " ", 
+      RowBox[{"SaveDefinitions", " ", "->", " ", "True"}], ",", " ", "\n", 
+      "\t\t    ", 
+      RowBox[{"Initialization", " ", ":>", " ", 
+       RowBox[{"{", 
+        RowBox[{"(*", 
+         RowBox[{
+         "test", " ", "if", " ", "point", " ", "pt", " ", "inside", " ", 
+          "polygon", " ", "poly"}], "*)"}], "\n", "\t\t    ", 
+        RowBox[{
+         RowBox[{"testpoint", "[", 
+          RowBox[{"poly_", ",", " ", "pt_"}], "]"}], " ", ":=", " ", "\n", 
+         "\t\t      ", 
+         RowBox[{
+          RowBox[{"Round", "[", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{
+              RowBox[{"Total", "@", "\n", "\t\t\t    ", 
+               RowBox[{"Mod", "[", 
+                RowBox[{
+                 RowBox[{
+                  RowBox[{
+                   RowBox[{"(", 
+                    RowBox[{"#", " ", "-", " ", 
+                    RowBox[{"RotateRight", "[", "#", "]"}]}], ")"}], " ", 
+                   "&"}], "@", 
+                  RowBox[{"(", 
+                   RowBox[{
+                    RowBox[{
+                    RowBox[{"ArcTan", " ", "@@", " ", 
+                    RowBox[{"(", 
+                    RowBox[{"pt", " ", "-", " ", "#"}], ")"}]}], " ", "&"}], 
+                    " ", "/@", " ", "poly"}], ")"}]}], ",", "\n", 
+                 "\t\t\t      ", 
+                 RowBox[{"2", " ", "Pi"}], ",", " ", 
+                 RowBox[{"-", "Pi"}]}], "]"}]}], "/", "2"}], "/", "Pi"}], 
+            ")"}], "]"}], " ", "!=", " ", "0"}]}], "}"}]}]}], "]"}], "\n", 
+    "\t\t", ")"}]}]}]], "Input",
+ CellChangeTimes->{{3.703522631193513*^9, 3.7035226315558443`*^9}, {
+  3.703574636425521*^9, 3.703574679659175*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"gameApp22", "[", "]"}]], "Input",
+ CellChangeTimes->{{3.703574649515872*^9, 3.7035746529202967`*^9}}],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`pts$$ = {{-0.1200000000000001, 
+     0.08999999999999986}, {-2, -2}, {2, -2}, {0, 2}}, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`pts$$], {{0, 0}, {-2, -2}, {2, -2}, {0, 
+       2}}}, {-3, -3}, {3, 3}}}, Typeset`size$$ = {400., {234., 241.}}, 
+    Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = 
+    False, $CellContext`pts$2196$$ = {0, 0}}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`pts$$ = {{0, 0}, {-2, -2}, {2, -2}, {0, 
+         2}}}, "ControllerVariables" :> {
+        Hold[$CellContext`pts$$, $CellContext`pts$2196$$, {0, 0}]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> 
+      With[{$CellContext`p = Rest[$CellContext`pts$$], $CellContext`pt = 
+         First[$CellContext`pts$$]}, 
+        Graphics[{
+          If[
+           $CellContext`testpoint[$CellContext`p, $CellContext`pt], Pink, 
+           Orange], 
+          Polygon[$CellContext`p]}, PlotRange -> 3 {{-1, 1}, {-1, 1}}, 
+         ImageSize -> {400, 475}, PlotLabel -> Text[
+           Style[
+            If[
+             $CellContext`testpoint[$CellContext`p, $CellContext`pt], 
+             "\[Element]", "\[NotElement]"], Bold, Italic, Large]]]], 
+      "Specifications" :> {{{$CellContext`pts$$, {{0, 0}, {-2, -2}, {2, -2}, {
+          0, 2}}}, {-3, -3}, {3, 3}, ControlType -> Locator, 
+         LocatorAutoCreate -> {4, 
+           DirectedInfinity[1]}}}, "Options" :> {}, "DefaultOptions" :> {}],
+     ImageSizeCache->{453., {268., 275.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    Initialization:>({{$CellContext`testpoint[
+           Pattern[$CellContext`poly, 
+            Blank[]], 
+           Pattern[$CellContext`pt, 
+            Blank[]]] := Round[Total[
+              Mod[
+               (# - RotateRight[#]& )[
+                Map[Apply[ArcTan, $CellContext`pt - #]& , $CellContext`poly]],
+                2 Pi, -Pi]] 2^(-1)/Pi] != 0}; {$CellContext`testpoint[
+           Pattern[$CellContext`poly, 
+            Blank[]], 
+           Pattern[$CellContext`pt, 
+            Blank[]]] := Round[(Total[
+               Mod[
+                (# - RotateRight[#]& )[
+                 Map[
+                 Apply[ArcTan, $CellContext`pt - #]& , $CellContext`poly]], 2 
+                Pi, -Pi]]/2)/Pi] != 0}}; Typeset`initDone$$ = True),
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{{3.7035746536616373`*^9, 3.7035746836674213`*^9}}]
+}, Open  ]]
 },
 WindowSize->{1366, 704},
 WindowMargins->{{0, Automatic}, {Automatic, 0}},
@@ -66798,7 +66998,11 @@ Cell[CellGroupData[{
 Cell[351380, 6778, 121, 2, 32, "Input"],
 Cell[351504, 6782, 3653233, 59943, 417, "Output"]
 }, Open  ]],
-Cell[4004752, 66728, 94, 1, 32, "Input"]
+Cell[4004752, 66728, 4931, 125, 363, "Input"],
+Cell[CellGroupData[{
+Cell[4009708, 66857, 125, 2, 32, "Input"],
+Cell[4009836, 66861, 3206, 67, 560, "Output"]
+}, Open  ]]
 }
 ]
 *)
