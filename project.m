@@ -83,7 +83,7 @@
 			 			 Text["A", {-40, 2}], Red, 
 			 			 Text["C: UNIONE", {0, 38}], Black , Text["B", {10, 2}]
 			 			 },
-						ImageSize -> 750, PlotRange -> {{-45, 45}, {0, 40}}, 
+						ImageSize -> Scaled[.6], PlotRange -> {{-45, 45}, {0, 40}}, 
 						Axes -> False], None], 
 		      		      Button["Valuta!", 
 		       		       
@@ -93,7 +93,7 @@
 						Speak["You can do better"]]],
 		      		      Button["Reset!",pt1 = {-34, 7}; pt2 = {-31, 7}; pt3 = {-28, 7}; 
 		    				    pt4 = {-24, 7}; pt5 = {-20, 7}; pt6 = {-16, 7}; 
-						        pt7 = {16, 7};  pt8 = {19, 7}; pt9 = {23, 7}; pt10 = {31, 7};pt11 = {35, 7};pt12 = {27, 7}; pt13 = {25, 4} ; inSix = 0; 
+						        pt7 = {16, 7};  pt8 = {19, 7}; pt9 = {23, 7}; pt10 = {31, 7};pt11 = {35, 7};pt12 = {27, 7}; pt13 = {23, 4} ; inSix = 0; 
 		    		    inTwelve = 0; inEighteen = 0; oneTime = 1; oneTimeOut = 1; 
 		     init = 1; init1 = 1; init2 = 1; init3 = 1; init4 = 1; 
 		    init5 = 1; init6 = 1; init9 = 1; init15 = 1; init10 = 1;
@@ -152,7 +152,7 @@
 			  			  (*se inserisco il numero tre nell'insieme unione*)
 		    \
 		      		    If[
-			   			   val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 , 
+			   			   val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 , 
 			   			   
 			   If[oneTimeloc == 1, val1 = {-10, 31}; colThree = Red; 
 			    ok4 = 1(*Speak[
@@ -167,7 +167,7 @@
 			   			   (*se inserisco il numero sei nell'insieme unione*)
 		  \
 			 		   
-			   If[val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 ,
+			   If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 ,
 			    			    val1 = {-7, 31};
 			    			    
 			    			    If[oneTimeloc == 1, oneTimeloc = 0; 
@@ -186,7 +186,7 @@
 			  			  (*se inserisco il numero tre nell'insieme unione*)
 		    \
 		      		    If[
-			   			   val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 , 
+			   			   val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 , 
 			   			   
 			   If[oneTimeloc == 1, val1 = {-1, 31}; colNine = Red; 
 			    ok5 = 1(*Speak[
@@ -203,7 +203,7 @@
 			   		  
 			   				    
 			   			   
-			   If[val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 ,
+			   If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 ,
 			    			    val1 = {6, 31};
 			    			    
 			    			    If[oneTimeloc == 1, oneTimeloc = 0; 
@@ -226,7 +226,7 @@
 			  			  (*se inserisco il numero tre nell'insieme unione*)
 		    \
 		      		    If[
-			   			   val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 , 
+			   			   val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 , 
 			   			   
 			   If[oneTimeloc == 1, val1 = {-3, 26}; colFifteen = Red; 
 			    ok6 = 1(*Speak[
@@ -243,7 +243,7 @@
 			   		  
 			   				    
 			   			   
-			   If[val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 ,
+			   If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 ,
 			    			    val1 = {5, 26};
 			    			    
 			    			    If[oneTimeloc == 1, oneTimeloc = 0; 
@@ -267,7 +267,7 @@
 			   		  
 			   				    
 			   			   
-			   If[val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 ,
+			   If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 ,
 			    			    val1 = {-7, 31};
 			    			    
 			    			    If[oneTimeloc == 1, oneTimeloc = 0; 
@@ -288,7 +288,7 @@
 			  			  (*se inserisco il numero tre nell'insieme unione*)
 		    \
 		      		    If[
-			   			   val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 , 
+			   			   val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 , 
 			   			   
 			   If[oneTimeloc == 1, val1 = {-4, 31}; colEight = Red; 
 			    ok7 = 1(*Speak[
@@ -304,7 +304,7 @@
 			  			  (*se inserisco il numero tre nell'insieme unione*)
 		    \
 		      		    If[
-			   			   val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 , 
+			   			   val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 , 
 			   			   
 			   If[oneTimeloc == 1, val1 = {2, 31}; colTen = Red; 
 			    ok8 = 1(*Speak[
@@ -320,7 +320,7 @@
 			  			  (*se inserisco il numero tre nell'insieme unione*)
 		    \
 		      		    If[
-			   			   val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 , 
+			   			   val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 , 
 			   			   
 			   If[oneTimeloc == 1, val1 = {10, 31}; colFuorteen = Red; 
 			    ok9 = 1(*Speak[
@@ -337,7 +337,7 @@
 			  			  (*se inserisco il numero tre nell'insieme unione*)
 		    \
 		      		    If[
-			   			   val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 , 
+			   			   val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 , 
 			   			   
 			   If[oneTimeloc == 1, val1 = {1, 26}; colSixteen = Red; 
 			    ok10 = 1(*Speak[
@@ -355,7 +355,7 @@
 			   		  
 			   				    
 			   			   
-			   If[val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 ,
+			   If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 ,
 			    			    val1 = {6, 31};
 			    			    
 			    			    If[oneTimeloc == 1, oneTimeloc = 0; 
@@ -380,7 +380,7 @@
 			   		  
 			   				    
 			   			   
-			   If[val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 ,
+			   If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 ,
 			    			    val1 = {5, 26};
 			    			    
 			    			    If[oneTimeloc == 1, oneTimeloc = 0; 
@@ -459,7 +459,7 @@
 		DynamicModule[{pt1 = {-34, 7}, pt2 = {-31, 7}, pt3 = {-28, 7}, 
 		    pt4 = {-24, 7}, pt5 = {-20, 7}, pt6 = {-16, 7}, pt7 = {16, 7}, 
 		    pt8 = {19, 7}, pt9 = {23, 7}, pt10 = {31, 7}, pt11 = {35, 7}, 
-		    pt12 = {27, 7}, pt13 = {25, 4} , eh1, eh, eh2, eh3, eh4, eh5, eh6,
+		    pt12 = {27, 7}, pt13 = {23, 4} , eh1, eh, eh2, eh3, eh4, eh5, eh6,
 		     eh7, eh8, eh9, eh10, eh11, eh12, l1, l2, l3, l4, inSix = 0, 
 		    inTwelve = 0, inEighteen = 0, oneTime = 1, oneTimeOut = 1, prec, 
 		    init = 1, init1 = 1, init2 = 1, init3 = 1, init4 = 1, init5 = 1, 
@@ -490,14 +490,14 @@
 			 Text["A", {-40, 2}], Red, 
 			 Text["C: INTERSEZIONE", {0, 38}], Black , Text["B", {10, 2}]
 			 },
-			ImageSize -> 750, PlotRange -> {{-45, 45}, {0, 40}}, 
+			ImageSize -> Scaled[.6], PlotRange -> {{-45, 45}, {0, 40}}, 
 			Axes -> False], None], 
 		      Button["Valuta!", 
 		       If[ok1 == 1 && ok2 == 1 && ok3 == 1, Speak["Very good"], 
 			Speak["You can do better"]]], Button["Reset!",pt1 = {-34, 7}; pt2 = {-31, 7}; pt3 = {-28, 7}; 
 		    pt4 = {-24, 7}; pt5 = {-20, 7}; pt6 = {-16, 7}; pt7 = {16, 7}; 
 		    pt8 = {19, 7}; pt9 = {23, 7}; pt10 = {31, 7}; pt11 = {35, 7}; 
-		    pt12 = {27, 7}; pt13 = {25, 4}; inSix = 0; 
+		    pt12 = {27, 7}; pt13 = {23, 4}; inSix = 0; 
 		    inTwelve = 0; inEighteen = 0; oneTime = 1; oneTimeOut = 1; 
 		    init = 1; init1 = 1; init2 = 1; init3 = 1; init4 = 1; init5 = 1; 
 		    colSix = Blue; colSix1 = Black; colTwelve = Blue; 
@@ -554,7 +554,7 @@
 			  (*se inserisco il numero uno nell'insieme intersezione*)
 		   
 				 If[
-			   val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 , 
+			   val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 , 
 			   If[oneTimeOut == 1, val1 = {-34, 7}; oneTimeOut = 0(*Speak[
 			    "Very Bad!"];*)]]
 			  )
@@ -567,7 +567,7 @@
 			   (*se inserisco il numero sei nell'insieme intersezione*)
 		  
 				    
-			   If[val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 ,
+			   If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 ,
 			    val1 = {-5, 28};
 			    
 			    If[oneTimeloc == 1, oneTimeloc = 0; 
@@ -585,7 +585,7 @@
 			  (*se inserisco il numero uno nell'insieme intersezione*)
 		   
 				 If[
-			   val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 , 
+			   val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 , 
 			   If[oneTimeOut == 1, val1 = {-28, 7}; oneTimeOut = 0(*Speak[
 			    "Very Bad!"];*)]]
 			  )
@@ -598,7 +598,7 @@
 			   (*se inserisco il numero sei nell'insieme intersezione*)
 		  
 				    
-			   If[val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 ,
+			   If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 ,
 			    val1 = {0, 28};
 			    
 			    If[oneTimeloc == 1, oneTimeloc = 0; 
@@ -619,7 +619,7 @@
 			  (*se inserisco il numero uno nell'insieme intersezione*)
 		   
 				 If[
-			   val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 , 
+			   val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 , 
 			   If[oneTimeOut == 1, val1 = {-20, 7}; oneTimeOut = 0(*Speak[
 			    "Very Bad!"];*)]]
 			  )
@@ -632,7 +632,7 @@
 			   (*se inserisco il numero sei nell'insieme intersezione*)
 		  
 				    
-			   If[val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 ,
+			   If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 ,
 			    val1 = {5, 28};
 			    
 			    If[oneTimeloc == 1, oneTimeloc = 0; 
@@ -652,7 +652,7 @@
 			   (*se inserisco il numero sei nell'insieme intersezione*)
 		  
 				    
-			   If[val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 ,
+			   If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 ,
 			    val1 = {-5, 28};
 			    
 			    If[oneTimeloc == 1, oneTimeloc = 0; 
@@ -672,7 +672,7 @@
 			  (*se inserisco il numero otto nell'insieme intersezione*)
 		  
 				  If[
-			   val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 , 
+			   val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 , 
 			   If[oneTimeOut == 1, val1 = {19, 7}; oneTimeOut = 0(*Speak[
 			    "Very Bad!"];*)]]
 			  )
@@ -686,7 +686,7 @@
 			  (*se inserisco il numero otto nell'insieme intersezione*)
 		  
 				  If[
-			   val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 , 
+			   val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 , 
 			   If[oneTimeOut == 1, val1 = {23, 7}; oneTimeOut = 0(*Speak[
 			    "Very Bad!"];*)]]
 			  )
@@ -700,7 +700,7 @@
 			  (*se inserisco il numero otto nell'insieme intersezione*)
 		  
 				  If[
-			   val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 , 
+			   val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 , 
 			   If[oneTimeOut == 1, val1 = {31, 7}; oneTimeOut = 0(*Speak[
 			    "Very Bad!"];*)]]
 			  )
@@ -714,7 +714,7 @@
 			  (*se inserisco il numero otto nell'insieme intersezione*)
 		  
 				  If[
-			   val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 , 
+			   val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 , 
 			   If[oneTimeOut == 1, val1 = {35, 7}; oneTimeOut = 0(*Speak[
 			    "Very Bad!"];*)]]
 			  )
@@ -727,7 +727,7 @@
 			   (*se inserisco il numero sei nell'insieme intersezione*)
 		  
 				    
-			   If[val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 ,
+			   If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 ,
 			    val1 = {0, 28};
 			    
 			    If[oneTimeloc == 1, oneTimeloc = 0; 
@@ -748,7 +748,7 @@
 			   (*se inserisco il numero sei nell'insieme intersezione*)
 		  
 				    
-			   If[val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 ,
+			   If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 ,
 			    val1 = {5, 28};
 			    
 			    If[oneTimeloc == 1, oneTimeloc = 0; 
@@ -784,7 +784,7 @@
 		    DynamicModule[{pt3b = {-34, 7}, pt6b = {-31, 7}, pt9b = {-28, 7}, 
 		    pt12b = {-24, 7}, pt15b = {-20, 7}, pt18b = {-16, 7}, 
 		    pt6n = {16, 7}, pt8n = {19, 7}, pt10n = {23, 7}, pt14n = {31, 7}, 
-		    pt16n = {35, 7}, pt12n = {27, 7}, pt18n = {25, 4} , eh3b, eh6b, 
+		    pt16n = {35, 7}, pt12n = {27, 7}, pt18n = {23, 4} , eh3b, eh6b, 
 		    eh9b, eh12b, eh15b, eh18b, eh6n, eh8n, eh10n, eh12n, eh14n, eh16n,
 		     eh18n, l1, l2, l3, l4, inThree = 0, inNine = 0, inFifteen = 0, 
 		    oneTime = 1, oneTimeOut = 1, prec, init = 1, init1 = 1, init2 = 1,
@@ -814,14 +814,14 @@
 			 Text["A", {-40, 2}], Red, Text["C: DIFFERENZA", {0, 38}], Black , 
 			 Text["B", {10, 2}]
 			 },
-			ImageSize -> 750, PlotRange -> {{-45, 45}, {0, 40}}, 
+			ImageSize -> Scaled[.6], PlotRange -> {{-45, 45}, {0, 40}}, 
 			Axes -> False], None], 
 		      Button["Valuta!", 
 		       If[ok1 == 1 && ok2 == 1 && ok3 == 1, Speak["Very good"], 
 			Speak["You can do better"]]], Button["Reset!",pt3b = {-34, 7}; pt6b = {-31, 7}; pt9b = {-28, 7}; 
 		    pt12b = {-24, 7}; pt15b = {-20, 7}; pt18b = {-16, 7}; 
 		    pt6n = {16, 7}; pt8n = {19, 7}; pt10n = {23, 7}; pt14n = {31, 7}; 
-		    pt16n = {35, 7}; pt12n = {27, 7}; pt18n = {25, 4};inThree = 0; inNine = 0; inFifteen = 0; 
+		    pt16n = {35, 7}; pt12n = {27, 7}; pt18n = {23, 4};inThree = 0; inNine = 0; inFifteen = 0; 
 		    oneTime = 1; oneTimeOut = 1; init = 1; init1 = 1; init2 = 1;
 		     colThree = Blue; colNine = Blue; colFifteen = Blue; ok1 = 0; 
 		    ok2 = 0; ok3 = 0;]],
@@ -867,7 +867,7 @@
 			"MouseDragged" :> (If[oneTimeloc == 1, 
 			    val1 = MousePosition["Graphics"];]
 			   (*se inserisco il numero tre blu nell'insieme intersezione*) 
-			   If[val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15, 
+			   If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15, 
 			    val1 = {-5, 28};
 			      colThree = Red;ok1=1])}];
 		     
@@ -878,7 +878,7 @@
 			   val1 = MousePosition["Graphics"];, 
 			   If[oneTimeOut == 0, oneTimeOut = 1];];
 			  (*se inserisco il numero sei blu nell'insieme intersezione*)
-			  If[val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15, 
+			  If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15, 
 			   If[oneTimeOut == 1, val1 = {-31, 7}; oneTimeOut = 0(*Speak[
 			    "Very Bad!"];*)]])}];
 		     
@@ -889,7 +889,7 @@
 			    val1 = MousePosition["Graphics"];]
 			   (*se inserisco il numero nove blu nell'insieme \
 		intersezione*) 
-			   If[val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15, 
+			   If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15, 
 			    val1 = {0, 28};
 			    colNine = Red;ok2=1])}];
 		     
@@ -901,7 +901,7 @@
 			   If[oneTimeOut == 0, oneTimeOut = 1];];
 			  (*se inserisco il numero dodici blu nell'insieme \
 		intersezione*)
-			  If[val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15, 
+			  If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15, 
 			   If[oneTimeOut == 1, val1 = {-24, 7}; oneTimeOut = 0(*Speak[
 			    "Very Bad!"];*)]])}];
 		     
@@ -912,7 +912,7 @@
 			    val1 = MousePosition["Graphics"];]
 			   (*se inserisco il numero quindici blu nell'insieme \
 		intersezione*) 
-			   If[val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15, 
+			   If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15, 
 			    val1 = {5, 28};
 			    colFifteen = Red;ok3=1])}];
 		     
@@ -924,7 +924,7 @@
 			   If[oneTimeOut == 0, oneTimeOut = 1];];
 			  (*se inserisco il numero diciotto blu nell'insieme \
 		intersezione*)
-			  If[val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15, 
+			  If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15, 
 			   If[oneTimeOut == 1, val1 = {-16, 7}; oneTimeOut = 0(*Speak[
 			    "Very Bad!"];*)]])}];
 		     
@@ -935,7 +935,7 @@
 			   val1 = MousePosition["Graphics"];, 
 			   If[oneTimeOut == 0, oneTimeOut = 1];];
 			  (*se inserisco il numero sei nero nell'insieme intersezione*)
-			  If[val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15, 
+			  If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15, 
 			   If[oneTimeOut == 1, val1 = {16, 7}; oneTimeOut = 0(*Speak[
 			    "Very Bad!"];*)]])}];
 		     
@@ -947,7 +947,7 @@
 			   If[oneTimeOut == 0, oneTimeOut = 1];];
 			  (*se inserisco il numero otto nero nell'insieme \
 		intersezione*)
-			  If[val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15, 
+			  If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15, 
 			   If[oneTimeOut == 1, val1 = {19, 7}; oneTimeOut = 0(*Speak[
 			    "Very Bad!"];*)]])}];
 		     
@@ -959,7 +959,7 @@
 			   If[oneTimeOut == 0, oneTimeOut = 1];];
 			  (*se inserisco il numero dieci nero nell'insieme \
 		intersezione*)
-			  If[val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15, 
+			  If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15, 
 			   If[oneTimeOut == 1, val1 = {23, 7}; oneTimeOut = 0(*Speak[
 			    "Very Bad!"];*)]])}];
 		     eh12n[val1_] := 
@@ -970,7 +970,7 @@
 			   If[oneTimeOut == 0, oneTimeOut = 1];];
 			  (*se inserisco il numero dodici nero nell'insieme \
 		intersezione*)
-			  If[val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15, 
+			  If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15, 
 			   If[oneTimeOut == 1, val1 = {27, 7}; oneTimeOut = 0(*Speak[
 			    "Very Bad!"];*)]])}];
 		     
@@ -982,7 +982,7 @@
 			   If[oneTimeOut == 0, oneTimeOut = 1];];
 			  (*se inserisco il numero quattordici nero nell'insieme \
 		intersezione*)
-			  If[val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15, 
+			  If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15, 
 			   If[oneTimeOut == 1, val1 = {31, 7}; oneTimeOut = 0(*Speak[
 			    "Very Bad!"];*)]])}];
 		     
@@ -994,7 +994,7 @@
 			   If[oneTimeOut == 0, oneTimeOut = 1];];
 			  (*se inserisco il numero sedici nero nell'insieme \
 		intersezione*)
-			  If[val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15, 
+			  If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15, 
 			   If[oneTimeOut == 1, val1 = {35, 7}; oneTimeOut = 0(*Speak[
 			    "Very Bad!"];*)]])}];
 		     eh18n[val1_] := 
@@ -1005,8 +1005,8 @@
 			   If[oneTimeOut == 0, oneTimeOut = 1];];
 			  (*se inserisco il numero diciotto nero nell'insieme \
 		intersezione*)
-			  If[val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15, 
-			   If[oneTimeOut == 1, val1 = {25, 4}; oneTimeOut = 0(*Speak[
+			  If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15, 
+			   If[oneTimeOut == 1, val1 = {23, 4}; oneTimeOut = 0(*Speak[
 			    "Very Bad!"];*)]])}];
 		     
 		     
@@ -1021,7 +1021,8 @@
 		    pt5 = {RandomInteger[{-35, 35}], RandomInteger[{15, 35}]}, 
 		    pt6 = {RandomInteger[{-35, 35}], RandomInteger[{15, 35}]}, eh1, 
 		    eh, eh2, l1, l2, l3, l4, inPera = 0, inBanana = 0, inMela = 0, 
-		    oneTime = 1, oneTimeOut = 1, prec}, 
+		    oneTime = 1, oneTimeOut = 1, prec},Manipulate[
+ 
 		   Dynamic[Graphics[{eh@pt1, eh@pt2, eh1@pt3, eh1@pt4, eh2@pt5, 
 		      eh2@pt6, Yellow, Thickness[0.01], 
 		      l1 = Line[{{-40, 8}, {-35, 1}, {-25, 1}, {-20, 8}, {-40, 8}}], 
@@ -1038,7 +1039,14 @@
 		      Text["C", {20, 2}]
 		      },
 		     ImageSize -> 900, PlotRange -> {{-45, 45}, {0, 40}}, 
-		     Axes -> False], None],
+		     Axes -> False], None],Button[Style["Reset!",Bold,Medium],pt1 = {RandomInteger[{-35, 35}],
+		      RandomInteger[{15, 35}]}; 
+		    pt2 = {RandomInteger[{-35, 35}], RandomInteger[{15, 35}]}; 
+		    pt3 = {RandomInteger[{-35, 35}], RandomInteger[{15, 35}]}; 
+		    pt4 = {RandomInteger[{-35, 35}], RandomInteger[{15, 35}]}; 
+		    pt5 = {RandomInteger[{-35, 35}], RandomInteger[{15, 35}]}; 
+		    pt6 = {RandomInteger[{-35, 35}], RandomInteger[{15, 35}]}; inPera = 0; inBanana = 0; inMela = 0; 
+		    oneTime = 1; oneTimeOut = 1;]],
 		   Initialization :> (
 		     testpoint[poly_, pt_] := 
 		      Round[(Total@
@@ -1076,7 +1084,7 @@
 			   (*se la mela viene messa all'interno del contenitore pera*)
 
 				      
-			   If[val1[[2]] < 5 && val1[[1]] > 25 && val1[[1]] < 40 , 
+			   If[val1[[2]] < 5 && val1[[1]] > 23 && val1[[1]] < 40 , 
 			    If[oneTimeOut == 1, val1 = {30, 15}; 
 			     oneTimeOut = 0(*Speak["Very Bad!"];*)]]
 			  )
@@ -1098,7 +1106,7 @@
 			     "Very Bad!"];*)]]
 			   (*se la banana viene messa all'interno del contenitore pera*)
 			   
-			   If[val[[2]] < 5 && val[[1]] > 25 && val[[1]] < 40 , 
+			   If[val[[2]] < 5 && val[[1]] > 23 && val[[1]] < 40 , 
 			    If[oneTimeOut == 1, val = {30, 15}; oneTimeOut = 0(*Speak[
 			     "Very Bad!"];*)]]
 			  
@@ -1110,7 +1118,7 @@
 			"MouseDragged" :> (If[ inPera == 0 && oneTimeOut == 1, 
 			   val2 = MousePosition["Graphics"], 
 			   If[ oneTimeOut == 0, oneTimeOut = 1]; inPera = 1;]; 
-			  If[val2[[2]] < 5 && val2[[1]] > 25 && val2[[1]] < 40 , 
+			  If[val2[[2]] < 5 && val2[[1]] > 23 && val2[[1]] < 40 , 
 			    inPera = 1; 
 			    If[oneTime == 1, oneTime = 0; Speak["Very good!"];];, 
 			    inPera = 0; oneTime = 1]
@@ -1202,7 +1210,7 @@
 			    If[ oneTimeOut == 0, oneTimeOut = 1];]
 			   (*se inserisco il numero uno nell'insieme dispari*)
 		       
-			       If[val1[[2]] > 25 && val1[[1]] > -40 && 
+			       If[val1[[2]] > 23 && val1[[1]] > -40 && 
 			     val1[[1]] < -10 ,
 			    val1 = {-33, 28};
 			    
@@ -1211,7 +1219,7 @@
 			    ];
 			  (*numero dispari nell'insieme pari*)
 			  
-			  If[val1[[2]] > 25 && val1[[1]] > 15 && val1[[1]] < 40 , 
+			  If[val1[[2]] > 23 && val1[[1]] > 15 && val1[[1]] < 40 , 
 			   If[oneTimeOut == 1, val1 = {-10, 8}; oneTimeOut = 0(*Speak[
 			    "Very Bad!"];*)]];
 			  )
@@ -1225,14 +1233,14 @@
 			    (*se inserisco il numero sei nell'insieme intersezione*)
 		 
 				       
-			    If[val1[[2]] > 25 && val1[[1]] > 15 && val1[[1]] < 40 ,
+			    If[val1[[2]] > 23 && val1[[1]] > 15 && val1[[1]] < 40 ,
 			     val1 = {16.9, 28};
 			     
 			     If[oneTimeloc == 1, oneTimeloc = 0; colTwo = Black; 
 			      ok2 = 1;];
 			     ]
 			    
-			    If[val1[[2]] > 25 && val1[[1]] > -40 && val1[[1]] < -10 , 
+			    If[val1[[2]] > 23 && val1[[1]] > -40 && val1[[1]] < -10 , 
 			     If[oneTimeOut == 1, val1 = {-7, 8}; 
 			      oneTimeOut = 0(*Speak["Very Bad!"];*)]];
 			  )
@@ -1246,14 +1254,14 @@
 			    (*se inserisco il numero sei nell'insieme intersezione*)
 		 
 				       
-			    If[val1[[2]] > 25 && val1[[1]] > -40 && val1[[1]] < -10 ,
+			    If[val1[[2]] > 23 && val1[[1]] > -40 && val1[[1]] < -10 ,
 			     val1 = {-29, 28};
 			     
 			     If[oneTimeloc == 1, oneTimeloc = 0; colThree = Blue; 
 			      ok3 = 1;];
 			     ]
 			    
-			    If[val1[[2]] > 25 && val1[[1]] > 15 && val1[[1]] < 40 , 
+			    If[val1[[2]] > 23 && val1[[1]] > 15 && val1[[1]] < 40 , 
 			     If[oneTimeOut == 1, val1 = {-4, 8}; 
 			      oneTimeOut = 0(*Speak["Very Bad!"];*)]];
 			  )
@@ -1267,14 +1275,14 @@
 			    (*se inserisco il numero sei nell'insieme intersezione*)
 		 
 				       
-			    If[val1[[2]] > 25 && val1[[1]] > 15 && val1[[1]] < 40 ,
+			    If[val1[[2]] > 23 && val1[[1]] > 15 && val1[[1]] < 40 ,
 			     val1 = {21, 28};
 			     
 			     If[oneTimeloc == 1, oneTimeloc = 0; colFour = Black; 
 			      ok4 = 1;];
 			     ]
 			    
-			    If[val1[[2]] > 25 && val1[[1]] > -40 && val1[[1]] < -10 , 
+			    If[val1[[2]] > 23 && val1[[1]] > -40 && val1[[1]] < -10 , 
 			     If[oneTimeOut == 1, val1 = {-1, 8}; 
 			      oneTimeOut = 0(*Speak["Very Bad!"];*)]];
 			  )
@@ -1288,14 +1296,14 @@
 			    (*se inserisco il numero sei nell'insieme intersezione*)
 		 
 				       
-			    If[val1[[2]] > 25 && val1[[1]] > -40 && val1[[1]] < -10 ,
-			     val1 = {-25, 28};
+			    If[val1[[2]] > 23 && val1[[1]] > -40 && val1[[1]] < -10 ,
+			     val1 = {-23, 28};
 			     
 			     If[oneTimeloc == 1, oneTimeloc = 0; colFive = Blue; 
 			      ok5 = 1;];
 			     ]
 			    
-			    If[val1[[2]] > 25 && val1[[1]] > 15 && val1[[1]] < 40 , 
+			    If[val1[[2]] > 23 && val1[[1]] > 15 && val1[[1]] < 40 , 
 			     If[oneTimeOut == 1, val1 = {2, 8}; oneTimeOut = 0(*Speak[
 			      "Very Bad!"];*)]];
 			  )
@@ -1309,14 +1317,14 @@
 			    (*se inserisco il numero sei nell'insieme intersezione*)
 		 
 				       
-			    If[val1[[2]] > 25 && val1[[1]] > 15 && val1[[1]] < 40 ,
-			     val1 = {25, 28};
+			    If[val1[[2]] > 23 && val1[[1]] > 15 && val1[[1]] < 40 ,
+			     val1 = {23, 28};
 			     
 			     If[oneTimeloc == 1, oneTimeloc = 0; colSix = Black; 
 			      ok6 = 1;];
 			     ]
 			    
-			    If[val1[[2]] > 25 && val1[[1]] > -40 && val1[[1]] < -10 , 
+			    If[val1[[2]] > 23 && val1[[1]] > -40 && val1[[1]] < -10 , 
 			     If[oneTimeOut == 1, val1 = {5, 8}; oneTimeOut = 0(*Speak[
 			      "Very Bad!"];*)]];
 			  )
@@ -1330,14 +1338,14 @@
 			    (*se inserisco il numero sei nell'insieme intersezione*)
 		 
 				       
-			    If[val1[[2]] > 25 && val1[[1]] > -40 && val1[[1]] < -10 ,
+			    If[val1[[2]] > 23 && val1[[1]] > -40 && val1[[1]] < -10 ,
 			     val1 = {-21, 28};
 			     
 			     If[oneTimeloc == 1, oneTimeloc = 0; colSeven = Blue; 
 			      ok7 = 1;];
 			     ]
 			    
-			    If[val1[[2]] > 25 && val1[[1]] > 15 && val1[[1]] < 40 , 
+			    If[val1[[2]] > 23 && val1[[1]] > 15 && val1[[1]] < 40 , 
 			     If[oneTimeOut == 1, val1 = {8, 8}; oneTimeOut = 0(*Speak[
 			      "Very Bad!"];*)]];
 			  )
@@ -1351,14 +1359,14 @@
 			    (*se inserisco il numero sei nell'insieme intersezione*)
 		 
 				       
-			    If[val1[[2]] > 25 && val1[[1]] > 15 && val1[[1]] < 40 ,
+			    If[val1[[2]] > 23 && val1[[1]] > 15 && val1[[1]] < 40 ,
 			     val1 = {29, 28};
 			     
 			     If[oneTimeloc == 1, oneTimeloc = 0; colEight = Black; 
 			      ok8 = 1;];
 			     ]
 			    
-			    If[val1[[2]] > 25 && val1[[1]] > -40 && val1[[1]] < -10 , 
+			    If[val1[[2]] > 23 && val1[[1]] > -40 && val1[[1]] < -10 , 
 			     If[oneTimeOut == 1, val1 = {11, 8}; 
 			      oneTimeOut = 0(*Speak["Very Bad!"];*)]];
 			  )
@@ -1372,14 +1380,14 @@
 			    (*se inserisco il numero sei nell'insieme intersezione*)
 		 
 				       
-			    If[val1[[2]] > 25 && val1[[1]] > -40 && val1[[1]] < -10 ,
+			    If[val1[[2]] > 23 && val1[[1]] > -40 && val1[[1]] < -10 ,
 			     val1 = {-17, 28};
 			     
 			     If[oneTimeloc == 1, oneTimeloc = 0; colNine = Blue; 
 			      ok9 = 1;];
 			     ]
 			    
-			    If[val1[[2]] > 25 && val1[[1]] > 15 && val1[[1]] < 40 , 
+			    If[val1[[2]] > 23 && val1[[1]] > 15 && val1[[1]] < 40 , 
 			     If[oneTimeOut == 1, val1 = {-1, 4}; 
 			      oneTimeOut = 0(*Speak["Very Bad!"];*)]];
 			  )
@@ -1393,14 +1401,14 @@
 			    (*se inserisco il numero sei nell'insieme intersezione*)
 		 
 				       
-			    If[val1[[2]] > 25 && val1[[1]] > 15 && val1[[1]] < 40 ,
+			    If[val1[[2]] > 23 && val1[[1]] > 15 && val1[[1]] < 40 ,
 			     val1 = {33, 28};
 			     
 			     If[oneTimeloc == 1, oneTimeloc = 0; colTen = Black; 
 			      ok10 = 1;];
 			     ]
 			    
-			    If[val1[[2]] > 25 && val1[[1]] > -40 && val1[[1]] < -10 , 
+			    If[val1[[2]] > 23 && val1[[1]] > -40 && val1[[1]] < -10 , 
 			     If[oneTimeOut == 1, val1 = {2, 4}; oneTimeOut = 0(*Speak[
 			      "Very Bad!"];*)]];
 			  )
@@ -1490,7 +1498,7 @@ colMauro2=Black;colCate2=Black;   ok1 = 0; ok2 = 0; ok3 = 0; ok4 = 0; ok5 = 0; o
 					
 							"MouseDragged" :> (If[ oneTimeloc == 1 , val1 = MousePosition["Graphics"]];
 			  			  (*se inserisco il numero tre nell'insieme unione*)
-If[val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 ,
+If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 ,
 			    			    val1 = {0, 33};
 			    			    
 			    			    If[oneTimeloc == 1, oneTimeloc = 0; 
@@ -1508,7 +1516,7 @@ If[val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 ,
 			   			   (*se inserisco il numero sei nell'insieme unione*)
 		 
 			 		   
-			                                   If[val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 ,
+			                                   If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 ,
 			    			    val1 = {0, 27};
 			    			    
 			    			    If[oneTimeloc == 1, oneTimeloc = 0; 
@@ -1527,7 +1535,7 @@ If[val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 ,
 			  			  (*se inserisco il numero tre nell'insieme unione*)
 		  
 		      		    If[
-			   			   val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 , 
+			   			   val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 , 
 			   			   
 			   val1 = {-35, 3};]
 			  			  )
@@ -1542,7 +1550,7 @@ If[val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 ,
 			   		  
 			   				    
 			   			   
-			   If[val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 ,
+			   If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 ,
 			    			    val1 = {-27, 3};
 			    			    
 			    			    ]
@@ -1557,7 +1565,7 @@ If[val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 ,
 			   val1 = MousePosition["Graphics"]];
 			  			  (*se inserisco il numero tre nell'insieme unione*)
 		
-		      		    If[ val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 , 
+		      		    If[ val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 , 
 			   			   
 			   val1 = {-7, 6}; ]
 			  			  )
@@ -1572,7 +1580,7 @@ If[val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 ,
 			   		  
 			   				    
 			   			   
-			   If[val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 ,
+			   If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 ,
 			    			    val1 = {0, 27};
 			    			    
 			    			    If[oneTimeloc == 1, oneTimeloc = 0; 
@@ -1596,7 +1604,7 @@ If[val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 ,
 			   		  
 			   				    
 			   			   
-			   If[val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 ,
+			   If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 ,
 			    			    val1 = {0, 33};
 			    			    
 			    			    If[oneTimeloc == 1, oneTimeloc = 0; 
@@ -1617,7 +1625,7 @@ If[val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 ,
 			  			  (*se inserisco il numero tre nell'insieme unione*)
 		 
 		      		    If[
-			   			   val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 , 
+			   			   val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 , 
 			   			   
 			   val1 = {4, 3};]
 			  			  )
@@ -1631,7 +1639,7 @@ If[val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 ,
 			  			  (*se inserisco il numero tre nell'insieme unione*)
 		 
 		      		    If[
-			   			   val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 , 
+			   			   val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 , 
 			   			   
 			   val1 = {23, 6}; ]
 			  			  )
@@ -1644,7 +1652,7 @@ If[val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 ,
 			   val1 = MousePosition["Graphics"]];
 			  			  (*se inserisco il numero tre nell'insieme unione*)
 		
-		      		    If[val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 , 
+		      		    If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 , 
 			   			   
 			   val1 = {35, 6}]
 			  			  )
@@ -1659,7 +1667,7 @@ If[val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 ,
 			  			  (*se inserisco il numero tre nell'insieme unione*)
 		  
 		      		    If[
-			   			   val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 , 
+			   			   val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 , 
 			   			   
 			   val1 = {29, 3};]
 			  			  )
@@ -1757,7 +1765,7 @@ colMauro2=Black;colLuca=Blue;colCate2=Black;colGiac = Blue;colLuigi = Black;colM
 					
 							"MouseDragged" :> (If[ oneTimeloc == 1 , val1 = MousePosition["Graphics"]];
 			  			  (*se inserisco il numero tre nell'insieme unione*)
-If[val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 ,
+If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 ,
 			    			    val1 = {-10, 34};
 			    			    
 			    			    If[oneTimeloc == 1, oneTimeloc = 0; 
@@ -1775,7 +1783,7 @@ If[val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 ,
 			   			   (*se inserisco il numero sei nell'insieme unione*)
 		 
 			 		   
-			                                   If[val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 ,
+			                                   If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 ,
 			    			    val1 = {0, 34};
 			    			    
 			    			    If[oneTimeloc == 1, oneTimeloc = 0; 
@@ -1794,7 +1802,7 @@ If[val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 ,
 			  			  (*se inserisco il numero tre nell'insieme unione*)
 		  
 		      		    If[
-			   			   val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 , 
+			   			   val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 , 
 			   			   
 			   val1 = {10, 34};colLuca = Red;ok3=1]
 			  			  )
@@ -1809,7 +1817,7 @@ If[val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 ,
 			   		  
 			   				    
 			   			   
-			   If[val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 ,
+			   If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 ,
 			    			    val1 = {-8, 30};colGiac = Red;ok4 = 1;
 			    			    
 			    			    ]
@@ -1824,7 +1832,7 @@ If[val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 ,
 			   val1 = MousePosition["Graphics"]];
 			  			  (*se inserisco il numero tre nell'insieme unione*)
 		
-		      		    If[ val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 , 
+		      		    If[ val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 , 
 			   			   
 			   val1 = {0, 30};colLuigi = Red;ok5 = 1; ]
 			  			  )
@@ -1839,7 +1847,7 @@ If[val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 ,
 			   		  
 			   				    
 			   			   
-			   If[val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 ,
+			   If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 ,
 			    			    val1 = {0, 34};
 			    			    
 			    			    If[oneTimeloc == 1, oneTimeloc = 0; 
@@ -1863,7 +1871,7 @@ If[val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 ,
 			   		  
 			   				    
 			   			   
-			   If[val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 ,
+			   If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 ,
 			    			    val1 = {-10, 34};
 			    			    
 			    			    If[oneTimeloc == 1, oneTimeloc = 0; 
@@ -1884,7 +1892,7 @@ If[val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 ,
 			  			  (*se inserisco il numero tre nell'insieme unione*)
 		 
 		      		    If[
-			   			   val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 , 
+			   			   val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 , 
 			   			   
 			   val1 = {8, 30};colMarco = Red;ok6 = 1;]
 			  			  )
@@ -1898,7 +1906,7 @@ If[val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 ,
 			  			  (*se inserisco il numero tre nell'insieme unione*)
 		 
 		      		    If[
-			   			   val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 , 
+			   			   val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 , 
 			   			   
 			   val1 = {-8, 26};colCarlo = Red;ok7=1; ]
 			  			  )
@@ -1911,7 +1919,7 @@ If[val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 ,
 			   val1 = MousePosition["Graphics"]];
 			  			  (*se inserisco il numero tre nell'insieme unione*)
 		
-		      		    If[val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 , 
+		      		    If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 , 
 			   			   
 			   val1 = {0, 26};colFederico = Red;ok8 = 1;]
 			  			  )
@@ -1926,7 +1934,7 @@ If[val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 ,
 			  			  (*se inserisco il numero tre nell'insieme unione*)
 		  
 		      		    If[
-			   			   val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 , 
+			   			   val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 , 
 			   			   
 			   val1 = {8, 26};colElisa = Red;ok9 =1;]
 			  			  )
@@ -2018,7 +2026,7 @@ gameExercise3[] := (
 					
 							"MouseDragged" :> (If[ oneTimeloc == 1 , val1 = MousePosition["Graphics"]];
 			  			  (*se inserisco il numero tre nell'insieme unione*)
-If[val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 ,
+If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 ,
 			    			    val1 = {-36, 6};
 			    		
 			    			    ]
@@ -2031,7 +2039,7 @@ If[val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 ,
 			   			   (*se inserisco il numero sei nell'insieme unione*)
 		 
 			 		   
-			                                   If[val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 ,
+			                                   If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 ,
 			    			    val1 = {-24, 6};
 			    			    
 			    			 
@@ -2046,7 +2054,7 @@ If[val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 ,
 			   val1 = MousePosition["Graphics"]];
 			  			  (*se inserisco il numero tre nell'insieme unione*)
 		  
-		      		    If[ val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 , 
+		      		    If[ val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 , 
 			   			   val1 = {0, 33};
 			  If[oneTimeloc == 1, oneTimeloc = 0; 
 			     			  ];
@@ -2066,7 +2074,7 @@ If[val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 ,
 			   		  
 			   				    
 			   			   
-			   If[val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 ,
+			   If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 ,
 			    			    val1 = {0, 27};
 			    			    
 			    			    If[oneTimeloc == 1, oneTimeloc = 0; 
@@ -2085,7 +2093,7 @@ If[val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 ,
 			   val1 = MousePosition["Graphics"]];
 			  			  (*se inserisco il numero tre nell'insieme unione*)
 		
-		      		    If[ val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 , 
+		      		    If[ val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 , 
 			   			   
 			   val1 = {-7, 6}; ]
 			  			  )
@@ -2100,7 +2108,7 @@ If[val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 ,
 			   		  
 			   				    
 			   			   
-			   If[val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 ,
+			   If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 ,
 			    			    val1 = {6, 6};
 			    			    ]
 			  			  )
@@ -2115,7 +2123,7 @@ If[val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 ,
 			   		  
 			   				    
 			   			   
-			   If[val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 ,
+			   If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 ,
 			    			    val1 = {-4, 3};
 			    	
 			    			    ]
@@ -2131,7 +2139,7 @@ If[val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 ,
 			  			  (*se inserisco il numero tre nell'insieme unione*)
 		 
 		      		    If[
-			   			   val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 , 
+			   			   val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 , 
 			   			   
 			   val1 = {4, 3};]
 			  			  )
@@ -2145,7 +2153,7 @@ If[val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 ,
 			  			  (*se inserisco il numero tre nell'insieme unione*)
 		 
 		      		    If[
-			   			   val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 , 
+			   			   val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 , 
 			   			   
 			   val1 = {23, 6}; ]
 			  			  )
@@ -2158,7 +2166,7 @@ If[val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 ,
 			   val1 = MousePosition["Graphics"]];
 			  			  (*se inserisco il numero tre nell'insieme unione*)
 		
-		      		    If[val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 , 
+		      		    If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 , 
 			   			   
 			   val1 = {35, 6}]
 			  			  )
@@ -2173,7 +2181,7 @@ If[val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 ,
 			  			  (*se inserisco il numero tre nell'insieme unione*)
 		  
 		      		    If[
-			   			   val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 , 
+			   			   val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 , 
 			   			   
 			   val1 = {29, 3};]
 			  			  )
@@ -2265,7 +2273,7 @@ gameExercise4[] := (
 					
 							"MouseDragged" :> (If[ oneTimeloc == 1 , val1 = MousePosition["Graphics"]];
 			  			  (*se inserisco il numero tre nell'insieme unione*)
-If[val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 ,
+If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 ,
 			    			    val1 = {-36, 6};
 			    		
 			    			    ]
@@ -2278,7 +2286,7 @@ If[val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 ,
 			   			   (*se inserisco il numero sei nell'insieme unione*)
 		 
 			 		   
-			                                   If[val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 ,
+			                                   If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 ,
 			    			    val1 = {-24, 6};
 			    			    
 			    			 
@@ -2293,7 +2301,7 @@ If[val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 ,
 			   val1 = MousePosition["Graphics"]];
 			  			  (*se inserisco il numero tre nell'insieme unione*)
 		  
-		      		    If[ val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 , 
+		      		    If[ val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 , 
 			   			   val1 = {-5, 33};
 			  If[oneTimeloc == 1, oneTimeloc = 0; 
 			     			  ];
@@ -2313,7 +2321,7 @@ If[val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 ,
 			   		  
 			   				    
 			   			   
-			   If[val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 ,
+			   If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 ,
 			    			    val1 = {5, 33};
 			    			    
 			    			    If[oneTimeloc == 1, oneTimeloc = 0; 
@@ -2332,7 +2340,7 @@ If[val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 ,
 			   val1 = MousePosition["Graphics"]];
 			  			  (*se inserisco il numero tre nell'insieme unione*)
 		
-		      		    If[ val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 , 
+		      		    If[ val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 , 
 			   			   
 			   val1 = {-5, 27}; 
 					    If[oneTimeloc == 1, oneTimeloc = 0; 
@@ -2352,7 +2360,7 @@ If[val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 ,
 			   		  
 			   				    
 			   			   
-			   If[val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 ,
+			   If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 ,
 			    			    val1 = {6, 6};
 			    			    ]
 			  			  )
@@ -2367,7 +2375,7 @@ If[val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 ,
 			   		  
 			   				    
 			   			   
-			   If[val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 ,
+			   If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 ,
 			    			    val1 = {-4, 3};
 			    	
 			    			    ]
@@ -2382,7 +2390,7 @@ If[val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 ,
 			   val1 = MousePosition["Graphics"]];
 			  			  (*se inserisco il numero tre nell'insieme unione*)
 		 
-		      		    If[  val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 , 
+		      		    If[  val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 , 
 			   			   
 			      val1 = {5, 27}; 
 					    If[oneTimeloc == 1, oneTimeloc = 0; 
@@ -2401,7 +2409,7 @@ If[val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 ,
 			  			  (*se inserisco il numero tre nell'insieme unione*)
 		 
 		      		    If[
-			   			   val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 , 
+			   			   val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 , 
 			   			   
 			   val1 = {23, 6}; ]
 			  			  )
@@ -2414,7 +2422,7 @@ If[val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 ,
 			   val1 = MousePosition["Graphics"]];
 			  			  (*se inserisco il numero tre nell'insieme unione*)
 		
-		      		    If[val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 , 
+		      		    If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 , 
 			   			   
 			   val1 = {35, 6}]
 			  			  )
@@ -2429,7 +2437,7 @@ If[val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 ,
 			  			  (*se inserisco il numero tre nell'insieme unione*)
 		  
 		      		    If[
-			   			   val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 , 
+			   			   val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 , 
 			   			   
 			   val1 = {29, 3};]
 			  			  )
