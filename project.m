@@ -81,7 +81,7 @@
 			 			 
 			 			 
 			 			 Text["A", {-40, 2}], Red, 
-			 			 Text["A\[Union]B", {0, 38}], Black , Text["B", {10, 2}]
+			 			 Text["C: UNIONE", {0, 38}], Black , Text["B", {10, 2}]
 			 			 },
 						ImageSize -> 750, PlotRange -> {{-45, 45}, {0, 40}}, 
 						Axes -> False], None], 
@@ -112,8 +112,8 @@
 		       PlotStyle ->  If[a > 15, {Black, Blue, Blue}, {Red, Red, Red}], 
 		       		       ImageSize -> Medium, 
 		       		       Epilog -> {Text[
-			  			  Style["A\[Union]B", Red, Italic, 
-			   			   15], {0, -4.5}]}], {{a, 20, "A\[Union]B"}, 20, 10, 1}]
+			  			  Style["C=A\[Union]B", Red, Italic, 
+			   			   15], {0, -4.5}]}], {{a, 20, "C=A\[Union]B"}, 20, 10, 1}]
 		     		    }],
 		   		   Initialization :> (
 		     		     testpoint[poly_, pt_] := 
@@ -488,7 +488,7 @@
 			 
 			 
 			 Text["A", {-40, 2}], Red, 
-			 Text["A\[Intersection]B", {0, 38}], Black , Text["B", {10, 2}]
+			 Text["C: INTERSEZIONE", {0, 38}], Black , Text["B", {10, 2}]
 			 },
 			ImageSize -> 750, PlotRange -> {{-45, 45}, {0, 40}}, 
 			Axes -> False], None], 
@@ -514,11 +514,11 @@
 		       							    PlotStyle -> {Black, Blue, Red}, 
 		       ImageSize -> Medium, 
 		       Epilog -> {Text[
-			  Style["A\[Intersection]B", Red, Italic, 
-			   15], {0, -4.5}]}], {{a, 10, "A \[Intersection] B"}, 10, 
+			  Style["C=A \[Intersection] B", Red, Italic, 
+			   15], {0, -4.5}]}], {{a, 10, "C=A \[Intersection] B"}, 10, 
 		       							  20, 1}]
 		     
-		     }, "    "],
+		     }],
 		   Initialization :> (
 		     testpoint[poly_, pt_] := 
 		      Round[(Total@
@@ -811,7 +811,7 @@
 			     0.2}}], Blue, FontSize -> 20,
 			 
 			 
-			 Text["A", {-40, 2}], Red, Text["A-B", {0, 38}], Black , 
+			 Text["A", {-40, 2}], Red, Text["C: DIFFERENZA", {0, 38}], Black , 
 			 Text["B", {10, 2}]
 			 },
 			ImageSize -> 750, PlotRange -> {{-45, 45}, {0, 40}}, 
@@ -833,10 +833,10 @@
 		       PlotStyle -> If[a>15,{Black, Black, Blue},{Black, Black, Red}], 
 		       ImageSize -> Medium, 
 		       Epilog -> {Text[
-			  Style["A-B", Red, Italic, 15], {0, -4.5}]}], {{a, 10, 
-			"A-B"}, 10, 20, 1}]
+			  Style["C=A\B", Red, Italic, 15], {0, -4.5}]}], {{a, 10, 
+			"C=A\B"}, 10, 20, 1}]
 		     
-		     }, "    "],
+		     }],
 		   Initialization :> (testpoint[poly_, pt_] := 
 		      Round[(Total@
 			    Mod[(# - RotateRight[#]) &@(ArcTan @@ (pt - #) & /@ poly),
@@ -1439,13 +1439,10 @@ gameExercise1[] := (
 			 l1 = Line[{{-42, 8}, {-37, 1}, {-22, 1}, {-17, 8}, {-42, 8}}], 
 		      Black,
 		      l2 = Line[{{-13, 8}, {-7, 1}, {8, 1}, {13, 8}, {-13, 8}}], Green,
-		      l3 = Line[{{18, 8}, {23, 1}, {38, 1}, {43, 8}, {18, 8}}],
-			 			  Red,
-			 l4 =  Line[{{-15, 37}, {-10, 23}, {10, 23}, {15, 37}, {-15, 
-			     37}}], 
+		      l3 = Line[{{18, 8}, {23, 1}, {38, 1}, {43, 8}, {18, 8}}], Red,
+			 l4 =  Line[{{-15, 37}, {-10, 23}, {10, 23}, {15, 37}, {-15,37}}], 
 			 			 Black, Thickness[0.001],
-			 			 l5 = 
-			  			  Line[{{-44, 0.2}, {44, 0.2}, {44, 40}, {-44, 40}, {-44, 
+			 			 l5 =  Line[{{-44, 0.2}, {44, 0.2}, {44, 40}, {-44, 40}, {-44, 
 			     			     0.2}}], Blue, FontSize -> 20,
 			 			 
 			 			 
@@ -1454,7 +1451,7 @@ gameExercise1[] := (
 			 			 },
 						ImageSize -> 950, PlotRange -> {{-45, 45}, {0, 40}}, 
 						Axes -> False], None], 
-		      		      Button["Valuta!", 
+		      		    Grid[{{ Button["Valuta!", 
 		       		       
 		       If[ok1 == 1 && ok3 == 1 , 
 			Speak["Very good"], 
@@ -1468,7 +1465,7 @@ gameExercise1[] := (
 		     init = 1; init1 = 1; init2 = 1; init3 = 1; init4 = 1; 
 		    init5 = 1; init6 = 1; init9 = 1; init15 = 1; init10 = 1;
 		    init16 = 1;    init8 = 1; init14 = 1;colMauro=Blue;colCate=Blue;
-colMauro2=Black;colCate2=Black;   ok1 = 0; ok2 = 0; ok3 = 0; ok4 = 0; ok5 = 0; ok6 = 0;   ok7 = 0;ok8 = 0; ok9 = 0; ok10 = 0]],
+colMauro2=Black;colCate2=Black;   ok1 = 0; ok2 = 0; ok3 = 0; ok4 = 0; ok5 = 0; ok6 = 0;   ok7 = 0;ok8 = 0; ok9 = 0; ok10 = 0],Button["Suggerimento",MessageDialog[Style["L'operazione da fare \[EGrave]: (A\[Intersection]B)",Bold,Large]]],SpanFromLeft}},Alignment->Center]],
 		     		     
 		   		   Initialization :> (
 		     		     SetAttributes[eh1, HoldAll];
@@ -1699,18 +1696,14 @@ gameExercise2[] := (
 			 			  eh9[pt10, init14], eh10[pt11, init16], 
 			 
 			 			 Blue, Thickness[0.005], 
-			 			 
 			 l1 = Line[{{-42, 8}, {-37, 1}, {-22, 1}, {-17, 8}, {-42, 8}}], 
 		      Black,
 		      l2 = Line[{{-13, 8}, {-7, 1}, {8, 1}, {13, 8}, {-13, 8}}], Green,
-		      l3 = Line[{{18, 8}, {23, 1}, {38, 1}, {43, 8}, {18, 8}}],
-			 			  Red,
-			l4 =  Line[{{-15, 37}, {-10, 23}, {10, 23}, {15, 37}, {-15, 
-			     37}}], 
+		      l3 = Line[{{18, 8}, {23, 1}, {38, 1}, {43, 8}, {18, 8}}], Red,
+			 l4 =  Line[{{-15, 38}, {-10, 24}, {10, 24}, {15, 38}, {-15,38}}],  
 			 			 Black, Thickness[0.001],
 			 			 l5 = 
-			  			  Line[{{-44, 0.2}, {44, 0.2}, {44, 40}, {-44, 40}, {-44, 
-			     			     0.2}}], Blue, FontSize -> 20,
+			  			  Line[{{-44, 0.2}, {44, 0.2}, {44, 40}, {-44, 40}, {-44,0.2}}], Blue, FontSize -> 20,
 			 			 
 			 			 
 			 			 Text["A", {-40, 2}], Green, 
@@ -1718,7 +1711,7 @@ gameExercise2[] := (
 			 			 },
 						ImageSize -> 950, PlotRange -> {{-45, 45}, {0, 40}}, 
 						Axes -> False], None], 
-		      		      Button["Valuta!", 
+		      		     Grid[{{Button["Valuta!", 
 		       		       
 		       If[ok1 == 1 && ok2 == 1 && ok3 == 1 && ok4 == 1 && ok5 == 1 && 
 			 ok6 == 1 ok7 == 1 && ok8 == 1 && ok9 == 1 , 
@@ -1733,7 +1726,7 @@ gameExercise2[] := (
 		     init = 1; init1 = 1; init2 = 1; init3 = 1; init4 = 1; 
 		    init5 = 1; init6 = 1; init9 = 1; init15 = 1; init10 = 1;
 		    init16 = 1;    init8 = 1; init14 = 1;colMauro=Blue;colCate=Blue;
-colMauro2=Black;colLuca=Blue;colCate2=Black;colGiac = Blue;colLuigi = Black;colMarco = Black;colCarlo=Green;colElisa = Green; colFederico = Green;  ok1 = 0; ok2 = 0; ok3 = 0; ok4 = 0; ok5 = 0; ok6 = 0;   ok7 = 0;ok8 = 0; ok9 = 0;]],
+colMauro2=Black;colLuca=Blue;colCate2=Black;colGiac = Blue;colLuigi = Black;colMarco = Black;colCarlo=Green;colElisa = Green; colFederico = Green;  ok1 = 0; ok2 = 0; ok3 = 0; ok4 = 0; ok5 = 0; ok6 = 0;   ok7 = 0;ok8 = 0; ok9 = 0;],Button["Suggerimento",MessageDialog[Style["L'operazione da fare \[EGrave]: (A\[Union]B\[Union]C)",Bold,Large]]],SpanFromLeft}},Alignment->Center]],
 		     		     
 		   		   Initialization :> (
 		     		     testpoint[poly_, pt_] := 
@@ -1989,7 +1982,7 @@ gameExercise3[] := (
 			 			 },
 						ImageSize -> 950, PlotRange -> {{-45, 45}, {0, 40}}, 
 						Axes -> False], None], 
-		      		      Button["Valuta!", 
+		      		    Grid[{{ Button["Valuta!", 
 		       		       
 		       If[ok1 == 1 && ok3 == 1 , 
 			Speak["Very good"], 
@@ -2002,7 +1995,7 @@ gameExercise3[] := (
 		    		    oneTime = 1; oneTimeOut = 1; 
 		     init = 1; init1 = 1; init2 = 1; init3 = 1; init4 = 1; 
 		    init5 = 1; init6 = 1; init9 = 1; init15 = 1; init10 = 1;
-		    init16 = 1;    init8 = 1; init14 = 1;colLuca=Blue;colGiacomo=Blue;   ok1 = 0; ok2 = 0; ok3 = 0; ok4 = 0; ok5 = 0; ok6 = 0;   ok7 = 0;ok8 = 0; ok9 = 0; ok10 = 0]],
+		    init16 = 1;    init8 = 1; init14 = 1;colLuca=Blue;colGiacomo=Blue;   ok1 = 0; ok2 = 0; ok3 = 0; ok4 = 0; ok5 = 0; ok6 = 0;   ok7 = 0;ok8 = 0; ok9 = 0; ok10 = 0],Button["Suggerimento",MessageDialog[Style["L'operazione da fare \[EGrave]: A\(A\[Intersection]B)",Bold,Large]]],SpanFromLeft}},Alignment->Center]],
 		     		     
 		   		   Initialization :> (
 		     		     SetAttributes[eh1, HoldAll];
@@ -2236,12 +2229,12 @@ gameExercise4[] := (
 			 			 },
 						ImageSize -> 950, PlotRange -> {{-45, 45}, {0, 40}}, 
 						Axes -> False], None], 
-		      		      Button["Valuta!", 
+		      	Grid[{{ Button["Valuta!", 
 		       		       
 		       If[ok1 == 1 && ok3 == 1 &&ok4 == 1 && ok5 == 1 , 
 			Speak["Very good"], 
 						Speak["You can do better"]]],
-		      		      Button["Reset!",pt1 = {-36, 6}; pt2 = {-24, 6}; pt3 = {-35, 3}; 
+		      		      Button["Reset",pt1 = {-36, 6}; pt2 = {-24, 6}; pt3 = {-35, 3}; 
 		    		    pt4 = {-27, 3}; pt5 = {-7, 6}; pt6 = {6, 6}; 
 		    pt7 = {-4, 3}; 
 		    		    pt8 = {4, 3}; pt9 = {23, 6}; pt10 = {35, 6}; 
@@ -2249,7 +2242,7 @@ gameExercise4[] := (
 		    		    oneTime = 1; oneTimeOut = 1; 
 		     init = 1; init1 = 1; init2 = 1; init3 = 1; init4 = 1; 
 		    init5 = 1; init6 = 1; init9 = 1; init15 = 1; init10 = 1;
-		    init16 = 1;    init8 = 1; init14 = 1;colLuca=Blue;colGiacomo=Blue;  colLuigi=Black; colMarco=Black; ok1 = 0; ok2 = 0; ok3 = 0; ok4 = 0; ok5 = 0; ok6 = 0;   ok7 = 0;ok8 = 0; ok9 = 0; ok10 = 0]],
+		    init16 = 1;    init8 = 1; init14 = 1;colLuca=Blue;colGiacomo=Blue;  colLuigi=Black; colMarco=Black; ok1 = 0; ok2 = 0; ok3 = 0; ok4 = 0; ok5 = 0; ok6 = 0;   ok7 = 0;ok8 = 0; ok9 = 0; ok10 = 0],Button["Suggerimento",MessageDialog[Style["L'operazione da fare \[EGrave]: (A\[Union]B)\(A\[Intersection]B)",Bold,Large]]],SpanFromLeft}},Alignment->Center]],
 		     		     
 		   		   Initialization :> (
 		     		     SetAttributes[eh1, HoldAll];
@@ -2449,8 +2442,6 @@ If[val1[[2]] > 25 && val1[[1]] > -15 && val1[[1]] < 15 ,
 	End[ ]
 	Protect[project]
 EndPackage[ ]
-
-
 "Global`project`Private`"
 {}
 
