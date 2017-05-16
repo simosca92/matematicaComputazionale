@@ -18,6 +18,7 @@
 
 	BeginPackage["`project`"]
     (*Caricamento immagini necessarie*)
+    (*Recupero delle path per raggiungere la directory img dove sono contenute le immagini utilizzate*)
 	pathBanana = DirectoryName[ToFileName["FileName"/.NotebookInformation[SelectedNotebook[]]]]<>"img/banana.png"
 	pathMela = DirectoryName[ToFileName["FileName"/.NotebookInformation[SelectedNotebook[]]]]<>"img/mela.png"
     pathPera = DirectoryName[ToFileName["FileName"/.NotebookInformation[SelectedNotebook[]]]]<>"img/pera.png"
@@ -25,6 +26,8 @@
     pathScaff = DirectoryName[ToFileName["FileName"/.NotebookInformation[SelectedNotebook[]]]]<>"img/scaff.png"
     pathOnion = DirectoryName[ToFileName["FileName"/.NotebookInformation[SelectedNotebook[]]]]<>"img/onion.png"
     pathCarrot = DirectoryName[ToFileName["FileName"/.NotebookInformation[SelectedNotebook[]]]]<>"img/carrot.png"
+
+    (*Definizioni di Usage delle varie funzioni*) 
 	gameApp::usage = "gameApp[] Funzione utilizzata per rappresentare graficamente il concetto di appartenenza"
 	gameInter::usage = "gameInter[] Esercizio inerente le operazioni tra insiemi. Nel caso specifico: Intersezione."
 	gameApp2::usage = "gameApp2[] Funzione utilizzata per rappresentare graficamente il concetto di appartenenza geometrica."
@@ -46,9 +49,12 @@
 		onion = Import[pathOnion];
 		carrot = Import[pathCarrot];
 
-        (*Commento*)
+        (* Funzione che rappresenta graficamente il concetto di unione di insiemi *)
+        (*L'interfaccia grafica \[EGrave] divisa in due parti,a sinistra un esercizio e a destra invece \[EGrave] presente una dimostrazione*)
 
 		gameUnion[] := (
+         
+          (*Definizione delle varibili per la gestione dei punti iniziali dei vari oggetti grafici,del colore di essi e di altre funzionalit\[AGrave]*)
 
   		DynamicModule[{pt1 = {-34, 7}, pt2 = {-31, 7}, pt3 = {-28, 7}, pt4 = {-24, 7}, pt5 = {-20, 7}, pt6 = {-16, 7}, 
 		                pt7 = {16, 7}, pt8 = {19, 7}, pt9 = {23, 7}, pt10 = {31, 7}, pt11 = {35, 7}, pt12 = {27, 7}, 
@@ -59,8 +65,13 @@
 		    		    colTwelve1 = Black, colEighteen = Blue, colEighteen1 = Black, colThree = Blue, colNine = Blue, 
 		                colFifteen = Blue, colTen = Black, colSixteen = Black, ok1 = 0, ok2 = 0, ok3 = 0, ok4 = 0, ok5 = 0, ok6 = 0, 
 		                ok7 = 0, ok8 = 0, ok9 = 0, ok10 = 0},
+                        
+                       (*All'interno di questo array vengono aggiunte le due interfacce grafiche, 2 Manipulate*)
 
 		                Row[{
+
+                          (*Parte sinistra dell'interfaccia dove \[EGrave] presente un esercizio dimostrativo sul concetto di unione*)
+
 		     		     Manipulate[
 		      		      Dynamic[
 		                            Graphics[{eh[pt1, init6], eh1[pt2, init], eh2[pt3, init9], eh3[pt4, init2], 
@@ -73,7 +84,9 @@
 			 			                    Black, Thickness[0.001], l4 = Line[{{-44, 0.2}, {44, 0.2}, {44, 40}, {-44, 40}, {-44, 0.2}}], 
                                              Blue, FontSize -> 20,Text["A", {-40, 2}], Red,Text["C: UNIONE", {0, 38}], Black , Text["B", {10, 2}]},
 						                     ImageSize -> Scaled[.6], PlotRange -> {{-45, 45}, {0, 40}}, Axes -> False]
-                                   , None], 
+                                   , None],
+
+                          (*Creazione di 2 bottoni, uno per valutare la correttezza dell'esercizio e uno per ripristinarlo alle condizioni iniziali.*) 
 		      		                       
                           Button["Valuta!", 
                                   If[ok1 == 1 && ok2 == 1 && ok3 == 1 && ok4 == 1 && ok5 == 1 && ok6 == 1 ok7 == 1 && ok8 == 1 && ok9 == 1 && ok10 == 1 , 
@@ -86,6 +99,8 @@
 		                          colSix1=Black; colTwelve=Blue; colFuorteen=Black; colTwelve1=Black; colEighteen=Blue; colEighteen1=Black; 
                                   colThree=Blue; colNine=Blue; colFifteen=Blue; colTen=Black; colSixteen=Black;   
                                   ok1=0; ok2=0; ok3=0; ok4=0; ok5=0; ok6=0; ok7=0; ok8=0; ok9=0; ok10=0]],
+
+                         (*Parte destra dell'interfaccia dove \[EGrave] presenta una dimostrazione del concetto di unione di insiemi*)
 
 		     		    Manipulate[RegionPlot[{(x - (a/5))^2 + y^2 < 10 && ! ((x + (a/5))^2 + y^2 < 10), (x + (a/5))^2 + y^2 < 10 
                                                && ! ((x - (a/5))^2 + y^2 < 10), (x - (a/5))^2 + y^2 < 10 && ((x + (a/5))^2 + y^2 < 10)}, {x, -8, 8}, {y, -8, 8}, 
@@ -115,7 +130,12 @@
 		     		SetAttributes[inSix, HoldAll];
 		     	    SetAttributes[inEighteen, HoldAll];
 		     		SetAttributes[inTwelve, HoldAll];
-		     		     
+
+                     (*Per ogni oggetto viene definito un Gestore di Eventi che si occupa di gestire l'interazione tra il mouse e l'oggetto stesso*)
+                     (*Viene gestito il click del mouse sull'oggetto e il trascinamento di questo tenendo premuto il mouse*)
+	
+                     (*Numero 3 blu*)
+	     		     
 		     	    eh[val1_, oneTimeloc_] := EventHandler[{Text[Style["3", colThree, Italic, 20], Dynamic@val1]}, 
                                            {"MouseClicked" :> (val1 = pt1), 
 				                            "MouseDragged" :> (If[ oneTimeloc == 1 , val1 = MousePosition["Graphics"]];
@@ -123,6 +143,7 @@
 			  			                                     If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 , 
 			   			                                    If[oneTimeloc == 1,oneTimeloc = 0, val1 = {-10, 31}; colThree = Red;ok4=1]])
 						                   }];
+                     (*Numero 6 blu*)
 
 		     	    eh1[val1_, oneTimeloc_] := EventHandler[{Text[Style["6", colSix, Italic, 20], Dynamic@val1]}, 
                                              {"MouseClicked" :> (val1 = pt2), 
@@ -132,6 +153,7 @@
 			    			                                     If[oneTimeloc == 1, oneTimeloc = 0; inSix = inSix + 1];
 			    			                                     If[inSix == 2, colSix = Red; colSix1 = Red; ok1 = 1];])
 						                   }];
+                     (*Numero 9 blu*)
 
 		     		eh2[val1_, oneTimeloc_] := EventHandler[{Text[Style["9", colNine, Italic, 20], Dynamic@val1]}, 
                                              {"MouseClicked" :> (val1 = pt3), 
@@ -140,6 +162,7 @@
 		      		                                          If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 , 
 			   			                                     If[oneTimeloc == 1,oneTimeloc = 0; val1 = {-1, 31}; colNine = Red; ok5=1]])
                                            }];
+                     (*Numero 12 blu*)
 
 		     		eh3[val1_, oneTimeloc_] := EventHandler[{Text[Style["12", colTwelve, Italic, 20], Dynamic@val1]}, 
                                              {"MouseClicked" :> (val1 = pt4), 
@@ -149,6 +172,7 @@
 			    			                                   If[oneTimeloc == 1, oneTimeloc = 0; inTwelve = inTwelve + 1];
 			    			                                   If[inTwelve == 2, colTwelve = Red; colTwelve1 = Red; ok2 = 1];])
                                            }];
+                    (*Numero 15 blu*)
 
 		     	   eh4[val1_, oneTimeloc_] := EventHandler[{Text[Style["15", colFifteen, Italic, 20], Dynamic@val1]}, 
                                              {"MouseClicked" :> (val1 = pt5), 
@@ -157,6 +181,7 @@
 			  			                                     If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 , 
 			   			                                    If[oneTimeloc == 1,oneTimeloc = 0; val1 = {-3, 26}; colFifteen = Red; ok6 = 1]])
                                            }];
+                    (*Numero 18 blu*)
 
 		     	   eh5[val1_, oneTimeloc_] := EventHandler[{Text[Style["18", colEighteen, Italic, 20], Dynamic@val1]}, 
                                             {"MouseClicked" :> (val1 = pt6), 
@@ -166,6 +191,7 @@
 			    			                                   If[oneTimeloc == 1, oneTimeloc = 0; inEighteen = inEighteen + 1];
 			    			                                   If[inEighteen == 2, colEighteen = Red; colEighteen1 = Red;ok3 = 1];])
                                            }];
+                    (*Numero 6 nero*)
 
 		     	   eh6[val1_, oneTimeloc_] := EventHandler[{Text[Style["6", colSix1, Italic, 20], Dynamic@val1]}, 
                                             {"MouseClicked" :> (val1 = pt7), 
@@ -175,6 +201,7 @@
 			    			                                   If[oneTimeloc == 1, oneTimeloc = 0;inSix = inSix + 1(*Speak["Very Bad!"];*)];
 			    			                                   If[inSix == 2, colSix1 = Red; colSix = Red; ok1 = 1];])
                                            }];
+                   (*Numero 8 nero*)
 
 		     	  eh7[val1_, oneTimeloc_] := EventHandler[{Text[Style["8", colEight, Italic, 20], Dynamic@val1]}, 
                                              {"MouseClicked" :> (val1 = pt8), 
@@ -183,6 +210,7 @@
 		      		                                          If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 , 
 			   			                                     If[oneTimeloc == 1,oneTimeloc = 0; val1 = {-4, 31}; colEight = Red; ok7=1]])
                                            }];
+                   (*Numero 10 nero*)
 
 		     	  eh8[val1_, oneTimeloc_] := EventHandler[{Text[Style["10", colTen, Italic, 20], Dynamic@val1]}, 
                                               {"MouseClicked" :> (val1 = pt9), 
@@ -191,6 +219,7 @@
 		      		                                            If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 , 
 			   			                                       If[oneTimeloc == 1,oneTimeloc = 0; val1 = {2, 31}; colTen = Red; ok8=1]])
                                            }];
+                  (*Numero 14 nero*)
 
 		     	 eh9[val1_, oneTimeloc_] := EventHandler[{Text[Style["14", colFuorteen, Italic, 20], Dynamic@val1]}, 
                                             {"MouseClicked" :> (val1 = pt10), 
@@ -199,6 +228,7 @@
 		      		                                        If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 , 
 			   			                                   If[oneTimeloc == 1,oneTimeloc = 0; val1 = {10, 31}; colFuorteen = Red; ok9=1]])
                                            }];
+                  (*Numero 16 nero*)
 
 		          eh10[val1_, oneTimeloc_] := EventHandler[{Text[Style["16", colSixteen, Italic, 20], Dynamic@val1]}, 
                                             {"MouseClicked" :> (val1 = pt11), 
@@ -207,6 +237,7 @@
 		      		                                         If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 , 
 			   			                                    If[oneTimeloc == 1,oneTimeloc = 0; val1 = {1, 26}; colSixteen = Red; ok10=1]])
                                            }];
+                 (*Numero 12 nero*)
 
 		     	eh11[val1_, oneTimeloc_] := EventHandler[{Text[Style["12", colTwelve1, Italic, 20], Dynamic@val1]}, 
                                             {"MouseClicked" :> (val1 = pt12), 
@@ -215,7 +246,8 @@
 			   		                                       If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 ,val1 = {6, 31};
 			    			                                  If[oneTimeloc == 1, oneTimeloc = 0; inTwelve = inTwelve + 1];
 			    			                                  If[inTwelve == 2, colTwelve = Red; colTwelve1 = Red; ok2 = 1];])
-                                           }];
+                                          }];
+                  (*Numero 18 nero*)
 
 		          eh12[val1_, oneTimeloc_] := EventHandler[{Text[Style["18", colEighteen1, Italic, 20], Dynamic@val1]}, 
                                               {"MouseClicked" :> (val1 = pt13), 
@@ -228,7 +260,9 @@
         )])
 
 
-        (*Commento*)
+        (*Funzione utilizzata per rappresentare graficamente il concetto di Appartenenza degli insiemi*)
+        (*L'interfaccia \[EGrave] composta da due parti, una statica formata da vari oggetti e una checkbox*)
+        
 
 		gameApp[] := (
 
@@ -247,8 +281,12 @@
 		      ImageSize -> 900, PlotRange -> {{-45, 45}, {0, 40}}, 
 		      Axes -> False],
 		      DynamicModule[{yesNoTest1 = False, yesNoTest = False,yesNoTest2 = False, yesNoTest3 = False, yesNoTest4 = False, 
-		                     yesNoTest5 = False, yesNoTest6 = False, yesNoTest7 = False}, 
+		                     yesNoTest5 = False, yesNoTest6 = False, yesNoTest7 = False},
+
+              (*Checkbox formata da 4 righe e 2 colonne, per ogni oggetto si deve scegliere se appartiene o no all'insieme*)
+ 
 		      Grid[{{"    Food    ", "\[Element] ad A", "\[NotElement] ad A"}, 
+              (*ROW 1*)
               {ImageResize[mela, 30], 
 			              Checkbox[Dynamic[yesNoTest, (yesNoTest = #;If[#, yesNoTest1 = False, yesNoTest = True]) &]], 
 			              Checkbox[Dynamic[yesNoTest1, (yesNoTest1 = #;If[#, yesNoTest = False, yesNoTest1 = True]) &]]},
@@ -270,9 +308,12 @@
  
 		Frame -> All]]}, "  "])
 
-		(*Commento*)
+		(*Funzione utilizzata per rappresentare graficamente il concetto di intersezione*)
+        (*L'interfaccia grafica \[EGrave] divisa in 2 parti,un esercizio ed una dimostrazione*)
 
 		gameInter[] :=(
+
+            (*Definizione delle varibili per la gestione dei punti iniziali dei vari oggetti grafici,del colore di essi e di altre funzionalit\[AGrave]*)
 
 		    DynamicModule[{pt1 = {-34, 7}, pt2 = {-31, 7}, pt3 = {-28, 7}, pt4 = {-24, 7}, pt5 = {-20, 7}, 
                            pt6 = {-16, 7}, pt7 = {16, 7},pt8 = {19, 7}, pt9 = {23, 7}, pt10 = {31, 7}, 
@@ -281,8 +322,13 @@
                            oneTime = 1, oneTimeOut = 1, prec,init = 1, init1 = 1, init2 = 1, init3 = 1, init4 = 1, init5 = 1, 
 		                   colSix = Blue, colSix1 = Black, colTwelve = Blue,colTwelve1 = Black, colEighteen = Blue, 
                            colEighteen1 = Black,ok1 = 0, ok2 = 0, ok3 = 0},
+
+            (*All'interno di questo array vengono aggiunte le due interfacce grafiche, 2 Manipulate*)
 		   
 		    Row[{
+
+             (*Esercizio dimostrativo*)
+
 		     Manipulate[
 		           Dynamic[Graphics[{eh[pt1], eh1[pt2, init], eh2@pt3, eh3[pt4, init2], 
 			                         eh4@pt5, eh5[pt6, init3] , eh6[pt7, init1], eh7@pt8, eh8@pt9,
@@ -297,6 +343,8 @@
                                      ImageSize -> Scaled[.6], PlotRange -> {{-45, 45}, {0, 40}}, Axes -> False],
                    None],
 
+            (*Definizione di 2 bottoni, uno per valutare l'esercizio e l'altro per ripristinarlo allo stato iniziale*)
+
 		    Button["Valuta!", If[ok1 == 1 && ok2 == 1 && ok3 == 1, Speak["Very good"], 
 			       Speak["You can do better"]]],
  
@@ -305,6 +353,9 @@
 		                   inTwelve=0; inEighteen=0; oneTime=1; oneTimeOut=1; init=1; init1=1; init2=1; init3=1; init4=1; init5=1; 
 		                   colSix=Blue; colSix1=Black; colTwelve=Blue; colTwelve1=Black; colEighteen=Blue; colEighteen1=Black; 
 		                   ok1=0; ok2=0; ok3=0;]],
+
+            (*Dimostrazione grafica*)
+
 		    Manipulate[
 		      RegionPlot[{(x - (a/5))^2 + y^2 < 10 && ! ((x + (a/5))^2 + y^2 < 10), (x + (a/5))^2 + y^2 < 10 && ! ((x - (a/5))^2 + y^2 < 10),
                           (x - (a/5))^2 + y^2 < 10 && ((x + (a/5))^2 + y^2 < 10)}, {x, -8, 8}, {y, -8, 8}, PlotStyle -> {Black, Blue, Red}, 
@@ -334,33 +385,41 @@
 		   SetAttributes[inSix, HoldAll];
 		   SetAttributes[inEighteen, HoldAll];
 		   SetAttributes[inTwelve, HoldAll];
+
+           (*Per ogni oggetto viene definito un Gestore di Eventi che si occupa di gestire l'interazione tra il mouse e l'oggetto stesso*)
+           (*Viene gestito il click del mouse sull'oggetto e il trascinamento di questo tenendo premuto il mouse*)
+
+           (*Numero 3 blu*)
 		     
 		    eh[val1_] := EventHandler[{Text[Style["3", Blue, Italic, 20], Dynamic@val1]}, 
                         {"MouseClicked" :> (val1 = pt1), 
 			             "MouseDragged" :> (If[oneTimeOut == 1 , val1 = MousePosition["Graphics"];, 
 			                               If[oneTimeOut == 0, oneTimeOut = 1]; ];
-			                               (*se inserisco il numero tre nell'insieme intersezione*)
+			                               (*se inserisco il numero tre blu nell'insieme intersezione*)
 		                                   If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 , 
 			                               If[oneTimeOut == 1, val1 = {-34, 7}; oneTimeOut = 0]])
 			          }];
+           (*Numero 6 blu*)
 
 		   eh1[val1_, oneTimeloc_] := EventHandler[{Text[Style["6", colSix, Italic, 20], Dynamic@val1]}, 
                                    {"MouseClicked" :> (val1 = pt2), 
 			                       "MouseDragged" :> (If[oneTimeloc == 1, val1 = MousePosition["Graphics"];]
-			                                         (*se inserisco il numero sei nell'insieme intersezione*)
+			                                         (*se inserisco il numero sei blunell'insieme intersezione*)
 		                                              If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 , val1={-5,28};
 			                                          If[oneTimeloc == 1, oneTimeloc = 0; inSix = inSix + 1];
 			                                          If[inSix == 2, colSix = Red; colSix1 = Red; ok1 = 1];])
 			                      }];
+           (*Numero 9 blu*)
 
 		   eh2[val1_] := EventHandler[{Text[Style["9", Blue, Italic, 20], Dynamic@val1]}, 
                        {"MouseClicked" :> (val1 = pt3), 
 			            "MouseDragged" :> (If[oneTimeOut == 1 ,val1 = MousePosition["Graphics"];, 
 			                               If[oneTimeOut == 0, oneTimeOut = 1]; ];
-			                              (*se inserisco il numero nove nell'insieme intersezione*)
+			                              (*se inserisco il numero nove blu nell'insieme intersezione*)
 		                                   If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 , 
 			                               If[oneTimeOut == 1, val1 = {-28, 7}; oneTimeOut = 0]])
 			          }];
+          (*Numero 12 blu*)
 
 		   eh3[val1_, oneTimeloc_] := EventHandler[{Text[Style["12", colTwelve, Italic, 20], Dynamic@val1]}, 
                                    {"MouseClicked" :> (val1 = pt4), 
@@ -370,24 +429,27 @@
 			                                           If[oneTimeloc == 1, oneTimeloc = 0; inTwelve = inTwelve + 1];
 			                                           If[inTwelve == 2, colTwelve = Red; colTwelve1 = Red; ok2 = 1];])
                                    }];
+         (*Numero 15 blu*)
 
 		  eh4[val1_] := EventHandler[{Text[Style["15", Blue, Italic, 20], Dynamic@val1]}, 
                       {"MouseClicked" :> (val1 = pt5), 
 			           "MouseDragged" :> (If[oneTimeOut == 1 ,val1 = MousePosition["Graphics"];, 
 			                              If[oneTimeOut == 0, oneTimeOut = 1]; ];
-			                             (*se inserisco il numero quindici nell'insieme intersezione*)
+			                             (*se inserisco il numero quindici blu nell'insieme intersezione*)
 		                                  If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 , 
 			                              If[oneTimeOut == 1, val1 = {-20, 7}; oneTimeOut = 0]])
 			         }];
+         (*Numero 18 blu*)
 
 		  eh5[val1_, oneTimeloc_] := EventHandler[{Text[Style["18", colEighteen, Italic, 20], Dynamic@val1]}, 
                                     {"MouseClicked" :> (val1 = pt6), 
 			                         "MouseDragged" :> (If[oneTimeloc == 1, val1 = MousePosition["Graphics"];]
-			                                           (*se inserisco il numero diciotto nell'insieme intersezione*)
+			                                           (*se inserisco il numero diciotto blu nell'insieme intersezione*)
 		                                                If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 , val1={5,28};
 			                                            If[oneTimeloc == 1, oneTimeloc = 0; inEighteen = inEighteen + 1];
 			                                            If[inEighteen == 2, colEighteen = Red; colEighteen1 = Red;ok3 = 1];])
                                    }];
+          (*Numero 6 nero*)
 
 		  eh6[val1_, oneTimeloc_] := EventHandler[{Text[Style["6", colSix1, Italic, 20], Dynamic@val1]}, 
                                     {"MouseClicked" :> (val1 = pt7), 
@@ -397,6 +459,7 @@
 			                                            If[oneTimeloc == 1, oneTimeloc = 0; inSix = inSix + 1];
 			                                            If[inSix == 2, colSix1 = Red; colSix = Red; ok1 = 1];])
                                   }];
+         (*Numero 8 nero*)
 
 		  eh7[val1_] := EventHandler[{Text[Style["8", Black, Italic, 20], Dynamic@val1]}, 
                        {"MouseClicked" :> (val1 = pt8), 
@@ -406,6 +469,7 @@
 		                                   If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 , 
 			                               If[oneTimeOut == 1, val1 = {19, 7}; oneTimeOut = 0]])
                      }];
+         (*Numero 10 nero*)
 
 		  eh8[val1_] := EventHandler[{Text[Style["10", Black, Italic, 20], Dynamic@val1]}, 
                         {"MouseClicked" :> (val1 = pt9), 
@@ -415,6 +479,7 @@
 		                                    If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 , 
 			                                If[oneTimeOut == 1, val1 = {23, 7}; oneTimeOut = 0]])
                       }];
+         (*Numero 14 nero*)
 
 		  eh9[val1_] := EventHandler[{Text[Style["14", Black, Italic, 20], Dynamic@val1]}, 
                        {"MouseClicked" :> (val1 = pt10), 
@@ -424,6 +489,7 @@
 		                                   If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 , 
 			                               If[oneTimeOut == 1, val1 = {31, 7}; oneTimeOut = 0]])
                       }];
+         (*Numero 16 nero*)
 
 		 eh10[val1_] := EventHandler[{Text[Style["16", Black, Italic, 20], Dynamic@val1]}, 
                        {"MouseClicked" :> (val1 = pt11), 
@@ -433,6 +499,7 @@
 		                                   If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 , 
 			                               If[oneTimeOut == 1, val1 = {35, 7}; oneTimeOut = 0]])
 			         }];
+         (*Numero 12 nero*)
 
 		 eh11[val1_, oneTimeloc_] := EventHandler[{Text[Style["12", colTwelve1, Italic, 20], Dynamic@val1]}, 
                                    {"MouseClicked" :> (val1 = pt12), 
@@ -442,6 +509,7 @@
 			                                          If[oneTimeloc == 1, oneTimeloc = 0;inTwelve = inTwelve + 1];
 			                                          If[inTwelve == 2, colTwelve = Red; colTwelve1 = Red; ok2 = 1];])
                                   }];
+        (*Numero 18 nero*)
 
 		 eh12[val1_, oneTimeloc_] := EventHandler[{Text[Style["18", colEighteen1, Italic, 20], Dynamic@val1]}, 
                                   {"MouseClicked" :> (val1 = pt13), 
@@ -453,7 +521,10 @@
                                   }];
        )])
 
-       (*COmmento*)
+       (*Funzione che rappresenta graficamente il concetto di appartenenza*)
+       (*Interfaccia grafica formata solamente da una parte rappresentante un triangolo di un colore con all'interno un punto*)
+       (*Se questo punto viene trascinato fuori dal triangolo, quest'ultimo cambia colore*)
+       (*Si possono spostare anche gli estremi del triangolo per fargli cambiare forma*)
 
 	   gameApp2[] := (
 
@@ -465,17 +536,24 @@
 		             Initialization :> {(*test if point pt inside polygon poly*)
 		                                 testpoint[poly_, pt_] := 
 		             Round[(Total@Mod[(# - RotateRight[#]) &@(ArcTan @@ (pt - #) & /@ poly),2 Pi, -Pi]/2/Pi)] != 0}])
-       (*Commento*)
+
+       (*Funzione che rappresenta graficamente il concetto di appartenenza*)
+       (*L'interfaccia grafica \[EGrave] divisa in 2 parti,un esercizio ed una dimostrazione*)
 
 	   gameDiff[] :=(
+
+           (*Definizione delle varibili per la gestione dei punti iniziali dei vari oggetti grafici,del colore di essi e di altre funzionalit\[AGrave]*)
 
 		    DynamicModule[{pt3b = {-34, 7}, pt6b = {-31, 7}, pt9b = {-28, 7}, pt12b = {-24, 7}, pt15b = {-20, 7}, pt18b = {-16, 7}, 
 		                   pt6n = {16, 7}, pt8n = {19, 7}, pt10n = {23, 7}, pt14n = {31, 7}, pt16n = {35, 7}, pt12n = {27, 7}, pt18n = {23, 4}, 
                            eh3b, eh6b, eh9b, eh12b, eh15b, eh18b, eh6n, eh8n, eh10n, eh12n, eh14n, eh16n,eh18n, l1, l2, l3, l4, 
                            inThree = 0, inNine = 0, inFifteen = 0,oneTime = 1, oneTimeOut = 1, prec, init = 1, init1 = 1, init2 = 1,
                            colThree = Blue, colNine = Blue, colFifteen = Blue, ok1 = 0, ok2 = 0, ok3 = 0},
+
+                (*All'interno di questo array vengono aggiunte le due interfacce grafiche, 2 Manipulate*)
 		   
 		        Row[{
+                    (*Esercizio dimostrativo*)
 		            Manipulate[
 		              Dynamic[Graphics[{eh3b[pt3b, init], eh6b[pt6b], eh9b[pt9b, init1], eh12b[pt12b], eh15b[pt15b, init2], eh18b@pt18b , 
                                       eh6n@pt6n,eh8n@pt8n, eh10n@pt10n, eh12n@pt12n, eh14n@pt14n, eh16n@pt16n, eh18n@pt18n, 
@@ -488,6 +566,8 @@
                                       Black, Text["B", {10, 2}]},
 			                          ImageSize -> Scaled[.6], PlotRange -> {{-45, 45}, {0, 40}}, Axes -> False], 
                       None],
+
+                    (*Definizione di 2 bottoni, uno per valutare l'eserzio e l'altro per ripristinarlo allo stato iniziale*)
  
 		            Button["Valuta!", If[ok1 == 1 && ok2 == 1 && ok3 == 1, Speak["Very good"], 
 			               Speak["You can do better"]]], 
@@ -496,6 +576,8 @@
 		                   pt6n = {16, 7}; pt8n = {19, 7}; pt10n = {23, 7}; pt14n = {31, 7}; pt16n = {35, 7}; pt12n = {27, 7}; pt18n = {23, 4};
                            inThree = 0; inNine = 0; inFifteen = 0;oneTime = 1; oneTimeOut = 1; init = 1; init1 = 1; init2 = 1;colThree = Blue; 
                            colNine = Blue; colFifteen = Blue; ok1 = 0;ok2 = 0; ok3 = 0;]],
+
+                    (*Animazione*)
 
 		            Manipulate[RegionPlot[{(x - (a/5))^2 + y^2 < 10 && ! ((x + (a/5))^2 + y^2 < 10),
                                            (x + (a/5))^2 + y^2 < 10, (x + (a/5))^2 + y^2 < 10 && ! 
@@ -528,6 +610,11 @@
 		      SetAttributes[inNine, HoldAll];
 		      SetAttributes[inFifteen, HoldAll];
 
+              (*Per ogni oggetto viene definito un Gestore di Eventi che si occupa di gestire l'interazione tra il mouse e l'oggetto stesso*)
+              (*Viene gestito il click del mouse sull'oggetto e il trascinamento di questo tenendo premuto il mouse*)
+
+              (*Numero 3 blu*)
+
 		      eh3b[val1_, oneTimeloc_] := EventHandler[{Text[Style["3", colThree, Italic, 20], Dynamic@val1]}, 
                                         {"MouseClicked" :> (val1 = pt3b),
 			                             "MouseDragged" :> (If[oneTimeloc == 1, val1 = MousePosition["Graphics"];]
@@ -535,6 +622,7 @@
 			                                               If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15, 
                                                            val1 = {-5, 28};oneTimeloc = 0;colThree = Red;ok1=1])
                                        }];
+             (*Numero 6 blu*)
 		     
 		     eh6b[val1_] := EventHandler[{Text[Style["6", Blue, Italic, 20],  Dynamic@val1]}, 
                            {"MouseClicked" :> (val1 = pt6b), 
@@ -544,6 +632,7 @@
 			                                   If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15, 
 			                                   If[oneTimeOut == 1, val1 = {-31, 7}; oneTimeOut = 0]])
                          }];
+             (*Numero 9 blu*)
 		     
 		     eh9b[val1_, oneTimeloc_] := EventHandler[{Text[Style["9", colNine, Italic, 20], Dynamic@val1]}, 
                                       {"MouseClicked" :> (val1 = pt9b), 
@@ -552,6 +641,7 @@
 			                                            If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15, 
                                                         val1 = {0, 28};oneTimeloc = 0;colNine = Red;ok2=1])
                                       }];
+             (*Numero 12 blu*)
 		     
 		     eh12b[val1_] := EventHandler[{Text[Style["12", Blue, Italic, 20], Dynamic@val1]}, 
                           {"MouseClicked" :> (val1 = pt12b), 
@@ -561,6 +651,7 @@
 			                                  If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15, 
 			                                  If[oneTimeOut == 1, val1 = {-24, 7}; oneTimeOut = 0]])
                           }];
+             (*Numero 15 blu*)
 		     
 		     eh15b[val1_, oneTimeloc_] := EventHandler[{Text[Style["15", colFifteen, Italic, 20], Dynamic@val1]}, 
                                        {"MouseClicked" :> (val1 = pt15b), 
@@ -569,6 +660,7 @@
 			                                              If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15, 
 			                                              val1 = {5, 28};oneTimeloc = 0;colFifteen = Red;ok3=1])
                                        }];
+             (*Numero 18 blu*)
 		     
 		     eh18b[val1_] := EventHandler[{Text[Style["18", Blue, Italic, 20], Dynamic@val1]}, 
                             {"MouseClicked" :> (val1 = pt18b), 
@@ -578,6 +670,7 @@
 			                                    If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15, 
 			                                    If[oneTimeOut == 1, val1 = {-16, 7}; oneTimeOut = 0]])
                           }];
+             (*Numero 6 nero*)
 		     
 		     eh6n[val1_] := EventHandler[{Text[Style["6", Black, Italic, 20], Dynamic@val1]}, 
                            {"MouseClicked" :> (val1 = pt6n), 
@@ -587,6 +680,7 @@
 			                                   If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15, 
 			                                   If[oneTimeOut == 1, val1 = {16, 7}; oneTimeOut = 0]])
                           }];
+            (*Numero 8 nero*)
 		     
 		     eh8n[val1_] := EventHandler[{Text[Style["8", Black, Italic, 20], Dynamic@val1]}, 
                            {"MouseClicked" :> (val1 = pt8n), 
@@ -596,6 +690,7 @@
 			                                  If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15, 
 			                                  If[oneTimeOut == 1, val1 = {19, 7}; oneTimeOut = 0]])
                  }];
+            (*Numero 10 nero*)
 		     
 		     eh10n[val1_] := EventHandler[{Text[Style["10", Black, Italic, 20], Dynamic@val1]}, 
                             {"MouseClicked" :> (val1 = pt10n), 
@@ -605,6 +700,7 @@
 			                                   If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15, 
 			                                   If[oneTimeOut == 1, val1 = {23, 7}; oneTimeOut = 0]])
                           }];
+             (*Numero 12 nero*)
 
 		     eh12n[val1_] := EventHandler[{Text[Style["12", Black, Italic, 20], Dynamic@val1]}, 
                             {"MouseClicked" :> (val1 = pt12n), 
@@ -614,6 +710,7 @@
 			                                    If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15, 
 			                                    If[oneTimeOut == 1, val1 = {27, 7}; oneTimeOut = 0]])
                           }];
+             (*Numero 14 nero*)
 		     
 		     eh14n[val1_] := EventHandler[{Text[Style["14", Black, Italic, 20], Dynamic@val1]}, 
                             {"MouseClicked" :> (val1 = pt14n), 
@@ -623,6 +720,7 @@
 			                                    If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15, 
 			                                    If[oneTimeOut == 1, val1 = {31, 7}; oneTimeOut = 0]])
                           }];
+            (*Numero 16 nero*)
 		     
 		     eh16n[val1_] := EventHandler[{Text[Style["16", Black, Italic, 20], Dynamic@val1]}, 
                              {"MouseClicked" :> (val1 = pt16n), 
@@ -632,6 +730,7 @@
 			                                     If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15, 
 			                                     If[oneTimeOut == 1, val1 = {35, 7}; oneTimeOut = 0]])
                           }];
+            (*Numero 18 nero*)
 
 		     eh18n[val1_] := EventHandler[{Text[Style["18", Black, Italic, 20], Dynamic@val1]}, 
                             {"MouseClicked" :> (val1 = pt18n), 
@@ -643,6 +742,9 @@
                           }];
 		     )
         ])
+
+      (*Funzione che rappresenta graficamente il concetto di insieme*)
+      (*Ogni oggetto viene inizializzato con una posizione random tra un range di valori*)
 
 	  game1[] := (DynamicModule[{pt1 = {RandomInteger[{-35, 35}], RandomInteger[{15, 35}]}, 
 		                         pt2 = {RandomInteger[{-35, 35}], RandomInteger[{15, 35}]}, 
@@ -663,6 +765,7 @@
                              Green , Text["C", {20, 2}]},
                              ImageSize -> 900, PlotRange -> {{-45, 45}, {0, 40}},Axes -> False], 
                      None],
+                (*Creazione del bottone per rispristinare l'esercizio allo stato iniziale*)
 
                 Button[Style["Reset!",Bold,Medium],
                           pt1 = {RandomInteger[{-35, 35}],RandomInteger[{15, 35}]}; 
@@ -688,6 +791,11 @@
 		       SetAttributes[oneTimeOut, HoldAll];
 		       SetAttributes[prec, HoldAll];
 
+              (*Per ogni oggetto viene definito un Gestore di Eventi che si occupa di gestire l'interazione tra il mouse e l'oggetto stesso*)
+              (*Viene gestito il click del mouse sull'oggetto e il trascinamento di questo tenendo premuto il mouse*)
+
+               (*Oggetto mela*)
+
 		       eh1[val1_] := EventHandler[{Inset[mela, Dynamic@val1, Automatic, 5]}, 
                           {"MouseClicked" :> (val1 = {RandomInteger[{-35, 35}], RandomInteger[{15, 35}]}), 
 			              "MouseDragged" :> (If[inMela == 0 && oneTimeOut == 1 , 
@@ -706,6 +814,7 @@
                                             If[val1[[2]] < 5 && val1[[1]] > 23 && val1[[1]] < 40 , 
 			                                If[oneTimeOut == 1, val1 = {30, 15};oneTimeOut = 0]])
 			               }];
+              (*Oggetto banana*)
 
 		      eh[val_] := EventHandler[{Inset[banana, Dynamic@val, Automatic,5]}, 
                          {"MouseClicked" :> (val = {RandomInteger[{-35, 35}], RandomInteger[{15, 35}]}), 
@@ -722,6 +831,7 @@
 			                                 If[val[[2]] < 5 && val[[1]] > 23 && val[[1]] < 40 , 
 			                                 If[oneTimeOut == 1, val = {30, 15}; oneTimeOut = 0]])
 			          }];
+            (*Oggetto pera*)
 
 		     eh2[val2_] := EventHandler[{Inset[pera, Dynamic@val2, Automatic, 5]}, 
                         {"MouseClicked" :> (val2 = {RandomInteger[{-35, 35}], RandomInteger[{15, 35}]}), 
@@ -741,7 +851,11 @@
 		     )
 		   ])
 
+     (*Funzione che rappresenta il concetto di intersezione*)
+
 	  gamePart[] := (
+
+               (*Definizione delle varibili per la gestione dei punti iniziali dei vari oggetti grafici,del colore di essi e di altre funzionalit\[AGrave]*)
 
 		       DynamicModule[{pt1 = {-10, 8}, pt2 = {-7, 8}, pt3 = {-4, 8}, pt4 = {-1, 8}, pt5 = {2, 8},
                               pt6 = {5, 8}, pt7 = {8, 8}, pt8 = {11, 8}, pt9 = {-1, 4}, pt10 = {2, 4} , 
@@ -766,6 +880,8 @@
                                  Red, Text["A", {-13, 2}], Black , Text["P", {11, 23}]},
 		                         ImageSize -> 900, PlotRange -> {{-45, 45}, {0, 40}}, Axes -> False],
                     None],
+
+             (*Definizione di 2 bottoni, uno per valutare l'esercizio e uno per rispristinarlo allo stato iniziale*)
  
 		     Button["Valuta!", 
                         If[ok1 == 1 && ok2 == 1 && ok3 == 1 && ok4 == 1 && ok5 == 1 && 
@@ -796,6 +912,11 @@
 		     SetAttributes[l3, HoldAll];
 		     SetAttributes[l4, HoldAll];
 
+             (*Per ogni oggetto viene definito un Gestore di Eventi che si occupa di gestire l'interazione tra il mouse e l'oggetto stesso*)
+             (*Viene gestito il click del mouse sull'oggetto e il trascinamento di questo tenendo premuto il mouse*)
+
+             (*Numero 1 rosso*)
+
 		     eh1[val1_, oneTimeloc_] := EventHandler[{Text[Style["1", colOne, Italic, 20], Dynamic@val1]}, 
                                        {"MouseClicked" :> (val1 = pt1), 
 			                            "MouseDragged" :> (If[oneTimeloc == 1, val1 = MousePosition["Graphics"]; 
@@ -810,6 +931,8 @@
 			                                               If[oneTimeOut == 1, val1 = {-10, 8}; oneTimeOut = 0]];)
                                      }];
 
+             (*Numero 2 rosso*)
+
 		     eh2[val1_, oneTimeloc_] := EventHandler[{Text[Style["2", colTwo, Italic, 20], Dynamic@val1]}, 
                                        {"MouseClicked" :> (val1 = pt2), 
 			                            "MouseDragged" :> ( If[oneTimeloc == 1, val1 = MousePosition["Graphics"]; 
@@ -818,104 +941,128 @@
 			                                              (*se inserisco il numero due nell'insieme pari*)
 		                                                   If[val1[[2]] > 23 && val1[[1]] > 15 && val1[[1]] < 40 , val1={16.9,28};
                                                            If[oneTimeloc == 1, oneTimeloc = 0; colTwo = Black; ok2 = 1;];]
-			    
+
+			                                              (*numero pari nell'insieme dispari*)
 			                                               If[val1[[2]] > 23 && val1[[1]] > -40 && val1[[1]] < -10 , 
 			                                               If[oneTimeOut == 1, val1 = {-7, 8};oneTimeOut = 0]];)
                                       }];
+             (*Numero 3 rosso*)
 
 		     eh3[val1_, oneTimeloc_] := EventHandler[{Text[Style["3", colThree, Italic, 20], Dynamic@val1]}, 
                                         {"MouseClicked" :> (val1 = pt3), 
 			                            "MouseDragged" :> (If[oneTimeloc == 1, val1 = MousePosition["Graphics"]; 
 			                                               If[oneTimeOut == 0, oneTimeOut = 1];]
 			    
-                                                          (**)
+                                                          (*se inserisco numero 3 nell'insieme dispari*)
 		                                                  If[val1[[2]] > 23 && val1[[1]] > -40 && val1[[1]] < -10 , val1={-29, 28};
 			                                              If[oneTimeloc == 1, oneTimeloc = 0; colThree = Blue; ok3 = 1;];]
+
+                                                          (*numero dispari nell'insieme pari*)
 			                                              If[val1[[2]] > 23 && val1[[1]] > 15 && val1[[1]] < 40 , 
 			                                              If[oneTimeOut == 1, val1 = {-4, 8}; oneTimeOut = 0]];)
                                       }];
+           (*Numero 4 rosso*)
 
 			eh4[val1_, oneTimeloc_] := EventHandler[{Text[Style["4", colFour, Italic, 20], Dynamic@val1]}, 
                                      {"MouseClicked" :> (val1 = pt4), 
 			                         "MouseDragged" :> (If[oneTimeloc == 1, val1 = MousePosition["Graphics"]; 
 			                                            If[oneTimeOut == 0, oneTimeOut = 1];]
 			    
-                                                       (**)
+                                                       (*se inserisco numero 4 nell'insieme pari*)
 		                                               If[val1[[2]] > 23 && val1[[1]] > 15 && val1[[1]] < 40 , val1={21,28};
 			                                           If[oneTimeloc == 1, oneTimeloc = 0; colFour = Black;ok4 = 1;];]
+
+                                                       (*numero pari nell'insieme dispari*)
 			                                           If[val1[[2]] > 23 && val1[[1]] > -40 && val1[[1]] < -10 , 
 			                                           If[oneTimeOut == 1, val1 = {-1, 8}; oneTimeOut = 0]];)
                                     }];
+           (*Numero 5 rosso*)
 
 		    eh5[val1_, oneTimeloc_] := EventHandler[{Text[Style["5", colFive, Italic, 20], Dynamic@val1]}, 
                                      {"MouseClicked" :> (val1 = pt5), 
 			                          "MouseDragged" :> (If[oneTimeloc == 1, val1 = MousePosition["Graphics"]; 
 			                                             If[oneTimeOut == 0, oneTimeOut = 1];]
 
-			                                            (**)
+			                                            (*se inserisco numero 5 nell'insieme dispari*)
 		                                                 If[val1[[2]] > 23 && val1[[1]] > -40 && val1[[1]] < -10 ,val1={-25,28};
 			                                             If[oneTimeloc == 1, oneTimeloc = 0; colFive = Blue; ok5 = 1;];]
+
+                                                         (*numero dispari nell'insieme pari*)
 			                                             If[val1[[2]] > 23 && val1[[1]] > 15 && val1[[1]] < 40 , 
 			                                             If[oneTimeOut == 1, val1 = {2, 8}; oneTimeOut = 0]];)
 			                        }];
+           (*Numero 6 rosso*)
 
 		   eh6[val1_, oneTimeloc_] := EventHandler[{Text[Style["6", colSix, Italic, 20], Dynamic@val1]}, 
                                     {"MouseClicked" :> (val1 = pt6), 
 			                         "MouseDragged" :> (If[oneTimeloc == 1, val1 = MousePosition["Graphics"]; 
 			                                           If[oneTimeOut == 0, oneTimeOut = 1];]
 
-			                                          (**)
+			                                          (*se inserisco numero 6 nell'insieme pari*)
 		                                               If[val1[[2]] > 23 && val1[[1]] > 15 && val1[[1]] < 40 , val1={25,28};
 			                                           If[oneTimeloc == 1, oneTimeloc = 0; colSix = Black; ok6 = 1;];]
-			    
+                         
+			                                           (*numero pari nell'insieme dispari*)
 			                                           If[val1[[2]] > 23 && val1[[1]] > -40 && val1[[1]] < -10 , 
 			                                           If[oneTimeOut == 1, val1 = {5, 8}; oneTimeOut = 0]];)
                                     }];
+            (*Numero 7 rosso*)
 
 		    eh7[val1_, oneTimeloc_] := EventHandler[{Text[Style["7", colSeven, Italic, 20], Dynamic@val1]}, 
                                       {"MouseClicked" :> (val1 = pt7), 
 			                           "MouseDragged" :> (If[oneTimeloc == 1, val1 = MousePosition["Graphics"]; 
 			                                              If[oneTimeOut == 0, oneTimeOut = 1];]
 
-			                                             (**)
+			                                             (*se inserisco numero 7 nell'insieme dispari*)
 		                                                 If[val1[[2]] > 23 && val1[[1]] > -40 && val1[[1]] < -10 , val1={-21,28};
 			                                             If[oneTimeloc == 1, oneTimeloc = 0; colSeven = Blue; ok7 = 1;];]
+
+                                                         (*numero dispari nell'insieme pari*)
 			                                             If[val1[[2]] > 23 && val1[[1]] > 15 && val1[[1]] < 40 , 
 			                                             If[oneTimeOut == 1, val1 = {8, 8}; oneTimeOut = 0]];)
                                    }];
+              (*Numero 8 rosso*)
 
 		      eh8[val1_, oneTimeloc_] := EventHandler[{Text[Style["8", colEight, Italic, 20], Dynamic@val1]}, 
                                        {"MouseClicked" :> (val1 = pt8), 
 			                            "MouseDragged" :> (If[oneTimeloc == 1, val1 = MousePosition["Graphics"]; 
 			                                               If[oneTimeOut == 0, oneTimeOut = 1];]
 
-			                                              (**)
+			                                              (*se inserisco numero 8 nell'insieme pari*)
 		                                                  If[val1[[2]] > 23 && val1[[1]] > 15 && val1[[1]] < 40 , val1={29,28};
 			                                              If[oneTimeloc == 1, oneTimeloc = 0; colEight = Black; ok8 = 1;];]
+
+                                                          (*numero pari nell'insieme dispari*)
 			                                              If[val1[[2]] > 23 && val1[[1]] > -40 && val1[[1]] < -10 , 
 			                                              If[oneTimeOut == 1, val1 = {11, 8}; oneTimeOut = 0]];)
                                       }];
+              (*Numero 9 rosso*)
 
 		      eh9[val1_, oneTimeloc_] := EventHandler[{Text[Style["9", colNine, Italic, 20], Dynamic@val1]}, 
                                         {"MouseClicked" :> (val1 = pt9), 
 			                            "MouseDragged" :> (If[oneTimeloc == 1, val1 = MousePosition["Graphics"]; 
 			                                               If[ oneTimeOut == 0, oneTimeOut = 1];]
 
-			                                              (**)
+			                                              (*se inserisco numero 9 nell'insieme dispari*)
 		                                                  If[val1[[2]] > 23 && val1[[1]] > -40 && val1[[1]] < -10 , val1={-17,28};
 			                                              If[oneTimeloc == 1, oneTimeloc = 0; colNine = Blue;ok9 = 1;];]
+
+                                                          (*numero dispari nell'insieme pari*)
 			                                              If[val1[[2]] > 23 && val1[[1]] > 15 && val1[[1]] < 40 , 
 			                                              If[oneTimeOut == 1, val1 = {-1, 4};oneTimeOut = 0]];)
                                       }];
+             (*Numero 10 rosso*)
 
 		     eh10[val1_, oneTimeloc_] := EventHandler[{Text[Style["10", colTen, Italic, 20], Dynamic@val1]}, 
                                        {"MouseClicked" :> (val1 = pt10), 
 			                            "MouseDragged" :> (If[oneTimeloc == 1, val1 = MousePosition["Graphics"]; 
 			                                               If[ oneTimeOut == 0, oneTimeOut = 1];]
 			    
-                                                          (**)
+                                                          (*se inserisco numero 10 nell'insieme pari*)
 		                                                  If[val1[[2]] > 23 && val1[[1]] > 15 && val1[[1]] < 40 , val1={33,28};
 			                                              If[oneTimeloc == 1, oneTimeloc = 0; colTen = Black; ok10 = 1;];]
+
+                                                          (*numero pari nell'insieme dispari*)
 			                                              If[val1[[2]] > 23 && val1[[1]] > -40 && val1[[1]] < -10 , 
 			                                              If[oneTimeOut == 1, val1 = {2, 4}; oneTimeOut = 0]];)
                                       }];
@@ -923,7 +1070,13 @@
        )
 
 
-       gameExercise1[] := (
+        (*funzioni utilizzate per la risoluzione di 4 esercizi finali di comprensione*) 
+
+        (*Primo Esercizio*)
+
+		gameExercise1[] := (
+
+                (*Definizione delle varibili per la gestione dei punti iniziali dei vari oggetti grafici,del colore di essi e di altre funzionalit\[AGrave]*)
 
   		      DynamicModule[{pt1={-36,6}, pt2= {-24, 6}, pt3 = {-35, 3}, pt4={-27,3}, pt5={-7, 6}, pt6={6,6}, pt7={-4,3}, 
 		    		           pt8 = {4, 3}, pt9 = {23, 6}, pt10 = {35, 6}, pt11 = {29, 3}, pt12 = {27, 7}, pt13 = {25, 4}, 
@@ -948,8 +1101,11 @@
 						                   ImageSize -> 950, PlotRange -> {{-45, 45}, {0, 40}},Axes -> False],
                         None], 
 		      		 Grid[{{ 
+                               (*Definizione di 3 bottoni*)
+                               (*Bottone utilizzato per valutare l'esercizio*)
                                Button["Valuta!", If[ok1 == 1 && ok3 == 1 , Speak["Very good"], Speak["You can do better"]]],
 
+                               (*Bottone utilizzato per ripristinare l'esercizio allo stato iniziale*)
 		      		         Button["Reset!",pt1={-36,6}; pt2={-24,6}; pt3={-35,3}; pt4={-27,3}; pt5={-7,6}; pt6={6,6}; 
 		                               pt7={-4,3}; pt8={4,3}; pt9={23,6}; pt10={35,6}; pt11={29,3}; inMauro=0; inCate=0; 
                                        oneTime=1; oneTimeOut=1; init=1; init1=1; init2=1; init3=1; init4=1; init5=1; init6=1; 
@@ -957,6 +1113,7 @@
                                        colMauro2=Black; colCate2=Black; ok1=0; ok2=0; ok3=0; ok4=0; ok5=0; ok6=0; ok7=0; ok8=0; 
                                        ok9=0; ok10=0],
 
+                               (*Bottone utilizzato per ottenere un suggerimento utile per la risoluzione dell'esercizio*)
                                Button["Suggerimento",MessageDialog[Style["L'operazione da fare \[EGrave]: (A\[Intersection]B)",Bold,Large]]],SpanFromLeft}},
                                         Alignment->Center]],
 		     		     
@@ -977,7 +1134,12 @@
 		       SetAttributes[eh12, HoldAll];
 		       SetAttributes[inMauro, HoldAll];
 		       SetAttributes[inCate, HoldAll];
-		     		     
+
+               (*Per ogni oggetto viene definito un Gestore di Eventi che si occupa di gestire l'interazione tra il mouse e l'oggetto stesso*)
+               (*Viene gestito il click del mouse sull'oggetto e il trascinamento di questo tenendo premuto il mouse*)
+		     	
+               (*Nome Mauro blu*)	
+     
 		       eh[val1_, oneTimeloc_] := EventHandler[{Text[Style["Mauro", colMauro, Italic, 20], Dynamic@val1]}, 
                                       {"MouseClicked" :> (val1 = pt1), 
 					                   "MouseDragged" :> (If[oneTimeloc == 1 , val1 = MousePosition["Graphics"]];
@@ -986,6 +1148,7 @@
 			    			                              If[oneTimeloc == 1, oneTimeloc = 0;inMauro = inMauro + 1];
 			    			                              If[inMauro == 2, colMauro = Red; colMauro2 = Red; ok1 = 1];])
 						              }];
+               (*Nome Caterina blu*)
 
 		       eh1[val1_, oneTimeloc_] := EventHandler[{Text[Style["Caterina", colCate, Italic, 20], Dynamic@val1]}, 
                                          {"MouseClicked" :> (val1 = pt2), 
@@ -995,6 +1158,7 @@
 			    			                                 If[oneTimeloc == 1, oneTimeloc = 0; inCate = inCate + 1];
                                                              If[inCate == 2, colCate = Red; colCate2 = Red; ok3 = 1];])
                                        }];
+               (*Nome Luca blu*)
 
 		       eh2[val1_, oneTimeloc_] := EventHandler[{Text[Style["Luca", Blue, Italic, 20], Dynamic@val1]}, 
                                         {"MouseClicked" :> (pt3), 
@@ -1002,6 +1166,7 @@
 			  			                                (*se inserisco il nome Luca blu nell'insieme unione*)
 		                                                   If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 , val1={-35,3};])
                                        }];
+               (*Nome Giacomo blu*)
 
 		       eh3[val1_, oneTimeloc_] := EventHandler[{Text[Style["Giacomo", Blue, Italic, 20], Dynamic@val1]}, 
                                          {"MouseClicked" :> (pt4), 
@@ -1009,6 +1174,7 @@
 			   			                                (*se inserisco il nome Giacomo blu nell'insieme intersezione*)
 			   		                                     If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 , val1={-27,3};])
                                         }];
+               (*Nome Luigi nero*)
 
 		       eh4[val1_, oneTimeloc_] := EventHandler[{Text[Style["Luigi", Black, Italic, 20], Dynamic@val1]}, 
                                         {"MouseClicked" :> (val1 = pt5), 
@@ -1016,6 +1182,7 @@
 			  			                                (*se inserisco il nome Luigi nero nell'insieme unione*)
 		                                                   If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 , val1={-7,6}; ])
 						               }];
+               (*Nome Caterina nero*)
 
 		       eh5[val1_, oneTimeloc_] := EventHandler[{Text[Style["Caterina", colCate2, Italic, 20], Dynamic@val1]}, 
                                         {"MouseClicked" :> (val1 = pt6), 
@@ -1025,6 +1192,7 @@
 			    			                               If[oneTimeloc == 1, oneTimeloc = 0;inCate = inCate + 1];
                                                            If[inCate == 2, colCate = Red;colCate2 = Red;ok3 = 1];])
                                        }];
+               (*Nome Mauro nero*)
 
 		       eh6[val1_, oneTimeloc_] := EventHandler[{Text[Style["Mauro", colMauro2, Italic, 20], Dynamic@val1]}, 
                                          {"MouseClicked" :> (val1 = pt7), 
@@ -1034,6 +1202,7 @@
                                                             If[oneTimeloc == 1, oneTimeloc = 0;inMauro = inMauro + 1];
                                                             If[inMauro == 2, colMauro = Red; colMauro2 = Red; ok1 = 1];])
                                        }];
+               (*Nome Marco nero*)
 
 		       eh7[val1_, oneTimeloc_] := EventHandler[{Text[Style["Marco", Black, Italic, 20], Dynamic@val1]}, 
                                          {"MouseClicked" :> (val1 = pt8), 
@@ -1041,6 +1210,7 @@
 			  			                                 (*se inserisco il nome Marco nero nell'insieme unione*)
 		                                                    If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 , val1={4, 3};])
                                         }];
+               (*Nome Carlo verde*)
 
 		       eh8[val1_, oneTimeloc_] := EventHandler[{Text[Style["Carlo", Green, Italic, 20], Dynamic@val1]}, 
                                         {"MouseClicked" :> (val1 = pt9), 
@@ -1048,6 +1218,7 @@
 			  			                                (*se inserisco il nome Carlo verde nell'insieme unione*)
                                                             If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 , val1={23,6};])
 						               }];
+              (*Nome Federico verde*)
 
 		       eh9[val1_, oneTimeloc_] := EventHandler[{Text[Style["Federico", Green, Italic, 20], Dynamic@val1]}, 
                                        {"MouseClicked" :> (val1 = pt10), 
@@ -1055,6 +1226,7 @@
 			  			                                (*se inserisco il nome Federico verde nell'insieme unione*)
                                                            If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 , val1={35,6}])
 						              }];
+              (*Nome Elisa verde*)
 
 		       eh10[val1_, oneTimeloc_] := EventHandler[{Text[Style["Elisa", Green, Italic, 20], Dynamic@val1]}, 
                                          {"MouseClicked" :> (val1 = pt11), 
@@ -1065,9 +1237,11 @@
           )])
 
 
-          (*Commento*)           
+          (*Secondo Esercizio*)           
 
           gameExercise2[] := (
+
+                   (*Definizione delle varibili per la gestione dei punti iniziali dei vari oggetti grafici,del colore di essi e di altre funzionalit\[AGrave]*)
 
   		         DynamicModule[{pt1={-36,6}, pt2={-24,6}, pt3={-35,3}, pt4={-27,3}, pt5={-7,6}, pt6={6,6}, pt7={-4,3}, 
 		    		              pt8={4,3}, pt9={23,6}, pt10={35,6}, pt11={29,3}, pt12={27,7}, pt13={25,4}, eh1, eh, eh2, eh3, eh4, 
@@ -1092,9 +1266,14 @@
 						    ImageSize -> 950, PlotRange -> {{-45, 45}, {0, 40}}, Axes -> False], None],
  
 
-		           Grid[{{Button["Valuta!", If[ok1 == 1 && ok2 == 1 && ok3 == 1 && ok4 == 1 && ok5 == 1 && 
+		           Grid[{{
+                         (*Definizione di 3 bottoni*)
+                         (*Bottone utilizzato per valutare l'esercizio*)
+
+                          Button["Valuta!", If[ok1 == 1 && ok2 == 1 && ok3 == 1 && ok4 == 1 && ok5 == 1 && 
 			                     ok6 == 1 ok7 == 1 && ok8 == 1 && ok9 == 1, Speak["Very good"], Speak["You can do better"]]],
 
+                          (*Bottone utilizzato per ripristinare l'esercizio allo stato iniziale*)
 		      		    Button["Reset!",pt1={-36, 6}; pt2={-24, 6}; pt3={-35,3}; pt4={-27,3}; pt5={-7,6}; 
                                          pt6={6,6}; pt7={-4,3}; pt8={4,3}; pt9={23,6}; pt10={35,6}; pt11={29,3}; 
 		    		                     inMauro=0; inCate=0; oneTime=1; oneTimeOut=1; init=1; init1=1; init2=1; init3=1; 
@@ -1103,6 +1282,7 @@
                                          colMarco=Black; colCarlo=Green; colElisa=Green; colFederico=Green;  ok1=0; ok2=0; ok3=0; ok4=0; 
                                          ok5=0; ok6=0; ok7=0; ok8=0; ok9=0;],
 
+                          (*Bottone utilizzato per ottenere un suggerimento utile per la risoluzione dell'esercizio*)
                           Button["Suggerimento",MessageDialog[Style["L'operazione da fare \[EGrave]: (A\[Union]B\[Union]C)",Bold,Large]]],SpanFromLeft}},Alignment->Center]],
 		     		     
 		   		       Initialization :> (testpoint[poly_, pt_] := Round[(Total@Mod[(# - RotateRight[#]) &@(ArcTan @@ (pt - #) & /@ poly),2 Pi, -Pi]/2/Pi)] != 0;
@@ -1122,6 +1302,11 @@
 		     		     SetAttributes[eh12, HoldAll];
 		     		     SetAttributes[inMauro, HoldAll];
 		     		     SetAttributes[inCate, HoldAll];
+
+                          (*Per ogni oggetto viene definito un Gestore di Eventi che si occupa di gestire l'interazione tra il mouse e l'oggetto stesso*)
+                          (*Viene gestito il click del mouse sull'oggetto e il trascinamento di questo tenendo premuto il mouse*)
+
+                          (*Nome Mauro blu*)
 		     		     
 		     		     eh[val1_, oneTimeloc_] := EventHandler[{Text[Style["Mauro", colMauro, Italic, 20], Dynamic@val1]}, 
                                                  {"MouseClicked" :> (val1 = pt1), 
@@ -1131,6 +1316,7 @@
                                                                      If[oneTimeloc == 1, oneTimeloc = 0;inMauro = inMauro + 1];
                                                                      If[inMauro == 2, colMauro = Red; colMauro2 = Red; ok1 = 1];])
 						                        }];
+                          (*Nome Caterina blu*)
 
 		     		     eh1[val1_, oneTimeloc_] := EventHandler[{Text[Style["Caterina", colCate, Italic, 20], Dynamic@val1]}, 
                                                   {"MouseClicked" :> (val1 = pt2), 
@@ -1140,6 +1326,7 @@
                                                                       If[oneTimeloc == 1, oneTimeloc = 0; inCate = inCate + 1];
 	                                                                  If[inCate == 2, colCate = Red; colCate2 = Red; ok2 = 1];])
                                                   }];
+                           (*Nome Luca blu*)
 
 		     		      eh2[val1_, oneTimeloc_] := EventHandler[{Text[Style["Luca", colLuca, Italic, 20], Dynamic@val1]}, 
                                                     {"MouseClicked" :> (val1 = pt3), 
@@ -1148,6 +1335,7 @@
                                                                        If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 , 
                                                                        val1 = {10, 34};colLuca = Red;ok3=1;oneTimeloc =0;])
 						                           }];
+                           (*Nome Giacomo blu*)
 
 		     		      eh3[val1_, oneTimeloc_] := EventHandler[{Text[Style["Giacomo", colGiac, Italic, 20], Dynamic@val1]}, 
                                                     {"MouseClicked" :> (val1 = pt4), 
@@ -1156,6 +1344,7 @@
                                                                        If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 ,
 			    			                                          val1 = {-8, 30};colGiac = Red;ok4 = 1;oneTimeloc = 0;])
 						                           }];
+                           (*Nome Luigi blu*)
 
 		     		      eh4[val1_, oneTimeloc_] := EventHandler[{Text[Style["Luigi", colLuigi, Italic, 20], Dynamic@val1]}, 
                                                      {"MouseClicked" :> (val1 = pt5), 
@@ -1164,6 +1353,7 @@
                                                                         If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 , 
                                                                         val1 = {0, 30};colLuigi = Red;ok5 = 1;oneTimeloc =0; ])
 						                          }];
+                            (*Nome Caterina nero*)
 
 		     		       eh5[val1_, oneTimeloc_] := EventHandler[{Text[Style["Caterina", colCate2, Italic, 20], Dynamic@val1]}, 
                                                      {"MouseClicked" :> (val1 = pt6), 
@@ -1173,6 +1363,7 @@
                                                                         If[oneTimeloc == 1, oneTimeloc = 0; inCate = inCate + 1];
                                                                         If[inCate == 2, colCate = Red; colCate2 = Red;ok2 = 1];])
                                                     }];
+                           (*Nome Mauro nero*)
 
 		     		      eh6[val1_, oneTimeloc_] := EventHandler[{Text[Style["Mauro", colMauro2, Italic, 20], Dynamic@val1]}, 
                                                    {"MouseClicked" :> (val1 = pt7), 
@@ -1182,6 +1373,7 @@
                                                                       If[oneTimeloc == 1, oneTimeloc = 0; inMauro = inMauro + 1];
                                                                       If[inMauro == 2, colMauro = Red; colMauro2 = Red; ok1 = 1];])
                                                    }];
+                           (*Nome Marco blu*)
 
 		     		      eh7[val1_, oneTimeloc_] := EventHandler[{Text[Style["Marco", colMarco, Italic, 20], Dynamic@val1]}, 
                                                    {"MouseClicked" :> (val1 = pt8), 
@@ -1190,14 +1382,16 @@
                                                                        If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 , 
                                                                           val1 = {8, 30};colMarco = Red;ok6 = 1;oneTimeloc = 0;])
 						                           }];
+                            (*Nome Carlo verde*)
 
 		     		       eh8[val1_, oneTimeloc_] := EventHandler[{Text[Style["Carlo",colCarlo, Italic, 20], Dynamic@val1]}, 
                                                     {"MouseClicked" :> (val1 = pt9), 
                                                     "MouseDragged" :> (If[oneTimeloc == 1 ,val1 = MousePosition["Graphics"]];
-			  			                                           (*se inserisco il nome Carlo blu nell'insieme unione*)
+			  			                                           (*se inserisco il nome Carlo verde nell'insieme unione*)
                                                                        If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 , 
                                                                           val1 = {-8, 26};colCarlo = Red;ok7=1;oneTimeloc =0;])
 						                            }];
+                         (*Nome Federico verde*)
 
 		     		     eh9[val1_, oneTimeloc_] := EventHandler[{Text[Style["Federico", colFederico, Italic, 20], Dynamic@val1]}, 
                                                    {"MouseClicked" :> (val1 = pt10), 
@@ -1206,6 +1400,7 @@
                                                                       If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 , 
                                                                          val1 = {0, 26};colFederico = Red;ok8 = 1;oneTimeloc = 0;])
 						                          }];
+                          (*Nome Elisa verde*)
 
 		                  eh10[val1_, oneTimeloc_] := EventHandler[{Text[Style["Elisa", colElisa, Italic, 20], Dynamic@val1]}, 
                                                     {"MouseClicked" :> (val1 = pt11), 
@@ -1216,9 +1411,11 @@
                                                    }];
           )])
 
-          (*Commento*)
+          (*Terzo Esercizio*)
 
           gameExercise3[] := (
+
+                  (*Definizione delle varibili per la gestione dei punti iniziali dei vari oggetti grafici,del colore di essi e di altre funzionalit\[AGrave]*)
 
   		        DynamicModule[{pt1={-36,6}, pt2={-24,6}, pt3={-35,3}, pt4={-27, 3}, pt5={-7, 6}, pt6={6, 6}, pt7={-4, 3}, pt8={4,3}, 
                                  pt9={23,6}, pt10={35,6}, pt11={29,3}, pt12={27,7}, pt13={25,4} , eh1, eh, eh2, eh3, eh4, eh5, eh6,eh7, 
@@ -1242,12 +1439,21 @@
                               None], 
 		      		        Grid[{{ 
 
+                              (*Definizione di 3 bottoni*)
+                              (*Bottone utilizzato per valutare l'esercizio*)
+
                               Button["Valuta!", If[ok1 == 1 && ok3 == 1, Speak["Very good"], Speak["You can do better"]]],
 
+                              (*Bottone utilizzato per ripristinare l'esercizio allo stato iniziale*)
 		      		        Button["Reset!", pt1={-36, 6}; pt2={-24, 6}; pt3={-35,3}; pt4={-27,3}; pt5={-7,6}; pt6={6,6}; 
 		                                      pt7={-4,3}; pt8={4,3}; pt9={23,6}; pt10={35,6}; pt11={29,3}; oneTime=1; oneTimeOut=1; 
 		                                      init=1; init1=1; init2=1; init3=1; init4=1; init5=1; init6=1; init9=1; init15=1; init10=1;
-		                                      init16=1; init8=1; init14=1; colLuca=Blue; colGiacomo=Blue; ok1=0; ok2=0; ok3=0; ok4=0; ok5=0; ok6=0; ok7=0; ok8=0; ok9=0; ok10 = 0],Button["Suggerimento",MessageDialog[Style["L'operazione da fare \[EGrave]: A\(A\[Intersection]B)",Bold,Large]]],SpanFromLeft}},Alignment->Center]],
+		                                      init16=1; init8=1; init14=1; colLuca=Blue; colGiacomo=Blue; ok1=0; ok2=0; ok3=0; ok4=0; 
+                                              ok5=0; ok6=0; ok7=0; ok8=0; ok9=0; ok10 = 0],
+
+                              (*Bottone utilizzato per ottenere un suggerimento utile per la risoluzione dell'esercizio*)
+                              Button["Suggerimento",MessageDialog[Style["L'operazione da fare \[EGrave]: A\(A\[Intersection]B)",Bold,Large]]],
+                                      SpanFromLeft}},Alignment->Center]],
 		     		     
 		   		           Initialization :> (
 
@@ -1265,13 +1471,18 @@
 		     		         SetAttributes[eh11, HoldAll];
 		     		         SetAttributes[eh12, HoldAll];
 
-		     		   
+                              (*Per ogni oggetto viene definito un Gestore di Eventi che si occupa di gestire l'interazione tra il mouse e l'oggetto stesso*)
+                              (*Viene gestito il click del mouse sull'oggetto e il trascinamento di questo tenendo premuto il mouse*)
+
+		     		         (*Nome Mauro blu*)
+
 		     		         eh[val1_, oneTimeloc_] := EventHandler[{Text[Style["Mauro", Blue, Italic, 20], Dynamic@val1]}, 
                                                       {"MouseClicked" :> (val1 = pt1), 
                                                        "MouseDragged" :> (If[oneTimeloc == 1 , val1 = MousePosition["Graphics"]];
 			  			                                              (*se inserisco il nome Mauro blu nell'insieme unione*)
                                                                           If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 ,val1={-36,6};])
                                                      }];
+                             (*Nome Caterina blu*)
 
 		     		        eh1[val1_, oneTimeloc_] := EventHandler[{Text[Style["Caterina", Blue, Italic, 20], Dynamic@val1]}, 
                                                       {"MouseClicked" :> (val1 = pt2), 
@@ -1279,6 +1490,7 @@
 			   			                                             (*se inserisco il nome Caterina blu nell'insieme unione*)
                                                                           If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 ,val1 = {-24, 6};])
                                                                       }];
+                             (*Nome Luca blu*)
 
 		     		        eh2[val1_, oneTimeloc_] := EventHandler[{Text[Style["Luca", colLuca, Italic, 20], Dynamic@val1]}, 
                                                      {"MouseClicked" :> (val1 = pt3), 
@@ -1287,6 +1499,7 @@
                                                                        If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15, val1 = {0, 33};
 			                                                           If[oneTimeloc == 1, oneTimeloc = 0; ];colLuca = Red; ok1 = 1])
 						                             }];
+                            (*Nome Giacomo blu*)
 
 		     		       eh3[val1_, oneTimeloc_] := EventHandler[{Text[Style["Giacomo", colGiacomo, Italic, 20], Dynamic@val1]}, 
                                                       {"MouseClicked" :> (val1 = pt4), 
@@ -1295,6 +1508,7 @@
                                                                          If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 ,val1 = {0, 27};
                                                                          If[oneTimeloc == 1, oneTimeloc = 0;];colGiacomo = Red; ok3 = 1])
                                                      }];
+                           (*Nome Luigi nero*)
 
 		     		      eh4[val1_, oneTimeloc_] := EventHandler[{Text[Style["Luigi", Black, Italic, 20], Dynamic@val1]}, 
                                                      {"MouseClicked" :> (val1 = pt5), 
@@ -1302,6 +1516,7 @@
 			  			                                             (*se inserisco il nome Luigi nero nell'insieme unione*)
                                                                          If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 , val1 = {-7, 6}; ])
 						                            }];
+                           (*Nome Caterina nero*)
 
 		     		      eh5[val1_, oneTimeloc_] := EventHandler[{Text[Style["Caterina", Black, Italic, 20], Dynamic@val1]}, 
                                                     {"MouseClicked" :> (val1 = pt6), 
@@ -1309,6 +1524,7 @@
 			   			                                           (*se inserisco il nome Caterina nero nell'insieme intersezione*)
                                                                        If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 ,val1 = {6, 6};])
                                                     }];
+                           (*Nome Mauro nero*)
 
 		     		      eh6[val1_, oneTimeloc_] := EventHandler[{Text[Style["Mauro", Black, Italic, 20], Dynamic@val1]}, 
                                                     {"MouseClicked" :> (val1 = pt7), 
@@ -1316,6 +1532,7 @@
 			   			                                           (*se inserisco il nome Mauro nero nell'insieme intersezione*)
                                                                        If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 ,val1 = {-4, 3};])
                                                      }];
+                           (*Nome Marco nero*)
 
 		     		      eh7[val1_, oneTimeloc_] := EventHandler[{Text[Style["Marco", Black, Italic, 20], Dynamic@val1]}, 
                                                    {"MouseClicked" :> (val1 = pt8), 
@@ -1323,12 +1540,14 @@
 			  			                                           (*se inserisco il nome Marco nero nell'insieme unione*)
                                                                       If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 , val1 = {4, 3};])
                                                    }];
+                           (*Nome Carlo verde*)
 
 		     		      eh8[val1_, oneTimeloc_] := EventHandler[{Text[Style["Carlo", Green, Italic, 20], Dynamic@val1]}, 
                                                    {"MouseClicked" :> (val1 = pt9), 
                                                     "MouseDragged" :> (If[oneTimeloc == 1 , val1 = MousePosition["Graphics"]];
-			  			                                           (*se inserisco il numero tre nell'insieme unione*)
+			  			                                           (*se inserisco il nome Carlo verde nell'insieme unione*)
                                                                       If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 , val1 = {23, 6}; ])}];
+                           (*Nome Federico verde*)
 
 		     		      eh9[val1_, oneTimeloc_] := EventHandler[{Text[Style["Federico", Green, Italic, 20], Dynamic@val1]}, 
                                                    {"MouseClicked" :> (val1 = pt10), 
@@ -1336,6 +1555,7 @@
 			  			                                           (*se inserisco il nome Federico verde nell'insieme unione*)
                                                                       If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 , val1 = {35, 6}])
                                                     }];
+                          (*Nome Elisa verde*)
 
 		     		     eh10[val1_, oneTimeloc_] := EventHandler[{Text[Style["Elisa", Green, Italic, 20], Dynamic@val1]}, 
                                                    {"MouseClicked" :> (val1 = pt11), 
@@ -1347,10 +1567,15 @@
 		     		     
 		  )])
 
-          (*Commento*)
+
+          
 
 
+          
+         (*Quarto Esercizio*)
           gameExercise4[] := (
+
+               (*Definizione delle varibili per la gestione dei punti iniziali dei vari oggetti grafici,del colore di essi e di altre funzionalit\[AGrave]*)
 
   		     DynamicModule[{pt1={-36,6}, pt2={-24,6}, pt3={-35,3}, pt4={-27,3}, pt5={-7,6}, pt6={6,6}, pt7={-4,3}, 
 		    		          pt8={4,3}, pt9={23,6}, pt10={35,6}, pt11={29,3}, pt12={27,7}, pt13={25,4} , eh1, eh, 
@@ -1375,17 +1600,22 @@
                                        Black , Text["B", {-10, 2}]},
 						               ImageSize -> 950, PlotRange -> {{-45, 45}, {0, 40}}, Axes -> False], 
                           None], 
-		      	        Grid[{{ 
-
+		      	        Grid[{{
+                 
+                          (*Definizione di 3 bottoni*)
+                          (*Bottone utilizzato per valutare l'esercizio*)
+ 
                           Button["Valuta!",If[ok1 == 1 && ok3 == 1 &&ok4 == 1 && ok5 == 1 , 
 			                     Speak["Very good"], Speak["You can do better"]]],
 
+                          (*Bottone utilizzato per ripristinare l'esercizio allo stato iniziale*)
 		      		    Button["Reset",pt1={-36,6}; pt2={-24,6}; pt3={-35,3};pt4={-27,3}; pt5={-7,6}; pt6={6,6}; 
 		                          pt7={-4,3}; pt8={4,3}; pt9={23,6}; pt10={35,6}; pt11={29,3}; oneTime=1; oneTimeOut=1; 
 		                          init=1; init1=1; init2=1; init3=1; init4=1; init5=1; init6=1; init9=1; init15=1; init10=1;
 		                          init16=1; init8=1; init14=1colLuca=Blue; colGiacomo=Blue; colLuigi=Black; colMarco=Black; 
                                   ok1=0; ok2=0; ok3=0; ok4=0; ok5=0; ok6=0; ok7=0; ok8=0; ok9=0; ok10=0],
-    
+
+                          (*Bottone utilizzato per ottenere un suggerimento utile per la risoluzione dell'esercizio*)
                           Button["Suggerimento",MessageDialog[Style["L'operazione da fare \[EGrave]: (A\[Union]B)\(A\[Intersection]B)",Bold,Large]]],
                                   SpanFromLeft}},Alignment->Center]],
 		     		     
@@ -1405,13 +1635,18 @@
 		     		     SetAttributes[eh11, HoldAll];
 		     		     SetAttributes[eh12, HoldAll];
 
+                          (*Per ogni oggetto viene definito un Gestore di Eventi che si occupa di gestire l'interazione tra il mouse e l'oggetto stesso*)
+                          (*Viene gestito il click del mouse sull'oggetto e il trascinamento di questo tenendo premuto il mouse*)
 		     		   
+                          (*Nome Mario blu*)
+
 		     		     eh[val1_, oneTimeloc_] := EventHandler[{Text[Style["Mauro", Blue, Italic, 20], Dynamic@val1]}, 
                                                    {"MouseClicked" :> (val1 = pt1), 
                                                     "MouseDragged" :> (If[ oneTimeloc == 1 , val1 = MousePosition["Graphics"]];
 			  			                                           (*se inserisco il nome Mario blu nell'insieme unione*)
                                                                       If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 ,val1 = {-36, 6};])
 						                         }];
+                          (*Nome Caterina blu*)
 
 		     		     eh1[val1_, oneTimeloc_] := EventHandler[{Text[Style["Caterina", Blue, Italic, 20], Dynamic@val1]}, 
                                                    {"MouseClicked" :> (val1 = pt2), 
@@ -1419,6 +1654,7 @@
 			   			                                          (*se inserisco il nome Caterina blu nell'insieme unione*)
                                                                       If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 ,val1 = {-24, 6};])
                                                    }];
+                          (*Nome Luca blu*)
 
 		     		     eh2[val1_, oneTimeloc_] := EventHandler[{Text[Style["Luca", colLuca, Italic, 20], Dynamic@val1]}, 
                                                    {"MouseClicked" :> (val1 = pt3), 
@@ -1427,6 +1663,7 @@
                                                                       If[ val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15, val1 = {-5, 33};
 			                                                          If[oneTimeloc == 1, oneTimeloc = 0;];colLuca = Red;ok1 = 1])
                                                    }];
+                          (*Nome Giacomo blu*)
 
 		     		     eh3[val1_, oneTimeloc_] := EventHandler[{Text[Style["Giacomo", colGiacomo, Italic, 20], Dynamic@val1]}, 
                                                  {"MouseClicked" :> (val1 = pt4), 
@@ -1435,6 +1672,7 @@
                                                                      If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 ,val1 = {5, 33};
                                                                      If[oneTimeloc == 1, oneTimeloc = 0;];colGiacomo = Red;ok3 = 1])
                                                   }];
+                          (*Nome Luigi blu*)
 
 		     		     eh4[val1_, oneTimeloc_] := EventHandler[{Text[Style["Luigi", colLuigi, Italic, 20], Dynamic@val1]}, 
                                                  {"MouseClicked" :> (val1 = pt5), 
@@ -1443,6 +1681,7 @@
                                                                      If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15, val1 = {-5, 27}; 
 					                                                 If[oneTimeloc == 1, oneTimeloc = 0;];colLuigi = Red;ok4 = 1])
                                                  }];
+                          (*Nome Caterina nero*)
 
 		     		     eh5[val1_, oneTimeloc_] := EventHandler[{Text[Style["Caterina", Black, Italic, 20], Dynamic@val1]}, 
                                                  {"MouseClicked" :> (val1 = pt6), 
@@ -1450,6 +1689,7 @@
 			   			                                        (*se inserisco il nome Caterina nero nell'insieme intersezione*)
                                                                     If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15,val1 = {6, 6};])
 						                         }];
+                          (*Nome Mauro nero*)
 
 		     		     eh6[val1_, oneTimeloc_] := EventHandler[{Text[Style["Mauro", Black, Italic, 20], Dynamic@val1]}, 
                                                   {"MouseClicked" :> (val1 = pt7), 
@@ -1457,14 +1697,16 @@
 			   			                                         (*se inserisco il nome Mauro nero nell'insieme intersezione*)
                                                                      If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 ,val1 = {-4, 3};])
                                                   }];
+                          (*Nome Marco blu*)
 
 		     		     eh7[val1_, oneTimeloc_] := EventHandler[{Text[Style["Marco", colMarco, Italic, 20], Dynamic@val1]}, 
                                                   {"MouseClicked" :> (val1 = pt8), 
                                                    "MouseDragged" :> (If[oneTimeloc == 1, val1 = MousePosition["Graphics"]];
-			  			                                           (*se inserisco il nome Marco nell'insieme unione*)
+			  			                                           (*se inserisco il nome Marco blu nell'insieme unione*)
                                                                      If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 , val1 = {5, 27}; 
 					                                                 If[oneTimeloc == 1, oneTimeloc = 0; ];colMarco = Red; ok5 = 1])
                                                    }];
+                          (*Nome Carlo verde*)
 
 		     		     eh8[val1_, oneTimeloc_] := EventHandler[{Text[Style["Carlo", Green, Italic, 20], Dynamic@val1]}, 
                                                   {"MouseClicked" :> (val1 = pt9), 
@@ -1472,6 +1714,7 @@
 			  			                                          (*se inserisco il nome Carlo verde nell'insieme unione*)
                                                                       If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 , val1 = {23, 6};])
                                                    }];
+                          (*Nome Federico verde*)
 
 		     		     eh9[val1_, oneTimeloc_] := EventHandler[{Text[Style["Federico", Green, Italic, 20], Dynamic@val1]}, 
                                                   {"MouseClicked" :> (val1 = pt10), 
@@ -1479,6 +1722,7 @@
 			  			                                         (*se inserisco il nome Federico verde nell'insieme unione*)
 		                                                            If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15, val1 = {35, 6}])
                                                   }];
+                          (*Nome Elisa verde*)
 
 		     		     eh10[val1_, oneTimeloc_] := EventHandler[{Text[Style["Elisa", Green, Italic, 20], Dynamic@val1]}, 
                                                    {"MouseClicked" :> (val1 = pt11), 
