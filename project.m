@@ -30,6 +30,7 @@
     (*Definizioni di Usage delle varie funzioni*) 
 	gameApp::usage = "gameApp[] Funzione utilizzata per rappresentare graficamente il concetto di appartenenza"
 	gameInter::usage = "gameInter[] Esercizio inerente le operazioni tra insiemi. Nel caso specifico: Intersezione."
+    gameInterVuoto::usage = "gameInter[] Esercizio inerente le operazioni tra insiemi. Nel caso specifico: Intersezione."
 	gameApp2::usage = "gameApp2[] Funzione utilizzata per rappresentare graficamente il concetto di appartenenza geometrica."
 	gameDiff::usage = "gameDiff[] Esercizio inerente le operazioni tra insiemi. Nel caso specifico: Differenza."
 	game1::usage = "game1[] Funzione utilizzata per rappresentare graficamente, con mele banane e pere, il concetto di insieme."
@@ -518,6 +519,141 @@
 		                                              If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 , val1={5,28};
 			                                          If[oneTimeloc == 1, oneTimeloc = 0; inEighteen = inEighteen + 1];
 			                                          If[inEighteen == 2, colEighteen = Red; colEighteen1 = Red;ok3 = 1];])
+                                  }];
+       )])
+		gameInterVuoto[] :=(
+
+            (*Definizione delle varibili per la gestione dei punti iniziali dei vari oggetti grafici,del colore di essi e di altre funzionalit\[AGrave]*)
+
+		    DynamicModule[{pt1 = {-28, 7}, pt2 = {-25, 7}, pt3 = {-22, 7}, pt10 = {23, 7}, 
+                           pt11 = {27, 7},pt12 = {19, 7}, pt13 = {31, 7} , eh1, eh, eh2, eh3,eh9, eh10, eh11, eh12, l1, l2, l3, l4, 
+                           oneTime = 1, oneTimeOut = 1, prec,init = 1, init1 = 1, init2 = 1, init3 = 1, init4 = 1, init5 = 1, 
+		                   colSix = Blue, colSix1 = Black, colTwelve = Blue,colTwelve1 = Black, colEighteen = Blue, 
+                           colEighteen1 = Black,ok1 = 0, ok2 = 0, ok3 = 0},
+
+            (*All'interno di questo array vengono aggiunte le due interfacce grafiche, 2 Manipulate*)
+		   
+		    Row[{
+
+             (*Esercizio dimostrativo*)
+
+		     Manipulate[
+		           Dynamic[Graphics[{eh[pt1], eh1[pt2, init], eh2@pt3,
+			                         eh9@pt10, eh10@pt11, eh11[pt12, init4], eh12[pt13, init5], 
+			                         Blue, Thickness[0.005], l1 = Line[{{-40, 13}, {-35, 1}, {-15, 1}, {-10, 13}, {-40, 13}}], 
+                                     Red, l2 = Line[{{-15, 36}, {-10, 22}, {10, 22}, {15, 36}, {-15, 36}}],
+                                     Black,l3 = Line[{{10, 13}, {15, 1}, {35, 1}, {40, 13}, {10, 13}}], 
+                                     Black, Thickness[0.001], l4 = Line[{{-44, 0.2}, {44, 0.2}, {44, 40}, {-44, 40}, {-44, 0.2}}], 
+                                     Blue, FontSize -> 20,Text["A", {-40, 2}], 
+                                     Red, Text["C: INTERSEZIONE", {0, 38}], 
+                                     Black , Text["B", {10, 2}]},
+                                     ImageSize -> Scaled[.6], PlotRange -> {{-45, 45}, {0, 40}}, Axes -> False],
+                   None],
+
+            (*Definizione di 2 bottoni, uno per valutare l'esercizio e l'altro per ripristinarlo allo stato iniziale*)
+
+		    Button["Valuta!", If[ok1 == 1 && ok2 == 1 && ok3 == 1, Speak["Very good"], 
+			       Speak["You can do better"]]],
+ 
+            Button["Reset!",pt1 = {-28, 7}; pt2 = {-25, 7}; pt3 = {-22, 7}; pt10 = {23, 7}; 
+                           pt11 = {27, 7};pt12 = {19, 7}; pt13 = {31, 7};oneTime=1; oneTimeOut=1; 
+                           init=1; init1=1; init2=1; init3=1; init4=1; init5=1; 
+		                   colSix=Blue; colSix1=Black; colTwelve=Blue; colTwelve1=Black; colEighteen=Blue; colEighteen1=Black; 
+		                   ok1=0; ok2=0; ok3=0;]],
+
+            (*Dimostrazione grafica*)
+
+		    Manipulate[
+		      RegionPlot[{(x - (a/5))^2 + y^2 < 10 && ! ((x + (a/5))^2 + y^2 < 10), (x + (a/5))^2 + y^2 < 10 && ! ((x - (a/5))^2 + y^2 < 10),
+                          (x - (a/5))^2 + y^2 < 10 && ((x + (a/5))^2 + y^2 < 10)}, {x, -8, 8}, {y, -8, 8}, PlotStyle -> {Black, Blue, White}, 
+		      ImageSize -> Medium, Epilog -> {Text[Style["C=A \[Intersection] B", Red, Italic, 15], {0, -4.5}]}], {{a, 20, "C=A \[Intersection] B"}, 20, 10, 1}]
+		     
+		   }],
+
+		   Initialization :> (testpoint[poly_, pt_] := Round[(Total@Mod[(# - RotateRight[#]) &@(ArcTan @@ (pt - #) & /@ poly),2 Pi, -Pi]/2/Pi)] != 0;
+		     
+           SetAttributes[eh1, HoldAll];
+		   SetAttributes[eh, HoldAll];
+		   SetAttributes[eh2, HoldAll];
+		   SetAttributes[eh3, HoldAll];
+		   SetAttributes[eh9, HoldAll];
+		   SetAttributes[eh10, HoldAll];
+		   SetAttributes[eh11, HoldAll];
+		   SetAttributes[eh12, HoldAll];
+		  (*Per ogni oggetto viene definito un Gestore di Eventi che si occupa di gestire l'interazione tra il mouse e l'oggetto stesso*)
+           (*Viene gestito il click del mouse sull'oggetto e il trascinamento di questo tenendo premuto il mouse*)
+
+           (*Numero 3 blu*)
+		     
+		    eh[val1_] := EventHandler[{Text[Style["3", Blue, Italic, 20], Dynamic@val1]}, 
+                        {"MouseClicked" :> (val1 = pt1), 
+			             "MouseDragged" :> (If[oneTimeOut == 1 , val1 = MousePosition["Graphics"];, 
+			                               If[oneTimeOut == 0, oneTimeOut = 1]; ];
+			                               (*se inserisco il numero tre blu nell'insieme intersezione*)
+		                                   If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 , 
+			                               If[oneTimeOut == 1, val1 = {-28, 7}; oneTimeOut = 0]])
+			          }];
+           (*Numero 6 blu*)
+
+		   eh1[val1_, oneTimeloc_] := EventHandler[{Text[Style["6", colSix, Italic, 20], Dynamic@val1]}, 
+                                   {"MouseClicked" :> (val1 = pt2), 
+			                       "MouseDragged" :> (If[oneTimeloc == 1, val1 = MousePosition["Graphics"];
+                                                       If[oneTimeOut == 0, oneTimeOut = 1]; ];
+			                                         (*se inserisco il numero sei blu nell'insieme intersezione*)
+		                                               If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 , 
+			                                           If[oneTimeOut == 1, val1 = {-25, 7}; oneTimeOut = 0]])
+			                      }];
+           (*Numero 9 blu*)
+
+		   eh2[val1_] := EventHandler[{Text[Style["9", Blue, Italic, 20], Dynamic@val1]}, 
+                       {"MouseClicked" :> (val1 = pt3), 
+			            "MouseDragged" :> (If[oneTimeOut == 1 ,val1 = MousePosition["Graphics"];, 
+			                               If[oneTimeOut == 0, oneTimeOut = 1]; ];
+			                              (*se inserisco il numero nove blu nell'insieme intersezione*)
+		                                   If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 , 
+			                               If[oneTimeOut == 1, val1 = {-22, 7}; oneTimeOut = 0]])
+			          }];
+          
+
+         (*Numero 14 nero*)
+
+		  eh9[val1_] := EventHandler[{Text[Style["14", Black, Italic, 20], Dynamic@val1]}, 
+                       {"MouseClicked" :> (val1 = pt10), 
+			            "MouseDragged" :> (If[oneTimeOut == 1, val1 = MousePosition["Graphics"];, 
+			                               If[oneTimeOut == 0, oneTimeOut = 1]; ];
+			                              (*se inserisco il numero quattordici nell'insieme intersezione*)
+		                                   If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 , 
+			                               If[oneTimeOut == 1, val1 = {23, 7}; oneTimeOut = 0]])
+                      }];
+         (*Numero 16 nero*)
+
+		 eh10[val1_] := EventHandler[{Text[Style["16", Black, Italic, 20], Dynamic@val1]}, 
+                       {"MouseClicked" :> (val1 = pt11), 
+			            "MouseDragged" :> (If[ oneTimeOut == 1 , val1 = MousePosition["Graphics"];, 
+			                               If[ oneTimeOut == 0, oneTimeOut = 1]; ];
+			                              (*se inserisco il numero sedici nell'insieme intersezione*)
+		                                   If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 , 
+			                               If[oneTimeOut == 1, val1 = {27, 7}; oneTimeOut = 0]])
+			         }];
+         (*Numero 12 nero*)
+
+		 eh11[val1_, oneTimeloc_] := EventHandler[{Text[Style["12", colTwelve1, Italic, 20], Dynamic@val1]}, 
+                                   {"MouseClicked" :> (val1 = pt12), 
+			                       "MouseDragged" :> (If[ oneTimeOut == 1 , val1 = MousePosition["Graphics"];, 
+			                               If[ oneTimeOut == 0, oneTimeOut = 1]; ];
+			                              (*se inserisco il numero dodici nell'insieme intersezione*)
+		                                   If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 , 
+			                               If[oneTimeOut == 1, val1 = {19, 7}; oneTimeOut = 0]])
+                                  }];
+        (*Numero 18 nero*)
+
+		 eh12[val1_, oneTimeloc_] := EventHandler[{Text[Style["18", colEighteen1, Italic, 20], Dynamic@val1]}, 
+                                  {"MouseClicked" :> (val1 = pt13), 
+			                       "MouseDragged" :> (If[ oneTimeOut == 1 , val1 = MousePosition["Graphics"];, 
+			                               If[ oneTimeOut == 0, oneTimeOut = 1]; ];
+			                              (*se inserisco il numero diciotto nell'insieme intersezione*)
+		                                   If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 , 
+			                               If[oneTimeOut == 1, val1 = {31, 7}; oneTimeOut = 0]])
                                   }];
        )])
 
@@ -1235,8 +1371,6 @@
                                                             If[val1[[2]] > 23 && val1[[1]] > -15 && val1[[1]] < 15 , val1={29,3};])
 						               }];
           )])
-
-
           (*Secondo Esercizio*)           
 
           gameExercise2[] := (
@@ -1566,11 +1700,7 @@
 		     		     
 		     		     
 		  )])
-
-
           
-
-
           
          (*Quarto Esercizio*)
           gameExercise4[] := (
