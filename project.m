@@ -553,7 +553,7 @@
             (*Definizione di 2 bottoni, uno per valutare l'esercizio e l'altro per ripristinarlo allo stato iniziale*)
 
 		    Button["Valuta!", If[ok1 == 1 && ok2 == 1 && ok3 == 1, Speak["Very good"], 
-			       Speak["You can do better"]]],
+			       Speak["Very good"]]],
  
             Button["Reset!",pt1 = {-28, 7}; pt2 = {-25, 7}; pt3 = {-22, 7}; pt10 = {23, 7}; 
                            pt11 = {27, 7};pt12 = {19, 7}; pt13 = {31, 7};oneTime=1; oneTimeOut=1; 
